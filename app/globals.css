@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
+/*
+ * WaveUp Himalayas — brand tokens.
+ * Hex values are eyeball-matched from the logo (see docs/04-brand.md) and NOT final.
+ * They live here as the single source of truth — swap before launch in one place.
+ */
+@theme {
+  /* Brand palette */
+  --color-navy: #1b2a4a; /* primary text, headers, dark sections, 3D fog */
+  --color-navy-deep: #111c33; /* deeper navy for gradients / overlays */
+  --color-gold: #b8923e; /* accents, primary CTAs, peak mark, dividers */
+  --color-gold-light: #d4b264; /* hover states, highlights */
+  --color-off-white: #f7f7f5; /* light backgrounds */
+  --color-ink: #222831; /* body text on light backgrounds */
+
+  /* Type families (wired to next/font in layout.tsx) */
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  /* Shared cinematic ease — "everything glides; nothing snaps" */
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: var(--color-off-white);
+  --foreground: var(--color-ink);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Lenis smooth-scroll: html gets data-lenis-smooth when active */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/*
+ * Gentle Ken Burns for the static hero poster used as the mobile / low-power
+ * fallback (the desktop hero plays a video instead). Low intensity (scale
+ * 1.0 → 1.04) so it stays calm on small screens. Auto-frozen by reduced motion.
+ */
+@keyframes kenburns-soft {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+.ken-burns-soft {
+  animation: kenburns-soft 24s ease-in-out infinite alternate;
+  transform-origin: center 55%;
+  will-change: transform;
+}
+
+/*
+ * Service-card icon line-draw (docs/01 §4). Strokes start hidden and "draw in"
+ * when the card reveals (JS adds .is-drawn in view). Reduced motion collapses
+ * the animation to ~instant via the rule below, leaving the icon fully drawn.
+ */
+@keyframes icon-draw {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.icon-draw svg {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}
+.icon-draw.is-drawn svg {
+  animation: icon-draw 0.9s var(--ease-out-expo) forwards;
+  animation-delay: var(--draw-delay, 0s);
+}
+
+/*
+ * Reduced motion: kill all transitions/animations and smooth-scroll.
+ * Components also branch on the useReducedMotion hook for JS-driven motion.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

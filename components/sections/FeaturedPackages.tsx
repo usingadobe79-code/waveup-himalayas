@@ -1,0 +1,111 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { useReducedMotion } from "@/lib/useReducedMotion";
+import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
+import { featuredPackages, totalPackages, whatsappEnquiry } from "@/lib/content";
+
+/**
+ * "Popular Adventures" — 6 featured packages in a responsive grid (docs/01 §5).
+ * Cards stagger-reveal on scroll; hover scales the framed image, lifts the card
+ * and nudges the gold "View Details →" arrow. No prices/durations (none exist);
+ * each card routes to a prefilled WhatsApp enquiry. Reduced motion → no reveal,
+ * instant content.
+ */
+export function FeaturedPackages() {
+  const reduced = useReducedMotion();
+
+  // Parent stagger props, disabled under reduced motion.
+  const groupProps = reduced
+    ? {}
+    : {
+        variants: staggerContainer,
+        initial: "hidden" as const,
+        whileInView: "show" as const,
+        viewport: REVEAL.viewport,
+      };
+  const itemVariants = reduced ? undefined : fadeRise;
+
+  return (
+    <section id="packages" className="bg-off-white py-16 sm:py-20 md:py-28 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <motion.div {...groupProps}>
+          <motion.div variants={itemVariants}>
+            <SectionHeading
+              eyebrow="Featured Packages"
+              title="Popular Adventures"
+              intro="A handful of our most-loved journeys across the Nepal Himalayas. Every trip is fully customizable — tell us what you have in mind."
+            />
+          </motion.div>
+
+          <div className="mt-10 grid gap-6 sm:mt-14 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3">
+            {featuredPackages.map((pkg, i) => (
+              <motion.article
+                key={pkg.title}
+                variants={itemVariants}
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-[transform,box-shadow,border-color] duration-300 ease-[var(--ease-out-expo)] hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-[0_18px_40px_-18px_rgba(27,42,74,0.45)]"
+              >
+                <Link
+                  href={whatsappEnquiry(pkg.title)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-1 flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70"
+                  aria-label={`Enquire about ${pkg.title} on WhatsApp`}
+                >
+                  {/* Fixed-ratio image frame. The real photo is the base layer;
+                      a subtle BOTTOM-ONLY scrim sits above it for grounding/
+                      badge legibility — never a full-card overlay. */}
+                  <div className="relative aspect-[3/2] overflow-hidden">
+                    <Image
+                      src={pkg.image}
+                      alt={pkg.title}
+                      fill
+                      // First card is above the fold (LCP) — load it eagerly with
+                      // a preload; the rest stay lazy.
+                      priority={i === 0}
+                      quality={82}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.08]"
+                    />
+                    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-deep/55 to-transparent" />
+                    <span className="absolute left-4 top-4 rounded-full bg-navy-deep/70 px-3 py-1 text-xs font-medium text-gold-light backdrop-blur-sm">
+                      {pkg.region}
+                    </span>
+                  </div>
+
+                  {/* Body */}
+                  <div className="flex flex-1 flex-col p-6">
+                    <h3 className="font-display text-xl text-navy">{pkg.title}</h3>
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-ink/70">{pkg.blurb}</p>
+                    <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-gold">
+                      View Details
+                      <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
+                    </span>
+                  </div>
+                </Link>
+              </motion.article>
+            ))}
+          </div>
+
+          {/* View All — gold underline wipe + arrow nudge */}
+          <motion.div variants={itemVariants} className="mt-14 flex justify-center">
+            <Link
+              href="/packages"
+              className="group inline-flex items-center gap-2 text-base font-semibold text-navy transition-colors hover:text-navy-deep"
+            >
+              <span className="relative">
+                View All {totalPackages} Packages
+                <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-gold transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-x-100" />
+              </span>
+              <ArrowRight className="h-4 w-4 text-gold transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
+            </Link>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
