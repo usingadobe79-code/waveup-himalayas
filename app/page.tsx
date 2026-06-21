@@ -8,6 +8,7 @@ import { Regions } from "@/components/sections/Regions";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { Gallery } from "@/components/sections/Gallery";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { CTABand } from "@/components/sections/CTABand";
 
 /**
  * Landing page composition.
@@ -28,6 +29,7 @@ export default function Home() {
         <WhyUs />
         <Gallery />
         <Testimonials />
+        <CTABand />
       </main>
       <Footer />
     </>
