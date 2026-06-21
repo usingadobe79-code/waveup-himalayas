@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { EASE_OUT_EXPO } from "@/lib/motion";
-import { regions, whatsappEnquiry } from "@/lib/content";
+import { regions } from "@/lib/content";
 
 /**
  * Regions — tabbed explorer (docs/01 §7). Tabs map to the real region buckets in
@@ -86,20 +87,18 @@ export function Regions() {
 
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {current.packages.map((p) => (
-                  <a
+                  <Link
                     key={p.slug}
-                    href={whatsappEnquiry(p.title)}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={`/packages/${p.slug}`}
                     className="group flex items-start justify-between gap-3 rounded-card border border-border bg-surface-alt px-5 py-4 shadow-card transition-[transform,box-shadow,border-color] duration-300 ease-[var(--ease-out-expo)] hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
-                    aria-label={`Enquire about ${p.title} on WhatsApp`}
+                    aria-label={`View details for ${p.title}`}
                   >
                     <span className="type-body font-medium text-ink">{p.title}</span>
                     <ArrowUpRight
                       className="mt-0.5 h-5 w-5 shrink-0 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                       aria-hidden="true"
                     />
-                  </a>
+                  </Link>
                 ))}
               </div>
             </motion.div>
