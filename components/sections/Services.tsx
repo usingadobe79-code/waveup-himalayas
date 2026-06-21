@@ -47,8 +47,8 @@ export function Services() {
   const item = reduced ? undefined : fadeRise;
 
   return (
-    <section id="services" className="bg-off-white py-16 sm:py-20 md:py-28 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6">
+    <section id="services" className="section-y bg-surface">
+      <div className="container-page">
         <motion.div {...groupProps}>
           <motion.div variants={item}>
             <SectionHeading
@@ -58,29 +58,26 @@ export function Services() {
             />
           </motion.div>
 
-          <div
-            ref={gridRef}
-            className="mt-10 grid grid-cols-2 gap-5 sm:mt-14 sm:gap-6 md:grid-cols-3 lg:grid-cols-6"
-          >
+          <div ref={gridRef} className="mt-12 grid grid-cols-2 gap-6 md:mt-16 md:grid-cols-3">
             {services.map((service, i) => {
               const Icon = ICONS[service.key] ?? Route;
               return (
                 <motion.article
                   key={service.key}
                   variants={item}
-                  className="group flex flex-col rounded-2xl border border-black/5 bg-white p-5 shadow-sm transition-[transform,box-shadow,border-color] duration-300 ease-[var(--ease-out-expo)] hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-[0_18px_40px_-18px_rgba(27,42,74,0.45)]"
+                  className="card card-hover group flex flex-col p-8"
                 >
                   <span
                     className={cn(
-                      "icon-draw mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gold/10 text-gold transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:rotate-6",
+                      "icon-draw mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:rotate-6",
                       inView && "is-drawn",
                     )}
                     style={{ "--draw-delay": `${0.1 + i * 0.08}s` } as CSSProperties}
                   >
                     <Icon className="h-6 w-6" strokeWidth={1.75} aria-hidden="true" />
                   </span>
-                  <h3 className="font-display text-base text-navy sm:text-lg">{service.title}</h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-ink/65">{service.blurb}</p>
+                  <h3 className="type-h3 text-ink">{service.title}</h3>
+                  <p className="type-small mt-3 text-muted">{service.blurb}</p>
                 </motion.article>
               );
             })}

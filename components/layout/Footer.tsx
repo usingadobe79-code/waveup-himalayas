@@ -9,10 +9,10 @@ function FooterLink({ href, children, external = false }: { href: string; childr
     <a
       href={href}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-      className="group relative inline-block text-sm text-white/60 transition-colors hover:text-white"
+      className="type-small group relative inline-block text-on-dark/60 transition-colors hover:text-on-dark"
     >
       {children}
-      <span className="absolute -bottom-0.5 left-0 h-px w-full origin-left scale-x-0 bg-gold transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-x-100" />
+      <span className="absolute -bottom-0.5 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-x-100" />
     </a>
   );
 }
@@ -33,21 +33,21 @@ const serviceLinks = [
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-navy-deep text-white">
-      <div className="mx-auto max-w-7xl px-6 py-16">
+    <footer id="contact" className="bg-surface-darker text-on-dark">
+      <div className="container-page py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Logo onDark className="text-2xl" />
-            <p className="mt-4 text-sm text-white/50">{brand.tagline}</p>
-            <p className="mt-2 text-sm text-white/40">{business.base}</p>
+            <p className="type-small mt-4 text-on-dark/50">{brand.tagline}</p>
+            <p className="type-small mt-2 text-on-dark/40">{business.base}</p>
             <div className="mt-5 flex items-center gap-3">
               <a
                 href={contact.instagram.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="text-white/50 transition-colors hover:text-gold"
+                className="text-on-dark/50 transition-colors hover:text-accent"
               >
                 <InstagramIcon />
               </a>
@@ -56,7 +56,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="text-white/50 transition-colors hover:text-gold"
+                className="text-on-dark/50 transition-colors hover:text-accent"
               >
                 <FacebookIcon />
               </a>
@@ -65,7 +65,7 @@ export function Footer() {
 
           {/* Explore */}
           <nav aria-label="Explore">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">Explore</h3>
+            <h3 className="type-eyebrow">Explore</h3>
             <ul className="mt-4 space-y-3">
               {exploreLinks.map((l) => (
                 <li key={l.label}><FooterLink href={l.href}>{l.label}</FooterLink></li>
@@ -75,7 +75,7 @@ export function Footer() {
 
           {/* Services */}
           <nav aria-label="Services">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">Services</h3>
+            <h3 className="type-eyebrow">Services</h3>
             <ul className="mt-4 space-y-3">
               {serviceLinks.map((l) => (
                 <li key={l.label}><FooterLink href={l.href}>{l.label}</FooterLink></li>
@@ -85,31 +85,31 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">Get in touch</h3>
-            <ul className="mt-4 space-y-3 text-sm text-white/60">
+            <h3 className="type-eyebrow">Get in touch</h3>
+            <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-2.5">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <FooterLink href={contact.whatsapp} external>{contact.phone}</FooterLink>
               </li>
               <li className="flex items-start gap-2.5">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <FooterLink href={`mailto:${contact.email}`}>{contact.email}</FooterLink>
               </li>
               <li className="flex items-start gap-2.5">
-                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>{contact.hours}</span>
+                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                <span className="type-small text-on-dark/60">{contact.hours}</span>
               </li>
               <li className="flex items-start gap-2.5">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>{business.registeredAddress}</span>
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                <span className="type-small text-on-dark/60">{business.registeredAddress}</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row sm:items-center">
-          <p>
+        <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-on-dark/10 pt-6 sm:flex-row sm:items-center">
+          <p className="type-small text-on-dark/40">
             © {business.touristDotCom.since} {business.name}. Also trading as {business.alsoTradesAs}.
           </p>
           <FooterLink href={business.touristDotCom.listing} external>

@@ -31,8 +31,8 @@ export function FeaturedPackages() {
   const itemVariants = reduced ? undefined : fadeRise;
 
   return (
-    <section id="packages" className="bg-off-white py-16 sm:py-20 md:py-28 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6">
+    <section id="packages" className="section-y bg-surface-alt">
+      <div className="container-page">
         <motion.div {...groupProps}>
           <motion.div variants={itemVariants}>
             <SectionHeading
@@ -42,18 +42,18 @@ export function FeaturedPackages() {
             />
           </motion.div>
 
-          <div className="mt-10 grid gap-6 sm:mt-14 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:mt-16 sm:grid-cols-2 lg:grid-cols-3">
             {featuredPackages.map((pkg, i) => (
               <motion.article
                 key={pkg.title}
                 variants={itemVariants}
-                className="group relative flex flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-[transform,box-shadow,border-color] duration-300 ease-[var(--ease-out-expo)] hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-[0_18px_40px_-18px_rgba(27,42,74,0.45)]"
+                className="card card-hover group relative flex flex-col overflow-hidden"
               >
                 <Link
                   href={whatsappEnquiry(pkg.title)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-1 flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70"
+                  className="flex flex-1 flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
                   aria-label={`Enquire about ${pkg.title} on WhatsApp`}
                 >
                   {/* Fixed-ratio image frame. The real photo is the base layer;
@@ -71,17 +71,17 @@ export function FeaturedPackages() {
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.08]"
                     />
-                    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-deep/55 to-transparent" />
-                    <span className="absolute left-4 top-4 rounded-full bg-navy-deep/70 px-3 py-1 text-xs font-medium text-gold-light backdrop-blur-sm">
+                    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface-darker/55 to-transparent" />
+                    <span className="type-small absolute left-4 top-4 rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
                       {pkg.region}
                     </span>
                   </div>
 
                   {/* Body */}
                   <div className="flex flex-1 flex-col p-6">
-                    <h3 className="font-display text-xl text-navy">{pkg.title}</h3>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-ink/70">{pkg.blurb}</p>
-                    <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-gold">
+                    <h3 className="type-h3 text-ink">{pkg.title}</h3>
+                    <p className="type-small mt-2 flex-1 text-muted">{pkg.blurb}</p>
+                    <span className="type-small mt-5 inline-flex items-center gap-1.5 font-semibold text-accent">
                       View Details
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
                     </span>
@@ -92,16 +92,16 @@ export function FeaturedPackages() {
           </div>
 
           {/* View All — gold underline wipe + arrow nudge */}
-          <motion.div variants={itemVariants} className="mt-14 flex justify-center">
+          <motion.div variants={itemVariants} className="mt-16 flex justify-center">
             <Link
               href="/packages"
-              className="group inline-flex items-center gap-2 text-base font-semibold text-navy transition-colors hover:text-navy-deep"
+              className="type-body group inline-flex items-center gap-2 font-semibold text-ink transition-colors hover:text-accent"
             >
               <span className="relative">
                 View All {totalPackages} Packages
-                <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-gold transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-x-100" />
+                <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-x-100" />
               </span>
-              <ArrowRight className="h-4 w-4 text-gold transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
+              <ArrowRight className="h-4 w-4 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
             </Link>
           </motion.div>
         </motion.div>

@@ -39,20 +39,24 @@ export function HeroContent() {
 
   return (
     <div className="relative z-10 mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-6 py-24 text-center text-white">
+      {/* Localized navy wash behind the copy — darkens just the text zone (incl.
+          the bright warm sky behind the gold word) without dimming the whole image. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[60vmin] w-[min(100%,72rem)] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[radial-gradient(ellipse_at_center,rgba(17,28,51,0.68)_0%,rgba(17,28,51,0.45)_48%,transparent_78%)] blur-2xl"
+      />
+
       {/* Self-drawing gold peak mark — echo of the logo, sits cleanly above all copy */}
       <PeakMark reduced={reduced} />
 
       {/* Eyebrow */}
-      <motion.p
-        {...rise(0)}
-        className="mb-5 text-xs uppercase tracking-[0.35em] text-gold-light sm:text-sm"
-      >
+      <motion.p {...rise(0)} className="type-eyebrow mb-5">
         {brand.hero.eyebrow}
       </motion.p>
 
       {/* Headline */}
       <div className="relative">
-        <h1 className="font-display text-4xl font-light leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem]">
+        <h1 className="type-display [text-shadow:0_1px_3px_rgba(17,28,51,0.5),0_8px_38px_rgba(17,28,51,0.55)]">
           {words.map((word, i) => (
             <span key={i} className="inline-block overflow-hidden align-bottom">
               <motion.span
@@ -65,7 +69,13 @@ export function HeroContent() {
                     : { duration: 0.7, delay: 0.3 + i * 0.1, ease: EASE_OUT_EXPO }
                 }
               >
-                {word === "Ordinary" ? <span className="text-gold">{word}</span> : word}
+                {word === "Ordinary" ? (
+                  <span className="text-gold [text-shadow:0_0_1px_rgba(17,28,51,0.9),0_2px_8px_rgba(17,28,51,0.85),0_6px_28px_rgba(17,28,51,0.7)]">
+                    {word}
+                  </span>
+                ) : (
+                  word
+                )}
                 {i < words.length - 1 ? " " : ""}
               </motion.span>
             </span>
@@ -74,7 +84,7 @@ export function HeroContent() {
       </div>
 
       {/* Sub */}
-      <motion.p {...rise(0.9)} className="mt-6 max-w-xl text-base text-white/80 sm:text-lg">
+      <motion.p {...rise(0.9)} className="type-body-lg mt-6 max-w-xl text-on-dark/80 [text-shadow:0_1px_14px_rgba(17,28,51,0.5)]">
         {brand.hero.sub}
       </motion.p>
 

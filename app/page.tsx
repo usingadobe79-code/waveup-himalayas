@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { HeroRise } from "@/components/sections/HeroRise";
 import { Services } from "@/components/sections/Services";
 import { FeaturedPackages } from "@/components/sections/FeaturedPackages";
+import { Offers } from "@/components/sections/Offers";
 
 /**
  * Landing page composition.
@@ -18,6 +19,7 @@ export default function Home() {
         <HeroRise />
         <Services />
         <FeaturedPackages />
+        <Offers />
       </main>
       <Footer />
     </>

@@ -34,7 +34,7 @@ export default function RootLayout({
       lang="en"
       className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-off-white text-ink">
+      <body className="min-h-full flex flex-col bg-surface text-ink">
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

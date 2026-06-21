@@ -1,8 +1,9 @@
 import { cn } from "@/lib/cn";
 
 /**
- * Reusable section heading: small gold eyebrow + display title + optional intro.
- * Presentational only — parent sections wrap it for scroll-reveal motion.
+ * Reusable section heading: gold eyebrow + display title + optional intro.
+ * Uses the central type scale (type-eyebrow / type-h1 / type-body-lg) and
+ * semantic color tokens. Presentational only — parents wrap it for motion.
  */
 export function SectionHeading({
   eyebrow,
@@ -26,21 +27,10 @@ export function SectionHeading({
         className,
       )}
     >
-      {eyebrow && (
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-gold">
-          {eyebrow}
-        </p>
-      )}
-      <h2
-        className={cn(
-          "font-display text-4xl font-light leading-tight tracking-tight md:text-5xl",
-          onDark ? "text-white" : "text-navy",
-        )}
-      >
-        {title}
-      </h2>
+      {eyebrow && <p className="type-eyebrow mb-4">{eyebrow}</p>}
+      <h2 className={cn("type-h1", onDark ? "text-on-dark" : "text-ink")}>{title}</h2>
       {intro && (
-        <p className={cn("mt-4 text-base md:text-lg", onDark ? "text-white/70" : "text-ink/70")}>
+        <p className={cn("type-body-lg mt-5", onDark ? "text-on-dark/70" : "text-muted")}>
           {intro}
         </p>
       )}

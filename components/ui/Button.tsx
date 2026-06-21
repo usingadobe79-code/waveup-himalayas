@@ -8,24 +8,25 @@ const base =
   "inline-flex items-center justify-center gap-2 rounded-full font-medium " +
   "transition-[transform,box-shadow,background-color,color,border-color] duration-300 " +
   "ease-[var(--ease-out-expo)] will-change-transform " +
-  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70 focus-visible:ring-offset-2";
+  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 focus-visible:ring-offset-2";
 
 const variants: Record<Variant, string> = {
   // Gold fill, subtle scale + glow on hover (spec §1).
   gold:
-    "bg-gold text-navy-deep hover:bg-gold-light hover:scale-[1.03] " +
-    "hover:shadow-[0_0_28px_-6px_var(--color-gold)]",
-  // White outline on dark backgrounds.
+    "bg-accent text-surface-darker hover:bg-accent-hover hover:scale-[1.03] " +
+    "hover:shadow-[0_0_28px_-6px_var(--color-accent)]",
+  // Light outline on dark backgrounds.
   outline:
-    "border border-white/40 text-white hover:border-white hover:bg-white/10 hover:scale-[1.02]",
-  // Navy outline on light backgrounds.
+    "border border-on-dark/40 text-on-dark hover:border-on-dark hover:bg-on-dark/10 hover:scale-[1.02]",
+  // Ink outline on light backgrounds.
   "outline-dark":
-    "border border-navy/30 text-navy hover:border-navy hover:bg-navy/5 hover:scale-[1.02]",
+    "border border-ink/30 text-ink hover:border-ink hover:bg-ink/5 hover:scale-[1.02]",
 };
 
+// Same 52px height for primary CTAs (design system). sm = compact (header).
 const sizes: Record<Size, string> = {
-  sm: "px-4 py-2 text-sm",
-  md: "px-6 py-3 text-base",
+  sm: "h-11 px-5 text-sm",
+  md: "h-[52px] px-7 text-base",
 };
 
 type CommonProps = {
