@@ -36,15 +36,20 @@ export function Services() {
   const gridRef = useRef<HTMLDivElement>(null);
   const inView = useInView(gridRef, { once: true, amount: 0.2 });
 
+  // Under reduced motion, drive children to the shown state via animate="show"
+  // (initial=false = no enter animation). Simply dropping the variants would
+  // strand them at the "hidden" opacity:0 they first rendered with — because
+  // useReducedMotion resolves true only after mount, and with Lenis off and no
+  // whileInView there is nothing left to reveal them. (a11y: was blank before.)
   const groupProps = reduced
-    ? {}
+    ? { variants: staggerContainer, initial: false as const, animate: "show" as const }
     : {
         variants: staggerContainer,
         initial: "hidden" as const,
         whileInView: "show" as const,
         viewport: REVEAL.viewport,
       };
-  const item = reduced ? undefined : fadeRise;
+  const item = fadeRise;
 
   return (
     <section id="services" className="section-y bg-surface">

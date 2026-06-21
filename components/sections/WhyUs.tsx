@@ -33,15 +33,18 @@ const ICONS: LucideIcon[] = [
 export function WhyUs() {
   const reduced = useReducedMotion();
 
+  // Under reduced motion, drive children to "show" (initial=false = no enter
+  // animation). Dropping variants instead strands them at hidden opacity:0,
+  // since useReducedMotion flips true only after mount with no whileInView left.
   const groupProps = reduced
-    ? {}
+    ? { variants: staggerContainer, initial: false as const, animate: "show" as const }
     : {
         variants: staggerContainer,
         initial: "hidden" as const,
         whileInView: "show" as const,
         viewport: REVEAL.viewport,
       };
-  const item = reduced ? undefined : fadeRise;
+  const item = fadeRise;
 
   return (
     <section id="why-us" className="section-y bg-surface-alt">

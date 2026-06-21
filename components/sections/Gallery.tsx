@@ -38,15 +38,18 @@ const tileVariants: Variants = {
 export function Gallery() {
   const reduced = useReducedMotion();
 
+  // Under reduced motion, drive tiles to "show" (initial=false = no enter
+  // animation). Dropping variants instead strands them at hidden opacity:0,
+  // since useReducedMotion flips true only after mount with no whileInView left.
   const groupProps = reduced
-    ? {}
+    ? { variants: staggerContainer, initial: false as const, animate: "show" as const }
     : {
         variants: staggerContainer,
         initial: "hidden" as const,
         whileInView: "show" as const,
         viewport: REVEAL.viewport,
       };
-  const item = reduced ? undefined : tileVariants;
+  const item = tileVariants;
 
   return (
     <section id="gallery" className="section-y bg-surface-dark text-on-dark">

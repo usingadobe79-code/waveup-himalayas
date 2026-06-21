@@ -19,16 +19,20 @@ import { featuredPackages, totalPackages, whatsappEnquiry } from "@/lib/content"
 export function FeaturedPackages() {
   const reduced = useReducedMotion();
 
-  // Parent stagger props, disabled under reduced motion.
+  // Under reduced motion, drive children to the shown state via animate="show"
+  // (initial=false = no enter animation). Dropping the variants instead would
+  // strand them at "hidden" opacity:0 — useReducedMotion resolves true only
+  // after mount, and with Lenis off + no whileInView nothing reveals them.
+  // (a11y: cards were blank for reduced-motion users before this.)
   const groupProps = reduced
-    ? {}
+    ? { variants: staggerContainer, initial: false as const, animate: "show" as const }
     : {
         variants: staggerContainer,
         initial: "hidden" as const,
         whileInView: "show" as const,
         viewport: REVEAL.viewport,
       };
-  const itemVariants = reduced ? undefined : fadeRise;
+  const itemVariants = fadeRise;
 
   return (
     <section id="packages" className="section-y bg-surface-alt">
@@ -91,10 +95,14 @@ export function FeaturedPackages() {
             ))}
           </div>
 
-          {/* View All — gold underline wipe + arrow nudge */}
+          {/* View All — gold underline wipe + arrow nudge.
+              NOTE: the dedicated /packages page doesn't exist yet (out of v1
+              scope), so this anchors to #regions, where all 25 packages are
+              browsable by region. Repoint to "/packages" once that page ships.
+              Plain anchor (not next/link) avoids a route prefetch 404. */}
           <motion.div variants={itemVariants} className="mt-16 flex justify-center">
-            <Link
-              href="/packages"
+            <a
+              href="#regions"
               className="type-body group inline-flex items-center gap-2 font-semibold text-ink transition-colors hover:text-accent"
             >
               <span className="relative">
@@ -102,7 +110,7 @@ export function FeaturedPackages() {
                 <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-x-100" />
               </span>
               <ArrowRight className="h-4 w-4 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
       </div>

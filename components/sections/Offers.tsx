@@ -21,8 +21,12 @@ const BADGE_OVERSHOOT: [number, number, number, number] = [0.34, 1.4, 0.64, 1];
 export function Offers() {
   const reduced = useReducedMotion();
 
+  // overflow-x-clip on the section: the cards animate in from x:±64; while this
+  // section is still below the fold that pre-state would push page-level
+  // horizontal scroll. Clipping X (not hidden — keeps Y/sticky/Lenis intact)
+  // contains it without changing the visible result.
   return (
-    <section id="offers" className="section-y bg-surface-dark text-on-dark">
+    <section id="offers" className="section-y overflow-x-clip bg-surface-dark text-on-dark">
       <div className="container-page">
         <SectionHeading
           onDark
