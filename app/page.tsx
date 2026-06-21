@@ -5,6 +5,7 @@ import { Services } from "@/components/sections/Services";
 import { FeaturedPackages } from "@/components/sections/FeaturedPackages";
 import { Offers } from "@/components/sections/Offers";
 import { Regions } from "@/components/sections/Regions";
+import { WhyUs } from "@/components/sections/WhyUs";
 
 /**
  * Landing page composition.
@@ -22,6 +23,7 @@ export default function Home() {
         <FeaturedPackages />
         <Offers />
         <Regions />
+        <WhyUs />
       </main>
       <Footer />
     </>
