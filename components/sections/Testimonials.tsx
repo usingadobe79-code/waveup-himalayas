@@ -83,7 +83,7 @@ export function Testimonials() {
                 href={business.touristDotCom.listing}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-accent underline-offset-4 hover:underline"
+                className="font-medium text-accent-ink underline-offset-4 hover:underline"
               >
                 &ldquo;{business.touristDotCom.status}&rdquo; on Tourist.com
               </a>

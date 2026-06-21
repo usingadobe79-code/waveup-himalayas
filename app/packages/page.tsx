@@ -27,7 +27,7 @@ export default function PackagesIndexPage() {
               <span className="px-2 text-on-dark/40">/</span>
               <span className="text-on-dark/90">Packages</span>
             </nav>
-            <p className="type-eyebrow mb-4">Every Trip We Run</p>
+            <p className="type-eyebrow mb-4 text-accent">Every Trip We Run</p>
             <h1 className="type-h1 max-w-3xl text-on-dark">All Packages</h1>
             <p className="type-body-lg mt-5 max-w-2xl text-on-dark/75">
               {totalPackages} journeys across the Nepal Himalayas — treks, tours, helicopter
@@ -77,7 +77,7 @@ export default function PackagesIndexPage() {
                           <span className="type-small font-medium text-muted">
                             {priceLabel(p.price)}
                           </span>
-                          <span className="type-small inline-flex items-center gap-1.5 font-semibold text-accent">
+                          <span className="type-small inline-flex items-center gap-1.5 font-semibold text-accent-ink">
                             View Details
                             <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
                           </span>

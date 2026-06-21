@@ -168,7 +168,7 @@ export default async function PackageDetailPage({
                 <div className="mt-6 border-t border-border pt-5">
                   <a
                     href={`tel:${contact.phone.replace(/\s/g, "")}`}
-                    className="flex items-center gap-2.5 text-muted transition-colors hover:text-accent"
+                    className="flex items-center gap-2.5 text-muted transition-colors hover:text-accent-ink"
                   >
                     <Phone className="h-4 w-4 shrink-0 text-accent" aria-hidden="true" />
                     <span className="type-small">{contact.phone}</span>
@@ -181,7 +181,7 @@ export default async function PackageDetailPage({
               <div className="mt-6 text-center">
                 <Link
                   href="/packages"
-                  className="type-small font-semibold text-accent underline-offset-4 hover:underline"
+                  className="type-small font-semibold text-accent-ink underline-offset-4 hover:underline"
                 >
                   ← All {packages.length} packages
                 </Link>

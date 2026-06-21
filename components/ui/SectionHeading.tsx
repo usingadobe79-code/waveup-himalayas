@@ -27,7 +27,9 @@ export function SectionHeading({
         className,
       )}
     >
-      {eyebrow && <p className="type-eyebrow mb-4">{eyebrow}</p>}
+      {eyebrow && (
+        <p className={cn("type-eyebrow mb-4", onDark && "text-accent")}>{eyebrow}</p>
+      )}
       <h2 className={cn("type-h1", onDark ? "text-on-dark" : "text-ink")}>{title}</h2>
       {intro && (
         <p className={cn("type-body-lg mt-5", onDark ? "text-on-dark/70" : "text-muted")}>

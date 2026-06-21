@@ -65,7 +65,7 @@ export function Footer() {
 
           {/* Explore */}
           <nav aria-label="Explore">
-            <h3 className="type-eyebrow">Explore</h3>
+            <h3 className="type-eyebrow text-accent">Explore</h3>
             <ul className="mt-4 space-y-3">
               {exploreLinks.map((l) => (
                 <li key={l.label}><FooterLink href={l.href}>{l.label}</FooterLink></li>
@@ -75,7 +75,7 @@ export function Footer() {
 
           {/* Services */}
           <nav aria-label="Services">
-            <h3 className="type-eyebrow">Services</h3>
+            <h3 className="type-eyebrow text-accent">Services</h3>
             <ul className="mt-4 space-y-3">
               {serviceLinks.map((l) => (
                 <li key={l.label}><FooterLink href={l.href}>{l.label}</FooterLink></li>
@@ -85,7 +85,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="type-eyebrow">Get in touch</h3>
+            <h3 className="type-eyebrow text-accent">Get in touch</h3>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-2.5">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" />

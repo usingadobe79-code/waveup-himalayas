@@ -20,8 +20,11 @@
   --color-muted: #5a6172; /* text-muted on light */
   --color-on-dark: #f7f7f5; /* text on dark surfaces */
   --color-border: #e6e4df; /* hairline borders/dividers */
-  --color-accent: #b8923e; /* gold accent / CTAs */
+  --color-accent: #b8923e; /* gold accent / CTAs (passes AA on dark/photo) */
   --color-accent-hover: #d4b264; /* gold hover/highlight */
+  --color-accent-ink: #856a2a; /* AA-safe darker gold — ONLY for small text on
+                                  light surfaces (eyebrows / "View Details" etc.).
+                                  ~4.8:1 on --surface, ~5.1:1 on white. */
 
   /* ---- Brand primitives (kept as aliases for legacy components) ---- */
   --color-navy: #1b2a4a;
@@ -105,7 +108,9 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--color-accent);
+    /* AA-safe darker gold by default (eyebrows sit mostly on light surfaces).
+       On dark surfaces add `text-accent` to restore the brighter brand gold. */
+    color: var(--color-accent-ink);
   }
 
   /* ---- Shared layout primitives so every section's content edges align ---- */

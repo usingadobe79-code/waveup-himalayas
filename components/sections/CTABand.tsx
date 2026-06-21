@@ -78,7 +78,7 @@ export function CTABand() {
           viewport={{ once: true, amount: 0.4 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <p className="type-eyebrow mb-5">Ready When You Are</p>
+          <p className="type-eyebrow mb-5 text-accent">Ready When You Are</p>
           <h2 className="type-h1 text-on-dark">Let&rsquo;s Plan Your Himalayan Journey</h2>
           <p className="type-body-lg mt-5 text-on-dark/75">
             Tell us your dates and what you have in mind — treks, tours, or a

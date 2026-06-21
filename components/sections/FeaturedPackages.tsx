@@ -90,7 +90,7 @@ export function FeaturedPackages() {
                     <p className="type-small mt-2 flex-1 text-muted">{pkg.blurb}</p>
                   )}
                   <div className="mt-5 flex items-center justify-between gap-3">
-                    <span className="type-small inline-flex items-center gap-1.5 font-semibold text-accent">
+                    <span className="type-small inline-flex items-center gap-1.5 font-semibold text-accent-ink">
                       View Details
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
                     </span>
@@ -98,7 +98,7 @@ export function FeaturedPackages() {
                       href={whatsappEnquiry(pkg.title)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="relative z-10 type-small inline-flex items-center gap-1.5 font-medium text-muted transition-colors hover:text-accent"
+                      className="relative z-10 type-small inline-flex items-center gap-1.5 font-medium text-muted transition-colors hover:text-accent-ink"
                       aria-label={`Enquire about ${pkg.title} on WhatsApp`}
                     >
                       <MessageCircle className="h-4 w-4" />
@@ -114,13 +114,13 @@ export function FeaturedPackages() {
           <motion.div variants={itemVariants} className="mt-16 flex justify-center">
             <Link
               href="/packages"
-              className="type-body group inline-flex items-center gap-2 font-semibold text-ink transition-colors hover:text-accent"
+              className="type-body group inline-flex items-center gap-2 font-semibold text-ink transition-colors hover:text-accent-ink"
             >
               <span className="relative">
                 View All {totalPackages} Packages
                 <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-x-100" />
               </span>
-              <ArrowRight className="h-4 w-4 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
+              <ArrowRight className="h-4 w-4 text-accent-ink transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
             </Link>
           </motion.div>
         </motion.div>

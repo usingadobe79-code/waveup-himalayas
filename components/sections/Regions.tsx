@@ -95,7 +95,7 @@ export function Regions() {
                   >
                     <span className="type-body font-medium text-ink">{p.title}</span>
                     <ArrowUpRight
-                      className="mt-0.5 h-5 w-5 shrink-0 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                      className="mt-0.5 h-5 w-5 shrink-0 text-accent-ink transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                       aria-hidden="true"
                     />
                   </Link>

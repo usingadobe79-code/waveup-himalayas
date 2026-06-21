@@ -50,7 +50,7 @@ export function HeroContent() {
       <PeakMark reduced={reduced} />
 
       {/* Eyebrow */}
-      <motion.p {...rise(0)} className="type-eyebrow mb-5">
+      <motion.p {...rise(0)} className="type-eyebrow mb-5 text-accent">
         {brand.hero.eyebrow}
       </motion.p>
 
