@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { useReducedMotion } from "@/lib/useReducedMotion";
@@ -49,46 +49,63 @@ export function FeaturedPackages() {
           <div className="mt-12 grid gap-6 md:mt-16 sm:grid-cols-2 lg:grid-cols-3">
             {featuredPackages.map((pkg, i) => (
               <motion.article
-                key={pkg.title}
+                key={pkg.slug}
                 variants={itemVariants}
                 className="card card-hover group relative flex flex-col overflow-hidden"
               >
-                <Link
-                  href={whatsappEnquiry(pkg.title)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-1 flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
-                  aria-label={`Enquire about ${pkg.title} on WhatsApp`}
-                >
-                  {/* Fixed-ratio image frame. The real photo is the base layer;
-                      a subtle BOTTOM-ONLY scrim sits above it for grounding/
-                      badge legibility — never a full-card overlay. */}
-                  <div className="relative aspect-[3/2] overflow-hidden">
-                    <PackageImage
-                      src={pkg.image}
-                      alt={pkg.title}
-                      // First card is above the fold (LCP) — load it eagerly with
-                      // a preload; the rest stay lazy. Branded placeholder if null.
-                      priority={i === 0}
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.08]"
-                    />
-                    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface-darker/55 to-transparent" />
-                    <span className="type-small absolute left-4 top-4 rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
-                      {pkg.region}
-                    </span>
-                  </div>
+                {/* Fixed-ratio image frame. The real photo (or branded
+                    placeholder) is the base layer; a subtle BOTTOM-ONLY scrim
+                    sits above it for badge legibility — never a full-card overlay. */}
+                <div className="relative aspect-[3/2] overflow-hidden">
+                  <PackageImage
+                    src={pkg.image}
+                    alt={pkg.title}
+                    // First card is above the fold (LCP) — load it eagerly with
+                    // a preload; the rest stay lazy. Branded placeholder if null.
+                    priority={i === 0}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.08]"
+                  />
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface-darker/55 to-transparent" />
+                  <span className="type-small absolute left-4 top-4 rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
+                    {pkg.region}
+                  </span>
+                </div>
 
-                  {/* Body */}
-                  <div className="flex flex-1 flex-col p-6">
-                    <h3 className="type-h3 text-ink">{pkg.title}</h3>
+                {/* Body */}
+                <div className="flex flex-1 flex-col p-6">
+                  {/* Stretched link: the title's ::before covers the whole card,
+                      so the card opens the detail page. The WhatsApp "Enquire"
+                      link below sits above it (z-10) as a separate action. */}
+                  <h3 className="type-h3 text-ink">
+                    <Link
+                      href={`/packages/${pkg.slug}`}
+                      className="rounded-card before:absolute before:inset-0 before:z-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
+                      aria-label={`View details for ${pkg.title}`}
+                    >
+                      {pkg.title}
+                    </Link>
+                  </h3>
+                  {pkg.blurb && (
                     <p className="type-small mt-2 flex-1 text-muted">{pkg.blurb}</p>
-                    <span className="type-small mt-5 inline-flex items-center gap-1.5 font-semibold text-accent">
+                  )}
+                  <div className="mt-5 flex items-center justify-between gap-3">
+                    <span className="type-small inline-flex items-center gap-1.5 font-semibold text-accent">
                       View Details
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
                     </span>
+                    <a
+                      href={whatsappEnquiry(pkg.title)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative z-10 type-small inline-flex items-center gap-1.5 font-medium text-muted transition-colors hover:text-accent"
+                      aria-label={`Enquire about ${pkg.title} on WhatsApp`}
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      Enquire
+                    </a>
                   </div>
-                </Link>
+                </div>
               </motion.article>
             ))}
           </div>
