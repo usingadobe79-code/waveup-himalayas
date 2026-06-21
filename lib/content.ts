@@ -65,108 +65,165 @@ export const offers = [
   },
 ] as const;
 
-/** Full package list (25) — exact titles, no invented detail. */
-export const allPackages = [
-  "Everest Base Camp Heli Tour",
-  "Everest Base Camp Heli Tour with Landing",
-  "Everest Base Camp Heli Trek",
-  "Everest Base Camp Trek with Three Pass",
-  "Everest Base Camp Trek with Gokyo Lake",
-  "Everest Base Camp Trek",
-  "Everest Mountain Flight",
-  "Annapurna Base Camp Heli Tour",
-  "Annapurna Base Camp Trek",
-  "Annapurna Circuit Trek",
-  "Ghorepani Poon Hill Trek",
-  "Mardi Himal Trek",
-  "Manaslu Circuit Trek",
-  "Manaslu Region with Tsum Valley Trek",
-  "Langtang Valley Trek",
-  "Kathmandu Sightseeing",
-  "Pokhara Sightseeing",
-  "Chitwan – Jungle Safari",
-  "Lumbini Historical Tour",
-  "Kathmandu Sightseeing & Escape to Nearby Mountain Village (Nagarkot)",
-  "A Week to Nepal – Fully customized (adventurous/cultural/historical)",
-  "Dedicated Female Tour – Fully guided with lady guide, safety ensured",
-  "Family Tour in Nepal",
-  "Make Your Wedding Memorable at Kalapatthar – Destination Wedding",
-  "Celebrate Honeymoon in the lap of Himalayas – Destination Honeymoon",
-] as const;
+/* ==========================================================================
+   Packages — ONE canonical list. featuredPackages + regions derive from it.
+   ========================================================================== */
 
-export const totalPackages = allPackages.length; // 25
+export type RegionKey =
+  | "everest"
+  | "annapurna"
+  | "manaslu-langtang"
+  | "cultural"
+  | "wildlife"
+  | "special";
+
+/** A bookable package.
+ *  - price: null renders the literal "Price on enquiry". NEVER fabricate a price.
+ *    Fill the number in here when known (set CURRENCY below to match).
+ *  - image: null renders the branded placeholder (never a broken image).
+ *  - blurb: null = no card description yet (no fabricated copy). */
+export type Package = {
+  slug: string;
+  title: string;
+  regionKey: RegionKey;
+  region: string; // display label, derived from REGION_LABELS
+  image: string | null;
+  blurb: string | null;
+  price: number | null;
+};
+
+const REGION_LABELS: Record<RegionKey, string> = {
+  everest: "Everest Region",
+  annapurna: "Annapurna Region",
+  "manaslu-langtang": "Manaslu / Langtang",
+  cultural: "Cultural Tours",
+  wildlife: "Wildlife",
+  special: "Special",
+};
+
+/** Small factory so each row stays terse; region label is derived, not repeated. */
+function pkg(
+  regionKey: RegionKey,
+  slug: string,
+  title: string,
+  extra: { image?: string; blurb?: string; price?: number } = {},
+): Package {
+  return {
+    slug,
+    title,
+    regionKey,
+    region: REGION_LABELS[regionKey],
+    image: extra.image ?? null,
+    blurb: extra.blurb ?? null,
+    price: extra.price ?? null, // all null in v1 — "Price on enquiry"
+  };
+}
 
 /**
- * Featured 6 for the landing grid ("Popular Adventures"). Order is curated.
- * Blurbs are descriptive only — NO prices, durations or day-counts (none exist).
- * Images live in /public/images/packages/ (brand-gradient placeholders in v1;
- * overwrite the files with real photos later — paths stay the same).
+ * The full 25 — exact titles from docs/03. Order within a region is curated and
+ * flows through to the Regions tabs and the /packages index. Only the 6 featured
+ * trips have a real photo + blurb today; the rest carry null (branded placeholder
+ * + "details on enquiry") until real assets/copy are supplied. No invented detail.
  */
-export const featuredPackages = [
-  {
-    title: "Annapurna Base Camp Trek",
-    region: "Annapurna Region",
-    image: "/images/packages/annapurna-base-camp.jpg",
-    blurb: "Climb through terraced valleys and rhododendron forest into the sweeping mountain amphitheatre of the Annapurna sanctuary.",
-  },
-  {
-    title: "Ghorepani Poon Hill Trek",
-    region: "Annapurna Region",
-    image: "/images/packages/poon-hill.jpg",
-    blurb: "A gentle classic to a celebrated sunrise viewpoint over the Dhaulagiri and Annapurna ranges.",
-  },
-  {
-    title: "Everest Base Camp Heli Tour",
-    region: "Everest Region",
-    image: "/images/packages/everest-heli-tour.jpg",
-    blurb: "Soar over the Khumbu by helicopter for an up-close Everest panorama — the high Himalaya without the long walk.",
-  },
-  {
-    title: "Chitwan Jungle Safari",
-    region: "Wildlife",
-    image: "/images/packages/chitwan-safari.jpg",
-    blurb: "Trade peaks for jungle — track rhinos and wildlife along the rivers and grasslands of Chitwan.",
-  },
-  {
-    title: "Everest Base Camp Trek",
-    region: "Everest Region",
+export const packages: Package[] = [
+  // --- Everest Region ---
+  pkg("everest", "everest-base-camp-trek", "Everest Base Camp Trek", {
     image: "/images/packages/everest-base-camp.jpg",
     blurb: "The iconic walk through Sherpa country to the foot of the highest mountain on earth.",
-  },
-  {
-    title: "Manaslu Circuit Trek",
-    region: "Manaslu / Langtang",
+  }),
+  pkg("everest", "everest-base-camp-heli-tour", "Everest Base Camp Heli Tour", {
+    image: "/images/packages/everest-heli-tour.jpg",
+    blurb: "Soar over the Khumbu by helicopter for an up-close Everest panorama — the high Himalaya without the long walk.",
+  }),
+  pkg("everest", "everest-base-camp-heli-tour-with-landing", "Everest Base Camp Heli Tour with Landing"),
+  pkg("everest", "everest-base-camp-heli-trek", "Everest Base Camp Heli Trek"),
+  pkg("everest", "everest-base-camp-three-passes-trek", "Everest Base Camp Trek with Three Pass"),
+  pkg("everest", "everest-base-camp-gokyo-lake-trek", "Everest Base Camp Trek with Gokyo Lake"),
+  pkg("everest", "everest-mountain-flight", "Everest Mountain Flight"),
+
+  // --- Annapurna Region ---
+  pkg("annapurna", "annapurna-base-camp-trek", "Annapurna Base Camp Trek", {
+    image: "/images/packages/annapurna-base-camp.jpg",
+    blurb: "Climb through terraced valleys and rhododendron forest into the sweeping mountain amphitheatre of the Annapurna sanctuary.",
+  }),
+  pkg("annapurna", "annapurna-base-camp-heli-tour", "Annapurna Base Camp Heli Tour"),
+  pkg("annapurna", "annapurna-circuit-trek", "Annapurna Circuit Trek"),
+  pkg("annapurna", "ghorepani-poon-hill-trek", "Ghorepani Poon Hill Trek", {
+    image: "/images/packages/poon-hill.jpg",
+    blurb: "A gentle classic to a celebrated sunrise viewpoint over the Dhaulagiri and Annapurna ranges.",
+  }),
+  pkg("annapurna", "mardi-himal-trek", "Mardi Himal Trek"),
+
+  // --- Manaslu / Langtang ---
+  pkg("manaslu-langtang", "manaslu-circuit-trek", "Manaslu Circuit Trek", {
     image: "/images/packages/manaslu-circuit.jpg",
     blurb: "A remote teahouse circuit around the world's eighth-highest peak, rich in Tibetan-influenced culture.",
-  },
+  }),
+  pkg("manaslu-langtang", "manaslu-tsum-valley-trek", "Manaslu Region with Tsum Valley Trek"),
+  pkg("manaslu-langtang", "langtang-valley-trek", "Langtang Valley Trek"),
+
+  // --- Cultural Tours ---
+  pkg("cultural", "kathmandu-sightseeing", "Kathmandu Sightseeing"),
+  pkg("cultural", "pokhara-sightseeing", "Pokhara Sightseeing"),
+  pkg("cultural", "lumbini-historical-tour", "Lumbini Historical Tour"),
+  pkg("cultural", "kathmandu-nagarkot-tour", "Kathmandu Sightseeing & Escape to Nearby Mountain Village (Nagarkot)"),
+
+  // --- Wildlife ---
+  pkg("wildlife", "chitwan-jungle-safari", "Chitwan – Jungle Safari", {
+    image: "/images/packages/chitwan-safari.jpg",
+    blurb: "Trade peaks for jungle — track rhinos and wildlife along the rivers and grasslands of Chitwan.",
+  }),
+
+  // --- Special ---
+  pkg("special", "family-tour-nepal", "Family Tour in Nepal"),
+  pkg("special", "dedicated-female-tour", "Dedicated Female Tour – Fully guided with lady guide, safety ensured"),
+  pkg("special", "honeymoon-himalayas", "Celebrate Honeymoon in the lap of Himalayas – Destination Honeymoon"),
+  pkg("special", "destination-wedding-kalapatthar", "Make Your Wedding Memorable at Kalapatthar – Destination Wedding"),
+  pkg("special", "a-week-to-nepal", "A Week to Nepal – Fully customized (adventurous/cultural/historical)"),
+];
+
+export const totalPackages = packages.length; // 25
+
+/** Currency for any price that gets filled in later. Prices are null today, so
+ *  this is unused until you add numbers — set it to match how you quote. */
+export const PRICE_CURRENCY = "USD";
+
+/** Render a price as text. null → the required "Price on enquiry" placeholder. */
+export function priceLabel(price: number | null): string {
+  if (price == null) return "Price on enquiry";
+  return `From ${PRICE_CURRENCY} ${price.toLocaleString()}`;
+}
+
+/** Look up a package by slug (used by the detail route + links). */
+export function getPackage(slug: string): Package | undefined {
+  return packages.find((p) => p.slug === slug);
+}
+
+/**
+ * Featured 6 for the landing grid ("Popular Adventures"). Curated selection of
+ * canonical packages — all six have a real photo + blurb.
+ */
+const FEATURED_SLUGS = [
+  "annapurna-base-camp-trek",
+  "ghorepani-poon-hill-trek",
+  "everest-base-camp-heli-tour",
+  "chitwan-jungle-safari",
+  "everest-base-camp-trek",
+  "manaslu-circuit-trek",
 ] as const;
 
-/** Regions / categories tabs. Packages filtered from allPackages where sensible. */
-export const regions = [
-  { key: "everest", label: "Everest Region", packages: [
-    "Everest Base Camp Trek", "Everest Base Camp Heli Tour", "Everest Base Camp Heli Tour with Landing",
-    "Everest Base Camp Heli Trek", "Everest Base Camp Trek with Three Pass", "Everest Base Camp Trek with Gokyo Lake",
-    "Everest Mountain Flight",
-  ]},
-  { key: "annapurna", label: "Annapurna Region", packages: [
-    "Annapurna Base Camp Trek", "Annapurna Base Camp Heli Tour", "Annapurna Circuit Trek",
-    "Ghorepani Poon Hill Trek", "Mardi Himal Trek",
-  ]},
-  { key: "manaslu-langtang", label: "Manaslu / Langtang", packages: [
-    "Manaslu Circuit Trek", "Manaslu Region with Tsum Valley Trek", "Langtang Valley Trek",
-  ]},
-  { key: "cultural", label: "Cultural Tours", packages: [
-    "Kathmandu Sightseeing", "Pokhara Sightseeing", "Lumbini Historical Tour",
-    "Kathmandu Sightseeing & Escape to Nearby Mountain Village (Nagarkot)",
-  ]},
-  { key: "wildlife", label: "Wildlife", packages: ["Chitwan – Jungle Safari"] },
-  { key: "special", label: "Special", packages: [
-    "Family Tour in Nepal", "Dedicated Female Tour – Fully guided with lady guide, safety ensured",
-    "Celebrate Honeymoon in the lap of Himalayas – Destination Honeymoon",
-    "Make Your Wedding Memorable at Kalapatthar – Destination Wedding",
-    "A Week to Nepal – Fully customized (adventurous/cultural/historical)",
-  ]},
-] as const;
+export const featuredPackages: Package[] = FEATURED_SLUGS.map((slug) => {
+  const found = getPackage(slug);
+  if (!found) throw new Error(`featured slug not found: ${slug}`);
+  return found;
+});
+
+/** Regions / category tabs — derived from the canonical list (single source). */
+export const regions = (Object.keys(REGION_LABELS) as RegionKey[]).map((key) => ({
+  key,
+  label: REGION_LABELS[key],
+  packages: packages.filter((p) => p.regionKey === key),
+}));
 
 /** Why choose us — exact points, no invented stats. */
 export const whyUs = [
@@ -205,6 +262,17 @@ export const photoAssets = [
   "Hero dashboard image — Himalayan peak at sunset (provided)",
 ] as const;
 
+/**
+ * Typical inclusions shown on the detail page. These are GENERIC and editable —
+ * not a per-package guarantee. Marked as such in the UI so nothing is implied
+ * that isn't real. Adjust per package once confirmed.
+ */
+export const typicalInclusions = [
+  "Government-licensed English-speaking guide",
+  "Required permits & paperwork",
+  "Airport / hotel transfers",
+] as const;
+
 /** CTA destinations — bookings always route to WhatsApp or email. */
 export const cta = {
   whatsapp: contact.whatsapp,
@@ -224,4 +292,13 @@ const WHATSAPP_DIGITS = "9779861992878";
 export function whatsappEnquiry(subject: string): string {
   const text = `Hi WaveUp Himalayas, I'd like to enquire about the ${subject}.`;
   return `https://wa.me/${WHATSAPP_DIGITS}?text=${encodeURIComponent(text)}`;
+}
+
+/** Same, for email — returns a mailto: with subject + body prefilled. */
+export function emailEnquiry(subject: string): string {
+  const s = encodeURIComponent(`Enquiry: ${subject}`);
+  const body = encodeURIComponent(
+    `Hi WaveUp Himalayas,\n\nI'd like to enquire about the ${subject}.\n\nDates / group size:\nQuestions:\n\nThank you!`,
+  );
+  return `mailto:${contact.email}?subject=${s}&body=${body}`;
 }

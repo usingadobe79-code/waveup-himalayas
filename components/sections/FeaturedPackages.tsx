@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { PackageImage } from "@/components/ui/PackageImage";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
 import { featuredPackages, totalPackages, whatsappEnquiry } from "@/lib/content";
@@ -64,16 +64,14 @@ export function FeaturedPackages() {
                       a subtle BOTTOM-ONLY scrim sits above it for grounding/
                       badge legibility — never a full-card overlay. */}
                   <div className="relative aspect-[3/2] overflow-hidden">
-                    <Image
+                    <PackageImage
                       src={pkg.image}
                       alt={pkg.title}
-                      fill
                       // First card is above the fold (LCP) — load it eagerly with
-                      // a preload; the rest stay lazy.
+                      // a preload; the rest stay lazy. Branded placeholder if null.
                       priority={i === 0}
-                      quality={82}
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.08]"
+                      className="transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.08]"
                     />
                     <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface-darker/55 to-transparent" />
                     <span className="type-small absolute left-4 top-4 rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">

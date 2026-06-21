@@ -85,16 +85,16 @@ export function Regions() {
               </p>
 
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {current.packages.map((title) => (
+                {current.packages.map((p) => (
                   <a
-                    key={title}
-                    href={whatsappEnquiry(title)}
+                    key={p.slug}
+                    href={whatsappEnquiry(p.title)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex items-start justify-between gap-3 rounded-card border border-border bg-surface-alt px-5 py-4 shadow-card transition-[transform,box-shadow,border-color] duration-300 ease-[var(--ease-out-expo)] hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
-                    aria-label={`Enquire about ${title} on WhatsApp`}
+                    aria-label={`Enquire about ${p.title} on WhatsApp`}
                   >
-                    <span className="type-body font-medium text-ink">{title}</span>
+                    <span className="type-body font-medium text-ink">{p.title}</span>
                     <ArrowUpRight
                       className="mt-0.5 h-5 w-5 shrink-0 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                       aria-hidden="true"
