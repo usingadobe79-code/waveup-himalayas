@@ -17,18 +17,22 @@ function FooterLink({ href, children, external = false }: { href: string; childr
   );
 }
 
+// Absolute "/#section" so these resolve from sub-pages too (detail / index):
+// on the homepage SmoothScroll intercepts + smooth-scrolls; off-home they
+// navigate home first, then land on the section. (Bare "#x" would be dead on
+// sub-pages that have no such section.)
 const exploreLinks = [
-  { label: "Packages", href: "#packages" },
-  { label: "Regions", href: "#regions" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "Packages", href: "/#packages" },
+  { label: "Regions", href: "/#regions" },
+  { label: "Why Us", href: "/#why-us" },
+  { label: "Gallery", href: "/#gallery" },
 ];
 
 const serviceLinks = [
-  { label: "Trekking", href: "#packages" },
-  { label: "Helicopter Tours", href: "#packages" },
-  { label: "Mountain Flights", href: "#packages" },
-  { label: "Jungle Safari", href: "#packages" },
+  { label: "Trekking", href: "/#packages" },
+  { label: "Helicopter Tours", href: "/#packages" },
+  { label: "Mountain Flights", href: "/#packages" },
+  { label: "Jungle Safari", href: "/#packages" },
 ];
 
 export function Footer() {
