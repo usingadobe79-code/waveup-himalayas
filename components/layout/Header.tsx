@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { MessageCircle, Menu, X } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
@@ -23,11 +24,22 @@ const navLinks = [
  * Sticky header. Transparent over the hero; frosts + shrinks once scrolled past
  * the hero (docs/01 §1). Inline nav from `lg` up; below `lg` the nav collapses
  * into a hamburger that opens a slide-in drawer (logo left, hamburger right).
+ *
+ * `solid` forces the frosted state — used on sub-pages (e.g. /packages) whose
+ * heroes aren't full-height, so the nav never sits transparent over light copy.
+ * Off the homepage, section anchors resolve to "/#section" so they navigate
+ * home first; the home smooth-scroll/pin handling lives in SmoothScroll.
  */
-export function Header() {
+export function Header({ solid = false }: { solid?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const reduced = useReducedMotion();
+  const pathname = usePathname();
+  const onHome = pathname === "/";
+  const frosted = scrolled || open || solid;
+
+  // Off-home, prefix section anchors so they route back to the homepage section.
+  const resolve = (hash: string) => (onHome ? hash : `/${hash}`);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > window.innerHeight * 0.85);
@@ -60,18 +72,22 @@ export function Header() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-[height,background-color,backdrop-filter] duration-500 ease-[var(--ease-out-expo)]",
-        scrolled || open
+        frosted
           ? "h-[60px] bg-navy/85 shadow-[0_1px_0_0_rgba(255,255,255,0.06)] backdrop-blur-md"
           : "h-[72px] bg-transparent",
       )}
     >
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
-        <a href="#top" aria-label="WaveUp Himalayas — home" className="shrink-0">
+        <a
+          href={onHome ? "#top" : "/"}
+          aria-label="WaveUp Himalayas — home"
+          className="shrink-0"
+        >
           <Logo
             onDark
             className={cn(
               "origin-left transition-transform duration-500 ease-[var(--ease-out-expo)]",
-              scrolled ? "scale-90 text-lg" : "scale-100 text-xl",
+              scrolled || solid ? "scale-90 text-lg" : "scale-100 text-xl",
             )}
           />
         </a>
@@ -82,7 +98,7 @@ export function Header() {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={resolve(link.href)}
                 className="group relative text-sm font-medium text-white/85 transition-colors hover:text-white"
               >
                 {link.label}
@@ -135,7 +151,7 @@ export function Header() {
                 {navLinks.map((link) => (
                   <a
                     key={link.href}
-                    href={link.href}
+                    href={resolve(link.href)}
                     onClick={() => setOpen(false)}
                     className="border-b border-white/10 py-4 text-lg font-medium text-white/90 transition-colors hover:text-gold"
                   >
