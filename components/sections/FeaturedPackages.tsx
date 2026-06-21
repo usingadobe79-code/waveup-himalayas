@@ -110,14 +110,10 @@ export function FeaturedPackages() {
             ))}
           </div>
 
-          {/* View All — gold underline wipe + arrow nudge.
-              NOTE: the dedicated /packages page doesn't exist yet (out of v1
-              scope), so this anchors to #regions, where all 25 packages are
-              browsable by region. Repoint to "/packages" once that page ships.
-              Plain anchor (not next/link) avoids a route prefetch 404. */}
+          {/* View All — gold underline wipe + arrow nudge → the /packages index. */}
           <motion.div variants={itemVariants} className="mt-16 flex justify-center">
-            <a
-              href="#regions"
+            <Link
+              href="/packages"
               className="type-body group inline-flex items-center gap-2 font-semibold text-ink transition-colors hover:text-accent"
             >
               <span className="relative">
@@ -125,7 +121,7 @@ export function FeaturedPackages() {
                 <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-x-100" />
               </span>
               <ArrowRight className="h-4 w-4 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
