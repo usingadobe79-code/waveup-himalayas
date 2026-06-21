@@ -110,6 +110,19 @@ function HeroRisePinned() {
     return () => lenis.off("scroll", onScroll);
   }, [lenis]);
 
+  // Re-measure the pin (and therefore every downstream section's scroll offset)
+  // once fonts/images settle and on resize, so anchor targets stay accurate.
+  useEffect(() => {
+    const refresh = () => ScrollTrigger.refresh();
+    window.addEventListener("load", refresh);
+    window.addEventListener("resize", refresh);
+    document.fonts?.ready.then(refresh).catch(() => {});
+    return () => {
+      window.removeEventListener("load", refresh);
+      window.removeEventListener("resize", refresh);
+    };
+  }, []);
+
   return (
     <section
       id="rise"
