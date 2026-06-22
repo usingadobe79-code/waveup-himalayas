@@ -6,10 +6,28 @@ import { Footer } from "@/components/layout/Footer";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { regions, totalPackages, priceLabel } from "@/lib/content";
 
+const PACKAGES_DESC =
+  "Browse all of WaveUp Himalayas' treks, tours, helicopter adventures and experiences across the Nepal Himalayas. Every trip is fully customizable.";
+
 export const metadata: Metadata = {
-  title: "All Packages — WaveUp Himalayas",
-  description:
-    "Browse all of WaveUp Himalayas' treks, tours, helicopter adventures and experiences across the Nepal Himalayas. Every trip is fully customizable.",
+  // Title template in the root layout appends " — WaveUp Himalayas".
+  title: "All Packages",
+  description: PACKAGES_DESC,
+  alternates: { canonical: "/packages" },
+  openGraph: {
+    type: "website",
+    siteName: "WaveUp Himalayas",
+    url: "/packages",
+    title: "All Packages — WaveUp Himalayas",
+    description: PACKAGES_DESC,
+    images: [{ url: "/images/hero.jpg", alt: "WaveUp Himalayas" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "All Packages — WaveUp Himalayas",
+    description: PACKAGES_DESC,
+    images: ["/images/hero.jpg"],
+  },
 };
 
 export default function PackagesIndexPage() {

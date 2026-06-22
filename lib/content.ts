@@ -20,6 +20,16 @@ export const business = {
   },
 } as const;
 
+/**
+ * Canonical site origin for metadata / OG / sitemap / JSON-LD.
+ * NOTE: the production domain isn't stated in docs/03 — this is INFERRED from the
+ * real info@waveuphimalayas.com email address. Confirm/override via the
+ * NEXT_PUBLIC_SITE_URL env var (no trailing slash) when the real domain is known.
+ */
+export const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://waveuphimalayas.com"
+).replace(/\/+$/, "");
+
 export const contact = {
   phone: "+977 9861992878",
   whatsapp: "https://wa.me/+9779861992878",

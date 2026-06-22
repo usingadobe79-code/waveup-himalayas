@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
-import { business, brand } from "@/lib/content";
+import { business, brand, siteUrl } from "@/lib/content";
 
 // Display: aspirational editorial serif (docs/04 suggests Fraunces).
 const fraunces = Fraunces({
@@ -20,8 +20,34 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: `${business.name} — Rise Above the Ordinary`,
+  // Absolute base so relative canonical / OG image URLs resolve site-wide.
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${business.name} — Rise Above the Ordinary`,
+    // Sub-pages set just their own title; this appends the brand.
+    template: `%s — ${business.name}`,
+  },
   description: brand.hero.sub,
+  applicationName: business.name,
+  alternates: { canonical: "/" },
+  // Sitewide OG/Twitter defaults so link shares (WhatsApp/Facebook/Instagram/X)
+  // get a proper preview. metadataBase makes the relative image absolute.
+  // Sub-pages override title/description/url/images with their own.
+  openGraph: {
+    type: "website",
+    siteName: business.name,
+    url: "/",
+    title: `${business.name} — Rise Above the Ordinary`,
+    description: brand.hero.sub,
+    locale: "en_US",
+    images: [{ url: "/images/hero.jpg", alt: `${business.name} — ${brand.tagline}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${business.name} — Rise Above the Ordinary`,
+    description: brand.hero.sub,
+    images: ["/images/hero.jpg"],
+  },
 };
 
 export default function RootLayout({

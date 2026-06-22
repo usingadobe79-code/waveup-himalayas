@@ -31,12 +31,33 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const pkg = getPackage(slug);
-  if (!pkg) return { title: "Package not found — WaveUp Himalayas" };
+  if (!pkg) return { title: "Package not found" };
+  // Real blurb when present; otherwise a factual line from the real title +
+  // region (no invented selling claims). Title template appends the brand.
   const description =
     pkg.blurb ?? `${pkg.title} in Nepal's ${pkg.region}. Plan a tailored trip with WaveUp Himalayas.`;
+  // Placeholder packages (no photo) fall back to the hero image for link previews
+  // — the branded placeholder is a component, not a shareable image file.
+  const ogImage = pkg.image ?? "/images/hero.jpg";
+  const ogTitle = `${pkg.title} — ${business.name}`;
   return {
-    title: `${pkg.title} — WaveUp Himalayas`,
+    title: pkg.title,
     description,
+    alternates: { canonical: `/packages/${pkg.slug}` },
+    openGraph: {
+      type: "website",
+      siteName: business.name,
+      url: `/packages/${pkg.slug}`,
+      title: ogTitle,
+      description,
+      images: [{ url: ogImage, alt: pkg.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description,
+      images: [ogImage],
+    },
   };
 }
 
