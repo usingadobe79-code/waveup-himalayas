@@ -6,6 +6,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
 import { PackageImage } from "@/components/ui/PackageImage";
+import { PackageItinerary } from "@/components/sections/PackageItinerary";
 import {
   packages,
   getPackage,
@@ -143,18 +144,22 @@ export default async function PackageDetailPage({
                 </p>
               </div>
 
-              {/* Itinerary */}
+              {/* Itinerary — real timeline when supplied, else the placeholder. */}
               <div>
                 <h2 className="type-h3 text-ink">Itinerary</h2>
-                <div className="mt-5 rounded-card border border-dashed border-border bg-surface-alt p-6 text-center">
-                  <p className="type-body font-medium text-ink">
-                    Detailed itinerary on enquiry
-                  </p>
-                  <p className="type-small mt-2 text-muted">
-                    We build a day-by-day plan around your dates and preferences — message
-                    us and we&rsquo;ll send a tailored itinerary for the {pkg.title}.
-                  </p>
-                </div>
+                {pkg.itinerary ? (
+                  <PackageItinerary itinerary={pkg.itinerary} />
+                ) : (
+                  <div className="mt-5 rounded-card border border-dashed border-border bg-surface-alt p-6 text-center">
+                    <p className="type-body font-medium text-ink">
+                      Detailed itinerary on enquiry
+                    </p>
+                    <p className="type-small mt-2 text-muted">
+                      We build a day-by-day plan around your dates and preferences — message
+                      us and we&rsquo;ll send a tailored itinerary for the {pkg.title}.
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
 
