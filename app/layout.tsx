@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { business, brand, siteUrl } from "@/lib/content";
 
 // Display: aspirational editorial serif (docs/04 suggests Fraunces).
@@ -61,6 +62,7 @@ export default function RootLayout({
       className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-surface text-ink">
+        <JsonLd />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
