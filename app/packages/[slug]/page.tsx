@@ -71,11 +71,15 @@ export default async function PackageDetailPage({
   const pkg = getPackage(slug);
   if (!pkg) notFound();
 
-  // No fabricated copy: use the real blurb when present, otherwise an honest,
-  // generic line. The tailoring note applies to every WaveUp trip.
+  // Overview text, in order of richness: the itinerary's own summary (real,
+  // trip-specific) → the card blurb → an honest generic line. No fabrication.
   const overview =
+    pkg.itinerary?.summary ??
     pkg.blurb ??
     `Full trip notes and a day-by-day plan for the ${pkg.title} are shared on enquiry.`;
+  // Trip-level highlights only exist on day-by-day itineraries.
+  const tripHighlights =
+    pkg.itinerary?.kind === "days" ? pkg.itinerary.highlights : undefined;
 
   return (
     <>
@@ -125,6 +129,24 @@ export default async function PackageDetailPage({
                   group size and we&rsquo;ll shape the itinerary around you.
                 </p>
               </div>
+
+              {/* Highlights — only for trips that supplied a highlights list */}
+              {tripHighlights && tripHighlights.length > 0 && (
+                <div>
+                  <h2 className="type-h3 text-ink">Highlights</h2>
+                  <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                    {tripHighlights.map((h) => (
+                      <li key={h} className="flex items-start gap-3">
+                        <span
+                          aria-hidden="true"
+                          className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
+                        />
+                        <span className="type-body text-ink">{h}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               {/* What's included */}
               <div>
