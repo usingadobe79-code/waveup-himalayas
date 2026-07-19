@@ -1,16 +1,18 @@
 import { cn } from "@/lib/cn";
 
 /**
- * WaveUp Himalayas wordmark.
+ * WaveUp Himalayas logo — the real brand lockup (flowing wave "W" in navy with a
+ * gold mountain peak, beside the "WAVE UP" wordmark). Source art lives in /logo;
+ * the web-optimized, transparent-background lockups are in /public/logo.
  *
- * The real logo has a distinctive flowing WAVE-shaped "W" mark in navy with a
- * gold mountain peak (upper right). We do NOT approximate it — instead we show
- * a clear placeholder box until the real asset lands.
+ * Two colour variants:
+ *  - default        → navy + gold, for light surfaces.
+ *  - onDark (true)  → white + gold, for the dark navy header / footer.
  *
- * TO WIRE THE REAL LOGO: drop the file at public/images/logo.svg (or .png),
- * then set MARK_SRC below to that path. The placeholder is replaced automatically.
+ * Sized in `em` so callers can scale it with a font-size utility (text-lg / text-xl
+ * / text-2xl) exactly as before; the intrinsic width/height keep layout shift out.
  */
-const MARK_SRC: string | null = null; // e.g. "/images/logo.svg" once provided
+const LOCKUP = { width: 3660, height: 510 } as const; // intrinsic px of the lockup PNGs
 
 export function Logo({
   className,
@@ -20,30 +22,13 @@ export function Logo({
   onDark?: boolean;
 }) {
   return (
-    <span
-      className={cn(
-        "inline-flex items-center gap-2 font-display font-semibold tracking-tight",
-        className,
-      )}
-      aria-label="WaveUp Himalayas"
-    >
-      {MARK_SRC ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={MARK_SRC} alt="" aria-hidden="true" className="h-[1.2em] w-auto shrink-0" />
-      ) : (
-        // Clear placeholder — intentionally NOT the real wave mark.
-        <span
-          aria-hidden="true"
-          title="Logo mark placeholder — real asset pending"
-          className="grid h-[1.2em] w-[1.2em] shrink-0 place-items-center rounded-[4px] border border-dashed border-gold/70 text-[0.5em] font-bold leading-none text-gold"
-        >
-          ▲
-        </span>
-      )}
-      <span className="leading-none">
-        <span className={onDark ? "text-white" : "text-navy"}>WAVE</span>
-        <span className="text-gold">UP</span>
-      </span>
-    </span>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={onDark ? "/logo/lockup-light.png" : "/logo/lockup.png"}
+      alt="WaveUp Himalayas"
+      width={LOCKUP.width}
+      height={LOCKUP.height}
+      className={cn("inline-block h-[1.5em] w-auto select-none", className)}
+    />
   );
 }
