@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------------------
+# Apache config for the static export on cPanel shared hosting.
+# Lives in public/ so `next build` copies it into out/, and it ships to
+# public_html alongside the site. Every directive is wrapped in <IfModule> so a
+# host missing one of these modules degrades quietly instead of 500-ing.
+# ---------------------------------------------------------------------------
+
+# Serve the branded "trail not found" page instead of Apache's default 404.
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS. HTTP_HOST is preserved, so this is safe on both www and apex.
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Canonical host: strip www, matching `siteUrl` (https://waveuphimalayas.com)
+  # and the URLs written into sitemap.xml. Remove this block if the client
+  # would rather the www version be the canonical one.
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Compress text assets. Images and video are already compressed formats and are
+# deliberately left alone.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE application/xml image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Files under /_next/static carry a content hash in their name, so a long
+  # immutable cache is safe — a change produces a new filename.
+  <IfModule mod_headers.c>
+    <FilesMatch "\.(js|css)$">
+      Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+  </IfModule>
+
+  # Media keeps its own name across deploys, so cache for a month rather than a
+  # year — long enough to help repeat visitors, short enough that replacing a
+  # photo is not invisible for a year.
+  ExpiresByType image/jpeg                "access plus 1 month"
+  ExpiresByType image/png                 "access plus 1 month"
+  ExpiresByType image/webp                "access plus 1 month"
+  ExpiresByType image/svg+xml             "access plus 1 month"
+  ExpiresByType video/mp4                 "access plus 1 month"
+  ExpiresByType video/webm                "access plus 1 month"
+
+  # HTML must revalidate, otherwise visitors keep seeing a stale site after a
+  # new upload.
+  ExpiresByType text/html                 "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
