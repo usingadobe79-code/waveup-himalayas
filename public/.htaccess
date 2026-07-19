@@ -11,6 +11,12 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Never touch /.well-known/ — cPanel's AutoSSL proves it controls the domain
+  # by fetching a token from there over plain HTTP. Redirecting or rewriting
+  # those requests risks failing certificate renewal, which would take the
+  # padlock away 90 days from now with no obvious cause.
+  RewriteRule ^\.well-known/ - [L]
+
   # Force HTTPS. HTTP_HOST is preserved, so this is safe on both www and apex.
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
