@@ -35,7 +35,14 @@ export function Logo({
       alt="WaveUp Himalayas"
       width={LOCKUP.width}
       height={LOCKUP.height}
-      className={cn("inline-block h-[1.5em] w-auto select-none", className)}
+      /**
+       * max-w-none matters: the CSS reset applies `max-width: 100%` to images,
+       * which in a narrow container (the footer's grid column) clamps the width
+       * while `h-[1.5em]` holds the height — rendering the lockup horizontally
+       * squashed. Opting out keeps width derived from the height and the real
+       * aspect ratio, wherever it is placed.
+       */
+      className={cn("inline-block h-[1.5em] w-auto max-w-none select-none", className)}
     />
   );
 }
