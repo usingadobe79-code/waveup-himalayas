@@ -85,6 +85,14 @@ export function Offers() {
                     rel="noopener noreferrer"
                     variant="gold"
                     className="mt-8"
+                    /**
+                     * Every offer's button reads "Claim This Offer", so anyone
+                     * navigating by link — screen reader users especially — hears
+                     * the same phrase repeatedly with no way to tell which offer
+                     * is which. The visible label stays short; the accessible
+                     * name names the offer.
+                     */
+                    aria-label={`Claim This Offer — ${offer.title}`}
                   >
                     Claim This Offer
                     <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />

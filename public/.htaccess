@@ -68,4 +68,18 @@ ErrorDocument 404 /404.html
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Stop the site being framed by another origin, which is how clickjacking
+  # overlays an invisible copy of a page on top of an attacker's own.
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Isolate this window from any document that opens it or that it opens.
+  # Safe here because nothing depends on cross-origin window handles — the
+  # WhatsApp and social links are plain navigations, not popup integrations.
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+
+  # Deliberately NOT set here: Strict-Transport-Security. HSTS is cached by
+  # the browser and cannot be called back, so if AutoSSL ever fails to renew,
+  # returning visitors get a hard block for the full max-age with no override.
+  # Worth adding once certificate renewal has proven itself over a few cycles.
 </IfModule>
