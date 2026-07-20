@@ -211,12 +211,79 @@ html.lenis body {
   animation-delay: var(--draw-delay, 0s);
 }
 
+/* ---------------------------------------------------------------------------
+   Hero entrance.
+   Driven by CSS, not JS, because these elements decide the page's LCP. Under
+   framer-motion they began at opacity 0 and only animated once React had
+   downloaded, parsed and hydrated — so on a mid-range phone over slow 4G the
+   hero copy stayed invisible for ~5.4s. A CSS animation starts the moment the
+   browser paints, with no JS in the path at all.
+   Per-element timing comes from a --d custom property set inline, keeping the
+   staggered sequence without a stylesheet rule per element.
+   --------------------------------------------------------------------------- */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Words rise from behind their own overflow-hidden mask, so the offset is in em
+   to track the display face's size across breakpoints. */
+@keyframes hero-rise-word {
+  from {
+    opacity: 0;
+    transform: translateY(0.4em);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-draw {
+  from {
+    stroke-dashoffset: 140;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+/* `both` holds the from-state through the delay, so nothing flashes in at full
+   opacity before its turn. */
+.hero-rise {
+  animation: hero-rise 0.6s var(--ease-out-expo) both;
+  animation-delay: var(--d, 0s);
+}
+
+.hero-rise-word {
+  display: inline-block;
+  animation: hero-rise-word 0.7s var(--ease-out-expo) both;
+  animation-delay: var(--d, 0s);
+}
+
+.hero-draw {
+  stroke-dasharray: 140;
+  animation: hero-draw 1.1s var(--ease-out-expo) both;
+  animation-delay: var(--d, 0s);
+}
+
 /* Reduced motion: kill transitions/animations + smooth scroll */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
+    /* Delays must go too. Without this the hero would still sit blank through
+       its stagger, which is exactly the waiting the preference asks us to drop. */
+    animation-delay: 0ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;

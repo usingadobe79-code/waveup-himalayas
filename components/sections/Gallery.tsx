@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { displaySrc } from "@/lib/img";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -73,7 +74,7 @@ export function Gallery() {
             >
               <div className="relative w-full" style={{ aspectRatio: shot.ratio }}>
                 <Image
-                  src={shot.src}
+                  src={displaySrc(shot.src)}
                   alt={shot.caption}
                   fill
                   quality={82}

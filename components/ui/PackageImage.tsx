@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { cn } from "@/lib/cn";
+import { displaySrc } from "@/lib/img";
 
 /**
  * Image with a branded fallback. When `src` is null/empty we render a navy block
@@ -25,7 +26,7 @@ export function PackageImage({
   if (src) {
     return (
       <Image
-        src={src}
+        src={displaySrc(src)}
         alt={alt}
         fill
         priority={priority}

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { useReducedMotion } from "@/lib/useReducedMotion";
@@ -10,10 +10,22 @@ import { brand, contact } from "@/lib/content";
 
 /**
  * Hero content overlay — shared across all variants.
- * Timeline (docs/01 §2): eyebrow 0.0s · headline words rise (stagger 0.1, start
- * 0.3) · sub 0.9s · CTAs 1.1s · scroll chevron (infinite bounce, fades on first
- * scroll) · gold peak mark draws itself in near the headline.
- * Under reduced motion every entrance collapses to instant opacity.
+ * Timeline: eyebrow 0.0s · headline words rise (stagger 0.07, start 0.12) ·
+ * sub 0.4s · CTAs 0.55s · peak mark draws itself in · scroll chevron last.
+ *
+ * The entrance runs on CSS (see globals.css), deliberately, not framer-motion.
+ * These elements decide the page's LCP, and animating them in JS left them at
+ * opacity 0 until React had downloaded, parsed and hydrated — about 5.4s on a
+ * mid-range phone over slow 4G. A CSS animation starts at first paint with no
+ * JS in the path.
+ *
+ * The old timeline also ran to 1.1s before the CTAs arrived, which read as
+ * sluggish once the copy itself appeared promptly; it is roughly halved here.
+ * Reduced motion is handled by the media query in globals.css rather than a
+ * branch per element.
+ *
+ * framer-motion is still used for the scroll chevron, which genuinely depends
+ * on scroll state and sits below the fold, so it never gates LCP.
  */
 export function HeroContent() {
   const reduced = useReducedMotion();
@@ -25,17 +37,10 @@ export function HeroContent() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Helper: a timed fade+rise that becomes instant under reduced motion.
-  const rise = (delay: number, y = 24) =>
-    reduced
-      ? { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0 } }
-      : {
-          initial: { opacity: 0, y },
-          animate: { opacity: 1, y: 0 },
-          transition: { duration: 0.6, delay, ease: EASE_OUT_EXPO },
-        };
-
   const words = brand.hero.headline.split(" ");
+
+  // Per-element stagger, handed to CSS as a custom property.
+  const delay = (seconds: number) => ({ "--d": `${seconds}s` }) as CSSProperties;
 
   return (
     <div className="relative z-10 mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-6 py-24 text-center text-white">
@@ -47,28 +52,17 @@ export function HeroContent() {
       />
 
       {/* Self-drawing gold peak mark — echo of the logo, sits cleanly above all copy */}
-      <PeakMark reduced={reduced} />
+      <PeakMark />
 
       {/* Eyebrow */}
-      <motion.p {...rise(0)} className="type-eyebrow mb-5 text-accent">
-        {brand.hero.eyebrow}
-      </motion.p>
+      <p className="hero-rise type-eyebrow mb-5 text-accent">{brand.hero.eyebrow}</p>
 
       {/* Headline */}
       <div className="relative">
         <h1 className="type-display [text-shadow:0_1px_3px_rgba(17,28,51,0.5),0_8px_38px_rgba(17,28,51,0.55)]">
           {words.map((word, i) => (
             <span key={i} className="inline-block overflow-hidden align-bottom">
-              <motion.span
-                className="inline-block"
-                initial={reduced ? { opacity: 0 } : { opacity: 0, y: "0.4em" }}
-                animate={reduced ? { opacity: 1 } : { opacity: 1, y: 0 }}
-                transition={
-                  reduced
-                    ? { duration: 0 }
-                    : { duration: 0.7, delay: 0.3 + i * 0.1, ease: EASE_OUT_EXPO }
-                }
-              >
+              <span className="hero-rise-word" style={delay(Number((0.12 + i * 0.07).toFixed(2)))}>
                 {word === "Ordinary" ? (
                   <span className="text-gold [text-shadow:0_0_1px_rgba(17,28,51,0.9),0_2px_8px_rgba(17,28,51,0.85),0_6px_28px_rgba(17,28,51,0.7)]">
                     {word}
@@ -76,22 +70,25 @@ export function HeroContent() {
                 ) : (
                   word
                 )}
-                {i < words.length - 1 ? " " : ""}
-              </motion.span>
+                {i < words.length - 1 ? " " : ""}
+              </span>
             </span>
           ))}
         </h1>
       </div>
 
-      {/* Sub */}
-      <motion.p {...rise(0.9)} className="type-body-lg mt-6 max-w-xl text-on-dark/80 [text-shadow:0_1px_14px_rgba(17,28,51,0.5)]">
+      {/* Sub — this is the LCP element, so it must never wait on hydration */}
+      <p
+        className="hero-rise type-body-lg mt-6 max-w-xl text-on-dark/80 [text-shadow:0_1px_14px_rgba(17,28,51,0.5)]"
+        style={delay(0.4)}
+      >
         {brand.hero.sub}
-      </motion.p>
+      </p>
 
       {/* CTAs — stacked full-width on mobile, inline from sm up */}
-      <motion.div
-        {...rise(1.1)}
-        className="mt-9 flex w-full max-w-xs flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:items-center sm:justify-center sm:gap-4"
+      <div
+        className="hero-rise mt-9 flex w-full max-w-xs flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:items-center sm:justify-center sm:gap-4"
+        style={delay(0.55)}
       >
         <Button href="#packages" variant="gold" className="w-full sm:w-auto">
           {brand.hero.ctaPrimary}
@@ -105,7 +102,7 @@ export function HeroContent() {
         >
           {brand.hero.ctaSecondary}
         </Button>
-      </motion.div>
+      </div>
 
       {/* Scroll chevron — gentle infinite bounce, fades on first scroll */}
       <motion.div
@@ -113,7 +110,7 @@ export function HeroContent() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60"
         initial={{ opacity: 0 }}
         animate={{ opacity: scrolled ? 0 : 1 }}
-        transition={{ duration: 0.4, delay: scrolled ? 0 : 1.6, ease: EASE_OUT_EXPO }}
+        transition={{ duration: 0.4, delay: scrolled ? 0 : 1, ease: EASE_OUT_EXPO }}
       >
         <motion.span
           className="block"
@@ -127,8 +124,12 @@ export function HeroContent() {
   );
 }
 
-/** Gold peak mark that draws itself in via stroke-dashoffset (pathLength). */
-function PeakMark({ reduced }: { reduced: boolean }) {
+/**
+ * Gold peak mark that draws itself in via stroke-dashoffset. Plain SVG plus a
+ * CSS animation rather than framer-motion's pathLength, so it paints on the
+ * same schedule as the copy around it instead of waiting for hydration.
+ */
+function PeakMark() {
   return (
     <svg
       aria-hidden="true"
@@ -136,15 +137,14 @@ function PeakMark({ reduced }: { reduced: boolean }) {
       className="mb-6 h-8 w-24 sm:h-10 sm:w-28"
       fill="none"
     >
-      <motion.path
+      <path
+        className="hero-draw"
+        style={{ "--d": "0.2s" } as CSSProperties}
         d="M10 34 L42 8 L58 24 L74 6 L110 34"
         stroke="var(--color-gold)"
         strokeWidth={2.5}
         strokeLinecap="round"
         strokeLinejoin="round"
-        initial={{ pathLength: reduced ? 1 : 0, opacity: reduced ? 1 : 0 }}
-        animate={{ pathLength: 1, opacity: 1 }}
-        transition={reduced ? { duration: 0 } : { duration: 1.3, delay: 0.4, ease: EASE_OUT_EXPO }}
       />
     </svg>
   );

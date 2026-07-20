@@ -150,7 +150,7 @@ function HeroRisePinned() {
             <source src="/videos/hero.mp4?v=2" type="video/mp4" />
           </video>
         ) : (
-          <Image src="/images/hero.jpg" alt="" fill priority sizes="100vw" className="object-cover" />
+          <Image src="/images/hero.webp" alt="" fill priority sizes="100vw" className="object-cover" />
         )}
       </div>
 
@@ -213,7 +213,7 @@ function HeroRiseStatic() {
     <>
       {/* Hero, static */}
       <section id="rise" className="relative h-screen w-full overflow-hidden bg-navy-deep">
-        <Image src="/images/hero.jpg" alt="" fill priority sizes="100vw" className="object-cover" />
+        <Image src="/images/hero.webp" alt="" fill priority sizes="100vw" className="object-cover" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-navy-deep/85 via-navy/35 to-navy-deep/55" />
         <div className="absolute inset-0 z-10">
           <HeroContent />
@@ -222,7 +222,7 @@ function HeroRiseStatic() {
 
       {/* Rise captions, shown normally below */}
       <section className="relative overflow-hidden bg-navy-deep text-white">
-        <Image src="/images/hero.jpg" alt="" fill sizes="100vw" className="object-cover opacity-20" />
+        <Image src="/images/hero.webp" alt="" fill sizes="100vw" className="object-cover opacity-20" />
         <div className="absolute inset-0 bg-navy-deep/80" />
         <div className="relative z-10 mx-auto flex max-w-2xl flex-col items-center gap-14 px-6 py-24 text-center">
           <div>

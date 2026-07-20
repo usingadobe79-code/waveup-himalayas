@@ -22,7 +22,7 @@ const navLinks = [
 
 /**
  * Sticky header. Transparent over the hero; frosts + shrinks once scrolled past
- * the hero (docs/01 §1). Inline nav from `lg` up; below `lg` the nav collapses
+ * the hero (docs/01 §1). Inline nav from `xl` up; below `xl` the nav collapses
  * into a hamburger that opens a slide-in drawer (logo left, hamburger right).
  *
  * `solid` forces the frosted state — used on sub-pages (e.g. /packages) whose
@@ -77,7 +77,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
           : "h-[72px] bg-transparent",
       )}
     >
-      <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
+      <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-5 sm:px-6">
         <a
           href={onHome ? "#top" : "/"}
           aria-label="WaveUp Himalayas — home"
@@ -87,14 +87,21 @@ export function Header({ solid = false }: { solid?: boolean }) {
             onDark
             className={cn(
               "origin-left transition-transform duration-500 ease-[var(--ease-out-expo)]",
-              scrolled || solid ? "scale-90 text-lg" : "scale-100 text-xl",
+              // Smaller base size so the lockup never crowds the controls on a
+              // narrow phone; it steps back up once there is room for it.
+              scrolled || solid ? "scale-90 text-base sm:text-lg" : "scale-100 text-lg sm:text-xl",
             )}
           />
         </a>
 
-        <div className="flex items-center gap-5">
-          {/* Desktop nav — gold underline wipes in left→right on hover */}
-          <nav className="hidden items-center gap-8 lg:flex">
+        <div className="flex items-center gap-4 xl:gap-5">
+          {/*
+            Inline nav appears at xl, not lg. At lg the six links, their 2rem
+            gaps and the Book Now pill totalled roughly the full 1024px, leaving
+            the button pressed up against the lockup. Below xl this all lives in
+            the drawer, which has room to present it properly.
+          */}
+          <nav className="hidden items-center gap-7 xl:flex">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -112,19 +119,24 @@ export function Header({ solid = false }: { solid?: boolean }) {
             target="_blank"
             rel="noopener noreferrer"
             size="sm"
-            className="hidden lg:inline-flex"
+            className="hidden xl:inline-flex"
           >
             <MessageCircle className="h-4 w-4" />
             Book Now
           </Button>
 
-          {/* Hamburger — mobile / tablet */}
+          {/*
+            Hamburger — everything below xl. The old -mr-1 pulled it into the
+            screen edge, which both looked jammed and put half the tap target
+            where thumbs tend to miss. It now sits inside the padding at a full
+            44px, the minimum comfortable touch size.
+          */}
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
-            className="-mr-1 inline-flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10 lg:hidden"
+            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10 xl:hidden"
           >
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -134,7 +146,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
       {/* Slide-in drawer */}
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 z-40 lg:hidden">
+          <div className="fixed inset-0 z-40 xl:hidden">
             <motion.div
               className="absolute inset-0 bg-navy-deep/60 backdrop-blur-sm"
               onClick={() => setOpen(false)}
