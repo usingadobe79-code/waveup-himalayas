@@ -133,22 +133,32 @@ export function Header({ solid = false }: { solid?: boolean }) {
           */}
           <button
             type="button"
-            onClick={() => setOpen((v) => !v)}
-            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen(true)}
+            aria-label="Open menu"
             aria-expanded={open}
             className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10 xl:hidden"
           >
-            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {/* Always the hamburger: the drawer covers this button once open,
+                so closing is handled by the X inside the drawer itself. */}
+            <Menu className="h-6 w-6" />
           </button>
         </div>
       </div>
 
-      {/* Slide-in drawer */}
+      {/*
+        Slide-in drawer.
+
+        z-[60] puts this above the header's z-50. Previously the drawer sat
+        below it, so its top strip was really the header's translucent
+        bg-navy/85 bar showing through — which read as the menu having no
+        background. The panel now owns the full height of the screen and is
+        solid navy-deep, a shade off the header so the two never blur together.
+      */}
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 z-40 xl:hidden">
+          <div className="fixed inset-0 z-[60] xl:hidden">
             <motion.div
-              className="absolute inset-0 bg-navy-deep/60 backdrop-blur-sm"
+              className="absolute inset-0 bg-navy-deep/70 backdrop-blur-sm"
               onClick={() => setOpen(false)}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -157,8 +167,25 @@ export function Header({ solid = false }: { solid?: boolean }) {
             />
             <motion.aside
               {...drawerMotion}
-              className="absolute right-0 top-0 flex h-full w-[80%] max-w-xs flex-col gap-2 bg-navy px-6 pb-8 pt-24"
+              className="absolute right-0 top-0 flex h-full w-[82%] max-w-sm flex-col bg-navy-deep px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)]"
             >
+              {/*
+                The drawer covers the header, so the header's own toggle is no
+                longer reachable while open — the close control has to live in
+                here. Labelled and 44px, matching the hamburger it replaces.
+              */}
+              <div className="mb-6 flex items-center justify-between">
+                <span className="type-eyebrow text-accent">Menu</span>
+                <button
+                  type="button"
+                  onClick={() => setOpen(false)}
+                  aria-label="Close menu"
+                  className="-mr-2 inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10"
+                >
+                  <X className="h-6 w-6" />
+                </button>
+              </div>
+
               <nav className="flex flex-col">
                 {navLinks.map((link) => (
                   <a
