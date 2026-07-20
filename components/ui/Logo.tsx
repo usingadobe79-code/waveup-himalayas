@@ -12,7 +12,14 @@ import { cn } from "@/lib/cn";
  * Sized in `em` so callers can scale it with a font-size utility (text-lg / text-xl
  * / text-2xl) exactly as before; the intrinsic width/height keep layout shift out.
  */
-const LOCKUP = { width: 3660, height: 510 } as const; // intrinsic px of the lockup PNGs
+/**
+ * Intrinsic px of the lockup PNGs. These must track the actual files: the
+ * browser uses the ratio to reserve space before the image arrives, so a stale
+ * value here reintroduces the layout shift the attributes exist to prevent.
+ * The source art was 3660px wide — roughly 14x the ~250px it ever renders at —
+ * so it was downsampled to 1000px, which still covers 4x retina.
+ */
+const LOCKUP = { width: 1000, height: 139 } as const;
 
 export function Logo({
   className,
