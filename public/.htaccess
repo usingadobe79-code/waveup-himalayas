@@ -41,9 +41,11 @@ ErrorDocument 404 /404.html
   ExpiresActive On
 
   # Files under /_next/static carry a content hash in their name, so a long
-  # immutable cache is safe — a change produces a new filename.
+  # immutable cache is safe — a change produces a new filename. Fonts are
+  # included: Next emits them hash-named too, and leaving them out left them on
+  # the 7-day default, which Lighthouse flagged on 113KB of woff2.
   <IfModule mod_headers.c>
-    <FilesMatch "\.(js|css)$">
+    <FilesMatch "\.(js|css|woff2?)$">
       Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
   </IfModule>

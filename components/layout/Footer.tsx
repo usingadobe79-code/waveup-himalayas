@@ -44,7 +44,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Logo onDark className="text-2xl" />
             <p className="type-small mt-4 text-on-dark/50">{brand.tagline}</p>
-            <p className="type-small mt-2 text-on-dark/40">{business.base}</p>
+            <p className="type-small mt-2 text-on-dark/60">{business.base}</p>
             <div className="mt-5 flex items-center gap-3">
               <a
                 href={contact.instagram.url}
@@ -113,7 +113,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-on-dark/10 pt-6 sm:flex-row sm:items-center">
-          <p className="type-small text-on-dark/40">
+          <p className="type-small text-on-dark/60">
             © {business.touristDotCom.since} {business.name}. Also trading as {business.alsoTradesAs}.
           </p>
           <FooterLink href={business.touristDotCom.listing} external>
