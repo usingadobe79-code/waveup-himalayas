@@ -9,7 +9,7 @@ function FooterLink({ href, children, external = false }: { href: string; childr
     <a
       href={href}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-      className="type-small group relative inline-block text-on-dark/60 transition-colors hover:text-on-dark"
+      className="type-small group relative inline-block text-on-dark/80 transition-colors hover:text-on-dark"
     >
       {children}
       <span className="absolute -bottom-0.5 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-x-100" />
@@ -28,11 +28,13 @@ const exploreLinks = [
   { label: "Gallery", href: "/#gallery" },
 ];
 
+// Point at /packages pre-filtered to each service (PackagesBrowser reads the
+// hash), matching the clickable service cards on the home page.
 const serviceLinks = [
-  { label: "Trekking", href: "/#packages" },
-  { label: "Helicopter Tours", href: "/#packages" },
-  { label: "Mountain Flights", href: "/#packages" },
-  { label: "Jungle Safari", href: "/#packages" },
+  { label: "Trekking", href: "/packages/#trekking" },
+  { label: "Helicopter Tours", href: "/packages/#heli-tours" },
+  { label: "Mountain Flights", href: "/packages/#mountain-flights" },
+  { label: "Jungle Safari", href: "/packages/#jungle-safari" },
 ];
 
 export function Footer() {
@@ -42,16 +44,18 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Logo onDark className="text-2xl" />
-            <p className="type-small mt-4 text-on-dark/50">{brand.tagline}</p>
-            <p className="type-small mt-2 text-on-dark/60">{business.base}</p>
+            {/* Half the previous size (was text-2xl) — the lockup was dominating
+                the footer's brand column. */}
+            <Logo onDark className="text-xs" />
+            <p className="type-small mt-4 text-on-dark/75">{brand.tagline}</p>
+            <p className="type-small mt-2 text-on-dark/75">{business.base}</p>
             <div className="mt-5 flex items-center gap-3">
               <a
                 href={contact.instagram.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="text-on-dark/50 transition-colors hover:text-accent"
+                className="text-on-dark/70 transition-colors hover:text-accent"
               >
                 <InstagramIcon />
               </a>
@@ -60,7 +64,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="text-on-dark/50 transition-colors hover:text-accent"
+                className="text-on-dark/70 transition-colors hover:text-accent"
               >
                 <FacebookIcon />
               </a>
@@ -101,11 +105,11 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2.5">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                <span className="type-small text-on-dark/60">{contact.hours}</span>
+                <span className="type-small text-on-dark/75">{contact.hours}</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                <span className="type-small text-on-dark/60">{business.registeredAddress}</span>
+                <span className="type-small text-on-dark/75">{business.registeredAddress}</span>
               </li>
             </ul>
           </div>
@@ -113,7 +117,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-on-dark/10 pt-6 sm:flex-row sm:items-center">
-          <p className="type-small text-on-dark/60">
+          <p className="type-small text-on-dark/75">
             © {business.touristDotCom.since} {business.name}. Also trading as {business.alsoTradesAs}.
           </p>
           <FooterLink href={business.touristDotCom.listing} external>

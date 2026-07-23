@@ -158,7 +158,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
         {open && (
           <div className="fixed inset-0 z-[60] xl:hidden">
             <motion.div
-              className="absolute inset-0 bg-navy-deep/70 backdrop-blur-sm"
+              className="absolute inset-0 bg-navy-deep/80 backdrop-blur-sm"
               onClick={() => setOpen(false)}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -167,14 +167,27 @@ export function Header({ solid = false }: { solid?: boolean }) {
             />
             <motion.aside
               {...drawerMotion}
-              className="absolute right-0 top-0 flex h-full w-[82%] max-w-sm flex-col bg-navy-deep px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)]"
+              className="absolute right-0 top-0 flex h-full w-[82%] max-w-sm flex-col overflow-hidden bg-navy-deep px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)]"
             >
+              {/*
+                Solid navy-deep base (never see-through), with a brand-gold glow
+                washed over the top corner at low opacity — the "add our gold at
+                ~50%" ask. A translucent gold *fill* would have reintroduced the
+                see-through look, so the gold sits as a glow on an opaque panel.
+                overflow-hidden on the aside clips it to the panel.
+              */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-[radial-gradient(130%_60%_at_100%_0%,rgba(184,146,62,0.28),transparent_62%)]"
+              />
+
               {/*
                 The drawer covers the header, so the header's own toggle is no
                 longer reachable while open — the close control has to live in
                 here. Labelled and 44px, matching the hamburger it replaces.
+                relative keeps this row above the gold glow layer.
               */}
-              <div className="mb-6 flex items-center justify-between">
+              <div className="relative mb-6 flex items-center justify-between">
                 <span className="type-eyebrow text-accent">Menu</span>
                 <button
                   type="button"
@@ -186,7 +199,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                 </button>
               </div>
 
-              <nav className="flex flex-col">
+              <nav className="relative flex flex-col">
                 {navLinks.map((link) => (
                   <a
                     key={link.href}
@@ -203,7 +216,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="mt-6 w-full"
+                className="relative mt-6 w-full"
               >
                 <MessageCircle className="h-4 w-4" />
                 Book Now

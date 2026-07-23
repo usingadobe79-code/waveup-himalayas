@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, type CSSProperties } from "react";
+import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import {
   MountainSnow,
@@ -9,6 +10,7 @@ import {
   PlaneTakeoff,
   TreePine,
   Route,
+  ArrowRight,
   type LucideIcon,
 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -67,23 +69,31 @@ export function Services() {
             {services.map((service, i) => {
               const Icon = ICONS[service.key] ?? Route;
               return (
-                <motion.article
-                  key={service.key}
-                  variants={item}
-                  className="card card-hover group flex flex-col p-8"
-                >
-                  <span
-                    className={cn(
-                      "icon-draw mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:rotate-6",
-                      inView && "is-drawn",
-                    )}
-                    style={{ "--draw-delay": `${0.1 + i * 0.08}s` } as CSSProperties}
+                <motion.div key={service.key} variants={item} className="h-full">
+                  {/* Each card links to /packages filtered to this service — the
+                      browser there reads the hash and opens on the matching pill. */}
+                  <Link
+                    href={`/packages#${service.key}`}
+                    aria-label={`${service.title} — view packages`}
+                    className="card card-hover group flex h-full flex-col p-8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
                   >
-                    <Icon className="h-6 w-6" strokeWidth={1.75} aria-hidden="true" />
-                  </span>
-                  <h3 className="type-h3 text-ink">{service.title}</h3>
-                  <p className="type-small mt-3 text-muted">{service.blurb}</p>
-                </motion.article>
+                    <span
+                      className={cn(
+                        "icon-draw mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:rotate-6",
+                        inView && "is-drawn",
+                      )}
+                      style={{ "--draw-delay": `${0.1 + i * 0.08}s` } as CSSProperties}
+                    >
+                      <Icon className="h-6 w-6" strokeWidth={1.75} aria-hidden="true" />
+                    </span>
+                    <h3 className="type-h3 text-ink">{service.title}</h3>
+                    <p className="type-small mt-3 flex-1 text-muted">{service.blurb}</p>
+                    <span className="type-small mt-5 inline-flex items-center gap-1.5 font-semibold text-accent-ink">
+                      View packages
+                      <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
+                    </span>
+                  </Link>
+                </motion.div>
               );
             })}
           </div>

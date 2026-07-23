@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { PackageImage } from "@/components/ui/PackageImage";
-import { regions, totalPackages, priceLabel } from "@/lib/content";
+import { PackagesBrowser } from "@/components/sections/PackagesBrowser";
+import { totalPackages } from "@/lib/content";
 
 const PACKAGES_DESC =
   "Browse all of WaveUp Himalayas' treks, tours, helicopter adventures and experiences across the Nepal Himalayas. Every trip is fully customizable.";
@@ -55,59 +54,8 @@ export default function PackagesIndexPage() {
           </div>
         </section>
 
-        {/* All packages, grouped by region */}
-        <section className="section-y bg-surface">
-          <div className="container-page space-y-16 md:space-y-20">
-            {regions.map((region) => (
-              <div key={region.key}>
-                <div className="flex items-baseline justify-between gap-4">
-                  <h2 className="type-h3 text-ink">{region.label}</h2>
-                  <span className="type-small shrink-0 text-muted">
-                    {region.packages.length}{" "}
-                    {region.packages.length === 1 ? "trip" : "trips"}
-                  </span>
-                </div>
-                <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  {region.packages.map((p) => (
-                    <Link
-                      key={p.slug}
-                      href={`/packages/${p.slug}`}
-                      className="card card-hover group flex flex-col overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
-                    >
-                      <div className="relative aspect-[3/2] overflow-hidden">
-                        <PackageImage
-                          src={p.image}
-                          alt={p.title}
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          className="transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.06]"
-                        />
-                        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface-darker/55 to-transparent" />
-                        <span className="type-small absolute left-4 top-4 rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
-                          {p.region}
-                        </span>
-                      </div>
-                      <div className="flex flex-1 flex-col p-5">
-                        <h3 className="type-h3 text-ink">{p.title}</h3>
-                        {p.blurb && (
-                          <p className="type-small mt-2 flex-1 text-muted">{p.blurb}</p>
-                        )}
-                        <div className="mt-4 flex items-center justify-between gap-3">
-                          <span className="type-small font-medium text-muted">
-                            {priceLabel(p.price)}
-                          </span>
-                          <span className="type-small inline-flex items-center gap-1.5 font-semibold text-accent-ink">
-                            View Details
-                            <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* All packages, filterable by service, grouped by region */}
+        <PackagesBrowser />
       </main>
       <Footer />
     </>

@@ -508,6 +508,40 @@ export function getPackage(slug: string): Package | undefined {
 }
 
 /**
+ * The six top-level services (see `services` above) double as filter categories
+ * on /packages. A package's service is derived from its own title and region —
+ * never a hand-maintained second list — so it cannot drift out of sync:
+ *
+ *  - "…Mountain Flight"  → mountain-flights   (fixed-wing scenic flights)
+ *  - "…Heli Tour"        → heli-tours         (a Heli *Trek* stays a trek)
+ *  - cultural region     → city-tours
+ *  - wildlife region     → jungle-safari
+ *  - special region      → custom-trips       (family / honeymoon / bespoke)
+ *  - everything else     → trekking
+ */
+export type ServiceKey =
+  | "trekking"
+  | "city-tours"
+  | "heli-tours"
+  | "mountain-flights"
+  | "jungle-safari"
+  | "custom-trips";
+
+export function packageService(p: Package): ServiceKey {
+  if (/mountain flight/i.test(p.title)) return "mountain-flights";
+  if (/heli tour/i.test(p.title)) return "heli-tours";
+  if (p.regionKey === "cultural") return "city-tours";
+  if (p.regionKey === "wildlife") return "jungle-safari";
+  if (p.regionKey === "special") return "custom-trips";
+  return "trekking";
+}
+
+/** How many trips sit under each service — used to hide empty filter pills. */
+export function serviceCount(key: ServiceKey): number {
+  return packages.filter((p) => packageService(p) === key).length;
+}
+
+/**
  * Featured 6 for the landing grid ("Popular Adventures"). Curated selection of
  * canonical packages — all six have a real photo + blurb.
  */
