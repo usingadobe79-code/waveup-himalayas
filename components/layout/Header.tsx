@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { MessageCircle, Menu, X } from "lucide-react";
@@ -33,10 +34,15 @@ const navLinks = [
 export function Header({ solid = false }: { solid?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const reduced = useReducedMotion();
   const pathname = usePathname();
   const onHome = pathname === "/";
   const frosted = scrolled || open || solid;
+
+  // The drawer renders through a portal (see below); portals need document.body,
+  // which only exists after mount.
+  useEffect(() => setMounted(true), []);
 
   // Off-home, prefix section anchors so they route back to the homepage section.
   const resolve = (hash: string) => (onHome ? hash : `/${hash}`);
@@ -69,7 +75,8 @@ export function Header({ solid = false }: { solid?: boolean }) {
       };
 
   return (
-    <header
+    <>
+      <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-[height,background-color,backdrop-filter] duration-500 ease-[var(--ease-out-expo)]",
         frosted
@@ -145,85 +152,80 @@ export function Header({ solid = false }: { solid?: boolean }) {
         </div>
       </div>
 
+      </header>
+
       {/*
-        Slide-in drawer.
+        Mobile drawer — portaled to <body>, NOT nested in <header>.
 
-        z-[60] puts this above the header's z-50. Previously the drawer sat
-        below it, so its top strip was really the header's translucent
-        bg-navy/85 bar showing through — which read as the menu having no
-        background. The panel now owns the full height of the screen and is
-        solid navy-deep, a shade off the header so the two never blur together.
+        The header gains `backdrop-blur` while the menu is open, and
+        backdrop-filter makes an element the containing block for its
+        position:fixed descendants. A drawer nested in the 60px-tall header was
+        therefore clamped to 60px: its background painted only in that top strip
+        while the links overflowed over the hero, which read as a see-through
+        menu. Rendering on document.body escapes that ancestor so the fixed
+        overlay fills the whole viewport and the panel background covers it.
       */}
-      <AnimatePresence>
-        {open && (
-          <div className="fixed inset-0 z-[60] xl:hidden">
-            <motion.div
-              className="absolute inset-0 bg-navy-deep/80 backdrop-blur-sm"
-              onClick={() => setOpen(false)}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: reduced ? 0 : 0.3 }}
-            />
-            {/*
-              Solid opaque panel. The background is a single declaration: a gold
-              glow (top-right, ~50% max) painted OVER an opaque navy-deep base
-              colour, so there is no separate layer and no way for the page to
-              show through. Inline style keeps the exact gradient explicit and
-              out of Tailwind's arbitrary-value parser.
-            */}
-            <motion.aside
-              {...drawerMotion}
-              style={{
-                backgroundColor: "#111c33",
-                backgroundImage:
-                  "radial-gradient(135% 55% at 100% 0%, rgba(184,146,62,0.22), transparent 60%)",
-              }}
-              className="absolute right-0 top-0 flex h-full w-[82%] max-w-sm flex-col px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)]"
-            >
-              {/*
-                The drawer covers the header, so the header's own toggle is no
-                longer reachable while open — the close control lives here.
-                Labelled and 44px, matching the hamburger it replaces.
-              */}
-              <div className="mb-6 flex items-center justify-between">
-                <span className="type-eyebrow text-accent">Menu</span>
-                <button
-                  type="button"
+      {mounted &&
+        createPortal(
+          <AnimatePresence>
+            {open && (
+              <div className="fixed inset-0 z-[60] xl:hidden">
+                <motion.div
+                  className="absolute inset-0 bg-navy-deep/80 backdrop-blur-sm"
                   onClick={() => setOpen(false)}
-                  aria-label="Close menu"
-                  className="-mr-2 inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: reduced ? 0 : 0.3 }}
+                />
+                {/* Site navy at 60% + heavy blur: the hero behind softens to an
+                    unreadable wash while the menu text stays legible. */}
+                <motion.aside
+                  {...drawerMotion}
+                  className="absolute right-0 top-0 flex h-full w-[82%] max-w-sm flex-col bg-navy/60 px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)] backdrop-blur-2xl"
                 >
-                  <X className="h-6 w-6" />
-                </button>
-              </div>
+                  {/* Close control lives in the drawer — the header's toggle is
+                      covered while open. Labelled, 44px. */}
+                  <div className="mb-6 flex items-center justify-between">
+                    <span className="type-eyebrow text-accent">Menu</span>
+                    <button
+                      type="button"
+                      onClick={() => setOpen(false)}
+                      aria-label="Close menu"
+                      className="-mr-2 inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10"
+                    >
+                      <X className="h-6 w-6" />
+                    </button>
+                  </div>
 
-              <nav className="flex flex-col">
-                {navLinks.map((link) => (
-                  <a
-                    key={link.href}
-                    href={resolve(link.href)}
+                  <nav className="flex flex-col">
+                    {navLinks.map((link) => (
+                      <a
+                        key={link.href}
+                        href={resolve(link.href)}
+                        onClick={() => setOpen(false)}
+                        className="border-b border-white/10 py-4 text-lg font-medium text-white/90 transition-colors hover:text-gold"
+                      >
+                        {link.label}
+                      </a>
+                    ))}
+                  </nav>
+                  <Button
+                    href={contact.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => setOpen(false)}
-                    className="border-b border-white/10 py-4 text-lg font-medium text-white/90 transition-colors hover:text-gold"
+                    className="mt-6 w-full"
                   >
-                    {link.label}
-                  </a>
-                ))}
-              </nav>
-              <Button
-                href={contact.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setOpen(false)}
-                className="mt-6 w-full"
-              >
-                <MessageCircle className="h-4 w-4" />
-                Book Now
-              </Button>
-            </motion.aside>
-          </div>
+                    <MessageCircle className="h-4 w-4" />
+                    Book Now
+                  </Button>
+                </motion.aside>
+              </div>
+            )}
+          </AnimatePresence>,
+          document.body,
         )}
-      </AnimatePresence>
-    </header>
+    </>
   );
 }
