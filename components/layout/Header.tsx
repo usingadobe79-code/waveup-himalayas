@@ -165,29 +165,28 @@ export function Header({ solid = false }: { solid?: boolean }) {
               exit={{ opacity: 0 }}
               transition={{ duration: reduced ? 0 : 0.3 }}
             />
+            {/*
+              Solid opaque panel. The background is a single declaration: a gold
+              glow (top-right, ~50% max) painted OVER an opaque navy-deep base
+              colour, so there is no separate layer and no way for the page to
+              show through. Inline style keeps the exact gradient explicit and
+              out of Tailwind's arbitrary-value parser.
+            */}
             <motion.aside
               {...drawerMotion}
-              className="absolute right-0 top-0 flex h-full w-[82%] max-w-sm flex-col overflow-hidden bg-navy-deep px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)]"
+              style={{
+                backgroundColor: "#111c33",
+                backgroundImage:
+                  "radial-gradient(135% 55% at 100% 0%, rgba(184,146,62,0.22), transparent 60%)",
+              }}
+              className="absolute right-0 top-0 flex h-full w-[82%] max-w-sm flex-col px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)]"
             >
               {/*
-                Solid navy-deep base (never see-through), with a brand-gold glow
-                washed over the top corner at low opacity — the "add our gold at
-                ~50%" ask. A translucent gold *fill* would have reintroduced the
-                see-through look, so the gold sits as a glow on an opaque panel.
-                overflow-hidden on the aside clips it to the panel.
-              */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 bg-[radial-gradient(130%_60%_at_100%_0%,rgba(184,146,62,0.28),transparent_62%)]"
-              />
-
-              {/*
                 The drawer covers the header, so the header's own toggle is no
-                longer reachable while open — the close control has to live in
-                here. Labelled and 44px, matching the hamburger it replaces.
-                relative keeps this row above the gold glow layer.
+                longer reachable while open — the close control lives here.
+                Labelled and 44px, matching the hamburger it replaces.
               */}
-              <div className="relative mb-6 flex items-center justify-between">
+              <div className="mb-6 flex items-center justify-between">
                 <span className="type-eyebrow text-accent">Menu</span>
                 <button
                   type="button"
@@ -199,7 +198,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                 </button>
               </div>
 
-              <nav className="relative flex flex-col">
+              <nav className="flex flex-col">
                 {navLinks.map((link) => (
                   <a
                     key={link.href}
@@ -216,7 +215,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="relative mt-6 w-full"
+                className="mt-6 w-full"
               >
                 <MessageCircle className="h-4 w-4" />
                 Book Now
