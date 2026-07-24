@@ -179,10 +179,13 @@ export function Header({ solid = false }: { solid?: boolean }) {
                   transition={{ duration: reduced ? 0 : 0.3 }}
                 />
                 {/* Site navy at 60% + heavy blur: the hero behind softens to an
-                    unreadable wash while the menu text stays legible. */}
+                    unreadable wash while the menu text stays legible. Height is
+                    content-sized (no h-full) so the panel hangs from the top like
+                    a card; the full-screen scrim behind still dims the rest and
+                    closes on tap. Rounded bottom-left finishes the hanging edge. */}
                 <motion.aside
                   {...drawerMotion}
-                  className="absolute right-0 top-0 flex h-full w-[82%] max-w-sm flex-col bg-navy/60 px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)] backdrop-blur-2xl"
+                  className="absolute right-0 top-0 flex w-[82%] max-w-sm flex-col rounded-bl-2xl bg-navy/60 px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)] backdrop-blur-2xl"
                 >
                   {/* Close control lives in the drawer — the header's toggle is
                       covered while open. Labelled, 44px. */}
