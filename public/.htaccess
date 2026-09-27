@@ -73,10 +73,12 @@ ErrorDocument 404 /404.html
   # overlays an invisible copy of a page on top of an attacker's own.
   Header always set X-Frame-Options "SAMEORIGIN"
 
-  # Isolate this window from any document that opens it or that it opens.
-  # Safe here because nothing depends on cross-origin window handles — the
-  # WhatsApp and social links are plain navigations, not popup integrations.
-  Header always set Cross-Origin-Opener-Policy "same-origin"
+  # Isolate this window from documents that open it, but keep a handle to
+  # popups WE open. The /admin blog editor (Sveltia CMS) signs in via a GitHub
+  # OAuth popup that must postMessage the token back to the opener; plain
+  # "same-origin" severs that handle and the sign-in aborts. "-allow-popups"
+  # keeps the isolation while letting our own popups talk back.
+  Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
 
   # Deliberately NOT set here: Strict-Transport-Security. HSTS is cached by
   # the browser and cannot be called back, so if AutoSSL ever fails to renew,
