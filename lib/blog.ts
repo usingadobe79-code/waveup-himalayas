@@ -25,12 +25,28 @@ export type BlogPost = {
 
 type PostFrontmatter = {
   title: string;
-  date: string;
+  // YAML parses an unquoted `date: 2026-09-28` into a Date, but a quoted
+  // `date: "2026-09-28"` stays a string. The CMS writes the unquoted form, so
+  // we must accept both and normalise (see toDateString).
+  date: string | Date;
   excerpt: string;
   coverImage: string;
   author: string;
   draft?: boolean;
 };
+
+/**
+ * Normalise a frontmatter date to a "YYYY-MM-DD" string. gray-matter's YAML
+ * turns an unquoted date into a Date object; a quoted one stays a string.
+ * Either way we return a plain ISO day string so the rest of the code (sorting,
+ * formatDate) has one predictable type and the build never crashes on it.
+ */
+function toDateString(value: string | Date | undefined): string {
+  if (value instanceof Date) {
+    return Number.isNaN(value.getTime()) ? "" : value.toISOString().slice(0, 10);
+  }
+  return typeof value === "string" ? value.trim() : "";
+}
 
 /** Filenames (without .md) of every post in content/blog/, draft or not. */
 export function getPostSlugs(): string[] {
@@ -63,7 +79,7 @@ export function getAllPosts(): BlogPost[] {
       const post: BlogPost = {
         slug,
         title: data.title,
-        date: data.date,
+        date: toDateString(data.date),
         excerpt: data.excerpt,
         coverImage: data.coverImage,
         author: data.author,
@@ -85,7 +101,7 @@ export function getPost(slug: string): BlogPost | undefined {
   return {
     slug,
     title: data.title,
-    date: data.date,
+    date: toDateString(data.date),
     excerpt: data.excerpt,
     coverImage: data.coverImage,
     author: data.author,
@@ -98,6 +114,9 @@ export function getPost(slug: string): BlogPost | undefined {
  *  shifts a day depending on the server/browser's local timezone. */
 export function formatDate(date: string): string {
   const parsed = new Date(`${date}T00:00:00Z`);
+  // Never let a malformed date throw and take the whole build down — fall back
+  // to the raw value instead.
+  if (Number.isNaN(parsed.getTime())) return date;
   return new Intl.DateTimeFormat("en-US", {
     year: "numeric",
     month: "long",
