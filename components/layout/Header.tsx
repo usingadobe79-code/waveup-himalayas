@@ -18,6 +18,7 @@ const navLinks = [
   { label: "Regions", href: "#regions" },
   { label: "Why Us", href: "#why-us" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -45,7 +46,8 @@ export function Header({ solid = false }: { solid?: boolean }) {
   useEffect(() => setMounted(true), []);
 
   // Off-home, prefix section anchors so they route back to the homepage section.
-  const resolve = (hash: string) => (onHome ? hash : `/${hash}`);
+  // Full paths (e.g. "/blog") already resolve on their own — don't double-prefix them.
+  const resolve = (hash: string) => (hash.startsWith("/") ? hash : onHome ? hash : `/${hash}`);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > window.innerHeight * 0.85);

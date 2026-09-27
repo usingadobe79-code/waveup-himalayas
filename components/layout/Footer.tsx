@@ -26,6 +26,7 @@ const exploreLinks = [
   { label: "Regions", href: "/#regions" },
   { label: "Why Us", href: "/#why-us" },
   { label: "Gallery", href: "/#gallery" },
+  { label: "Blog", href: "/blog" },
 ];
 
 // Point at /packages pre-filtered to each service (PackagesBrowser reads the

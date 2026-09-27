@@ -163,6 +163,108 @@
 }
 
 /* ==========================================================================
+   Blog prose — scoped styling for markdown-rendered post bodies
+   (app/blog/[slug]/page.tsx). Descendant selectors only; the type scale above
+   stays the single source for font sizes, so headings borrow it directly.
+   ========================================================================== */
+.prose-blog {
+  color: var(--color-muted);
+}
+.prose-blog > :first-child {
+  margin-top: 0;
+}
+.prose-blog h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.15;
+  color: var(--color-ink);
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+}
+.prose-blog h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--color-ink);
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+.prose-blog p {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+.prose-blog a {
+  color: var(--color-accent-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-blog a:hover {
+  color: var(--color-accent);
+}
+.prose-blog strong {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+.prose-blog ul,
+.prose-blog ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding-left: 1.5em;
+}
+.prose-blog ul {
+  list-style: disc;
+}
+.prose-blog ol {
+  list-style: decimal;
+}
+.prose-blog li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.7;
+}
+.prose-blog li::marker {
+  color: var(--color-accent);
+}
+.prose-blog blockquote {
+  margin: 2em 0;
+  padding: 0.25em 0 0.25em 1.5em;
+  border-left: 3px solid var(--color-accent);
+  font-style: italic;
+  color: var(--color-muted);
+}
+.prose-blog img {
+  width: 100%;
+  border-radius: var(--radius-card);
+  margin: 2em 0;
+}
+.prose-blog code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+}
+.prose-blog pre {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.25em;
+  overflow-x: auto;
+  margin: 2em 0;
+}
+.prose-blog pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* ==========================================================================
    Motion utilities
    ========================================================================== */
 
