@@ -1,0 +1,29 @@
+# Sveltia CMS configuration. base_url points at the GitHub sign-in helper
+# (the sveltia-cms-auth Cloudflare Worker).
+backend:
+  name: github
+  repo: usingadobe79-code/waveup-himalayas
+  branch: main
+  base_url: "https://sveltia-cms-auth.usingadobe79.workers.dev"
+
+# Uploaded images are committed here (repo path) and referenced by the public path.
+media_folder: "/public/images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog posts"
+    label_singular: "Blog post"
+    description: "Write and publish blog posts. Click Publish and the site updates in a couple of minutes."
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", picker_utc: true }
+      - { label: "Short summary (shown on cards and in Google)", name: "excerpt", widget: "text" }
+      - { label: "Cover image", name: "coverImage", widget: "image" }
+      - { label: "Author", name: "author", widget: "string", default: "WaveUp Himalayas" }
+      - { label: "Draft (keep hidden from the site)", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }

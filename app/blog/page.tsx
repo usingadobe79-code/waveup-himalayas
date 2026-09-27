@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { getAllPosts, formatDate } from "@/lib/blog";
-import { displaySrc } from "@/lib/img";
 
 const BLOG_DESC =
   "Trekking tips, packing guides and travel notes from WaveUp Himalayas — practical reading for planning your trip to the Nepal Himalayas.";
@@ -71,7 +70,7 @@ export default function BlogIndexPage() {
                     className="card card-hover group flex flex-col overflow-hidden"
                   >
                     <img
-                      src={displaySrc(post.coverImage)}
+                      src={post.coverImage}
                       alt={post.title}
                       className="aspect-[16/10] w-full rounded-t-card object-cover"
                     />

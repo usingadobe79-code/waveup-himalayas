@@ -7,10 +7,10 @@ import { siteUrl } from "@/lib/content";
  */
 export const dynamic = "force-static";
 
-/** robots.txt — allow full crawl and point at the sitemap. */
+/** robots.txt — allow full crawl (except the CMS admin) and point at the sitemap. */
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [{ userAgent: "*", allow: "/" }],
+    rules: [{ userAgent: "*", allow: "/", disallow: ["/admin/"] }],
     sitemap: `${siteUrl}/sitemap.xml`,
     host: siteUrl,
   };

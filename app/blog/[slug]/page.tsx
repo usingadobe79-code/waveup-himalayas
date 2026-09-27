@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { getPost, getPostSlugs, formatDate } from "@/lib/blog";
-import { displaySrc } from "@/lib/img";
 import { business } from "@/lib/content";
 
 // Only the known post slugs are valid routes; anything else 404s.
@@ -81,7 +80,7 @@ export default async function BlogPostPage({
         {/* Cover image */}
         <div className="container-page -mt-8 md:-mt-10">
           <img
-            src={displaySrc(post.coverImage)}
+            src={post.coverImage}
             alt={post.title}
             className="aspect-[16/9] w-full rounded-card object-cover shadow-card"
           />
