@@ -1,0 +1,54 @@
+name: Deploy to cPanel
+
+# Runs on every push to main (a new blog post, or any code change) and can also
+# be triggered by hand from the Actions tab. It rebuilds the static site and
+# uploads it to cPanel over FTPS — replacing the old manual zip-and-upload.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Never let two deploys run at once and clobber each other.
+concurrency:
+  group: deploy-cpanel
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build the static site
+        run: npm run build
+
+      - name: Upload to cPanel over FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./out/
+          server-dir: ./
+          # SAFETY: the action only ever deletes files it previously uploaded, so
+          # the SSL validation folder (.well-known) and cPanel's cgi-bin — which
+          # it never uploads — are left untouched. These excludes are extra
+          # insurance in case such paths ever appear in the build output.
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.well-known/**
+            **/cgi-bin/**
