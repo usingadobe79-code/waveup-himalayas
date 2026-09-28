@@ -76,7 +76,7 @@ Winter brings cold temperatures, especially at altitude. High passes like Thoron
 
 **Best Time by Activity**
 
-![](/images/blog/1aebdd87-7153-4be8-b184-f9d4ddcbbeef.png)
+![](/images/blog/nepal_activity_months_compact_table.png)
 
 **Festivals to Consider**
 
