@@ -76,18 +76,7 @@ Winter brings cold temperatures, especially at altitude. High passes like Thoron
 
 **Best Time by Activity**
 
-| Activity | Best Months |
-| --- | --- |
-| **Everest Base Camp trek** | Mar–May, Oct–Nov |
-| **Annapurna Circuit trek** | Mar–May, Oct–Nov |
-| **Annapurna Base Camp trek** | Oct–Nov, Mar–Apr |
-| **Poon Hill trek** | Oct–Nov, Mar–Apr, Dec–Feb |
-| **Mardi Himal trek** | Oct–Nov, Mar–Apr |
-| **Upper Mustang trek** | Jun–Sep (rain shadow) |
-| **Chitwan safari** | Oct–Mar |
-| **Kathmandu & Pokhara city tours** | Year-round |
-| **Nepal paragliding** | Oct–Nov, Mar–Apr |
-| **Nepal rafting** | Oct–Nov, Mar–Apr |
+![](/images/blog/1aebdd87-7153-4be8-b184-f9d4ddcbbeef.png)
 
 **Festivals to Consider**
 
@@ -119,7 +108,7 @@ Typical tourist visa fees:
 
 Fees and rules can change, so always confirm current rates on the official Nepal immigration website before you travel.
 
-##### Documents to Carry
+**Documents to Carry**
 
 - Passport valid for at least **6 months** with blank pages
 - Recent **passport-size photos**
@@ -128,7 +117,7 @@ Fees and rules can change, so always confirm current rates on the official Nepal
 - **Yellow fever certificate** if arriving from an affected country
 - Travel insurance covering **high-altitude trekking** and helicopter evacuation
 
-##### Entry Tips
+**Entry Tips**
 
 - Fill out the arrival form or use the **self-service kiosks** at the airport to save time.
 - Keep **USD cash** ready—card machines and ATMs at the airport can be unreliable.
@@ -137,7 +126,7 @@ Fees and rules can change, so always confirm current rates on the official Nepal
 - Keep a **digital and printed copy** of your passport, visa, and permits.
 - Immigration lines are longest during peak trekking season (**October–November** and **March–May**), so allow extra time.
 
-##### Extending Your Visa
+**Extending Your Visa**
 
 Visas can be extended at the **Department of Immigration** in Kathmandu or Pokhara. Extensions cost extra, and overstaying fines are steep—plan ahead if your **Nepal itinerary** changes.
 
@@ -149,7 +138,7 @@ Getting your **Nepal visa** is simple if you arrive prepared with the right docu
 
 **Nepal trekking** is the ultimate Himalayan adventure, drawing travelers from around the world to trails like the **Everest Base Camp trek** and **Annapurna Circuit trek**. But before you lace up your boots, you need to know the best routes and the **Nepal trekking permits** required. This quick guide from **Waveup Himalayas** covers both.
 
-##### Best Treks in Nepal
+**Best Treks in Nepal**
 
 ![](/images/blog/everest-base-camp-trek-1-scaled-1.jpg "Everest Base Camp Trek")
 
@@ -163,7 +152,7 @@ Getting your **Nepal visa** is simple if you arrive prepared with the right docu
 - **Poon Hill Trek** – A short, beginner-friendly trek with sunrise views over the Annapurnas.
 - **Mardi Himal Trek** – A quieter alternative with spectacular close-up mountain scenery.
 
-##### Nepal Trekking Permits
+**Nepal Trekking Permits**
 
 Permit requirements vary by region. Common permits include:
 
@@ -175,7 +164,7 @@ Permit requirements vary by region. Common permits include:
 
 Restricted areas also require a **licensed guide** and sometimes a minimum group size. Rules change often, so confirm before you go.
 
-##### Guides and Porters
+**Guides and Porters**
 
 A **Nepal trekking guide** and **Nepal porter** make your trek safer and smoother. They handle navigation, permits, tea houses, and local culture. For beginners and solo trekkers, a guide is strongly recommended. **Waveup Himalayas** provides experienced licensed guides, porters, and full trekking support.
 
@@ -187,45 +176,45 @@ A **Nepal trekking guide** and **Nepal porter** make your trek safer and smoothe
 
 Nepal is packed with unforgettable destinations—from ancient temples to Himalayan trails. Whether you're planning **Nepal trekking**, a cultural **Nepal tour**, or a relaxing **Nepal holiday**, here are the **best places to visit in Nepal** that belong on every **Nepal itinerary**.
 
-##### Kathmandu
+**Kathmandu**
 
 The vibrant capital is the gateway to Nepal. Explore **Thamel**, **Swayambhunath** (Monkey Temple), **Pashupatinath**, **Boudhanath Stupa**, and the historic **Kathmandu Durbar Square**. A **Kathmandu travel guide** isn't complete without these highlights.
 
-##### Pokhara
+**Pokhara**
 
 ![](/images/blog/1280px-Arial_view_of_Pokhara_05.jpg "Pokhara")
 
 Nepal's lakeside gem offers stunning Annapurna views, **Phewa Lake** boating, **Sarangkot** sunrise, **Nepal paragliding**, and access to **Annapurna Base Camp trek** and **Poon Hill trek**. It's a must for any **Pokhara travel guide**.
 
-##### Bhaktapur and Patan
+**Bhaktapur and Patan**
 
 These UNESCO-listed cities near Kathmandu showcase Nepal's finest Newari architecture, temples, and courtyards. Perfect for culture lovers and photographers.
 
-##### Chitwan National Park
+**Chitwan National Park**
 
 A top destination for **Chitwan safari**, offering rhinos, tigers, elephants, and jungle adventures. Ideal for wildlife enthusiasts and families.
 
-##### Lumbini
+**Lumbini**
 
 The birthplace of Buddha and a peaceful pilgrimage site, drawing spiritual travelers from around the world.
 
-##### Nagarkot
+**Nagarkot**
 
 A short escape from Kathmandu, famous for panoramic Himalayan sunrise and sunset views.
 
-##### Everest Region
+**Everest Region**
 
 Home to the legendary **Everest Base Camp trek**, **Gokyo Lakes**, and **Sherpa culture**. A dream for trekkers and adventure seekers.
 
-##### Annapurna Region
+**Annapurna Region**
 
 Offers the **Annapurna Circuit trek**, **Annapurna Base Camp trek**, **Mardi Himal trek**, and **Upper Mustang trek**—some of the best **Nepal trekking** routes.
 
-##### Bandipur
+**Bandipur**
 
 A charming hilltop town with Newari culture, mountain views, and a peaceful atmosphere.
 
-##### Rara Lake
+**Rara Lake**
 
 Nepal's largest lake, remote and breathtaking—ideal for off-the-beaten-path travelers.
 
@@ -237,29 +226,30 @@ From the temples of **Kathmandu** to the trails of the **Everest** and **Annapur
 
 Planning your **Nepal trip** means sorting out the practical stuff—money, connectivity, and power. Here's a quick **Nepal travel guide** to help you stay connected and cash-ready whether you're in **Kathmandu**, **Pokhara**, or on the **Everest Base Camp trek**.
 
-##### Money in Nepal
+**Money in Nepal**
 
 - **Currency:** Nepalese Rupee (NPR)
 - **ATMs** work in cities but are unreliable on treks. Carry enough cash.
+- **Money Exchange:** At Kathmandu airport you can exchange **USD, EUR, GBP, AUD, CAD, and other major currencies**, but airport rates are lower—use authorized money changers in **Thamel (Kathmandu)** or **Lakeside (Pokhara)** for better rates, and carry enough **NPR cash** before trekking since ATMs are unreliable in the mountains.
 - **Cards** are accepted in tourist areas, often with a surcharge.
 - **USD** is widely accepted for trekking permits and larger payments.
 - **Tipping** is common for guides, porters, drivers, and restaurant staff.
 - **Budget tip:** Carry small notes for tea houses, snacks, and transport.
 
-##### SIM Cards
+**SIM Cards**
 
 - Buy **Ncell** or **Nepal Telecom** SIM cards with your passport and a photo.
 - Available at the airport, official stores, and authorized shops.
 - Data is cheap and coverage is good in cities and popular trekking routes.
 - **Nepal Telecom** generally has better coverage in remote mountain areas.
 
-##### Internet
+**Internet**
 
 - Wi-Fi is common in **Kathmandu**, **Pokhara**, and tourist hotels.
 - On treks, Wi-Fi is paid and often patchy. Everest region has **Everest Link** cards.
 - Speeds drop at higher altitudes. Download offline maps and content in advance.
 
-##### Power and Plugs
+**Power and Plugs**
 
 - Plug types: **C, D, M** — bring a universal adapter.
 - Voltage: **230V**
@@ -274,13 +264,13 @@ Staying connected and cash-ready makes your **Nepal travel** smoother. Carry cas
 
 Getting around Nepal is part of the adventure. From winding mountain roads to scenic domestic flights, understanding **Nepal transportation** helps you plan a smoother **Nepal trip**—whether you're heading to **Kathmandu**, **Pokhara**, or the trailhead of the **Everest Base Camp trek** or **Annapurna Circuit trek**.
 
-##### Domestic Flights
+**Domestic Flights**
 
 - Fastest way to cover long distances, especially to **Lukla** for Everest treks.
 - Airlines like Buddha Air, Yeti Airlines, and Shree Airlines connect major cities.
 - Flights are often delayed or cancelled due to weather—always keep buffer days.
 
-##### Tourist Buses
+**Tourist Buses**
 
 ![](/images/blog/images.jpg "Public Transportation of Nepal")
 
@@ -288,31 +278,31 @@ Getting around Nepal is part of the adventure. From winding mountain roads to sc
 - Book through your hotel or a **Nepal tour operator** like **Waveup Himalayas**.
 - Overnight buses exist but are best avoided due to road conditions.
 
-##### Local Buses and Jeeps
+**Local Buses and Jeeps**
 
 - Cheapest option but crowded and slow.
 - Shared jeeps are common in mountain regions and for reaching trekking trailheads.
 - Expect delays, rough roads, and frequent stops.
 
-##### Taxis and Ride-Sharing
+**Taxis and Ride-Sharing**
 
 - Available in **Kathmandu** and **Pokhara**. Agree on the fare before you ride.
 - **Pathao** and **InDrive** are popular ride-sharing apps in cities.
 - Metered taxis are rare—negotiate or use apps for fair prices.
 
-##### Private Transport
+**Private Transport**
 
 - Private cars and jeeps offer comfort and flexibility for families or groups.
 - Ideal for custom **Nepal itineraries**, airport transfers, and city tours.
 - **Waveup Himalayas** can arrange private vehicles with experienced drivers.
 
-##### Trekking Transport
+**Trekking Transport**
 
 - Most treks start with a bus or jeep ride to the trailhead.
 - For Everest region, you'll fly to Lukla. For Annapurna, drive to Nayapul or Chame.
 - Porters and guides handle logistics so you can focus on the trail.
 
-##### Tips
+**Tips**
 
 - Avoid night travel on mountain roads.
 - Keep motion sickness medicine handy—roads are winding.
@@ -326,7 +316,7 @@ Nepal's transport network is varied and sometimes unpredictable, but with the ri
 
 Staying healthy and safe is the foundation of any great **Nepal trip**. Whether you're trekking to **Everest Base Camp**, exploring **Kathmandu**, or relaxing in **Pokhara**, a little preparation goes a long way. This **Nepal travel guide** covers the essentials for **Nepal trekking** and general travel.
 
-##### Health Tips
+**Health Tips**
 
 - **Water:** Tap water is not safe. Drink filtered, boiled, or purified water. Avoid ice and raw salads.
 - **Food:** Eat freshly cooked meals. Peel fruit. Stick to busy local restaurants.
@@ -334,7 +324,7 @@ Staying healthy and safe is the foundation of any great **Nepal trip**. Whether 
 - **Mosquitoes:** Use repellent in the Terai region (Chitwan, Lumbini) due to dengue and malaria risk.
 - **First Aid:** Carry a basic kit with blister care, pain relief, rehydration salts, and any personal medications.
 
-##### Safety in Nepal
+**Safety in Nepal**
 
 Nepal is generally safe for tourists, but use common sense:
 
@@ -344,7 +334,7 @@ Nepal is generally safe for tourists, but use common sense:
 - Check local news for strikes or disruptions.
 - Emergency numbers: Police **100**, Ambulance **102**, Tourist Police **1144**.
 
-##### Altitude Sickness
+**Altitude Sickness**
 
 **Altitude sickness** can affect anyone, regardless of fitness. It's the biggest risk during **Nepal trekking** in the Everest and Annapurna regions.
 
@@ -367,7 +357,7 @@ Packing smart makes your **Nepal trip** smoother. Whether you're heading to **Ka
 
 ![](/images/blog/packing-list-for-trekking-nepal.jpg "Packing list for Nepal")
 
-##### Clothing
+**Clothing**
 
 - Base layers, fleece, down jacket
 - Waterproof jacket and pants
@@ -375,32 +365,32 @@ Packing smart makes your **Nepal trip** smoother. Whether you're heading to **Ka
 - Warm hat, gloves, sun hat, sunglasses
 - Broken-in trekking shoes, sandals, warm socks
 
-##### Trekking Gear
+**Trekking Gear**
 
 - Backpack (40–60L) with rain cover, daypack
 - Trekking poles, headlamp
 - Water purification tablets or filter bottle
 - Sleeping bag, reusable water bottle, dry bags
 
-##### Documents and Money
+**Documents and Money**
 
 - Passport, visa, photos, travel insurance
 - Trekking permits, TIMS card
 - Cash (NPR and USD), backup card
 - Copies of all documents
 
-##### Health and Toiletries
+**Health and Toiletries**
 
 - Medications, **Diamox**, first aid kit
 - Sunscreen, lip balm, insect repellent
 - Toilet paper, sanitizer, travel towel
 
-##### Electronics
+**Electronics**
 
 - Power bank, universal adapter (C, D, M)
 - Phone, charger, camera, offline maps
 
-#### **Extras**
+**Extras**
 
 - Snacks, book, earplugs, locks
 
