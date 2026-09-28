@@ -23,6 +23,8 @@ Winter (December–February) isn’t the **best time to visit Nepal** overall, n
 
 ## Monsoon (June–August)
 
+![](/images/blog/054a61960bdf327cb2e0e4d6351f43da.jpg "Monsoon in Nepal")
+
 Monsoon (June–August) isn’t the **best time to visit Nepal**, **best season to visit Nepal**, or **best month to visit Nepal** for most trips. If you’re deciding **when to visit Nepal**, **Nepal weather by month** means rain, so it’s not the **best time to visit Nepal for trekking** or the **best time to visit Everest Base Camp**. It can still work for a **best time to visit Kathmandu** or **best time to visit Pokhara** if you don’t mind showers, and it’s the only window for Upper Mustang and Dolpo. And **is October a good time to visit Nepal**? Yes—but that’s autumn, not monsoon.
 
 ## Weather Planning
