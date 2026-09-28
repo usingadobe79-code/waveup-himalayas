@@ -13,7 +13,7 @@ At **Wave Up Himalayas**, we know the **best time to visit Nepal** depends on yo
 
 ![](/images/blog/Chitwan%20National%20Park.jpg%20sadd.jpg "Autumn in Nepal")
 
-> Autumn is widely regarded as the **best time to visit Nepal**, and for good reason. The monsoon has just ended, leaving the air washed clean and the Himalayas at their most visible. This is the **best season to visit Nepal** for mountain views, trekking, and sightseeing. October is often called the **best month to visit Nepal**, and if you're asking **is October a good time to visit Nepal**, the answer is a resounding yes.
+Autumn is widely regarded as the **best time to visit Nepal**, and for good reason. The monsoon has just ended, leaving the air washed clean and the Himalayas at their most visible. This is the **best season to visit Nepal** for mountain views, trekking, and sightseeing. October is often called the **best month to visit Nepal**, and if you're asking **is October a good time to visit Nepal**, the answer is a resounding yes.
 
 - **Weather:** Daytime temperatures in Kathmandu range from 20–25°C, while nights cool down to 10–15°C. At higher altitudes, expect much colder nights. Skies are clear, rainfall is minimal, and visibility is at its peak.
 - **Why it's the best:** This is the best time to visit Nepal for trekking, including the best time to visit Everest Base Camp. Trails are in excellent condition, teahouses are fully open, and mountain views are unobstructed. It's also a wonderful best time to visit Kathmandu and best time to visit Pokhara, with festivals like Dashain and Tihar bringing color and energy to the streets.
