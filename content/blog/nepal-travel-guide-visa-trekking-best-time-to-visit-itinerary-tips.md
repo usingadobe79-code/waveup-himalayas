@@ -3,7 +3,7 @@ title: 'Nepal Travel Guide: Visa, Trekking, Best Time to Visit & Itinerary Tips'
 date: 2026-09-28
 excerpt: 'Plan your Nepal trip with our complete travel guide: visa, best time to visit, trekking permits, Everest Base Camp, Annapurna, Kathmandu, Pokhara & more. Book with Waveup Himalayas.'
 coverImage: /images/blog/thumb_1600_750_nagarkot.webp
-author: WaveUp Himalayas
+author: Gaurav Lamichhane
 draft: false
 ---
 
