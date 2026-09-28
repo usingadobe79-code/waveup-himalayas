@@ -163,4 +163,4 @@ A: The monsoon (June–August) is generally the worst time for most trips, thoug
 
 **If you are looking for Tour Packages please** [**click here**](https://waveuphimalayas.com/#packages)
 
-**If you need any further information, please** [**contact us**](https://www.amenbhutan.com/contact-us)**, Email:** [**info@waveuphimalayas.com**](mailto:info@waveuphimalayas.com)  **Phone** [**(Whatsapp or Viber +977 9861992878)**](https://wa.me/+9779861992878)
+**If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** [**info@waveuphimalayas.com**](mailto:info@waveuphimalayas.com)  **Phone** [**(Whatsapp or Viber +977 9861992878)**](https://wa.me/+9779861992878)
