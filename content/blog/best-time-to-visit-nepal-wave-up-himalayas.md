@@ -161,6 +161,6 @@ A: **Nepal weather by month** varies greatly. Autumn and spring are stable; wint
 
 A: The monsoon (June–August) is generally the worst time for most trips, though it’s good for rain-shadow regions like Upper Mustang. Winter at high altitude is also challenging.
 
-**If you are looking Tour Package please** [**click here**](https://waveuphimalayas.com/#packages)
+**If you are looking for Tour Packages please** [**click here**](https://waveuphimalayas.com/#packages)
 
 **If you need any further information, please** [**contact us**](https://www.amenbhutan.com/contact-us)**, Email:** [**info@waveuphimalayas.com**](mailto:info@waveuphimalayas.com)  **Phone** [**(Whatsapp or Viber +977 9861992878)**](https://wa.me/+9779861992878)
