@@ -8,6 +8,26 @@ import { useReducedMotion } from "@/lib/useReducedMotion";
 import { EASE_OUT_EXPO } from "@/lib/motion";
 import { testimonials, business, contact } from "@/lib/content";
 
+/** Country → flag emoji for the testimonial footer. Unmapped countries fall
+ * back to plain text (no flag) rather than a broken/missing glyph. */
+const COUNTRY_FLAGS: Record<string, string> = {
+  USA: "🇺🇸",
+  Italy: "🇮🇹",
+  Australia: "🇦🇺",
+  India: "🇮🇳",
+};
+
+/** "Daniel & Isabelle" → "DI", "Mara" → "M" — first letter of each alphabetic
+ * word, uppercased, capped at 2. Used as the avatar placeholder's initials. */
+function initials(author: string): string {
+  return author
+    .split(/\s+/)
+    .filter((word) => /[a-zA-Z]/.test(word))
+    .map((word) => word[0]?.toUpperCase())
+    .join("")
+    .slice(0, 2);
+}
+
 /**
  * Testimonials (docs/01 §10) — FLAGGED EMPTY STATE.
  *
@@ -47,7 +67,7 @@ export function Testimonials() {
         />
 
         {hasReviews ? (
-          <div className="mt-12 grid gap-6 md:mt-16 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:mt-16 md:grid-cols-2 xl:grid-cols-4">
             {testimonials.map((t) => (
               <motion.figure
                 key={t.author}
@@ -59,8 +79,26 @@ export function Testimonials() {
                   &ldquo;
                 </span>
                 <blockquote className="type-body -mt-4 flex-1 text-ink">{t.quote}</blockquote>
-                <figcaption className="type-small mt-6 font-semibold text-muted">
-                  — {t.author}
+                <figcaption className="mt-6 flex items-center gap-3">
+                  <span
+                    aria-hidden="true"
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent/15 font-semibold text-accent-ink"
+                  >
+                    {initials(t.author)}
+                  </span>
+                  <div>
+                    <span className="type-small block font-semibold text-ink">{t.author}</span>
+                    {(t.country || t.trek) && (
+                      <span className="type-small mt-0.5 block text-muted">
+                        {[
+                          t.country ? `${COUNTRY_FLAGS[t.country] ?? ""} ${t.country}`.trim() : null,
+                          t.trek,
+                        ]
+                          .filter(Boolean)
+                          .join(" · ")}
+                      </span>
+                    )}
+                  </div>
                 </figcaption>
               </motion.figure>
             ))}

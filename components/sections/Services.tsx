@@ -10,7 +10,6 @@ import {
   PlaneTakeoff,
   TreePine,
   Route,
-  ArrowRight,
   type LucideIcon,
 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -88,9 +87,8 @@ export function Services() {
                     </span>
                     <h3 className="type-h3 text-ink">{service.title}</h3>
                     <p className="type-small mt-3 flex-1 text-muted">{service.blurb}</p>
-                    <span className="type-small mt-5 inline-flex items-center gap-1.5 font-semibold text-accent-ink">
+                    <span className="type-small mt-5 font-semibold text-accent-ink">
                       View packages
-                      <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
                     </span>
                   </Link>
                 </motion.div>

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { useReducedMotion } from "@/lib/useReducedMotion";
@@ -95,7 +94,6 @@ export function Offers() {
                     aria-label={`Claim This Offer — ${offer.title}`}
                   >
                     Claim This Offer
-                    <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
                   </Button>
                 </div>
               </motion.article>

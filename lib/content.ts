@@ -575,22 +575,37 @@ export const whyUs = [
   { title: "Dedicated female-guided option", detail: "A fully guided tour with a lady guide for solo women travelers." },
 ] as const;
 
-/**
- * Testimonials: docs/03 provides NO review text. Ship a flagged empty-state —
- * never fabricate quotes. Real reviews dropped in here later.
- */
-export const testimonials: { quote: string; author: string }[] = [];
-
-/** Scroll-Rise captions + altitude readout (§3). Altitude figures are from the spec. */
-export const riseSequence = {
-  captions: [
-    "Every journey begins with a single step.",
-    "Through valleys, forests, and frozen passes.",
-    "Until you rise above it all.",
-  ],
-  cta: "Find your trek",
-  altitude: { start: 2800, end: 5364 }, // metres
-} as const;
+/** Real client testimonials, provided by the site owner. */
+export const testimonials: { quote: string; author: string; country?: string; trek?: string }[] = [
+  {
+    quote:
+      "It was our first time in Nepal and we were a little nervous, but from the moment we landed we felt looked after. Our guide's personality just clicked with ours — he answered every question with real patience and made sure we understood everything on the trail. What stayed with us most was stopping in the villages and getting to know the local people. Professional from the first day to the last.",
+    author: "Daniel & Isabelle",
+    country: "USA",
+    trek: "Langtang Valley Trek",
+  },
+  {
+    quote:
+      "I'd asked for a female guide and WaveUp arranged exactly that, along with a porter who was just as kind and dependable — both were wonderful the whole way. As a first-timer in Nepal I felt completely safe and cared for, and my guide explained everything with such sincerity. I loved how much time we spent with the locals in every place we stopped.",
+    author: "Mara",
+    country: "Italy",
+    trek: "Mardi Himal Trek",
+  },
+  {
+    quote:
+      "First time in Nepal and it went beyond anything I'd pictured. The team was professional from start to finish, and my guide felt more like a mate than a guide — happy to explain anything, and genuinely caring when the altitude got tough. Gokyo and Base Camp were unreal, but honestly it was how friendly everyone was that made the trip.",
+    author: "Nick",
+    country: "Australia",
+    trek: "Everest Base Camp Trek with Gokyo Lakes",
+  },
+  {
+    quote:
+      "Everyone was so warm and welcoming — my first time in Nepal, and definitely not my last. The guide's vibe matched mine perfectly and he explained everything I needed to know along the way, always with a smile. Mingling with the locals was a real highlight. Sincere, caring people who clearly love what they do.",
+    author: "Rohan",
+    country: "India",
+    trek: "Ghorepani Poon Hill Trek",
+  },
+];
 
 /** Photo assets the client provided (placeholders in v1). */
 export const photoAssets = [

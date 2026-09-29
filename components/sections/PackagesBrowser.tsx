@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { PackageImage } from "@/components/ui/PackageImage";
 import {
   packages,
@@ -123,10 +122,7 @@ export function PackagesBrowser() {
                       {p.blurb && <p className="type-small mt-2 flex-1 text-muted">{p.blurb}</p>}
                       <div className="mt-4 flex items-center justify-between gap-3">
                         <span className="type-small font-medium text-muted">{priceLabel(p.price)}</span>
-                        <span className="type-small inline-flex items-center gap-1.5 font-semibold text-accent-ink">
-                          View Details
-                          <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:translate-x-1" />
-                        </span>
+                        <span className="type-small font-semibold text-accent-ink">View Details</span>
                       </div>
                     </div>
                   </Link>
