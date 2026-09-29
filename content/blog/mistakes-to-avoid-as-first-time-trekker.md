@@ -2,7 +2,7 @@
 title: Mistakes to Avoid as First Time Trekker
 date: 2026-09-29
 excerpt: Avoid first-time trekker mistakes with this essential guide. Learn to train, pack light, prevent blisters, and manage altitude for a safe Himalayan trek.
-coverImage: /images/blog/dccbd93e-0e1b-4e4e-afd7-7d4c309c8b8c_Annapurna-Base-Camp-Trek.webp
+coverImage: /images/blog/Everest-Base-Camp-Trek-1.jpeg
 author: WaveUp Himalayas
 draft: false
 ---
@@ -128,7 +128,7 @@ Don't underestimate the power of small gear. These items weigh little, cost rela
 
 ## Drinking Too Little Water (or Too Much)
 
-**:**Hydration is the simplest thing to get right—and the easiest to get wrong at altitude.
+Hydration is the simplest thing to get right—and the easiest to get wrong at altitude.
 
 **The Mistake:**
 
@@ -196,7 +196,7 @@ Respect the altitude, ascend slowly, and never ignore your body's warnings. The 
 
 ***
 
-## 7. The Wrong Mindset: "Summit Fever"
+## The Wrong Mindset: "Summit Fever"
 
 The goal of your first trek is to enjoy the journey—not to conquer the mountain.
 
