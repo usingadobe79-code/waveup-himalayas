@@ -91,7 +91,10 @@ export function PackagesBrowser() {
 
         <div className="space-y-16 md:space-y-20">
           {grouped.map((region) => (
-            <div key={region.key}>
+            // id lets the header's Regions dropdown deep-link straight here
+            // (/packages/#everest etc.) — SmoothScroll's arrival-hash effect
+            // handles the header-offset scroll globally, no extra wiring needed.
+            <div key={region.key} id={region.key}>
               <div className="flex items-baseline justify-between gap-4">
                 <h2 className="type-h3 text-ink">{region.label}</h2>
                 <span className="type-small shrink-0 text-muted">
@@ -122,7 +125,9 @@ export function PackagesBrowser() {
                       {p.blurb && <p className="type-small mt-2 flex-1 text-muted">{p.blurb}</p>}
                       <div className="mt-4 flex items-center justify-between gap-3">
                         <span className="type-small font-medium text-muted">{priceLabel(p.price)}</span>
-                        <span className="type-small font-semibold text-accent-ink">View Details</span>
+                        <span className="type-small font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">
+                          View Details
+                        </span>
                       </div>
                     </div>
                   </Link>

@@ -74,20 +74,24 @@ export function Services() {
                   <Link
                     href={`/packages#${service.key}`}
                     aria-label={`${service.title} — view packages`}
-                    className="card card-hover group flex h-full flex-col p-8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
+                    className="card card-hover group flex h-full flex-col p-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 sm:p-6 md:p-8"
                   >
                     <span
                       className={cn(
-                        "icon-draw mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:rotate-6",
+                        "icon-draw mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:rotate-6 sm:h-12 sm:w-12 md:mb-6",
                         inView && "is-drawn",
                       )}
                       style={{ "--draw-delay": `${0.1 + i * 0.08}s` } as CSSProperties}
                     >
-                      <Icon className="h-6 w-6" strokeWidth={1.75} aria-hidden="true" />
+                      <Icon className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} aria-hidden="true" />
                     </span>
-                    <h3 className="type-h3 text-ink">{service.title}</h3>
-                    <p className="type-small mt-3 flex-1 text-muted">{service.blurb}</p>
-                    <span className="type-small mt-5 font-semibold text-accent-ink">
+                    {/* Smaller title on phones + break long words (e.g. "Helicopter")
+                        so nothing spills out of the narrow card. */}
+                    <h3 className="type-h3 text-[1.15rem] leading-snug text-ink [overflow-wrap:anywhere] sm:text-[1.35rem] md:text-[1.5rem]">
+                      {service.title}
+                    </h3>
+                    <p className="type-small mt-2 flex-1 text-muted md:mt-3">{service.blurb}</p>
+                    <span className="type-small mt-4 font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4 md:mt-5">
                       View packages
                     </span>
                   </Link>

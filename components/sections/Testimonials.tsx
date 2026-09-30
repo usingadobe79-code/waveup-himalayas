@@ -1,11 +1,13 @@
 "use client";
 
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { MessageCircle, BadgeCheck } from "lucide-react";
+import { MessageCircle, BadgeCheck, ChevronLeft, ChevronRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { EASE_OUT_EXPO } from "@/lib/motion";
+import { cn } from "@/lib/cn";
 import { testimonials, business, contact } from "@/lib/content";
 
 /** Country → flag emoji for the testimonial footer. Unmapped countries fall
@@ -53,6 +55,31 @@ export function Testimonials() {
 
   const hasReviews = testimonials.length > 0;
 
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [index, setIndex] = useState(0);
+
+  // Exact per-card scroll step (card width + gap), measured from the DOM so it
+  // stays correct across breakpoints. Falls back to the first card's width.
+  function cardStep(track: HTMLDivElement): number {
+    const kids = track.children;
+    if (kids.length > 1) {
+      return (kids[1] as HTMLElement).offsetLeft - (kids[0] as HTMLElement).offsetLeft;
+    }
+    return (kids[0] as HTMLElement)?.offsetWidth ?? 0;
+  }
+  function goTo(i: number) {
+    const track = trackRef.current;
+    if (!track) return;
+    const clamped = Math.max(0, Math.min(i, testimonials.length - 1));
+    track.scrollTo({ left: clamped * cardStep(track), behavior: "smooth" });
+  }
+  function onTrackScroll() {
+    const track = trackRef.current;
+    if (!track) return;
+    const step = cardStep(track);
+    setIndex(step > 0 ? Math.round(track.scrollLeft / step) : 0);
+  }
+
   return (
     <section id="testimonials" className="section-y bg-surface">
       <div className="container-page">
@@ -67,42 +94,92 @@ export function Testimonials() {
         />
 
         {hasReviews ? (
-          <div className="mt-12 grid gap-6 md:mt-16 md:grid-cols-2 xl:grid-cols-4">
-            {testimonials.map((t) => (
-              <motion.figure
-                key={t.author}
-                {...reveal}
-                viewport={{ once: true, amount: 0.3 }}
-                className="card flex flex-col p-8"
-              >
-                <span aria-hidden="true" className="type-display leading-none text-accent">
-                  &ldquo;
-                </span>
-                <blockquote className="type-body -mt-4 flex-1 text-ink">{t.quote}</blockquote>
-                <figcaption className="mt-6 flex items-center gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent/15 font-semibold text-accent-ink"
-                  >
-                    {initials(t.author)}
-                  </span>
-                  <div>
-                    <span className="type-small block font-semibold text-ink">{t.author}</span>
-                    {(t.country || t.trek) && (
-                      <span className="type-small mt-0.5 block text-muted">
-                        {[
-                          t.country ? `${COUNTRY_FLAGS[t.country] ?? ""} ${t.country}`.trim() : null,
-                          t.trek,
-                        ]
-                          .filter(Boolean)
-                          .join(" · ")}
+          <motion.div
+            {...reveal}
+            viewport={{ once: true, amount: 0.2 }}
+            className="mt-12 md:mt-16"
+          >
+            <div
+              ref={trackRef}
+              onScroll={onTrackScroll}
+              role="region"
+              aria-label="Traveler reviews"
+              tabIndex={0}
+              className="flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth py-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+            >
+              {testimonials.map((t) => (
+                <figure key={t.author} className="flex shrink-0 basis-full snap-start">
+                  <div className="card mx-auto flex w-full max-w-2xl flex-col p-8">
+                    <span aria-hidden="true" className="type-display leading-none text-accent">
+                      &ldquo;
+                    </span>
+                    <blockquote className="type-body -mt-4 flex-1 text-ink">{t.quote}</blockquote>
+                    <figcaption className="mt-6 flex items-center gap-3">
+                      <span
+                        aria-hidden="true"
+                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent/15 font-semibold text-accent-ink"
+                      >
+                        {initials(t.author)}
                       </span>
-                    )}
+                      <div>
+                        <span className="type-small block font-semibold text-ink">
+                          {t.author}
+                        </span>
+                        {(t.country || t.trek) && (
+                          <span className="type-small mt-0.5 block text-muted">
+                            {[
+                              t.country
+                                ? `${COUNTRY_FLAGS[t.country] ?? ""} ${t.country}`.trim()
+                                : null,
+                              t.trek,
+                            ]
+                              .filter(Boolean)
+                              .join(" · ")}
+                          </span>
+                        )}
+                      </div>
+                    </figcaption>
                   </div>
-                </figcaption>
-              </motion.figure>
-            ))}
-          </div>
+                </figure>
+              ))}
+            </div>
+
+            <div className="mt-8 flex items-center justify-center gap-4">
+              <button
+                type="button"
+                onClick={() => goTo(index - 1)}
+                aria-label="Previous review"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-ink transition-colors hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
+              >
+                <ChevronLeft className="h-5 w-5" aria-hidden="true" />
+              </button>
+
+              <div className="flex items-center gap-2">
+                {testimonials.map((t, i) => (
+                  <button
+                    key={t.author}
+                    type="button"
+                    onClick={() => goTo(i)}
+                    aria-label={`Go to review ${i + 1}`}
+                    aria-current={i === index ? "true" : undefined}
+                    className={cn(
+                      "h-2 rounded-full transition-all",
+                      i === index ? "w-6 bg-accent" : "w-2 bg-border hover:bg-muted",
+                    )}
+                  />
+                ))}
+              </div>
+
+              <button
+                type="button"
+                onClick={() => goTo(index + 1)}
+                aria-label="Next review"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-ink transition-colors hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
+              >
+                <ChevronRight className="h-5 w-5" aria-hidden="true" />
+              </button>
+            </div>
+          </motion.div>
         ) : (
           /* Honest empty state — no fabricated reviews. */
           <motion.div

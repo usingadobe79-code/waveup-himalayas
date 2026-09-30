@@ -90,7 +90,7 @@ export function FeaturedPackages() {
                     <p className="type-small mt-2 flex-1 text-muted">{pkg.blurb}</p>
                   )}
                   <div className="mt-5 flex items-center justify-between gap-3">
-                    <span className="type-small font-semibold text-accent-ink">
+                    <span className="type-small font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">
                       View Details
                     </span>
                     <a
@@ -109,14 +109,13 @@ export function FeaturedPackages() {
             ))}
           </div>
 
-          {/* View All — gold underline wipe + arrow nudge → the /packages index. */}
+          {/* View All — gold text + underline on hover/focus → the /packages index. */}
           <motion.div variants={itemVariants} className="mt-16 flex justify-center">
             <Link
               href="/packages"
-              className="type-body group relative font-semibold text-ink transition-colors hover:text-accent-ink"
+              className="type-body rounded-sm font-semibold text-ink underline-offset-4 transition-colors hover:text-accent hover:underline focus-visible:text-accent focus-visible:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
             >
               View All {totalPackages} Packages
-              <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-x-100" />
             </Link>
           </motion.div>
         </motion.div>

@@ -92,7 +92,9 @@ export function Regions() {
                     className="group flex items-start rounded-card border border-border bg-surface-alt px-5 py-4 shadow-card transition-[transform,box-shadow,border-color] duration-300 ease-[var(--ease-out-expo)] hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
                     aria-label={`View details for ${p.title}`}
                   >
-                    <span className="type-body font-medium text-ink">{p.title}</span>
+                    <span className="type-body font-medium text-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">
+                      {p.title}
+                    </span>
                   </Link>
                 ))}
               </div>
