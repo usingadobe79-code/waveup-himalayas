@@ -36,7 +36,7 @@ The **best time to trek in Nepal** depends on where you go, what you want to see
 
 **Autumn: The Peak Season**
 
-![](/images/blog/Annapurna-Panorama-Trekking.jpg "Annapurna Base Camp in Autumn")
+![](/images/blog/annapurna-poonhill-viewtreks.webp "Annapurna Base Camp in Autumn")
 
 October and November are the most popular months for **Nepal trekking**. The monsoon has cleared, the air is crisp, and the mountain views are spectacular. This is the best time for the **Everest Base Camp trek**, **Annapurna Circuit trek**, **Manaslu Circuit trek**, and most high-altitude routes. Trails are lively, teahouses are full, and the weather is generally stable. The trade-off is higher prices and more crowds, so book early.
 
@@ -100,7 +100,7 @@ A 14-day trek from your home country often costs between **USD 2,000 and USD 2,5
 
 **Typical Guided Trek Package Ranges**
 
-![](/images/blog/510b4241-300d-49c3-b9c4-e72b263586d1.png)
+![](/images/blog/510b4241-300d-49c3-b9c4-e72b263586d1%20%281%29.png)
 
 These ranges vary by agency, group size, and service level. Private treks cost more than group departures, and peak season pushes prices higher.
 
@@ -138,7 +138,7 @@ At **Waveup Himalayas**, we offer transparent pricing and flexible packages. We 
 
 Nepal has more than 50 established **Nepal trekking routes**, from gentle village walks to serious high-altitude expeditions. That means there is no single “best trek” in Nepal—only the best trek for you. Your ideal choice depends on your fitness, your available time, the season, and whether you want iconic views, quiet trails, or a real physical challenge. Here are the **best treks in Nepal**, grouped by difficulty.
 
-#### Easy to Moderate Treks
+### Easy to Moderate Treks
 
 **Ghorepani Poon Hill Trek**
 
@@ -164,7 +164,7 @@ A shorter, less crowded alternative in the Annapurna region. The **Mardi Himal t
 
 A moderate trek through forests, villages, and yak pastures. The **Langtang Valley trek** is a great choice if you want a quieter Himalayan experience without long domestic flights.
 
-#### Demanding Treks
+### Demanding Treks
 
 **Everest Base Camp Trek**
 
@@ -190,7 +190,7 @@ The **Annapurna Circuit trek** crosses from subtropical valleys to high desert p
 
 A rewarding trek into the heart of the Annapurna Sanctuary. The **Annapurna Base Camp trek** combines rice terraces, rhododendron forests, and towering mountain walls.
 
-#### Hard to Very Hard Treks
+### Hard to Very Hard Treks
 
 **Manaslu Circuit Trek**
 
@@ -269,7 +269,7 @@ Avoid untreated tap water, stream water, and ice in drinks. At teahouses, you ca
 
 Altitude sickness is the most serious risk on any **Nepal trekking** route above 3,000 meters. It can affect anyone—fit or unfit, young or old. The good news is that with proper **Nepal trekking acclimatization**, awareness, and a sensible itinerary, it is largely preventable. The key is to ascend slowly, never ignore symptoms, and be ready to descend if things get worse.
 
-#### Prevention Rules
+### Prevention Rules
 
 - Ascend no more than **300–500 meters per day** above 3,000 meters.
 - Take a **rest day every three to four days**.
@@ -279,7 +279,7 @@ Altitude sickness is the most serious risk on any **Nepal trekking** route above
 - Avoid alcohol and smoking at altitude.
 - Never skip the acclimatization days built into your itinerary.
 
-#### Symptoms to Watch
+### Symptoms to Watch
 
 **Mild altitude sickness (AMS):**
 
@@ -304,7 +304,7 @@ Altitude sickness is the most serious risk on any **Nepal trekking** route above
 
 If symptoms worsen, **descend immediately**. Do not wait for morning. Descent is the best and most reliable treatment. **Diamox (Acetazolamide)** can help with acclimatization and reduce symptoms, but it does not replace gradual ascent. Consult your doctor before using it.
 
-#### Travel Insurance
+### Travel Insurance
 
 Your insurance must cover **high-altitude trekking and helicopter evacuation**. Mountain rescue in Nepal is expensive, and helicopters will not take off without guaranteed payment. Check your policy’s altitude limits, emergency contact number, and evacuation coverage before you travel.
 
