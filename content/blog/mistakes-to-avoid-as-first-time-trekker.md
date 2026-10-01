@@ -3,7 +3,7 @@ title: Mistakes to Avoid as First Time Trekker
 date: 2026-09-29
 excerpt: Avoid first-time trekker mistakes with this essential guide. Learn to train, pack light, prevent blisters, and manage altitude for a safe Himalayan trek.
 coverImage: /images/blog/Everest-Base-Camp-Trek-1.jpeg
-author: WaveUp Himalayas
+author: Gaurav Lamichhane
 draft: false
 ---
 
