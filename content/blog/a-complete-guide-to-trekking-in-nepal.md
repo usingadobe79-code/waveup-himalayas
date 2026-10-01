@@ -96,6 +96,8 @@ A 14-day trek from your home country often costs between **USD 2,000 and USD 2,5
 
 **Typical Guided Trek Package Ranges**
 
+![](/images/blog/ef8c7680-f23f-4cb1-be6c-49eca710e100%20%281%29.png)
+
 **Typical Guided Trek Package Ranges**
 
 ![](/images/blog/510b4241-300d-49c3-b9c4-e72b263586d1.png)
