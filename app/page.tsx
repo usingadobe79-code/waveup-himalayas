@@ -8,14 +8,13 @@ import { Regions } from "@/components/sections/Regions";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { Gallery } from "@/components/sections/Gallery";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { CTABand } from "@/components/sections/CTABand";
 import { EnquiryForm } from "@/components/sections/EnquiryForm";
 
 /**
  * Landing page composition.
  * Header → HeroRise (hero that scroll-scrubs into the rise) → Services →
- * FeaturedPackages → Offers → Regions → [why-us → gallery → testimonials → CTA]
- * → EnquiryForm (the "Plan Your Trip" contact moment) → Footer.
+ * FeaturedPackages → Offers → Regions → [why-us → gallery → testimonials]
+ * → EnquiryForm (the closing "Plan Your Trip" contact moment) → Footer.
  */
 export default function Home() {
   return (
@@ -30,7 +29,6 @@ export default function Home() {
         <WhyUs />
         <Gallery />
         <Testimonials />
-        <CTABand />
         <EnquiryForm />
       </main>
       <Footer />
