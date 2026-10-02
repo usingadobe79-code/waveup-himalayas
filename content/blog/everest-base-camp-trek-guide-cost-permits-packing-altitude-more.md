@@ -141,6 +141,8 @@ The final destination, **Everest Base Camp**, is approximately 5,364 metres abov
 
 The rapid increase in elevation is one of the main challenges of the **Everest Base Camp Trek**. At higher altitudes, there is less available oxygen, and your body needs time to adapt.
 
+***
+
 ## Best Time for Everest Base Camp Trek
 
 The **best time for the** [**E**](https://waveuphimalayas.com/packages/everest-base-camp-trek/)[**verest Base Camp Trek**](https://waveuphimalayas.com/packages/everest-base-camp-trek/) is generally during **spring (March to May)** and **autumn (September to November)**. These seasons offer more stable weather, clearer mountain views, and better trekking conditions in the Everest region. Autumn, especially **October and November**, is known for clear skies and excellent views of Mount Everest and the surrounding Himalayas. Spring brings warmer days, blooming rhododendrons, and beautiful scenery along the trail.
