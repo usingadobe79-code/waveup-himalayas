@@ -64,3 +64,27 @@ collections:
       - { label: "Cover photo", name: "image", widget: "image", required: false }
       - { label: "Short description (shown on trip cards)", name: "blurb", widget: "text", required: false }
       - { label: "Show on homepage (Popular Adventures)", name: "featured", widget: "boolean", default: false }
+      - { label: "Itinerary — overview", name: "itinerarySummary", widget: "text", required: false }
+      - label: "Itinerary — trip highlights"
+        name: "itineraryHighlights"
+        widget: "list"
+        required: false
+        field: { label: "Highlight", name: "highlight", widget: "string" }
+      - label: "Itinerary — good to know / notes"
+        name: "itineraryNotes"
+        widget: "list"
+        required: false
+        field: { label: "Note", name: "note", widget: "string" }
+      - label: "Itinerary — day by day"
+        name: "itineraryDays"
+        widget: "list"
+        required: false
+        label_singular: "Day"
+        summary: "Day {{fields.day}} — {{fields.route}}"
+        fields:
+          - { label: "Day number", name: "day", widget: "number", value_type: "int", min: 1 }
+          - { label: "Route / title", name: "route", widget: "string" }
+          - { label: "Altitude (optional)", name: "altitude", widget: "string", required: false }
+          - { label: "Duration / hours (optional)", name: "duration", widget: "string", required: false }
+          - { label: "Description (optional)", name: "description", widget: "text", required: false }
+          - { label: "Day highlights (optional)", name: "highlights", widget: "string", required: false }

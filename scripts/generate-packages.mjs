@@ -64,9 +64,40 @@ const ORIGINAL_ORDER = [
   "a-week-to-nepal",
 ];
 
+/**
+ * Builds the `Itinerary` ({ kind: "days", ... }) object for a package from its
+ * frontmatter, or undefined if the package has no itineraryDays (in which case
+ * lib/content.ts falls back to the ITINERARIES code map). Optional fields are
+ * omitted entirely when absent, so the shape matches the original
+ * Itinerary/ItineraryDay types exactly (no empty-string/undefined keys).
+ */
+function readItinerary(data) {
+  if (!data.itineraryDays) return undefined;
+
+  const itinerary = { kind: "days" };
+  if (data.itinerarySummary) itinerary.summary = data.itinerarySummary;
+  if (data.itineraryHighlights && data.itineraryHighlights.length) {
+    itinerary.highlights = data.itineraryHighlights;
+  }
+  if (data.itineraryNotes && data.itineraryNotes.length) {
+    itinerary.notes = data.itineraryNotes;
+  }
+  itinerary.days = data.itineraryDays.map((d) => {
+    const day = { day: d.day, route: d.route };
+    if (d.altitude) day.altitude = d.altitude;
+    if (d.duration) day.duration = d.duration;
+    if (d.description) day.description = d.description;
+    if (d.highlights) day.highlights = d.highlights;
+    return day;
+  });
+
+  return itinerary;
+}
+
 function readPackage(slug) {
   const raw = fs.readFileSync(path.join(PACKAGES_DIR, `${slug}.md`), "utf8");
   const { data } = matter(raw);
+  const itinerary = readItinerary(data);
   return {
     slug,
     title: data.title,
@@ -76,6 +107,7 @@ function readPackage(slug) {
     blurb: data.blurb || null,
     price: data.price ?? null,
     featured: data.featured ?? false,
+    ...(itinerary ? { itinerary } : {}),
   };
 }
 

@@ -167,56 +167,21 @@ type PackageData = {
   blurb: string | null;
   price: number | null;
   featured: boolean;
+  /** Present when the package's content/packages/<slug>.md has itineraryDays
+   *  (a "kind: days" trip). Absent otherwise — falls back to ITINERARIES. */
+  itinerary?: Itinerary;
 };
 
 /**
- * Real itineraries (client-supplied, cleaned). Keyed by package slug. Mapped by
- * title/region; values are verbatim — no invented days/altitudes/durations.
- * Attached to the matching package below. Packages not listed here keep the
- * "Detailed itinerary on enquiry" placeholder. Prices stay null everywhere.
- * (These stay in code for now — see content/packages/<slug>.md for the rest
- * of each package's fields.)
+ * Real itineraries (client-supplied, cleaned) for the handful of packages
+ * whose itinerary is "schedule"-shaped (time-based flights/heli tours) and
+ * hasn't been moved into CMS-editable content yet. Keyed by package slug;
+ * values are verbatim — no invented times/peaks/notes. Attached to the
+ * matching package below. Day-by-day ("kind: days") itineraries now live in
+ * content/packages/<slug>.md (itineraryDays etc.) and are generated into
+ * packages.data.json instead — see scripts/generate-packages.mjs.
  */
 const ITINERARIES: Record<string, Itinerary> = {
-  "mardi-himal-trek": {
-    kind: "days",
-    summary:
-      "Experience one of Nepal's most scenic short treks with breathtaking views of Machhapuchhre and the Annapurna range. Perfect for travelers seeking a peaceful trail, rich nature, and an authentic mountain experience.",
-    highlights: [
-      "Close-up views of Machhapuchhre and the Annapurna range",
-      "Peaceful, less-crowded trekking",
-      "Diverse landscape: forest, ridge, alpine terrain",
-      "Authentic Gurung culture in Siding village",
-    ],
-    days: [
-      { day: 1, route: "Kathmandu → Pokhara (drive/flight)", duration: "6–7 hrs drive / 25 min flight", description: "Scenic highway drive along rivers or short flight with Himalayan views. Explore Lakeside in the evening." },
-      { day: 2, route: "Pokhara → Kande → Forest Camp", duration: "5–6 hrs", description: "Drive to Kande, then trek through lush rhododendron and oak forests. Waterfalls and glimpses of Machhapuchhre." },
-      { day: 3, route: "Forest Camp → Low Camp → High Camp", duration: "6–7 hrs", description: "Gradual ascent through forest into alpine terrain. Ridge walk with views of Annapurna South and Machhapuchhre." },
-      { day: 4, route: "High Camp → Mardi Base Camp → Low Camp", duration: "6–7 hrs", description: "Early sunrise hike to Mardi Himal Base Camp. Panoramic views of the Annapurna range. Return via scenic ridge." },
-      { day: 5, route: "Low Camp → Siding → Pokhara", duration: "5–6 hrs", description: "Descend through forest and traditional villages. Gurung culture. Jeep drive back to Pokhara." },
-      { day: 6, route: "Pokhara → Kathmandu", duration: "6–7 hrs drive / 25 min flight", description: "Return journey. Option for scenic flight or comfortable drive. End of trek." },
-    ],
-  },
-  "ghorepani-poon-hill-trek": {
-    kind: "days",
-    highlights: [
-      "Poon Hill sunrise (3,210m) — Annapurna I, Dhaulagiri, Machhapuchhre",
-      "Rhododendron forests (vibrant in spring)",
-      "Gurung & Magar village culture",
-      "Diverse terrain — rivers, terraced fields, forests, ridges",
-      "Great photographic short trek",
-      "Moderate difficulty, good for beginners & families",
-    ],
-    days: [
-      { day: 1, route: "Kathmandu → Pokhara (drive)", duration: "6–7 hrs", description: "Scenic drive via Trishuli River, hills & villages; optional Lakeside walk at Phewa Lake." },
-      { day: 2, route: "Pokhara → Nayapul → Ulleri", duration: "1.5 hr drive + 5–6 hr trek", description: "Trek along Modi Khola, terraced farms, traditional villages, 3,000+ stone-step climb." },
-      { day: 3, route: "Ulleri → Ghorepani", duration: "5–6 hrs", description: "Dense rhododendron & oak forest, waterfalls, first Himalayan views." },
-      { day: 4, route: "Ghorepani → Poon Hill → Tadapani", duration: "6–7 hrs", description: "Sunrise over Annapurna & Dhaulagiri, Machhapuchhre views, ridge & forest trails." },
-      { day: 5, route: "Tadapani → Ghandruk", duration: "3–4 hrs", description: "Descend through forest; Gurung culture, stone houses, museum, mountain backdrop." },
-      { day: 6, route: "Ghandruk → Nayapul → Pokhara", duration: "4–5 hr trek + 2 hr drive", description: "Easy downhill, rural scenery, farmland & suspension bridges; relax in Pokhara." },
-      { day: 7, route: "Pokhara → Kathmandu (drive)", duration: "6–7 hrs", description: "Scenic highway return, river valleys, hills." },
-    ],
-  },
   "everest-mountain-flight": {
     kind: "schedule",
     summary: "A 50–60-minute scenic mountain flight from Kathmandu along the Himalayas.",
@@ -266,165 +231,6 @@ const ITINERARIES: Record<string, Itinerary> = {
       },
     ],
   },
-  "annapurna-base-camp-trek": {
-    kind: "days",
-    summary:
-      "A 10-day Annapurna Base Camp trek combining cultural villages, lush forests, natural hot springs, and breathtaking Himalayan views up to 4,130m. Perfectly paced for comfort, safety, and an unforgettable experience.",
-    days: [
-      { day: 1, route: "Kathmandu → Pokhara (drive/flight)", altitude: "822m", duration: "6–7 hrs drive / 25 min flight", description: "Scenic journey to Pokhara. Relax by Lakeside with Annapurna views." },
-      { day: 2, route: "Pokhara → Jhinu → Chhomrong", altitude: "2,170m", duration: "2–3 hrs drive + 5–6 hrs trek", description: "Drive to Jhinu, trek to Chhomrong, a Gurung village with mountain views." },
-      { day: 3, route: "Chhomrong → Bamboo", altitude: "2,310m", duration: "5–6 hrs", description: "Descend stone steps, trek through lush forests along the Modi Khola." },
-      { day: 4, route: "Bamboo → Deurali", altitude: "3,200m", duration: "5–6 hrs", description: "Bamboo and rhododendron forest; gradual transition to alpine terrain." },
-      { day: 5, route: "Deurali → MBC → ABC", altitude: "4,130m", duration: "5–6 hrs", description: "Trek to Machhapuchhre Base Camp, continue to ABC. Stunning panorama." },
-      { day: 6, route: "ABC → Bamboo", altitude: "2,310m", duration: "6–7 hrs", description: "Sunrise at ABC, then descend through valleys and forests." },
-      { day: 7, route: "Bamboo → Jhinu Danda", altitude: "1,780m", duration: "5–6 hrs", description: "Trek down to Jhinu. Natural hot spring beside the river." },
-      { day: 8, route: "Jhinu → Pokhara", altitude: "822m", duration: "3 hrs trek + 2–3 hrs drive", description: "Short trek and drive back to Pokhara." },
-      { day: 9, route: "Pokhara → Kathmandu", altitude: "1,400m", duration: "6–7 hrs drive / 25 min flight", description: "Return to Kathmandu. Optional sightseeing or rest." },
-      { day: 10, route: "Final departure", altitude: "—", duration: "—", description: "Transfer to airport for onward journey." },
-    ],
-  },
-  "everest-base-camp-trek": {
-    kind: "days",
-    summary:
-      "A 12-day Everest Base Camp trek offering a perfect balance of adventure and acclimatization. Experience Sherpa culture and Himalayan landscapes, and reach the base of the world's highest peak (5,364m) with a sunrise view from Kala Patthar (5,545m).",
-    days: [
-      { day: 1, route: "Kathmandu → Lukla → Phakding", altitude: "2,610m", duration: "30 min flight + 3–4 hrs trek", description: "Scenic flight to Lukla, easy trek along Dudh Koshi to Phakding." },
-      { day: 2, route: "Phakding → Namche Bazaar", altitude: "3,440m", duration: "5–6 hrs", description: "Enter Sagarmatha NP, cross suspension bridges to Namche." },
-      { day: 3, route: "Acclimatization — Namche", altitude: "3,440m", duration: "3–4 hrs (hike)", description: "Hike to Everest View Hotel. First views of Everest and Ama Dablam." },
-      { day: 4, route: "Namche → Tengboche", altitude: "3,860m", duration: "5–6 hrs", description: "Scenic trail; visit Tengboche Monastery." },
-      { day: 5, route: "Tengboche → Dingboche", altitude: "4,410m", duration: "5–6 hrs", description: "Alpine landscapes, Sherpa villages, Ama Dablam views." },
-      { day: 6, route: "Acclimatization — Dingboche", altitude: "4,410m", duration: "3–4 hrs (hike)", description: "Hike to Nagarjun Hill or Chhukung for adaptation." },
-      { day: 7, route: "Dingboche → Lobuche", altitude: "4,910m", duration: "5–6 hrs", description: "Glacier views, memorial sites at Thukla Pass." },
-      { day: 8, route: "Lobuche → Gorakshep → EBC", altitude: "5,364m", duration: "7–8 hrs", description: "Trek to Gorakshep, continue to Everest Base Camp." },
-      { day: 9, route: "Gorakshep → Kala Patthar → Pheriche", altitude: "5,545m (Kala Patthar)", duration: "7–8 hrs", description: "Sunrise hike to Kala Patthar, descend to Pheriche." },
-      { day: 10, route: "Pheriche → Namche Bazaar", altitude: "3,440m", duration: "6–7 hrs", description: "Descend through Pangboche and Tengboche to Namche." },
-      { day: 11, route: "Namche → Lukla", altitude: "2,860m", duration: "6–7 hrs", description: "Final trek along Dudh Koshi to Lukla." },
-      { day: 12, route: "Lukla → Kathmandu", altitude: "—", duration: "30 min flight", description: "Morning flight back to Kathmandu." },
-    ],
-  },
-  "langtang-valley-trek": {
-    kind: "days",
-    notes: [
-      "Permits: Langtang National Park Permit, TIMS Card",
-      "Accommodation: teahouses (basic but comfortable)",
-      "Walking: 4–7 hrs daily",
-      "Transport: road drive from Kathmandu",
-    ],
-    days: [
-      { day: 1, route: "Drive: Kathmandu → Syabrubesi", altitude: "1,460m", duration: "7–8 hrs drive", highlights: "Trishuli River, hills, local villages." },
-      { day: 2, route: "Trek: Syabrubesi → Lama Hotel", altitude: "2,380m", duration: "5–6 hrs", highlights: "Forest walk, bamboo & rhododendron, Langtang River." },
-      { day: 3, route: "Lama Hotel → Langtang Village", altitude: "3,430m", duration: "5–6 hrs", highlights: "Mountain views open up; Tamang culture." },
-      { day: 4, route: "Langtang Village → Kyanjin Gompa", altitude: "3,870m", duration: "3–4 hrs", highlights: "Glacial valley, monasteries, yak pastures." },
-      { day: 5, route: "Acclimatization + Kyanjin Ri / Tserko Ri", altitude: "4,773m–4,984m", duration: "5–7 hrs", highlights: "Panoramic views, Langtang Lirung." },
-      { day: 6, route: "Kyanjin Gompa → Lama Hotel", altitude: "2,380m", duration: "6–7 hrs", highlights: "Descend alpine to forest landscapes." },
-      { day: 7, route: "Lama Hotel → Syabrubesi", altitude: "1,460m", duration: "5–6 hrs", highlights: "Easy downhill, rivers & forests." },
-      { day: 8, route: "Drive: Syabrubesi → Kathmandu", altitude: "1,400m", duration: "7–8 hrs", highlights: "Return drive, countryside views." },
-    ],
-  },
-  "manaslu-circuit-trek": {
-    kind: "days",
-    days: [
-      { day: 1, route: "Drive: Kathmandu → Machhakhola", altitude: "870m", duration: "8–9 hrs", description: "Scenic drive through hills, rivers, villages", highlights: "Trishuli River, off-road adventure." },
-      { day: 2, route: "Trek: Machhakhola → Jagat", altitude: "1,340m", duration: "6–7 hrs", description: "Budhi Gandaki River, gradual ascent", highlights: "Suspension bridges, hot springs at Tatopani, waterfalls." },
-      { day: 3, route: "Trek: Jagat → Deng", altitude: "1,860m", duration: "6–7 hrs", description: "Enter restricted Manaslu region", highlights: "Tibetan-influenced culture, Mani walls, gorges." },
-      { day: 4, route: "Trek: Deng → Namrung", altitude: "2,630m", duration: "6–7 hrs", description: "Gradual climb, better views", highlights: "First Manaslu-region peaks, pine forests." },
-      { day: 5, route: "Trek: Namrung → Samagaon", altitude: "3,530m", duration: "6–7 hrs", description: "High Himalayan zone, Tibetan settlements", highlights: "Mount Manaslu views, monasteries, yak pastures." },
-      { day: 6, route: "Acclimatization: Samagaon (Manaslu BC)", altitude: "3,530m", duration: "—", description: "Rest & explore for adaptation", highlights: "Manaslu Base Camp or Pungyen Gompa, glaciers." },
-      { day: 7, route: "Trek: Samagaon → Samdo", altitude: "3,860m", duration: "4–5 hrs", description: "Short trek, gradual gain", highlights: "Tibetan culture, views toward Tibet." },
-      { day: 8, route: "Acclimatization: Samdo", altitude: "3,860m", duration: "—", description: "Rest, optional hike", highlights: "Tibet viewpoint, glacier panoramas." },
-      { day: 9, route: "Trek: Samdo → Dharamsala", altitude: "4,460m", duration: "4–5 hrs", description: "Trek to base of Larke Pass", highlights: "Alpine terrain, high-pass prep." },
-      { day: 10, route: "Trek: Dharamsala → Larke Pass → Bimthang", altitude: "5,160m", duration: "8–9 hrs", description: "Long, challenging pass day", highlights: "Larke Pass crossing, panoramas, glaciers." },
-      { day: 11, route: "Trek: Bimthang → Tilije", altitude: "2,300m", duration: "6–7 hrs", description: "Descend forests and valleys", highlights: "Himlung & Annapurna views, rhododendron." },
-      { day: 12, route: "Trek: Tilije → Dharapani", altitude: "1,960m", duration: "5–6 hrs", description: "Join Annapurna Circuit trail", highlights: "Mixed-culture villages, greenery." },
-      { day: 13, route: "Drive: Dharapani → Besisahar → Kathmandu", altitude: "1,400m", duration: "8–9 hrs", description: "Scenic drive to capital", highlights: "Marsyangdi valley, terraced farms." },
-      { day: 14, route: "Departure day", altitude: "—", duration: "—", description: "Transfer to airport", highlights: "Trip completion." },
-    ],
-  },
-  "everest-base-camp-three-passes-trek": {
-    kind: "days",
-    highlights: [
-      "Three high passes (Kongma La, Cho La, Renjo La)",
-      "EBC (5,364m)",
-      "Kala Patthar sunrise",
-      "Gokyo Lakes",
-      "Sherpa villages, glaciers, high alpine passes",
-    ],
-    days: [
-      { day: 1, route: "Fly: Kathmandu → Lukla, trek to Phakding", altitude: "2,610m", duration: "3–4 hrs", highlights: "Lukla flight, Dudh Koshi, suspension bridges." },
-      { day: 2, route: "Trek: Phakding → Namche Bazaar", altitude: "3,440m", duration: "6–7 hrs", highlights: "Hillary Bridge, first Everest view, Namche." },
-      { day: 3, route: "Acclimatization: Namche Bazaar", altitude: "3,440m", duration: "—", highlights: "Everest View Hotel, panoramas." },
-      { day: 4, route: "Trek: Namche → Tengboche", altitude: "3,860m", duration: "5–6 hrs", highlights: "Tengboche Monastery, Ama Dablam." },
-      { day: 5, route: "Trek: Tengboche → Dingboche", altitude: "4,410m", duration: "5–6 hrs", highlights: "Ama Dablam, Imja Valley." },
-      { day: 6, route: "Acclimatization: Dingboche", altitude: "4,410m", duration: "—", highlights: "Nangkartshang Hill, panoramas." },
-      { day: 7, route: "Trek: Dingboche → Chhukung", altitude: "4,730m", duration: "3–4 hrs", highlights: "Glacier views, Island Peak region." },
-      { day: 8, route: "Trek: Chhukung → Kongma La → Lobuche", altitude: "5,535m", duration: "7–8 hrs", highlights: "Cross Kongma La, glaciers, dramatic terrain." },
-      { day: 9, route: "Trek: Lobuche → Gorak Shep → EBC", altitude: "5,364m", duration: "7–8 hrs", highlights: "Everest Base Camp, Khumbu Glacier." },
-      { day: 10, route: "Hike: Kala Patthar, trek to Dzongla", altitude: "5,545m", duration: "6–7 hrs", highlights: "Best Everest view from Kala Patthar." },
-      { day: 11, route: "Trek: Dzongla → Cho La Pass → Thagnak", altitude: "5,420m", duration: "7–8 hrs", highlights: "Cross Cho La, ice & snow terrain." },
-      { day: 12, route: "Trek: Thagnak → Gokyo", altitude: "4,790m", duration: "3–4 hrs", highlights: "Turquoise Gokyo Lakes." },
-      { day: 13, route: "Acclimatization: Gokyo (Gokyo Ri)", altitude: "5,357m", duration: "3–4 hrs", highlights: "Gokyo Ri, Everest & Cho Oyu panorama." },
-      { day: 14, route: "Trek: Gokyo → Renjo La → Lungden", altitude: "5,360m", duration: "7–8 hrs", highlights: "Cross Renjo La, stunning views." },
-      { day: 15, route: "Trek: Lungden → Namche Bazaar", altitude: "3,440m", duration: "6–7 hrs", highlights: "Remote villages, culture." },
-      { day: 16, route: "Trek: Namche → Lukla", altitude: "2,860m", duration: "6–7 hrs", highlights: "Celebrate completion." },
-      { day: 17, route: "Fly: Lukla → Kathmandu", altitude: "1,400m", duration: "30 min", highlights: "Aerial Himalayan views." },
-      { day: 18, route: "Departure day", altitude: "—", duration: "—", highlights: "Transfer to airport." },
-    ],
-  },
-  "annapurna-circuit-trek": {
-    kind: "days",
-    days: [
-      { day: 1, route: "Drive: Kathmandu → Besisahar", altitude: "760m", duration: "6–7 hrs", highlights: "Trishuli River, terraced farms, countryside." },
-      { day: 2, route: "Drive: Besisahar → Chame", altitude: "2,670m", duration: "5–6 hrs", highlights: "Marsyangdi valley, waterfalls, mountains." },
-      { day: 3, route: "Trek: Chame → Pisang", altitude: "3,200m", duration: "5–6 hrs", highlights: "Lamjung Himal, suspension bridges." },
-      { day: 4, route: "Trek: Pisang → Manang (upper route)", altitude: "3,540m", duration: "6–7 hrs", highlights: "Annapurna II & III views." },
-      { day: 5, route: "Acclimatization: Manang", altitude: "3,540m", duration: "—", highlights: "Gangapurna Lake, glaciers, culture." },
-      { day: 6, route: "Trek: Manang → Yak Kharka", altitude: "4,050m", duration: "4–5 hrs", highlights: "Yak pastures, open landscapes." },
-      { day: 7, route: "Trek: Yak Kharka → Thorong High Camp", altitude: "4,925m", duration: "5–6 hrs", highlights: "High Camp, dramatic scenery." },
-      { day: 8, route: "Trek: High Camp → Thorong La → Muktinath", altitude: "5,416m", duration: "7–8 hrs", highlights: "Cross Thorong La Pass, panoramas." },
-      { day: 9, route: "Trek/Drive: Muktinath → Jomsom", altitude: "2,720m", duration: "5–6 hrs", highlights: "Muktinath Temple, desert landscape." },
-      { day: 10, route: "Trek/Drive: Jomsom → Tatopani", altitude: "1,190m", duration: "6–7 hrs", highlights: "Deepest gorge, apple orchards, hot springs." },
-      { day: 11, route: "Trek: Tatopani → Ghorepani", altitude: "2,860m", duration: "6–7 hrs", highlights: "Rhododendron forests, villages." },
-      { day: 12, route: "Hike: Poon Hill, trek to Tadapani", altitude: "3,210m", duration: "6–7 hrs", highlights: "Poon Hill sunrise, Annapurna & Dhaulagiri." },
-      { day: 13, route: "Trek: Tadapani → Ghandruk → drive to Pokhara", altitude: "822m", duration: "5–6 hrs", highlights: "Gurung culture, relaxed finish." },
-      { day: 14, route: "Drive: Pokhara → Kathmandu", altitude: "1,400m", duration: "6–7 hrs", highlights: "Scenic highway, river valleys." },
-    ],
-  },
-  "manaslu-tsum-valley-trek": {
-    kind: "days",
-    days: [
-      { day: 1, route: "Drive: Kathmandu → Machhakhola", altitude: "870m", duration: "8–9 hrs", highlights: "Trishuli River, waterfalls, countryside." },
-      { day: 2, route: "Trek: Machhakhola → Jagat", altitude: "1,340m", duration: "6–7 hrs", highlights: "Suspension bridges, hot springs, narrow trails." },
-      { day: 3, route: "Trek: Jagat → Lokpa", altitude: "2,240m", duration: "6–7 hrs", highlights: "First Ganesh Himal views, forests." },
-      { day: 4, route: "Trek: Lokpa → Chumling", altitude: "2,386m", duration: "5–6 hrs", highlights: "Traditional villages, Tibetan culture begins." },
-      { day: 5, route: "Trek: Chumling → Chhokang Paro", altitude: "3,010m", duration: "5–6 hrs", highlights: "Ganesh Himal views, monasteries." },
-      { day: 6, route: "Trek: Chhokang Paro → Nile", altitude: "3,361m", duration: "5–6 hrs", highlights: "Tibetan-plateau feel, ancient settlements." },
-      { day: 7, route: "Exploration: Nile / Mu Gompa", altitude: "3,700m", duration: "—", highlights: "Visit Mu Gompa, panoramas." },
-      { day: 8, route: "Trek: Nile → Chumling", altitude: "2,386m", duration: "6–7 hrs", highlights: "Scenic retrace, cultural immersion." },
-      { day: 9, route: "Trek: Chumling → Deng", altitude: "1,860m", duration: "6–7 hrs", highlights: "River crossings, lush forests." },
-      { day: 10, route: "Trek: Deng → Namrung", altitude: "2,630m", duration: "6–7 hrs", highlights: "First Manaslu peaks, pine forests." },
-      { day: 11, route: "Trek: Namrung → Samagaon", altitude: "3,530m", duration: "6–7 hrs", highlights: "Mount Manaslu views, monasteries." },
-      { day: 12, route: "Acclimatization: Samagaon", altitude: "3,530m", duration: "—", highlights: "Manaslu Base Camp or Pungyen Gompa." },
-      { day: 13, route: "Trek: Samagaon → Samdo", altitude: "3,860m", duration: "4–5 hrs", highlights: "Tibetan culture, wide valley." },
-      { day: 14, route: "Trek: Samdo → Dharamsala", altitude: "4,460m", duration: "4–5 hrs", highlights: "Alpine terrain, glacier views." },
-      { day: 15, route: "Trek: Dharamsala → Larke Pass → Bimthang", altitude: "5,160m", duration: "8–9 hrs", highlights: "Cross Larke Pass, panoramas." },
-      { day: 16, route: "Trek: Bimthang → Tilije", altitude: "2,300m", duration: "6–7 hrs", highlights: "Rhododendron forests, mountain views." },
-      { day: 17, route: "Trek/Drive: Tilije → Dharapani → Besisahar", altitude: "760m", duration: "6–7 hrs", highlights: "Mixed-culture villages, greenery." },
-      { day: 18, route: "Drive: Besisahar → Kathmandu", altitude: "1,400m", duration: "6–7 hrs", highlights: "River valleys, relaxed finish." },
-    ],
-  },
-  "a-week-to-nepal": {
-    kind: "days",
-    days: [
-      { day: 1, route: "Kathmandu sightseeing", altitude: "1,400m", duration: "Full day", highlights: "Pashupatinath, Boudhanath, Swayambhunath, Durbar Square." },
-      { day: 2, route: "Drive/Fly: Kathmandu → Pokhara", altitude: "822m", duration: "6–7 hrs drive / 25 min flight", highlights: "Scenic travel, relax at Phewa Lake." },
-      { day: 3, route: "Drive: Pokhara → Nayapul, trek to Ulleri", altitude: "2,050m", duration: "5–6 hrs", highlights: "Stone steps, villages, first mountain glimpses." },
-      { day: 4, route: "Trek: Ulleri → Ghorepani", altitude: "2,860m", duration: "5–6 hrs", highlights: "Forest trails, mountain views." },
-      { day: 5, route: "Hike: Poon Hill, trek to Tadapani", altitude: "3,210m", duration: "6–7 hrs", highlights: "Poon Hill sunrise, Annapurna & Dhaulagiri." },
-      { day: 6, route: "Trek: Tadapani → Ghandruk, drive to Pokhara", altitude: "822m", duration: "5–6 hrs", highlights: "Gurung culture in Ghandruk." },
-      { day: 7, route: "Drive: Pokhara → Chitwan National Park", altitude: "415m", duration: "5–6 hrs", highlights: "Riverside resort, sunset, Tharu culture." },
-      { day: 8, route: "Jungle activities & drive/fly: Chitwan → Kathmandu", altitude: "1,400m", duration: "Full day", highlights: "Jeep safari, wildlife (rhino, deer), canoe ride." },
-    ],
-  },
 };
 
 /**
@@ -444,7 +250,7 @@ export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
   blurb: p.blurb,
   price: p.price,
   featured: p.featured,
-  itinerary: ITINERARIES[p.slug],
+  itinerary: p.itinerary ?? ITINERARIES[p.slug],
 }));
 
 export const totalPackages = packages.length; // 25
