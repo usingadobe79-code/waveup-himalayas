@@ -12,6 +12,7 @@ itinerarySummary: |-
   With WaveUp Himalayas, you can experience the breathtaking beauty of the Annapurna region while discovering the rich culture and warm hospitality of local communities. Along the journey, enjoy stunning views of Annapurna I, Annapurna South, Machhapuchhre (Fishtail), Hiunchuli, and other Himalayan peaks.
 itineraryHighlights:
   - Spectacular views of Annapurna and Machhapuchhre
+  - Spectacular views of Annapurna and Machhapuchhre
   - Trek through lush rhododendron and bamboo forests
   - Explore traditional Gurung and Magar villages
   - Walk through beautiful valleys, waterfalls, and terraced fields
