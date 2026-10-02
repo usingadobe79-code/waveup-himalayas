@@ -1,7 +1,7 @@
 ---
 title: test
 regionKey: everest
-serviceKey: heli-tours
+serviceKey: trekking
 price: null
 image: ''
 blurb: ''
