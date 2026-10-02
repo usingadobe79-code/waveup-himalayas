@@ -3,7 +3,7 @@ title: A Complete Guide to Trekking in Nepal
 date: 2026-10-01
 excerpt: 'Plan your Nepal trek: complete guide to best treks like Everest Base Camp & Annapurna, permits, costs, seasons, packing & altitude safety. Waveup Himalayas.'
 coverImage: /images/blog/on-the-trail-to-kang-la-pass-nar-phu-valley-trek.jpg.webp
-author: Ishwari Pd Lamichhane
+author: Gaurav Lamichhane
 draft: false
 ---
 
