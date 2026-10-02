@@ -35,7 +35,7 @@ itineraryDays:
     altitude: 822m
     duration: 6–7 hrs drive / 25 min flight
     description: Scenic journey to Pokhara. Relax by Lakeside with Annapurna views.
-    highlights: Scenic Journey from Kathmandu to Pokhara – Travel through Nepal’s beautiful countryside by road or enjoy a quick domestic flight. Himalayan Landscapes – Enjoy views of green hills, rivers, valleys, and mountain scenery along the way. Trishuli River – Pass alongside one of Nepal’s famous rivers during the road journey. Traditional Villages & Terraced Fields – See rural Nepal and its traditional way of life. Arrival in Pokhara – Discover the peaceful lakeside city and gateway to the Annapurna region. Lakeside Views – Enjoy the relaxed atmosphere around Phewa Lake with views toward the Himalaya
+    highlights: Travel from Kathmandu to Pokhara by scenic road journey or a short domestic flight. Along the way, enjoy beautiful views of Nepal’s green hills, winding rivers, terraced fields, traditional villages, and mountain landscapes. Once you arrive in Pokhara, relax by the peaceful Phewa Lake, explore the lively Lakeside area, and enjoy the stunning views of the surrounding Himalayas.
   - day: 2
     route: Pokhara → Jhinu → Chhomrong
     altitude: 2,170m
