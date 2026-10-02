@@ -1,0 +1,107 @@
+#!/usr/bin/env node
+/**
+ * Codegen: reads content/packages/*.md (editable source of truth, eventually
+ * CMS-managed) and emits lib/packages.data.json — a plain JSON array that
+ * lib/content.ts imports. content.ts is used by client components too, so it
+ * must stay free of `fs`/Node-only APIs; this script is the only place that
+ * touches the filesystem, and it only ever runs at build time (via the `dev`
+ * and `build` npm scripts), never in the browser.
+ *
+ * Safe to run repeatedly (idempotent) — it only reads .md files and
+ * overwrites the generated JSON.
+ */
+
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+
+const PACKAGES_DIR = path.join(process.cwd(), "content", "packages");
+const OUTPUT_FILE = path.join(process.cwd(), "lib", "packages.data.json");
+
+/**
+ * Original curated order of the 25 packages (from the formerly-inline
+ * `packages` array in lib/content.ts). Preserving this order keeps the
+ * /packages index, region tabs, and featured-grid ordering unchanged.
+ * Any slug not in this list (e.g. a new package added later) is appended at
+ * the end, alphabetically.
+ */
+const ORIGINAL_ORDER = [
+  // --- Everest Region ---
+  "everest-base-camp-trek",
+  "everest-base-camp-heli-tour",
+  "everest-base-camp-heli-tour-with-landing",
+  "everest-base-camp-heli-trek",
+  "everest-base-camp-three-passes-trek",
+  "everest-base-camp-gokyo-lake-trek",
+  "everest-mountain-flight",
+
+  // --- Annapurna Region ---
+  "annapurna-base-camp-trek",
+  "annapurna-base-camp-heli-tour",
+  "annapurna-circuit-trek",
+  "ghorepani-poon-hill-trek",
+  "mardi-himal-trek",
+
+  // --- Manaslu / Langtang ---
+  "manaslu-circuit-trek",
+  "manaslu-tsum-valley-trek",
+  "langtang-valley-trek",
+
+  // --- Cultural Tours ---
+  "kathmandu-sightseeing",
+  "pokhara-sightseeing",
+  "lumbini-historical-tour",
+  "kathmandu-nagarkot-tour",
+
+  // --- Wildlife ---
+  "chitwan-jungle-safari",
+
+  // --- Special ---
+  "family-tour-nepal",
+  "dedicated-female-tour",
+  "honeymoon-himalayas",
+  "destination-wedding-kalapatthar",
+  "a-week-to-nepal",
+];
+
+function readPackage(slug) {
+  const raw = fs.readFileSync(path.join(PACKAGES_DIR, `${slug}.md`), "utf8");
+  const { data } = matter(raw);
+  return {
+    slug,
+    title: data.title,
+    regionKey: data.regionKey,
+    serviceKey: data.serviceKey,
+    image: data.image || null,
+    blurb: data.blurb || null,
+    price: data.price ?? null,
+    featured: data.featured ?? false,
+  };
+}
+
+function main() {
+  if (!fs.existsSync(PACKAGES_DIR)) {
+    throw new Error(`Packages directory not found: ${PACKAGES_DIR}`);
+  }
+
+  const slugsOnDisk = fs
+    .readdirSync(PACKAGES_DIR)
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => f.replace(/\.md$/, ""));
+
+  const knownOrder = ORIGINAL_ORDER.filter((slug) => slugsOnDisk.includes(slug));
+  const extra = slugsOnDisk
+    .filter((slug) => !ORIGINAL_ORDER.includes(slug))
+    .sort((a, b) => a.localeCompare(b));
+
+  const orderedSlugs = [...knownOrder, ...extra];
+
+  const packages = orderedSlugs.map(readPackage);
+
+  fs.mkdirSync(path.dirname(OUTPUT_FILE), { recursive: true });
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(packages, null, 2) + "\n", "utf8");
+
+  console.log(`Generated ${OUTPUT_FILE} (${packages.length} packages)`);
+}
+
+main();

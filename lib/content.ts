@@ -3,7 +3,15 @@
  * Sourced verbatim from docs/03-content.md — DO NOT invent prices, itineraries,
  * day-counts, reviews, or contact details. No online checkout in v1; bookings
  * route to WhatsApp or email.
+ *
+ * Package simple fields (title/regionKey/serviceKey/image/blurb/price/featured)
+ * live in content/packages/<slug>.md and are generated at build time into
+ * ./packages.data.json by scripts/generate-packages.mjs (run via the `dev`
+ * and `build` npm scripts). This file is imported by client components too
+ * ("use client"), so it must stay free of `fs`/Node-only APIs — the JSON
+ * import below is the only link to the filesystem-backed source.
  */
+import packagesData from "./packages.data.json";
 
 export const business = {
   name: "WaveUp Himalayas",
@@ -97,9 +105,12 @@ export type Package = {
   title: string;
   regionKey: RegionKey;
   region: string; // display label, derived from REGION_LABELS
+  serviceKey: ServiceKey;
   image: string | null;
   blurb: string | null;
   price: number | null;
+  /** Drives inclusion in `featuredPackages` ("Popular Adventures" on the homepage). */
+  featured: boolean;
   /** Real day-by-day / time-based itinerary (client-supplied), if available.
    *  Packages without one keep the "Detailed itinerary on enquiry" placeholder. */
   itinerary?: Itinerary;
@@ -146,94 +157,27 @@ const REGION_LABELS: Record<RegionKey, string> = {
   special: "Special",
 };
 
-/** Small factory so each row stays terse; region label is derived, not repeated. */
-function pkg(
-  regionKey: RegionKey,
-  slug: string,
-  title: string,
-  extra: { image?: string; blurb?: string; price?: number } = {},
-): Package {
-  return {
-    slug,
-    title,
-    regionKey,
-    region: REGION_LABELS[regionKey],
-    image: extra.image ?? null,
-    blurb: extra.blurb ?? null,
-    price: extra.price ?? null, // all null in v1 — "Price on enquiry"
-  };
-}
-
-/**
- * The full 25 — exact titles from docs/03. Order within a region is curated and
- * flows through to the Regions tabs and the /packages index. Only the 6 featured
- * trips have a real photo + blurb today; the rest carry null (branded placeholder
- * + "details on enquiry") until real assets/copy are supplied. No invented detail.
- */
-export const packages: Package[] = [
-  // --- Everest Region ---
-  pkg("everest", "everest-base-camp-trek", "Everest Base Camp Trek", {
-    image: "/images/packages/everest-base-camp.jpg",
-    blurb: "The iconic walk through Sherpa country to the foot of the highest mountain on earth.",
-  }),
-  pkg("everest", "everest-base-camp-heli-tour", "Everest Base Camp Heli Tour", {
-    image: "/images/packages/everest-heli-tour.jpg",
-    blurb: "Soar over the Khumbu by helicopter for an up-close Everest panorama — the high Himalaya without the long walk.",
-  }),
-  pkg("everest", "everest-base-camp-heli-tour-with-landing", "Everest Base Camp Heli Tour with Landing"),
-  pkg("everest", "everest-base-camp-heli-trek", "Everest Base Camp Heli Trek"),
-  pkg("everest", "everest-base-camp-three-passes-trek", "Everest Base Camp Trek with Three Pass"),
-  pkg("everest", "everest-base-camp-gokyo-lake-trek", "Everest Base Camp Trek with Gokyo Lake"),
-  pkg("everest", "everest-mountain-flight", "Everest Mountain Flight"),
-
-  // --- Annapurna Region ---
-  pkg("annapurna", "annapurna-base-camp-trek", "Annapurna Base Camp Trek", {
-    image: "/images/packages/annapurna-base-camp.jpg",
-    blurb: "Climb through terraced valleys and rhododendron forest into the sweeping mountain amphitheatre of the Annapurna sanctuary.",
-  }),
-  pkg("annapurna", "annapurna-base-camp-heli-tour", "Annapurna Base Camp Heli Tour"),
-  pkg("annapurna", "annapurna-circuit-trek", "Annapurna Circuit Trek"),
-  pkg("annapurna", "ghorepani-poon-hill-trek", "Ghorepani Poon Hill Trek", {
-    image: "/images/packages/poon-hill.jpg",
-    blurb: "A gentle classic to a celebrated sunrise viewpoint over the Dhaulagiri and Annapurna ranges.",
-  }),
-  pkg("annapurna", "mardi-himal-trek", "Mardi Himal Trek"),
-
-  // --- Manaslu / Langtang ---
-  pkg("manaslu-langtang", "manaslu-circuit-trek", "Manaslu Circuit Trek", {
-    image: "/images/packages/manaslu-circuit.jpg",
-    blurb: "A remote teahouse circuit around the world's eighth-highest peak, rich in Tibetan-influenced culture.",
-  }),
-  pkg("manaslu-langtang", "manaslu-tsum-valley-trek", "Manaslu Region with Tsum Valley Trek"),
-  pkg("manaslu-langtang", "langtang-valley-trek", "Langtang Valley Trek"),
-
-  // --- Cultural Tours ---
-  pkg("cultural", "kathmandu-sightseeing", "Kathmandu Sightseeing"),
-  pkg("cultural", "pokhara-sightseeing", "Pokhara Sightseeing"),
-  pkg("cultural", "lumbini-historical-tour", "Lumbini Historical Tour"),
-  pkg("cultural", "kathmandu-nagarkot-tour", "Kathmandu Sightseeing & Escape to Nearby Mountain Village (Nagarkot)"),
-
-  // --- Wildlife ---
-  pkg("wildlife", "chitwan-jungle-safari", "Chitwan – Jungle Safari", {
-    image: "/images/packages/chitwan-safari.jpg",
-    blurb: "Trade peaks for jungle — track rhinos and wildlife along the rivers and grasslands of Chitwan.",
-  }),
-
-  // --- Special ---
-  pkg("special", "family-tour-nepal", "Family Tour in Nepal"),
-  pkg("special", "dedicated-female-tour", "Dedicated Female Tour – Fully guided with lady guide, safety ensured"),
-  pkg("special", "honeymoon-himalayas", "Celebrate Honeymoon in the lap of Himalayas – Destination Honeymoon"),
-  pkg("special", "destination-wedding-kalapatthar", "Make Your Wedding Memorable at Kalapatthar – Destination Wedding"),
-  pkg("special", "a-week-to-nepal", "A Week to Nepal – Fully customized (adventurous/cultural/historical)"),
-];
+/** Shape of each entry in the generated lib/packages.data.json. */
+type PackageData = {
+  slug: string;
+  title: string;
+  regionKey: RegionKey;
+  serviceKey: ServiceKey;
+  image: string | null;
+  blurb: string | null;
+  price: number | null;
+  featured: boolean;
+};
 
 /**
  * Real itineraries (client-supplied, cleaned). Keyed by package slug. Mapped by
  * title/region; values are verbatim — no invented days/altitudes/durations.
  * Attached to the matching package below. Packages not listed here keep the
  * "Detailed itinerary on enquiry" placeholder. Prices stay null everywhere.
+ * (These stay in code for now — see content/packages/<slug>.md for the rest
+ * of each package's fields.)
  */
-const itineraries: Record<string, Itinerary> = {
+const ITINERARIES: Record<string, Itinerary> = {
   "mardi-himal-trek": {
     kind: "days",
     summary:
@@ -483,12 +427,25 @@ const itineraries: Record<string, Itinerary> = {
   },
 };
 
-// Attach each itinerary to its matching package (mutates the package objects;
-// featuredPackages / regions reference the same objects, so they see it too).
-for (const p of packages) {
-  const it = itineraries[p.slug];
-  if (it) p.itinerary = it;
-}
+/**
+ * The full 25 — exact titles from docs/03. Order within a region is curated and
+ * flows through to the Regions tabs and the /packages index (preserved by
+ * scripts/generate-packages.mjs). Only the 6 featured trips have a real photo
+ * + blurb today; the rest carry null (branded placeholder + "details on
+ * enquiry") until real assets/copy are supplied. No invented detail.
+ */
+export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
+  slug: p.slug,
+  title: p.title,
+  regionKey: p.regionKey,
+  region: REGION_LABELS[p.regionKey],
+  serviceKey: p.serviceKey,
+  image: p.image,
+  blurb: p.blurb,
+  price: p.price,
+  featured: p.featured,
+  itinerary: ITINERARIES[p.slug],
+}));
 
 export const totalPackages = packages.length; // 25
 
@@ -509,8 +466,11 @@ export function getPackage(slug: string): Package | undefined {
 
 /**
  * The six top-level services (see `services` above) double as filter categories
- * on /packages. A package's service is derived from its own title and region —
- * never a hand-maintained second list — so it cannot drift out of sync:
+ * on /packages. A package's service is a stored field (serviceKey, see
+ * content/packages/<slug>.md) — set once when the package was authored, by
+ * applying the same title/region derivation this function used to compute
+ * inline. Kept as a function (rather than reading p.serviceKey directly at
+ * call sites) so every caller keeps working unchanged:
  *
  *  - "…Mountain Flight"  → mountain-flights   (fixed-wing scenic flights)
  *  - "…Heli Tour"        → heli-tours         (a Heli *Trek* stays a trek)
@@ -528,12 +488,7 @@ export type ServiceKey =
   | "custom-trips";
 
 export function packageService(p: Package): ServiceKey {
-  if (/mountain flight/i.test(p.title)) return "mountain-flights";
-  if (/heli tour/i.test(p.title)) return "heli-tours";
-  if (p.regionKey === "cultural") return "city-tours";
-  if (p.regionKey === "wildlife") return "jungle-safari";
-  if (p.regionKey === "special") return "custom-trips";
-  return "trekking";
+  return p.serviceKey;
 }
 
 /** How many trips sit under each service — used to hide empty filter pills. */
@@ -542,23 +497,12 @@ export function serviceCount(key: ServiceKey): number {
 }
 
 /**
- * Featured 6 for the landing grid ("Popular Adventures"). Curated selection of
- * canonical packages — all six have a real photo + blurb.
+ * Featured packages for the landing grid ("Popular Adventures"). Driven by the
+ * `featured` flag set per package in content/packages/<slug>.md (editable via
+ * the CMS), preserving the canonical `packages` order and capped at 6 to
+ * protect the homepage grid layout.
  */
-const FEATURED_SLUGS = [
-  "annapurna-base-camp-trek",
-  "ghorepani-poon-hill-trek",
-  "everest-base-camp-heli-tour",
-  "chitwan-jungle-safari",
-  "everest-base-camp-trek",
-  "manaslu-circuit-trek",
-] as const;
-
-export const featuredPackages: Package[] = FEATURED_SLUGS.map((slug) => {
-  const found = getPackage(slug);
-  if (!found) throw new Error(`featured slug not found: ${slug}`);
-  return found;
-});
+export const featuredPackages: Package[] = packages.filter((p) => p.featured).slice(0, 6);
 
 /** Regions / category tabs — derived from the canonical list (single source). */
 export const regions = (Object.keys(REGION_LABELS) as RegionKey[]).map((key) => ({

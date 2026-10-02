@@ -27,3 +27,40 @@ collections:
       - { label: "Author", name: "author", widget: "string", default: "WaveUp Himalayas" }
       - { label: "Draft (keep hidden from the site)", name: "draft", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "packages"
+    label: "Packages"
+    label_singular: "Package"
+    description: "Add or edit a trek or tour. Click Publish and the site updates in a couple of minutes."
+    folder: "content/packages"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["title", "regionKey"]
+    media_folder: "/public/images/packages"
+    public_folder: "/images/packages"
+    fields:
+      - { label: "Trip name", name: "title", widget: "string" }
+      - label: "Region"
+        name: "regionKey"
+        widget: "select"
+        options:
+          - { label: "Everest Region", value: "everest" }
+          - { label: "Annapurna Region", value: "annapurna" }
+          - { label: "Manaslu / Langtang", value: "manaslu-langtang" }
+          - { label: "Cultural Tours", value: "cultural" }
+          - { label: "Wildlife", value: "wildlife" }
+          - { label: "Special", value: "special" }
+      - label: "Trip type"
+        name: "serviceKey"
+        widget: "select"
+        options:
+          - { label: "Trekking", value: "trekking" }
+          - { label: "Helicopter Tour", value: "heli-tours" }
+          - { label: "Mountain Flight", value: "mountain-flights" }
+          - { label: "City Tour", value: "city-tours" }
+          - { label: "Jungle Safari", value: "jungle-safari" }
+          - { label: "Custom Trip", value: "custom-trips" }
+      - { label: "Price in USD (leave blank for 'Price on enquiry')", name: "price", widget: "number", required: false, value_type: "int", min: 0 }
+      - { label: "Cover photo", name: "image", widget: "image", required: false }
+      - { label: "Short description (shown on trip cards)", name: "blurb", widget: "text", required: false }
+      - { label: "Show on homepage (Popular Adventures)", name: "featured", widget: "boolean", default: false }
