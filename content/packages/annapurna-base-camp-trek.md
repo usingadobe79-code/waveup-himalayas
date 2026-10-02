@@ -2,7 +2,7 @@
 title: Annapurna Base Camp Trek
 regionKey: annapurna
 serviceKey: trekking
-price: 1000
+price: 800
 image: /images/packages/37bbb1b4-0f3e-46c9-be40-38d98ea8b44d.png
 blurb: Climb through terraced valleys and rhododendron forest into the sweeping mountain amphitheatre of the Annapurna sanctuary.
 featured: true
