@@ -20,7 +20,15 @@ itineraryHighlights:
   - Experience diverse landscapes from lowland villages to the high Himalayas
   - Discover the rich culture and hospitality of local mountain communities
   - An unforgettable Himalayan trekking experience
-itineraryNotes: []
+itineraryNotes:
+  - 'Maximum Altitude: 4,130 m at Annapurna Base Camp'
+  - 'Trek Duration: Usually 7–12 days, depending on the itinerary'
+  - 'Difficulty: Moderate'
+  - 'Best Seasons: March–May and September–November'
+  - 'Altitude: Proper acclimatization, hydration, and a steady pace are important'
+  - 'Fitness: A reasonable level of fitness is recommended, as the trek involves several hours of walking each day'
+  - 'Guide & Porter: Hiring a licensed guide and porter can make the journey safer and more comfortable.'
+  - 'Permits: Annapurna Conservation Area Permit (ACAP) and TIMS may be required'
 itineraryDays:
   - day: 1
     route: Kathmandu → Pokhara (drive/flight)
