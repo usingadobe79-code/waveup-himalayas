@@ -6,8 +6,20 @@ price: 1000
 image: /images/packages/annapurna-base-camp.jpg
 blurb: Climb through terraced valleys and rhododendron forest into the sweeping mountain amphitheatre of the Annapurna sanctuary.
 featured: true
-itinerarySummary: A 10-day Annapurna Base Camp trek combining cultural villages, lush forests, natural hot springs, and breathtaking Himalayan views up to 4,130m. Perfectly paced for comfort, safety, and an unforgettable experience.
-itineraryHighlights: []
+itinerarySummary: |-
+  The Annapurna Base Camp Trek is a spectacular Himalayan adventure that takes you deep into the heart of Nepal’s Annapurna region. Starting from the beautiful surroundings of Pokhara, the trail passes through traditional villages, lush forests, terraced fields, waterfalls, and dramatic mountain landscapes before reaching Annapurna Base Camp at 4,130 metres.
+
+  With WaveUp Himalayas, you can experience the breathtaking beauty of the Annapurna region while discovering the rich culture and warm hospitality of local communities. Along the journey, enjoy stunning views of Annapurna I, Annapurna South, Machhapuchhre (Fishtail), Hiunchuli, and other Himalayan peaks.
+itineraryHighlights:
+  - Spectacular views of Annapurna and Machhapuchhre
+  - Trek through lush rhododendron and bamboo forests
+  - Explore traditional Gurung and Magar villages
+  - Walk through beautiful valleys, waterfalls, and terraced fields
+  - Enjoy stunning sunrise and sunset views
+  - Relax in the natural hot springs at Jhinu Danda
+  - Experience diverse landscapes from lowland villages to the high Himalayas
+  - Discover the rich culture and hospitality of local mountain communities
+  - An unforgettable Himalayan trekking experience
 itineraryNotes: []
 itineraryDays:
   - day: 1
