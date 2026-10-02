@@ -167,70 +167,9 @@ type PackageData = {
   blurb: string | null;
   price: number | null;
   featured: boolean;
-  /** Present when the package's content/packages/<slug>.md has itineraryDays
-   *  (a "kind: days" trip). Absent otherwise — falls back to ITINERARIES. */
+  /** Present when the package's content/packages/<slug>.md has an itinerary
+   *  (itineraryDays or itinerarySchedule). Absent otherwise. */
   itinerary?: Itinerary;
-};
-
-/**
- * Real itineraries (client-supplied, cleaned) for the handful of packages
- * whose itinerary is "schedule"-shaped (time-based flights/heli tours) and
- * hasn't been moved into CMS-editable content yet. Keyed by package slug;
- * values are verbatim — no invented times/peaks/notes. Attached to the
- * matching package below. Day-by-day ("kind: days") itineraries now live in
- * content/packages/<slug>.md (itineraryDays etc.) and are generated into
- * packages.data.json instead — see scripts/generate-packages.mjs.
- */
-const ITINERARIES: Record<string, Itinerary> = {
-  "everest-mountain-flight": {
-    kind: "schedule",
-    summary: "A 50–60-minute scenic mountain flight from Kathmandu along the Himalayas.",
-    peaks: ["Langtang", "Ganesh Himal", "Gauri Shankar", "Cho Oyu", "Manaslu", "Makalu", "Mount Everest"],
-    notes: [
-      "If a flight is canceled due to weather or operational issues, you're offered a full refund or a free reschedule for the next day.",
-    ],
-    sections: [
-      {
-        title: "Morning schedule",
-        rows: [
-          { time: "05:00–05:30 AM", activity: "Hotel pickup, transfer to Kathmandu domestic airport." },
-          { time: "05:30–06:15 AM", activity: "Airline check-in and security clearance." },
-          { time: "06:30–07:30 AM", activity: "One-hour scenic flight — heads east past Langtang Valley, Gauri Shankar, and Cho Oyu before circling Mount Everest." },
-          { time: "07:30–08:00 AM", activity: "Land back at airport; receive personalized experience certificate." },
-          { time: "08:00–08:30 AM", activity: "Drive back to your hotel." },
-        ],
-      },
-      {
-        title: "In-flight timeline",
-        rows: [
-          { time: "0–15 min", activity: "Takeoff; views of Ganesh Himal and Langtang." },
-          { time: "15–30 min", activity: "Passing Gauri Shankar, entering the Everest region." },
-          { time: "30–45 min", activity: "Close-up of Everest, Lhotse, and Nuptse (the climax)." },
-          { time: "45–60 min", activity: "Return leg with views of Makalu; journey back to Kathmandu." },
-        ],
-      },
-    ],
-  },
-  "everest-base-camp-heli-tour-with-landing": {
-    kind: "schedule",
-    summary:
-      "A typical 4-hour morning EBC helicopter tour with a landing and breakfast at Everest View Hotel.",
-    sections: [
-      {
-        rows: [
-          { time: "5:30–6:30 AM", activity: "Hotel pickup, transfer to Tribhuvan International Airport (domestic terminal)." },
-          { time: "6:30–7:00 AM", activity: "Check-in and pre-flight briefing." },
-          { time: "7:00–7:45 AM", activity: "Fly Kathmandu → Lukla (2,860m); scenic flight over hills, rivers, terraced farms; short refuel stop (5–10 min)." },
-          { time: "7:45–8:15 AM", activity: "Lukla → Pheriche (4,240m); fly over Namche Bazaar, Tengboche Monastery, Everest View Hotel; land for group weight management." },
-          { time: "8:15–8:45 AM", activity: "EBC & Kala Patthar flyover — Everest Base Camp (5,364m), Khumbu Glacier; hover near Kala Patthar (5,545m); aerial photos of Everest, Lhotse, Nuptse, Pumori, Ama Dablam." },
-          { time: "8:45–9:45 AM", activity: "Breakfast at Everest View Hotel (3,880m) with 360° Himalayan views." },
-          { time: "9:45–10:15 AM", activity: "Return flight to Lukla; refuel stop." },
-          { time: "10:15–11:00 AM", activity: "Fly Lukla → Kathmandu; final views of the Everest region." },
-          { time: "11:00–11:30 AM", activity: "Transfer to your hotel." },
-        ],
-      },
-    ],
-  },
 };
 
 /**
@@ -250,7 +189,7 @@ export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
   blurb: p.blurb,
   price: p.price,
   featured: p.featured,
-  itinerary: p.itinerary ?? ITINERARIES[p.slug],
+  itinerary: p.itinerary,
 }));
 
 export const totalPackages = packages.length; // 25

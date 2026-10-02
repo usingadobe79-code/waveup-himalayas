@@ -79,6 +79,7 @@ collections:
         name: "itineraryDays"
         widget: "list"
         required: false
+        hint: "For day-by-day treks."
         label_singular: "Day"
         summary: "Day {{fields.day}} — {{fields.route}}"
         fields:
@@ -88,3 +89,28 @@ collections:
           - { label: "Duration / hours (optional)", name: "duration", widget: "string", required: false }
           - { label: "Description (optional)", name: "description", widget: "text", required: false }
           - { label: "Day highlights (optional)", name: "highlights", widget: "string", required: false }
+      - label: "Itinerary — peaks you'll see (heli / flight tours)"
+        name: "itineraryPeaks"
+        widget: "list"
+        required: false
+        collapsed: true
+        hint: "For helicopter / mountain-flight tours only."
+        field: { label: "Peak", name: "peak", widget: "string" }
+      - label: "Itinerary — time schedule (heli / flight tours)"
+        name: "itinerarySchedule"
+        widget: "list"
+        required: false
+        collapsed: true
+        label_singular: "Section"
+        hint: "For helicopter / mountain-flight tours only — grouped time + activity rows. Leave empty for day-by-day treks."
+        summary: "{{fields.title}}"
+        fields:
+          - { label: "Section title (optional)", name: "title", widget: "string", required: false }
+          - label: "Rows"
+            name: "rows"
+            widget: "list"
+            label_singular: "Row"
+            summary: "{{fields.time}} — {{fields.activity}}"
+            fields:
+              - { label: "Time", name: "time", widget: "string" }
+              - { label: "Activity", name: "activity", widget: "string" }

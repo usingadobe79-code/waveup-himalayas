@@ -65,13 +65,32 @@ const ORIGINAL_ORDER = [
 ];
 
 /**
- * Builds the `Itinerary` ({ kind: "days", ... }) object for a package from its
- * frontmatter, or undefined if the package has no itineraryDays (in which case
- * lib/content.ts falls back to the ITINERARIES code map). Optional fields are
- * omitted entirely when absent, so the shape matches the original
- * Itinerary/ItineraryDay types exactly (no empty-string/undefined keys).
+ * Builds the `Itinerary` object for a package from its frontmatter, or
+ * undefined if the package has neither a schedule nor a days itinerary.
+ * Optional fields are omitted entirely when absent, so the shape matches the
+ * original Itinerary/ItineraryDay/ScheduleSection/ScheduleRow types exactly
+ * (no empty-string/undefined keys). "schedule" (time-based flights/heli
+ * tours) takes priority over "days" if both are somehow present.
  */
 function readItinerary(data) {
+  if (data.itinerarySchedule && data.itinerarySchedule.length) {
+    const itinerary = { kind: "schedule" };
+    if (data.itinerarySummary) itinerary.summary = data.itinerarySummary;
+    if (data.itineraryPeaks && data.itineraryPeaks.length) {
+      itinerary.peaks = data.itineraryPeaks;
+    }
+    if (data.itineraryNotes && data.itineraryNotes.length) {
+      itinerary.notes = data.itineraryNotes;
+    }
+    itinerary.sections = data.itinerarySchedule.map((s) => {
+      const section = {};
+      if (s.title) section.title = s.title;
+      section.rows = s.rows.map((r) => ({ time: r.time, activity: r.activity }));
+      return section;
+    });
+    return itinerary;
+  }
+
   if (!data.itineraryDays) return undefined;
 
   const itinerary = { kind: "days" };
