@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { SaleBadge } from "@/components/ui/SaleBadge";
+import { PriceTag } from "@/components/ui/PriceTag";
 import type { Package } from "@/lib/content";
 
 /**
@@ -32,6 +33,7 @@ export function RecommendedTrekCard({ pkg }: { pkg: Package }) {
       <div className="flex flex-1 flex-col p-4">
         <h3 className="type-small font-semibold text-ink">{pkg.title}</h3>
         {pkg.blurb && <p className="type-small mt-1.5 line-clamp-2 text-muted">{pkg.blurb}</p>}
+        <PriceTag pkg={pkg} size="sm" className="mt-2" />
         <span className="type-small mt-3 font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">
           View trek
         </span>

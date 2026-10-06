@@ -2,17 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { MapPin, Clock } from "lucide-react";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { SaleBadge } from "@/components/ui/SaleBadge";
-import {
-  packages,
-  regions,
-  services,
-  packageService,
-  priceLabel,
-  discountPercent,
-  type ServiceKey,
-} from "@/lib/content";
+import { PriceTag } from "@/components/ui/PriceTag";
+import { packages, regions, services, packageService, type ServiceKey } from "@/lib/content";
 import { cn } from "@/lib/cn";
 
 /**
@@ -125,16 +119,21 @@ export function PackagesBrowser() {
                     </div>
                     <div className="flex flex-1 flex-col p-5">
                       <h3 className="type-h3 text-ink">{p.title}</h3>
+                      <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 type-small text-muted">
+                        <span className="inline-flex items-center gap-1">
+                          <MapPin className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
+                          {p.region}
+                        </span>
+                        {p.tripFacts?.duration && (
+                          <span className="inline-flex items-center gap-1">
+                            <Clock className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
+                            {p.tripFacts.duration}
+                          </span>
+                        )}
+                      </div>
                       {p.blurb && <p className="type-small mt-2 flex-1 text-muted">{p.blurb}</p>}
                       <div className="mt-4 flex items-center justify-between gap-3">
-                        <span className="flex flex-wrap items-baseline gap-2">
-                          {discountPercent(p) != null && (
-                            <span className="type-small text-muted line-through">
-                              ${p.originalPrice!.toLocaleString()}
-                            </span>
-                          )}
-                          <span className="type-small font-medium text-muted">{priceLabel(p.price)}</span>
-                        </span>
+                        <PriceTag pkg={p} size="sm" />
                         <span className="type-small font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">
                           View Details
                         </span>

@@ -177,6 +177,10 @@ export type ItineraryDay = {
   duration?: string; // e.g. "6–7 hrs"
   description?: string; // narrative column, where supplied
   highlights?: string; // per-day highlights column, where supplied
+  image?: string; // optional per-day photo — raw committed path
+  /** On-page display path for `image` — see `imageDisplay` on Package. Present
+   *  whenever `image` is. */
+  imageDisplay?: string;
 };
 
 export type ScheduleRow = { time: string; activity: string };
@@ -316,7 +320,7 @@ export const PRICE_CURRENCY = "USD";
 /** Render a price as text. null → the required "Price on enquiry" placeholder. */
 export function priceLabel(price: number | null): string {
   if (price == null) return "Price on enquiry";
-  return `From $${price.toLocaleString()}`;
+  return `$${price.toLocaleString()}`;
 }
 
 /**

@@ -2,19 +2,14 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, MapPin, Clock } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { SaleBadge } from "@/components/ui/SaleBadge";
+import { PriceTag } from "@/components/ui/PriceTag";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
-import {
-  featuredPackages,
-  totalPackages,
-  whatsappEnquiry,
-  priceLabel,
-  discountPercent,
-} from "@/lib/content";
+import { featuredPackages, totalPackages, whatsappEnquiry } from "@/lib/content";
 
 /**
  * "Popular Adventures" — 6 featured packages in a responsive grid (docs/01 §5).
@@ -94,17 +89,22 @@ export function FeaturedPackages() {
                       {pkg.title}
                     </Link>
                   </h3>
+                  <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 type-small text-muted">
+                    <span className="inline-flex items-center gap-1">
+                      <MapPin className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
+                      {pkg.region}
+                    </span>
+                    {pkg.tripFacts?.duration && (
+                      <span className="inline-flex items-center gap-1">
+                        <Clock className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
+                        {pkg.tripFacts.duration}
+                      </span>
+                    )}
+                  </div>
                   {pkg.blurb && (
                     <p className="type-small mt-2 flex-1 text-muted">{pkg.blurb}</p>
                   )}
-                  <div className="mt-3 flex flex-wrap items-baseline gap-2">
-                    {discountPercent(pkg) != null && (
-                      <span className="type-small text-muted line-through">
-                        ${pkg.originalPrice!.toLocaleString()}
-                      </span>
-                    )}
-                    <span className="type-small font-medium text-muted">{priceLabel(pkg.price)}</span>
-                  </div>
+                  <PriceTag pkg={pkg} size="sm" className="mt-3" />
                   <div className="mt-5 flex items-center justify-between gap-3">
                     <span className="type-small font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">
                       View Details

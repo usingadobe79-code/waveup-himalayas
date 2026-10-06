@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { MapPin, Clock } from "lucide-react";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { SaleBadge } from "@/components/ui/SaleBadge";
+import { PriceTag } from "@/components/ui/PriceTag";
 import type { Package } from "@/lib/content";
 
 /**
@@ -34,7 +36,20 @@ export function SimilarTreks({ packages }: { packages: Package[] }) {
           </div>
           <div className="flex flex-1 flex-col p-5">
             <h3 className="type-h3 text-ink">{p.title}</h3>
+            <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 type-small text-muted">
+              <span className="inline-flex items-center gap-1">
+                <MapPin className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
+                {p.region}
+              </span>
+              {p.tripFacts?.duration && (
+                <span className="inline-flex items-center gap-1">
+                  <Clock className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
+                  {p.tripFacts.duration}
+                </span>
+              )}
+            </div>
             {p.blurb && <p className="type-small mt-2 flex-1 text-muted">{p.blurb}</p>}
+            <PriceTag pkg={p} size="sm" className="mt-3" />
             <span className="type-small mt-4 font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">
               View details
             </span>
