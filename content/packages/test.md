@@ -3,7 +3,7 @@ title: TEST
 regionKey: everest
 serviceKey: trekking
 price: 800
-image: ''
+image: /images/packages/everest-heli-tour.jpg
 blurb: Hello world
 featured: true
 itinerarySummary: TEST HELLO WORLD
@@ -37,8 +37,15 @@ excludes:
 faqs:
   - question: is this test
     answer: yes this is test
-gallery: []
-routeMap: ''
-packingList: []
-preparation: ''
+gallery:
+  - /images/packages/everest-base-camp.webp
+  - /images/packages/everest-base-camp.webp
+  - /images/blog/Old-Everest-Base-Camp-Trek.webp
+routeMap: /images/blog/sustainability-15-07134-g001.png
+packingList:
+  - glasses
+  - backpack
+preparation: |-
+  warm up 
+  this is test
 ---
