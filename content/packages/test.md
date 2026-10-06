@@ -7,7 +7,9 @@ originalPrice: 900
 offerLabel: auttum sale
 image: /images/packages/everest-heli-tour.jpg
 blurb: Hello world
-featured: true
+seoTitle: ''
+seoDescription: ''
+featured: false
 itinerarySummary: TEST HELLO WORLD
 itineraryHighlights:
   - This is test.
