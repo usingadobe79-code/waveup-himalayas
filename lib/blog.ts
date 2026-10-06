@@ -11,6 +11,29 @@ import { marked } from "marked";
 
 const POSTS_DIR = path.join(process.cwd(), "content", "blog");
 
+/**
+ * The CMS writes images as `![](url "Title")` — no alt text, just a title —
+ * which `marked`'s default renderer turns into `<img title="...">` with NO
+ * `alt`. Fix it for every post without editing the markdown: when an image
+ * has no alt text but does have a title, use the title as the alt text (a
+ * real, human-written string — not invented). Images that already have real
+ * alt text are untouched. `token.tokens` also has to be replaced with a
+ * matching text token: the default renderer re-derives alt text from it when
+ * non-empty, which would otherwise override `token.text` back to "" before
+ * falling through to it via `return false`.
+ */
+marked.use({
+  renderer: {
+    image(token) {
+      if (!token.text && token.title) {
+        token.text = token.title;
+        token.tokens = [{ type: "text", raw: token.title, text: token.title, escaped: false }];
+      }
+      return false;
+    },
+  },
+});
+
 export type BlogPost = {
   slug: string;
   title: string;

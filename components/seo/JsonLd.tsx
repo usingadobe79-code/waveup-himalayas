@@ -56,3 +56,25 @@ export function JsonLd() {
     />
   );
 }
+
+/**
+ * WebSite schema — global, references the TravelAgency above as `publisher`
+ * via its `@id` so the two nodes link up in the same graph.
+ */
+export function WebsiteJsonLd() {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
+    url: siteUrl,
+    name: business.name,
+    publisher: { "@id": `${siteUrl}/#travelagency` },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}

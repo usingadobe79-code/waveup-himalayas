@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { getPost, getPostSlugs, formatDate } from "@/lib/blog";
 import { business } from "@/lib/content";
 
@@ -54,6 +56,21 @@ export default async function BlogPostPage({
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: post.title, path: `/blog/${post.slug}` },
+        ]}
+      />
+      <ArticleJsonLd
+        headline={post.title}
+        description={post.excerpt}
+        image={post.coverImage}
+        datePublished={post.date}
+        author={post.author}
+        path={`/blog/${post.slug}`}
+      />
       <Header solid />
       <main className="flex-1">
         {/* Intro band — dark, so the solid navy header sits cleanly on top */}

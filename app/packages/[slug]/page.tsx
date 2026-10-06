@@ -7,6 +7,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { PackageItinerary } from "@/components/sections/PackageItinerary";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { TripJsonLd } from "@/components/seo/TripJsonLd";
 import {
   packages,
   getPackage,
@@ -16,6 +18,9 @@ import {
   typicalInclusions,
   contact,
   business,
+  services,
+  type Package,
+  type ServiceKey,
 } from "@/lib/content";
 
 // Only the 25 known slugs are valid routes; anything else 404s.
@@ -23,6 +28,30 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   return packages.map((p) => ({ slug: p.slug }));
+}
+
+/** Trip type as a plain noun, for the generated meta-description sentence. */
+const SERVICE_NOUNS: Record<ServiceKey, string> = {
+  trekking: "trek",
+  "heli-tours": "helicopter tour",
+  "mountain-flights": "mountain flight",
+  "city-tours": "tour",
+  "jungle-safari": "jungle safari",
+  "custom-trips": "custom trip",
+};
+
+/**
+ * Meta/OG description for a package. Real blurb when present; otherwise a
+ * factual sentence built only from real fields — the trip-type noun, the
+ * region label, and (when the package has a day-by-day itinerary) its real
+ * day count. No invented difficulty/season/price.
+ */
+function packageDescription(pkg: Package): string {
+  if (pkg.blurb) return pkg.blurb;
+  const noun = SERVICE_NOUNS[pkg.serviceKey];
+  const days = pkg.itinerary?.kind === "days" ? pkg.itinerary.days.length : undefined;
+  const span = days ? `a guided ${days}-day ${noun}` : `a guided ${noun}`;
+  return `${pkg.title} — ${span} in Nepal's ${pkg.region} with WaveUp Himalayas. Expert local guides, tailored departures.`;
 }
 
 export async function generateMetadata({
@@ -33,10 +62,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const pkg = getPackage(slug);
   if (!pkg) return { title: "Package not found" };
-  // Real blurb when present; otherwise a factual line from the real title +
-  // region (no invented selling claims). Title template appends the brand.
-  const description =
-    pkg.blurb ?? `${pkg.title} in Nepal's ${pkg.region}. Plan a tailored trip with WaveUp Himalayas.`;
+  const description = packageDescription(pkg);
   // Placeholder packages (no photo) fall back to the hero image for link previews
   // — the branded placeholder is a component, not a shareable image file.
   const ogImage = pkg.image ?? "/images/hero.jpg";
@@ -80,9 +106,27 @@ export default async function PackageDetailPage({
   // Trip-level highlights only exist on day-by-day itineraries.
   const tripHighlights =
     pkg.itinerary?.kind === "days" ? pkg.itinerary.highlights : undefined;
+  // Real service label (e.g. "Trekking", "Helicopter Tours") — same source as
+  // the /packages filter pills, used as TouristTrip.touristType below.
+  const touristType = services.find((s) => s.key === pkg.serviceKey)?.title ?? pkg.serviceKey;
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Packages", path: "/packages" },
+          { name: pkg.title, path: `/packages/${pkg.slug}` },
+        ]}
+      />
+      <TripJsonLd
+        name={pkg.title}
+        description={packageDescription(pkg)}
+        image={pkg.image ?? "/images/hero.jpg"}
+        path={`/packages/${pkg.slug}`}
+        touristType={touristType}
+        price={pkg.price}
+      />
       <Header solid />
       <main className="flex-1">
         {/* Hero */}
