@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PackageImage } from "@/components/ui/PackageImage";
+import { SaleBadge } from "@/components/ui/SaleBadge";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
 import { featuredPackages, totalPackages, whatsappEnquiry } from "@/lib/content";
@@ -70,6 +71,7 @@ export function FeaturedPackages() {
                   <span className="type-small absolute left-4 top-4 rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
                     {pkg.region}
                   </span>
+                  <SaleBadge pkg={pkg} className="absolute right-4 top-4" />
                 </div>
 
                 {/* Body */}

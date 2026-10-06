@@ -173,6 +173,10 @@ function readPackage(slug) {
     ...(image ? { imageDisplay: resolveDisplay(image) } : {}),
     blurb: data.blurb || null,
     price: data.price ?? null,
+    ...(data.originalPrice != null && data.originalPrice !== ""
+      ? { originalPrice: data.originalPrice }
+      : {}),
+    ...(data.offerLabel ? { offerLabel: data.offerLabel } : {}),
     featured: data.featured ?? false,
     ...(itinerary ? { itinerary } : {}),
     ...(tripFacts ? { tripFacts } : {}),
@@ -211,7 +215,13 @@ function main() {
 
   const orderedSlugs = [...knownOrder, ...extra];
 
-  const packages = orderedSlugs.map(readPackage);
+  const packages = orderedSlugs.map((slug) => {
+    try {
+      return readPackage(slug);
+    } catch (err) {
+      throw new Error(`Failed to process content/packages/${slug}.md: ${err.message}`);
+    }
+  });
 
   fs.mkdirSync(path.dirname(OUTPUT_FILE), { recursive: true });
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(packages, null, 2) + "\n", "utf8");

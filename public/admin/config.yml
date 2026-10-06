@@ -70,6 +70,8 @@ collections:
           - { label: "Jungle Safari", value: "jungle-safari" }
           - { label: "Custom Trip", value: "custom-trips" }
       - { label: "Price in USD (leave blank for 'Price on enquiry')", name: "price", widget: "number", required: false, value_type: "int", min: 0 }
+      - { label: "Original price in USD (for showing a discount)", name: "originalPrice", widget: "number", required: false, value_type: "int", min: 0, hint: "If higher than the Price above, the card shows it crossed out with an automatic % OFF badge." }
+      - { label: "Offer label (badge)", name: "offerLabel", widget: "string", required: false, hint: "e.g. 'Autumn Special' or 'Early Bird' — shows as a small badge. Optional." }
       - { label: "Cover photo", name: "image", widget: "image", required: false }
       - { label: "Short description (shown on trip cards)", name: "blurb", widget: "text", required: false }
       - { label: "Show on homepage (Popular Adventures)", name: "featured", widget: "boolean", default: false }

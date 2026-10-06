@@ -3,12 +3,15 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { PackageImage } from "@/components/ui/PackageImage";
+import { SaleBadge } from "@/components/ui/SaleBadge";
 import {
   packages,
   regions,
   services,
   packageService,
   priceLabel,
+  discountPercent,
+  PRICE_CURRENCY,
   type ServiceKey,
 } from "@/lib/content";
 import { cn } from "@/lib/cn";
@@ -119,12 +122,20 @@ export function PackagesBrowser() {
                       <span className="type-small absolute left-4 top-4 rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
                         {p.region}
                       </span>
+                      <SaleBadge pkg={p} className="absolute right-4 top-4" />
                     </div>
                     <div className="flex flex-1 flex-col p-5">
                       <h3 className="type-h3 text-ink">{p.title}</h3>
                       {p.blurb && <p className="type-small mt-2 flex-1 text-muted">{p.blurb}</p>}
                       <div className="mt-4 flex items-center justify-between gap-3">
-                        <span className="type-small font-medium text-muted">{priceLabel(p.price)}</span>
+                        <span className="flex flex-wrap items-baseline gap-2">
+                          {discountPercent(p) != null && (
+                            <span className="type-small text-muted line-through">
+                              {PRICE_CURRENCY} {p.originalPrice!.toLocaleString()}
+                            </span>
+                          )}
+                          <span className="type-small font-medium text-muted">{priceLabel(p.price)}</span>
+                        </span>
                         <span className="type-small font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">
                           View Details
                         </span>

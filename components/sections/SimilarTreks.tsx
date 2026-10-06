@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PackageImage } from "@/components/ui/PackageImage";
+import { SaleBadge } from "@/components/ui/SaleBadge";
 import type { Package } from "@/lib/content";
 
 /**
@@ -29,6 +30,7 @@ export function SimilarTreks({ packages }: { packages: Package[] }) {
             <span className="type-small absolute left-4 top-4 rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
               {p.region}
             </span>
+            <SaleBadge pkg={p} className="absolute right-4 top-4" />
           </div>
           <div className="flex flex-1 flex-col p-5">
             <h3 className="type-h3 text-ink">{p.title}</h3>

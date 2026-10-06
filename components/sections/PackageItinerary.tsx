@@ -46,7 +46,7 @@ function DaysView({ itinerary }: { itinerary: Extract<Itinerary, { kind: "days" 
                 {meta.length > 0 && (
                   <p className="type-small mt-1 text-muted">
                     {meta.map((m, mi) => (
-                      <span key={mi}>
+                      <span key={`${m}-${mi}`}>
                         {mi > 0 && <span className="px-1.5 text-accent-ink">·</span>}
                         {m}
                       </span>
@@ -80,14 +80,14 @@ function ScheduleView({
   return (
     <div className="mt-6 space-y-8">
       {sections.map((section, si) => (
-        <div key={si}>
+        <div key={`${section.title ?? "sec"}-${si}`}>
           {section.title && (
             <h3 className="type-body mb-3 font-semibold text-ink">{section.title}</h3>
           )}
           <ul className="overflow-hidden rounded-card border border-border bg-surface-alt">
             {section.rows.map((r, ri) => (
               <li
-                key={ri}
+                key={`${r.time}-${r.activity}-${ri}`}
                 className="flex flex-col gap-1 border-b border-border p-4 last:border-b-0 sm:flex-row sm:gap-5"
               >
                 <span className="type-small shrink-0 font-semibold text-accent-ink sm:w-36">

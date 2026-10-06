@@ -116,6 +116,14 @@ export type Package = {
   imageDisplay?: string;
   blurb: string | null;
   price: number | null;
+  /** "Was" price for a discount — set alongside `price` (the current/sale
+   *  price) to show a struck-through original price + an automatic % off
+   *  badge. Omitted (undefined) when there's no discount — see
+   *  `discountPercent` below. */
+  originalPrice?: number;
+  /** Free-text promo badge (e.g. "Autumn Special", "Early Bird"). Shown
+   *  independently of `originalPrice`/`discountPercent` — omitted when unset. */
+  offerLabel?: string;
   /** Drives inclusion in `featuredPackages` ("Popular Adventures" on the homepage). */
   featured: boolean;
   /** Real day-by-day / time-based itinerary (client-supplied), if available.
@@ -217,6 +225,10 @@ type PackageData = {
   imageDisplay?: string;
   blurb: string | null;
   price: number | null;
+  /** Present when the package's content/packages/<slug>.md has an `originalPrice`. Absent otherwise. */
+  originalPrice?: number;
+  /** Present when the package's content/packages/<slug>.md has an `offerLabel`. Absent otherwise. */
+  offerLabel?: string;
   featured: boolean;
   /** Present when the package's content/packages/<slug>.md has an itinerary
    *  (itineraryDays or itinerarySchedule). Absent otherwise. */
@@ -261,6 +273,8 @@ export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
   imageDisplay: p.imageDisplay,
   blurb: p.blurb,
   price: p.price,
+  originalPrice: p.originalPrice,
+  offerLabel: p.offerLabel,
   featured: p.featured,
   itinerary: p.itinerary,
   tripFacts: p.tripFacts,
@@ -285,6 +299,26 @@ export const PRICE_CURRENCY = "USD";
 export function priceLabel(price: number | null): string {
   if (price == null) return "Price on enquiry";
   return `From ${PRICE_CURRENCY} ${price.toLocaleString()}`;
+}
+
+/**
+ * The % off a package's sale price, when there's a genuine discount to show —
+ * both `price` and `originalPrice` are finite numbers AND `originalPrice` is
+ * strictly greater than `price`. Returns null otherwise (no price set, no
+ * `originalPrice` set, or `originalPrice` <= `price`) so nothing fabricated
+ * or nonsensical ever renders.
+ */
+export function discountPercent(pkg: Package): number | null {
+  const { price, originalPrice } = pkg;
+  if (typeof price !== "number" || !Number.isFinite(price)) return null;
+  if (typeof originalPrice !== "number" || !Number.isFinite(originalPrice)) return null;
+  if (originalPrice <= price) return null;
+  return Math.round(((originalPrice - price) / originalPrice) * 100);
+}
+
+/** Whether a package has a genuine discount to show — see `discountPercent`. */
+export function isOnSale(pkg: Package): boolean {
+  return discountPercent(pkg) != null;
 }
 
 /** Look up a package by slug (used by the detail route + links). */

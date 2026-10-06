@@ -20,6 +20,8 @@ import {
   getPackage,
   relatedPackages,
   priceLabel,
+  discountPercent,
+  PRICE_CURRENCY,
   whatsappEnquiry,
   emailEnquiry,
   typicalInclusions,
@@ -119,6 +121,9 @@ export default async function PackageDetailPage({
   // "Similar treks" — same region first, falling back to same service; see
   // lib/content.ts. Empty array hides the section below.
   const related = relatedPackages(pkg);
+  // Non-null only for a genuine discount (price + originalPrice both set,
+  // originalPrice > price) — drives the struck-through price + "X% OFF" badge.
+  const percentOff = discountPercent(pkg);
 
   return (
     <>
@@ -341,8 +346,29 @@ export default async function PackageDetailPage({
             <aside className="lg:col-span-1">
               <div className="card sticky top-24 p-6 lg:p-8">
                 <p className="type-eyebrow">Price</p>
+                {/* Struck-through "was" price — only when there's a genuine discount
+                    (see discountPercent in lib/content.ts). */}
+                {percentOff != null && (
+                  <p className="type-body mt-2 text-muted line-through">
+                    {PRICE_CURRENCY} {pkg.originalPrice!.toLocaleString()}
+                  </p>
+                )}
                 {/* All prices are null in v1 -> "Price on enquiry" (never fabricated). */}
-                <p className="type-h3 mt-2 text-ink">{priceLabel(pkg.price)}</p>
+                <div className="mt-2 flex flex-wrap items-center gap-2">
+                  <p className="type-h3 text-ink">{priceLabel(pkg.price)}</p>
+                  {percentOff != null && (
+                    <span className="type-small shrink-0 rounded-badge bg-accent px-2.5 py-1 font-semibold text-surface-darker">
+                      {percentOff}% OFF
+                    </span>
+                  )}
+                </div>
+                {/* Free-text promo badge — independent of the % math above;
+                    shows whenever the writer has set one. */}
+                {pkg.offerLabel && (
+                  <span className="type-small mt-3 inline-block rounded-badge bg-accent px-2.5 py-1 font-semibold text-surface-darker">
+                    {pkg.offerLabel}
+                  </span>
+                )}
                 <p className="type-small mt-3 text-muted">
                   No online checkout — we confirm everything with you directly, then send a
                   tailored quote.

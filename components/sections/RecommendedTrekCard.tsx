@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PackageImage } from "@/components/ui/PackageImage";
+import { SaleBadge } from "@/components/ui/SaleBadge";
 import type { Package } from "@/lib/content";
 
 /**
@@ -26,6 +27,7 @@ export function RecommendedTrekCard({ pkg }: { pkg: Package }) {
         <span className="type-small absolute left-3 top-3 rounded-badge bg-surface-darker/70 px-2.5 py-1 font-medium text-accent-hover backdrop-blur-sm">
           {pkg.region}
         </span>
+        <SaleBadge pkg={pkg} className="absolute right-3 top-3" />
       </div>
       <div className="flex flex-1 flex-col p-4">
         <h3 className="type-small font-semibold text-ink">{pkg.title}</h3>
