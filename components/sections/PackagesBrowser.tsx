@@ -11,7 +11,6 @@ import {
   packageService,
   priceLabel,
   discountPercent,
-  PRICE_CURRENCY,
   type ServiceKey,
 } from "@/lib/content";
 import { cn } from "@/lib/cn";
@@ -131,7 +130,7 @@ export function PackagesBrowser() {
                         <span className="flex flex-wrap items-baseline gap-2">
                           {discountPercent(p) != null && (
                             <span className="type-small text-muted line-through">
-                              {PRICE_CURRENCY} {p.originalPrice!.toLocaleString()}
+                              ${p.originalPrice!.toLocaleString()}
                             </span>
                           )}
                           <span className="type-small font-medium text-muted">{priceLabel(p.price)}</span>

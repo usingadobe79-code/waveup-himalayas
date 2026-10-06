@@ -35,6 +35,8 @@ collections:
         display_fields: ["title"]
         multiple: true
         required: false
+      - { label: "SEO title (Google title — optional)", name: "seoTitle", widget: "string", required: false, hint: "Custom title for Google results, ~60 characters. Leave blank to use the default." }
+      - { label: "SEO description (Google snippet — optional)", name: "seoDescription", widget: "text", required: false, hint: "Custom description for Google, ~155 characters. Leave blank to use the short description/excerpt." }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "packages"
@@ -74,6 +76,8 @@ collections:
       - { label: "Offer label (badge)", name: "offerLabel", widget: "string", required: false, hint: "e.g. 'Autumn Special' or 'Early Bird' — shows as a small badge. Optional." }
       - { label: "Cover photo", name: "image", widget: "image", required: false }
       - { label: "Short description (shown on trip cards)", name: "blurb", widget: "text", required: false }
+      - { label: "SEO title (Google title — optional)", name: "seoTitle", widget: "string", required: false, hint: "Custom title for Google results, ~60 characters. Leave blank to use the default." }
+      - { label: "SEO description (Google snippet — optional)", name: "seoDescription", widget: "text", required: false, hint: "Custom description for Google, ~155 characters. Leave blank to use the short description/excerpt." }
       - { label: "Show on homepage (Popular Adventures)", name: "featured", widget: "boolean", default: false }
       - { label: "Itinerary — overview", name: "itinerarySummary", widget: "text", required: false }
       - label: "Itinerary — trip highlights"

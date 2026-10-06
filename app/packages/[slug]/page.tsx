@@ -21,7 +21,6 @@ import {
   relatedPackages,
   priceLabel,
   discountPercent,
-  PRICE_CURRENCY,
   whatsappEnquiry,
   emailEnquiry,
   typicalInclusions,
@@ -71,13 +70,17 @@ export async function generateMetadata({
   const { slug } = await params;
   const pkg = getPackage(slug);
   if (!pkg) return { title: "Package not found" };
-  const description = packageDescription(pkg);
+  // Writer-set overrides (optional, from content/packages/<slug>.md) take
+  // priority; otherwise fall back to the existing generated title/description.
+  const description = pkg.seoDescription ?? packageDescription(pkg);
   // Placeholder packages (no photo) fall back to the hero image for link previews
   // — the branded placeholder is a component, not a shareable image file.
   const ogImage = pkg.image ?? "/images/hero.jpg";
-  const ogTitle = `${pkg.title} — ${business.name}`;
+  const ogTitle = pkg.seoTitle ?? `${pkg.title} — ${business.name}`;
   return {
-    title: pkg.title,
+    // `absolute` bypasses the sitewide "%s — {business}" title template
+    // (see app/layout.tsx) so a custom seoTitle renders verbatim.
+    title: pkg.seoTitle ? { absolute: pkg.seoTitle } : pkg.title,
     description,
     alternates: { canonical: `/packages/${pkg.slug}` },
     openGraph: {
@@ -350,7 +353,7 @@ export default async function PackageDetailPage({
                     (see discountPercent in lib/content.ts). */}
                 {percentOff != null && (
                   <p className="type-body mt-2 text-muted line-through">
-                    {PRICE_CURRENCY} {pkg.originalPrice!.toLocaleString()}
+                    ${pkg.originalPrice!.toLocaleString()}
                   </p>
                 )}
                 {/* All prices are null in v1 -> "Price on enquiry" (never fabricated). */}

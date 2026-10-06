@@ -47,6 +47,14 @@ export type BlogPost = {
    *  BlogRecommendedDrawer.tsx). Optional — defaults to [] when absent, in
    *  which case the post renders with no sidebar/drawer at all. */
   relatedPackages: string[];
+  /** Writer-set override for the Google results title — renders as an
+   *  `absolute` metadata title (bypassing the sitewide "%s — {business}"
+   *  template) when set. Undefined when unset, in which case the page falls
+   *  back to the post title — see generateMetadata in app/blog/[slug]/page.tsx. */
+  seoTitle?: string;
+  /** Writer-set override for the Google snippet / meta description. Undefined
+   *  when unset, in which case the page falls back to `excerpt`. */
+  seoDescription?: string;
   /** Rendered markdown body — only populated by getPost(), not the list. */
   contentHtml: string;
 };
@@ -62,6 +70,8 @@ type PostFrontmatter = {
   author: string;
   draft?: boolean;
   relatedPackages?: string[];
+  seoTitle?: string;
+  seoDescription?: string;
 };
 
 /**
@@ -114,6 +124,8 @@ export function getAllPosts(): BlogPost[] {
         author: data.author,
         draft: data.draft ?? false,
         relatedPackages: data.relatedPackages ?? [],
+        seoTitle: data.seoTitle || undefined,
+        seoDescription: data.seoDescription || undefined,
         contentHtml: "",
       };
       return post;
@@ -137,6 +149,8 @@ export function getPost(slug: string): BlogPost | undefined {
     author: data.author,
     draft: data.draft ?? false,
     relatedPackages: data.relatedPackages ?? [],
+    seoTitle: data.seoTitle || undefined,
+    seoDescription: data.seoDescription || undefined,
     contentHtml: marked.parse(content, { async: false }),
   };
 }

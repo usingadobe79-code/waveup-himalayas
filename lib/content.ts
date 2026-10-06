@@ -115,6 +115,17 @@ export type Package = {
    *  og:image/metadata — see lib/img.ts. */
   imageDisplay?: string;
   blurb: string | null;
+  /** Writer-set override for the Google results title — renders as an
+   *  `absolute` metadata title (bypassing the sitewide "%s — {business}"
+   *  template) when set. Omitted (undefined) when unset, in which case the
+   *  page falls back to its generated title — see generateMetadata in
+   *  app/packages/[slug]/page.tsx. */
+  seoTitle?: string;
+  /** Writer-set override for the Google snippet / meta description. Omitted
+   *  (undefined) when unset, in which case the page falls back to the real
+   *  `blurb` or a generated description — see packageDescription() in
+   *  app/packages/[slug]/page.tsx. */
+  seoDescription?: string;
   price: number | null;
   /** "Was" price for a discount — set alongside `price` (the current/sale
    *  price) to show a struck-through original price + an automatic % off
@@ -224,6 +235,10 @@ type PackageData = {
   /** Present when `image` is set — resolved by scripts/generate-packages.mjs. */
   imageDisplay?: string;
   blurb: string | null;
+  /** Present when the package's content/packages/<slug>.md has a `seoTitle`. Absent otherwise. */
+  seoTitle?: string;
+  /** Present when the package's content/packages/<slug>.md has a `seoDescription`. Absent otherwise. */
+  seoDescription?: string;
   price: number | null;
   /** Present when the package's content/packages/<slug>.md has an `originalPrice`. Absent otherwise. */
   originalPrice?: number;
@@ -272,6 +287,8 @@ export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
   image: p.image,
   imageDisplay: p.imageDisplay,
   blurb: p.blurb,
+  seoTitle: p.seoTitle,
+  seoDescription: p.seoDescription,
   price: p.price,
   originalPrice: p.originalPrice,
   offerLabel: p.offerLabel,
@@ -291,14 +308,15 @@ export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
 
 export const totalPackages = packages.length; // 25
 
-/** Currency for any price that gets filled in later. Prices are null today, so
- *  this is unused until you add numbers — set it to match how you quote. */
+/** ISO currency code for structured data (schema.org `priceCurrency` requires
+ *  the ISO code, not a symbol) — see components/seo/TripJsonLd.tsx. Visible
+ *  prices render with a "$" symbol instead (see `priceLabel` below). */
 export const PRICE_CURRENCY = "USD";
 
 /** Render a price as text. null → the required "Price on enquiry" placeholder. */
 export function priceLabel(price: number | null): string {
   if (price == null) return "Price on enquiry";
-  return `From ${PRICE_CURRENCY} ${price.toLocaleString()}`;
+  return `From $${price.toLocaleString()}`;
 }
 
 /**

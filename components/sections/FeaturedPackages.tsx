@@ -8,14 +8,20 @@ import { PackageImage } from "@/components/ui/PackageImage";
 import { SaleBadge } from "@/components/ui/SaleBadge";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
-import { featuredPackages, totalPackages, whatsappEnquiry } from "@/lib/content";
+import {
+  featuredPackages,
+  totalPackages,
+  whatsappEnquiry,
+  priceLabel,
+  discountPercent,
+} from "@/lib/content";
 
 /**
  * "Popular Adventures" — 6 featured packages in a responsive grid (docs/01 §5).
  * Cards stagger-reveal on scroll; hover scales the framed image, lifts the card
- * and nudges the gold "View Details →" arrow. No prices/durations (none exist);
- * each card routes to a prefilled WhatsApp enquiry. Reduced motion → no reveal,
- * instant content.
+ * and nudges the gold "View Details →" arrow; each card shows its price (see
+ * priceLabel/discountPercent in lib/content.ts) and routes to a prefilled
+ * WhatsApp enquiry. Reduced motion → no reveal, instant content.
  */
 export function FeaturedPackages() {
   const reduced = useReducedMotion();
@@ -91,6 +97,14 @@ export function FeaturedPackages() {
                   {pkg.blurb && (
                     <p className="type-small mt-2 flex-1 text-muted">{pkg.blurb}</p>
                   )}
+                  <div className="mt-3 flex flex-wrap items-baseline gap-2">
+                    {discountPercent(pkg) != null && (
+                      <span className="type-small text-muted line-through">
+                        ${pkg.originalPrice!.toLocaleString()}
+                      </span>
+                    )}
+                    <span className="type-small font-medium text-muted">{priceLabel(pkg.price)}</span>
+                  </div>
                   <div className="mt-5 flex items-center justify-between gap-3">
                     <span className="type-small font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">
                       View Details

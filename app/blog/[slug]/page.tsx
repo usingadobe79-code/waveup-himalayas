@@ -25,23 +25,28 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return { title: "Post not found" };
-  const ogTitle = `${post.title} — ${business.name}`;
+  // Writer-set overrides (optional, from content/blog/<slug>.md) take
+  // priority; otherwise fall back to the existing title/excerpt.
+  const description = post.seoDescription ?? post.excerpt;
+  const ogTitle = post.seoTitle ?? `${post.title} — ${business.name}`;
   return {
-    title: post.title,
-    description: post.excerpt,
+    // `absolute` bypasses the sitewide "%s — {business}" title template
+    // (see app/layout.tsx) so a custom seoTitle renders verbatim.
+    title: post.seoTitle ? { absolute: post.seoTitle } : post.title,
+    description,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       type: "article",
       siteName: business.name,
       url: `/blog/${post.slug}`,
       title: ogTitle,
-      description: post.excerpt,
+      description,
       images: [{ url: post.coverImage, alt: post.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: ogTitle,
-      description: post.excerpt,
+      description,
       images: [post.coverImage],
     },
   };

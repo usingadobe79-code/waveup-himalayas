@@ -172,6 +172,8 @@ function readPackage(slug) {
     image,
     ...(image ? { imageDisplay: resolveDisplay(image) } : {}),
     blurb: data.blurb || null,
+    ...(data.seoTitle ? { seoTitle: data.seoTitle } : {}),
+    ...(data.seoDescription ? { seoDescription: data.seoDescription } : {}),
     price: data.price ?? null,
     ...(data.originalPrice != null && data.originalPrice !== ""
       ? { originalPrice: data.originalPrice }
