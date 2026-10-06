@@ -1,12 +1,15 @@
 import Image from "next/image";
 import { cn } from "@/lib/cn";
-import { displaySrc } from "@/lib/img";
 
 /**
  * Image with a branded fallback. When `src` is null/empty we render a navy block
  * with the gold WaveUp peak mark instead of a broken image (hard rule: never a
  * broken image). Designed to fill a positioned parent — wrap it in a relative,
  * aspect-ratio'd container exactly like a `next/image` `fill` usage.
+ *
+ * `src` is expected to already be a resolved on-page display path (a
+ * package's `imageDisplay`, not its raw `image`) — see lib/content.ts and
+ * scripts/generate-packages.mjs.
  */
 export function PackageImage({
   src,
@@ -26,7 +29,7 @@ export function PackageImage({
   if (src) {
     return (
       <Image
-        src={displaySrc(src)}
+        src={src}
         alt={alt}
         fill
         priority={priority}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Check, X, MessageCircle, Mail, Phone } from "lucide-react";
@@ -9,12 +10,15 @@ import { PackageImage } from "@/components/ui/PackageImage";
 import { PackageItinerary } from "@/components/sections/PackageItinerary";
 import { TripFacts } from "@/components/sections/TripFacts";
 import { PackageFaq } from "@/components/sections/PackageFaq";
+import { PackageGallery } from "@/components/sections/PackageGallery";
+import { SimilarTreks } from "@/components/sections/SimilarTreks";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { TripJsonLd } from "@/components/seo/TripJsonLd";
 import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
 import {
   packages,
   getPackage,
+  relatedPackages,
   priceLabel,
   whatsappEnquiry,
   emailEnquiry,
@@ -112,6 +116,9 @@ export default async function PackageDetailPage({
   // Real service label (e.g. "Trekking", "Helicopter Tours") — same source as
   // the /packages filter pills, used as TouristTrip.touristType below.
   const touristType = services.find((s) => s.key === pkg.serviceKey)?.title ?? pkg.serviceKey;
+  // "Similar treks" — same region first, falling back to same service; see
+  // lib/content.ts. Empty array hides the section below.
+  const related = relatedPackages(pkg);
 
   return (
     <>
@@ -136,7 +143,7 @@ export default async function PackageDetailPage({
         {/* Hero */}
         <section className="relative isolate flex min-h-[58vh] items-end overflow-hidden">
           <PackageImage
-            src={pkg.image}
+            src={pkg.imageDisplay ?? null}
             alt={pkg.title}
             priority
             sizes="100vw"
@@ -264,11 +271,68 @@ export default async function PackageDetailPage({
                 )}
               </div>
 
+              {/* Route map — only for trips that supplied one. object-contain
+                  (not the card-grid's object-cover) so no part of the map is
+                  cropped out. */}
+              {pkg.routeMap && (
+                <div>
+                  <h2 className="type-h3 text-ink">Route map</h2>
+                  <div className="relative mt-5 aspect-[4/3] overflow-hidden rounded-card bg-surface-alt">
+                    <Image
+                      src={pkg.routeMapDisplay ?? pkg.routeMap}
+                      alt={`${pkg.title} route map`}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 66vw"
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {/* What to pack — only for trips that supplied a packing list;
+                  styled like the "What's included" list above. */}
+              {pkg.packingList && pkg.packingList.length > 0 && (
+                <div>
+                  <h2 className="type-h3 text-ink">What to pack</h2>
+                  <ul className="mt-5 space-y-3">
+                    {pkg.packingList.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+                          <Check className="h-4 w-4" strokeWidth={2} aria-hidden="true" />
+                        </span>
+                        <span className="type-body text-ink">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* How to prepare — only for trips that supplied preparation
+                  notes; preparationHtml is pre-rendered from Markdown by
+                  scripts/generate-packages.mjs (same technique as blog posts). */}
+              {pkg.preparationHtml && (
+                <div>
+                  <h2 className="type-h3 text-ink">How to prepare</h2>
+                  <div
+                    className="prose-blog mt-5"
+                    dangerouslySetInnerHTML={{ __html: pkg.preparationHtml }}
+                  />
+                </div>
+              )}
+
               {/* FAQ — only for trips that supplied faqs (see FaqJsonLd above). */}
               {pkg.faqs && pkg.faqs.length > 0 && (
                 <div>
                   <h2 className="type-h3 text-ink">Frequently asked questions</h2>
                   <PackageFaq faqs={pkg.faqs} />
+                </div>
+              )}
+
+              {/* Photo gallery — only for trips that supplied one. */}
+              {pkg.gallery && pkg.gallery.length > 0 && (
+                <div>
+                  <h2 className="type-h3 text-ink">Photo gallery</h2>
+                  <PackageGallery images={pkg.galleryDisplay ?? pkg.gallery} title={pkg.title} />
                 </div>
               )}
             </div>
@@ -325,6 +389,18 @@ export default async function PackageDetailPage({
             </aside>
           </div>
         </section>
+
+        {/* Similar treks — up to 3 other packages from the same region (or,
+            with none, the same service); computed in lib/content.ts. Hidden
+            entirely when a package has no matches. */}
+        {related.length > 0 && (
+          <section className="section-y bg-surface-alt">
+            <div className="container-page">
+              <h2 className="type-h3 text-ink">Similar treks</h2>
+              <SimilarTreks packages={related} />
+            </div>
+          </section>
+        )}
       </main>
       <Footer />
     </>

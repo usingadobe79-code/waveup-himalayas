@@ -110,7 +110,7 @@ export function PackagesBrowser() {
                   >
                     <div className="relative aspect-[3/2] overflow-hidden">
                       <PackageImage
-                        src={p.image}
+                        src={p.imageDisplay ?? null}
                         alt={p.title}
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.06]"

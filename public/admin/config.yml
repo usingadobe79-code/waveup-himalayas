@@ -158,3 +158,19 @@ collections:
         fields:
           - { label: "Question", name: "question", widget: "string" }
           - { label: "Answer", name: "answer", widget: "text" }
+      - label: "Photo gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Photo", name: "photo", widget: "image" }
+      - { label: "Route map", name: "routeMap", widget: "image", required: false }
+      - label: "What to pack"
+        name: "packingList"
+        widget: "list"
+        required: false
+        field: { label: "Item", name: "item", widget: "string" }
+      - label: "How to prepare (fitness/training)"
+        name: "preparation"
+        widget: "markdown"
+        required: false
+        hint: "Optional fitness/training guidance, shown as a \"How to prepare\" section on the trip page."

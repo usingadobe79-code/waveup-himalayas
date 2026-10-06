@@ -58,7 +58,7 @@ export function FeaturedPackages() {
                     sits above it for badge legibility — never a full-card overlay. */}
                 <div className="relative aspect-[3/2] overflow-hidden">
                   <PackageImage
-                    src={pkg.image}
+                    src={pkg.imageDisplay ?? null}
                     alt={pkg.title}
                     // First card is above the fold (LCP) — load it eagerly with
                     // a preload; the rest stay lazy. Branded placeholder if null.

@@ -107,6 +107,13 @@ export type Package = {
   region: string; // display label, derived from REGION_LABELS
   serviceKey: ServiceKey;
   image: string | null;
+  /** On-page display path for `image` — resolved at build time by
+   *  scripts/generate-packages.mjs to the `.webp` twin ONLY when one exists
+   *  on disk, else the original upload as-is (so a CMS photo with no twin
+   *  never points at a 404'd .webp). Absent when `image` is null. Render this
+   *  (not `image`) for on-page covers; `image` itself stays raw for
+   *  og:image/metadata — see lib/img.ts. */
+  imageDisplay?: string;
   blurb: string | null;
   price: number | null;
   /** Drives inclusion in `featuredPackages` ("Popular Adventures" on the homepage). */
@@ -123,6 +130,21 @@ export type Package = {
   excludes?: string[];
   /** Per-trip FAQs — renders the FAQ accordion + FAQPage JSON-LD when present. */
   faqs?: Faq[];
+  /** Extra trip photos — renders a "Photo gallery" grid when present. */
+  gallery?: string[];
+  /** On-page display paths for `gallery` — see `imageDisplay`. Present
+   *  whenever `gallery` is. */
+  galleryDisplay?: string[];
+  /** A single route-map image — renders a "Route map" section when present. */
+  routeMap?: string;
+  /** On-page display path for `routeMap` — see `imageDisplay`. Present
+   *  whenever `routeMap` is. */
+  routeMapDisplay?: string;
+  /** Packing checklist items — renders a "What to pack" list when present. */
+  packingList?: string[];
+  /** "How to prepare" body, pre-rendered from Markdown to HTML by
+   *  scripts/generate-packages.mjs — renders a "How to prepare" section when present. */
+  preparationHtml?: string;
 };
 
 /* ---- Itinerary shapes ----
@@ -191,6 +213,8 @@ type PackageData = {
   regionKey: RegionKey;
   serviceKey: ServiceKey;
   image: string | null;
+  /** Present when `image` is set — resolved by scripts/generate-packages.mjs. */
+  imageDisplay?: string;
   blurb: string | null;
   price: number | null;
   featured: boolean;
@@ -205,6 +229,19 @@ type PackageData = {
   excludes?: string[];
   /** Present when the package has a non-empty `faqs` list. Absent otherwise. */
   faqs?: Faq[];
+  /** Present when the package has a non-empty `gallery` list. Absent otherwise. */
+  gallery?: string[];
+  /** Present when `gallery` is — resolved by scripts/generate-packages.mjs. */
+  galleryDisplay?: string[];
+  /** Present when the package's content/packages/<slug>.md has a `routeMap`. Absent otherwise. */
+  routeMap?: string;
+  /** Present when `routeMap` is — resolved by scripts/generate-packages.mjs. */
+  routeMapDisplay?: string;
+  /** Present when the package has a non-empty `packingList`. Absent otherwise. */
+  packingList?: string[];
+  /** Present when the package's content/packages/<slug>.md has a `preparation`
+   *  Markdown body, pre-rendered to HTML. Absent otherwise. */
+  preparationHtml?: string;
 };
 
 /**
@@ -221,6 +258,7 @@ export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
   region: REGION_LABELS[p.regionKey],
   serviceKey: p.serviceKey,
   image: p.image,
+  imageDisplay: p.imageDisplay,
   blurb: p.blurb,
   price: p.price,
   featured: p.featured,
@@ -229,6 +267,12 @@ export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
   includes: p.includes,
   excludes: p.excludes,
   faqs: p.faqs,
+  gallery: p.gallery,
+  galleryDisplay: p.galleryDisplay,
+  routeMap: p.routeMap,
+  routeMapDisplay: p.routeMapDisplay,
+  packingList: p.packingList,
+  preparationHtml: p.preparationHtml,
 }));
 
 export const totalPackages = packages.length; // 25
@@ -246,6 +290,22 @@ export function priceLabel(price: number | null): string {
 /** Look up a package by slug (used by the detail route + links). */
 export function getPackage(slug: string): Package | undefined {
   return packages.find((p) => p.slug === slug);
+}
+
+/**
+ * Up to `limit` other packages for the "Similar treks" section on a
+ * package's detail page — same region first (excluding the package itself);
+ * when none share a region, falls back to same service; when still none,
+ * returns an empty array so the caller can hide the section. Pure lookup
+ * over the canonical `packages` list — no extra data/field needed.
+ */
+export function relatedPackages(pkg: Package, limit = 3): Package[] {
+  const sameRegion = packages.filter((p) => p.slug !== pkg.slug && p.regionKey === pkg.regionKey);
+  const pool =
+    sameRegion.length > 0
+      ? sameRegion
+      : packages.filter((p) => p.slug !== pkg.slug && p.serviceKey === pkg.serviceKey);
+  return pool.slice(0, limit);
 }
 
 /**

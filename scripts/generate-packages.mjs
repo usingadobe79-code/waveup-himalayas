@@ -14,6 +14,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { marked } from "marked";
 
 const PACKAGES_DIR = path.join(process.cwd(), "content", "packages");
 const OUTPUT_FILE = path.join(process.cwd(), "lib", "packages.data.json");
@@ -139,17 +140,37 @@ function readTripFacts(data) {
   return Object.keys(facts).length ? facts : undefined;
 }
 
+/**
+ * Resolves the DISPLAY path for an on-page package image: returns the
+ * `.webp` twin only when it actually exists on disk (the 6 curated trek
+ * photos each ship with one, committed alongside the .jpg); otherwise
+ * returns `src` unchanged. This is what makes CMS uploads (cover `image`,
+ * `gallery`, `routeMap`) safe — a phone photo with no .webp twin renders as
+ * its original file instead of a 404'd .webp. Non-jpg/jpeg paths (png,
+ * already-webp, etc.) pass through unchanged — nothing to resolve. The raw
+ * `src` keeps flowing to callers separately (see `image`/`gallery`/
+ * `routeMap` below) for og:image/metadata — see lib/img.ts for why.
+ */
+function resolveDisplay(src) {
+  const webpPath = src.replace(/\.jpe?g$/i, ".webp");
+  if (webpPath === src) return src; // not a .jpg/.jpeg — nothing to resolve
+  const onDisk = path.join(process.cwd(), "public", webpPath);
+  return fs.existsSync(onDisk) ? webpPath : src;
+}
+
 function readPackage(slug) {
   const raw = fs.readFileSync(path.join(PACKAGES_DIR, `${slug}.md`), "utf8");
   const { data } = matter(raw);
   const itinerary = readItinerary(data);
   const tripFacts = readTripFacts(data);
+  const image = data.image || null;
   return {
     slug,
     title: data.title,
     regionKey: data.regionKey,
     serviceKey: data.serviceKey,
-    image: data.image || null,
+    image,
+    ...(image ? { imageDisplay: resolveDisplay(image) } : {}),
     blurb: data.blurb || null,
     price: data.price ?? null,
     featured: data.featured ?? false,
@@ -159,6 +180,16 @@ function readPackage(slug) {
     ...(data.excludes && data.excludes.length ? { excludes: data.excludes } : {}),
     ...(data.faqs && data.faqs.length
       ? { faqs: data.faqs.map((f) => ({ question: f.question, answer: f.answer })) }
+      : {}),
+    ...(data.gallery && data.gallery.length
+      ? { gallery: data.gallery, galleryDisplay: data.gallery.map(resolveDisplay) }
+      : {}),
+    ...(data.routeMap
+      ? { routeMap: data.routeMap, routeMapDisplay: resolveDisplay(data.routeMap) }
+      : {}),
+    ...(data.packingList && data.packingList.length ? { packingList: data.packingList } : {}),
+    ...(data.preparation
+      ? { preparationHtml: marked.parse(data.preparation, { async: false }) }
       : {}),
   };
 }
