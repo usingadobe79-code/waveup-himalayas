@@ -2,15 +2,15 @@
 title: TEST
 regionKey: everest
 serviceKey: trekking
-price: null
+price: 800
 image: ''
 blurb: Hello world
 featured: true
-itinerarySummary: TEST HELLOW WORLD
+itinerarySummary: TEST HELLO WORLD
 itineraryHighlights:
   - This is test.
 itineraryNotes:
-  - Tjis is TEST.
+  - This is TEST.
 itineraryDays:
   - day: 1
     route: test
@@ -37,4 +37,8 @@ excludes:
 faqs:
   - question: is this test
     answer: yes this is test
+gallery: []
+routeMap: ''
+packingList: []
+preparation: ''
 ---
