@@ -3,6 +3,8 @@ title: TEST
 regionKey: everest
 serviceKey: trekking
 price: 800
+originalPrice: 900
+offerLabel: auttum sale
 image: /images/packages/everest-heli-tour.jpg
 blurb: Hello world
 featured: true
