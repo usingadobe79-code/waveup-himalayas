@@ -8,6 +8,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import type { Faq } from "@/lib/content";
 
 const POSTS_DIR = path.join(process.cwd(), "content", "blog");
 
@@ -55,6 +56,11 @@ export type BlogPost = {
   /** Writer-set override for the Google snippet / meta description. Undefined
    *  when unset, in which case the page falls back to `excerpt`. */
   seoDescription?: string;
+  /** Writer-set FAQ pairs — renders the FAQ accordion + FAQPage JSON-LD on the
+   *  post when present (see components/sections/PackageFaq.tsx and
+   *  components/seo/FaqJsonLd.tsx). Undefined when absent, in which case the
+   *  section is omitted entirely. */
+  faqs?: Faq[];
   /** Rendered markdown body — only populated by getPost(), not the list. */
   contentHtml: string;
 };
@@ -72,7 +78,28 @@ type PostFrontmatter = {
   relatedPackages?: string[];
   seoTitle?: string;
   seoDescription?: string;
+  faqs?: Faq[];
 };
+
+/**
+ * Normalise frontmatter `faqs` into a clean Faq[], or undefined when there's
+ * nothing usable — drops any entry missing a non-empty question or answer so
+ * a partially-filled CMS row never renders a blank accordion item or an empty
+ * FAQPage Question/Answer pair. Mirrors the defensive style of `toDateString`.
+ */
+function parseFaqs(raw: unknown): Faq[] | undefined {
+  if (!Array.isArray(raw)) return undefined;
+  const faqs = raw.filter(
+    (f): f is Faq =>
+      typeof f === "object" &&
+      f !== null &&
+      typeof (f as Faq).question === "string" &&
+      (f as Faq).question.trim() !== "" &&
+      typeof (f as Faq).answer === "string" &&
+      (f as Faq).answer.trim() !== "",
+  );
+  return faqs.length > 0 ? faqs : undefined;
+}
 
 /**
  * Normalise a frontmatter date to a "YYYY-MM-DD" string. gray-matter's YAML
@@ -126,6 +153,7 @@ export function getAllPosts(): BlogPost[] {
         relatedPackages: data.relatedPackages ?? [],
         seoTitle: data.seoTitle || undefined,
         seoDescription: data.seoDescription || undefined,
+        faqs: parseFaqs(data.faqs),
         contentHtml: "",
       };
       return post;
@@ -151,6 +179,7 @@ export function getPost(slug: string): BlogPost | undefined {
     relatedPackages: data.relatedPackages ?? [],
     seoTitle: data.seoTitle || undefined,
     seoDescription: data.seoDescription || undefined,
+    faqs: parseFaqs(data.faqs),
     contentHtml: marked.parse(content, { async: false }),
   };
 }

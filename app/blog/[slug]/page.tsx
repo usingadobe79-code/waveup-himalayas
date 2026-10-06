@@ -5,6 +5,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
+import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
+import { PackageFaq } from "@/components/sections/PackageFaq";
 import { BlogRecommendedSidebar } from "@/components/sections/BlogRecommendedSidebar";
 import { BlogRecommendedDrawer } from "@/components/sections/BlogRecommendedDrawer";
 import { getPost, getPostSlugs, formatDate } from "@/lib/blog";
@@ -86,6 +88,7 @@ export default async function BlogPostPage({
         author={post.author}
         path={`/blog/${post.slug}`}
       />
+      {post.faqs && post.faqs.length > 0 && <FaqJsonLd faqs={post.faqs} />}
       <Header solid />
       <main className="flex-1">
         {/* Intro band — dark, so the solid navy header sits cleanly on top */}
@@ -130,6 +133,14 @@ export default async function BlogPostPage({
                     <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
                   </div>
 
+                  {/* FAQ — only for posts that supplied faqs (see FaqJsonLd above). */}
+                  {post.faqs && post.faqs.length > 0 && (
+                    <div className="mt-12">
+                      <h2 className="type-h3 text-ink">Frequently asked questions</h2>
+                      <PackageFaq faqs={post.faqs} />
+                    </div>
+                  )}
+
                   <div className="mt-12 border-t border-border pt-6 text-center">
                     <Link
                       href="/blog"
@@ -147,6 +158,14 @@ export default async function BlogPostPage({
                 <div className="prose-blog mx-auto max-w-[68ch]">
                   <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
                 </div>
+
+                {/* FAQ — only for posts that supplied faqs (see FaqJsonLd above). */}
+                {post.faqs && post.faqs.length > 0 && (
+                  <div className="mx-auto mt-12 max-w-[68ch]">
+                    <h2 className="type-h3 text-ink">Frequently asked questions</h2>
+                    <PackageFaq faqs={post.faqs} />
+                  </div>
+                )}
 
                 <div className="mx-auto mt-12 max-w-[68ch] border-t border-border pt-6 text-center">
                   <Link
