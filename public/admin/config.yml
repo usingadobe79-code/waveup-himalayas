@@ -114,3 +114,47 @@ collections:
             fields:
               - { label: "Time", name: "time", widget: "string" }
               - { label: "Activity", name: "activity", widget: "string" }
+      - label: "Trip facts"
+        name: "tripFacts"
+        widget: "object"
+        required: false
+        collapsed: true
+        hint: "Shown in the Trip Facts box on the trip page. Leave any field blank to hide it."
+        fields:
+          - { label: "Duration (e.g. '14 days')", name: "duration", widget: "string", required: false }
+          - label: "Difficulty"
+            name: "difficulty"
+            widget: "select"
+            required: false
+            options:
+              - "Easy"
+              - "Moderate"
+              - "Moderately challenging"
+              - "Challenging"
+              - "Strenuous"
+          - { label: "Max altitude (e.g. '5,160 m')", name: "maxAltitude", widget: "string", required: false }
+          - { label: "Best season (e.g. 'Autumn & Spring')", name: "bestSeason", widget: "string", required: false }
+          - { label: "Group size (e.g. '1–20')", name: "groupSize", widget: "string", required: false }
+          - { label: "Accommodation (e.g. 'Hotel + teahouse')", name: "accommodation", widget: "string", required: false }
+          - { label: "Meals (e.g. 'Breakfast, lunch & dinner on the trek')", name: "meals", widget: "string", required: false }
+          - { label: "Trek distance (e.g. '177 km / 110 mi')", name: "trekDistance", widget: "string", required: false }
+          - { label: "Start / End point (e.g. 'Kathmandu')", name: "startEndPoint", widget: "string", required: false }
+      - label: "What's included"
+        name: "includes"
+        widget: "list"
+        required: false
+        field: { label: "Item", name: "item", widget: "string" }
+      - label: "What's NOT included"
+        name: "excludes"
+        widget: "list"
+        required: false
+        field: { label: "Item", name: "item", widget: "string" }
+      - label: "FAQs"
+        name: "faqs"
+        widget: "list"
+        required: false
+        label_singular: "FAQ"
+        summary: "{{fields.question}}"
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }

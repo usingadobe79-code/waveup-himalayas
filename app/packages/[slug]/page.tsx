@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Check, MessageCircle, Mail, Phone } from "lucide-react";
+import { Check, X, MessageCircle, Mail, Phone } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { PackageItinerary } from "@/components/sections/PackageItinerary";
+import { TripFacts } from "@/components/sections/TripFacts";
+import { PackageFaq } from "@/components/sections/PackageFaq";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { TripJsonLd } from "@/components/seo/TripJsonLd";
+import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
 import {
   packages,
   getPackage,
@@ -127,6 +130,7 @@ export default async function PackageDetailPage({
         touristType={touristType}
         price={pkg.price}
       />
+      {pkg.faqs && pkg.faqs.length > 0 && <FaqJsonLd faqs={pkg.faqs} />}
       <Header solid />
       <main className="flex-1">
         {/* Hero */}
@@ -174,6 +178,16 @@ export default async function PackageDetailPage({
                 </p>
               </div>
 
+              {/* Trip facts — only for trips that supplied at least one fact */}
+              {pkg.tripFacts && (
+                <div>
+                  <h2 className="type-h3 text-ink">Trip facts</h2>
+                  <div className="mt-5">
+                    <TripFacts facts={pkg.tripFacts} />
+                  </div>
+                </div>
+              )}
+
               {/* Highlights — only for trips that supplied a highlights list */}
               {tripHighlights && tripHighlights.length > 0 && (
                 <div>
@@ -192,23 +206,45 @@ export default async function PackageDetailPage({
                 </div>
               )}
 
-              {/* What's included */}
+              {/* What's included — real per-trip inclusions when supplied, else the
+                  generic typicalInclusions placeholder (unchanged for existing trips). */}
               <div>
                 <h2 className="type-h3 text-ink">What&rsquo;s included</h2>
                 <ul className="mt-5 space-y-3">
-                  {typicalInclusions.map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
-                        <Check className="h-4 w-4" strokeWidth={2} aria-hidden="true" />
-                      </span>
-                      <span className="type-body text-ink">{item}</span>
-                    </li>
-                  ))}
+                  {(pkg.includes && pkg.includes.length > 0 ? pkg.includes : typicalInclusions).map(
+                    (item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+                          <Check className="h-4 w-4" strokeWidth={2} aria-hidden="true" />
+                        </span>
+                        <span className="type-body text-ink">{item}</span>
+                      </li>
+                    ),
+                  )}
                 </ul>
-                <p className="type-small mt-4 text-muted">
-                  Typical inclusions — exact details are confirmed per trip when you enquire.
-                </p>
+                {!(pkg.includes && pkg.includes.length > 0) && (
+                  <p className="type-small mt-4 text-muted">
+                    Typical inclusions — exact details are confirmed per trip when you enquire.
+                  </p>
+                )}
               </div>
+
+              {/* What's not included — only for trips that supplied exclusions */}
+              {pkg.excludes && pkg.excludes.length > 0 && (
+                <div>
+                  <h2 className="type-h3 text-ink">What&rsquo;s not included</h2>
+                  <ul className="mt-5 space-y-3">
+                    {pkg.excludes.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-surface-darker/10 text-muted">
+                          <X className="h-4 w-4" strokeWidth={2} aria-hidden="true" />
+                        </span>
+                        <span className="type-body text-ink">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               {/* Itinerary — real timeline when supplied, else the placeholder. */}
               <div>
@@ -227,6 +263,14 @@ export default async function PackageDetailPage({
                   </div>
                 )}
               </div>
+
+              {/* FAQ — only for trips that supplied faqs (see FaqJsonLd above). */}
+              {pkg.faqs && pkg.faqs.length > 0 && (
+                <div>
+                  <h2 className="type-h3 text-ink">Frequently asked questions</h2>
+                  <PackageFaq faqs={pkg.faqs} />
+                </div>
+              )}
             </div>
 
             {/* Booking card */}

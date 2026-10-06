@@ -113,10 +113,37 @@ function readItinerary(data) {
   return itinerary;
 }
 
+/**
+ * Trip facts sub-fields, in display order. Only non-empty values are kept;
+ * the whole `tripFacts` object is omitted (undefined) when none are set —
+ * so packages without any Trip Facts data render no Trip Facts box.
+ */
+const TRIP_FACTS_KEYS = [
+  "duration",
+  "difficulty",
+  "maxAltitude",
+  "bestSeason",
+  "groupSize",
+  "accommodation",
+  "meals",
+  "trekDistance",
+  "startEndPoint",
+];
+
+function readTripFacts(data) {
+  if (!data.tripFacts) return undefined;
+  const facts = {};
+  for (const key of TRIP_FACTS_KEYS) {
+    if (data.tripFacts[key]) facts[key] = data.tripFacts[key];
+  }
+  return Object.keys(facts).length ? facts : undefined;
+}
+
 function readPackage(slug) {
   const raw = fs.readFileSync(path.join(PACKAGES_DIR, `${slug}.md`), "utf8");
   const { data } = matter(raw);
   const itinerary = readItinerary(data);
+  const tripFacts = readTripFacts(data);
   return {
     slug,
     title: data.title,
@@ -127,6 +154,12 @@ function readPackage(slug) {
     price: data.price ?? null,
     featured: data.featured ?? false,
     ...(itinerary ? { itinerary } : {}),
+    ...(tripFacts ? { tripFacts } : {}),
+    ...(data.includes && data.includes.length ? { includes: data.includes } : {}),
+    ...(data.excludes && data.excludes.length ? { excludes: data.excludes } : {}),
+    ...(data.faqs && data.faqs.length
+      ? { faqs: data.faqs.map((f) => ({ question: f.question, answer: f.answer })) }
+      : {}),
   };
 }
 

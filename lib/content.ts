@@ -114,6 +114,15 @@ export type Package = {
   /** Real day-by-day / time-based itinerary (client-supplied), if available.
    *  Packages without one keep the "Detailed itinerary on enquiry" placeholder. */
   itinerary?: Itinerary;
+  /** Quick-reference facts (duration, difficulty, altitude, etc.) — renders
+   *  the Trip Facts box on the detail page when present. */
+  tripFacts?: TripFacts;
+  /** Real per-trip inclusions. Falls back to `typicalInclusions` when absent. */
+  includes?: string[];
+  /** Real per-trip exclusions — renders a "What's not included" list when present. */
+  excludes?: string[];
+  /** Per-trip FAQs — renders the FAQ accordion + FAQPage JSON-LD when present. */
+  faqs?: Faq[];
 };
 
 /* ---- Itinerary shapes ----
@@ -148,6 +157,24 @@ export type Itinerary =
       sections: ScheduleSection[];
     };
 
+/** Quick-reference facts shown in the Trip Facts box on a package's detail
+ *  page. All sub-fields are optional strings, stored exactly as supplied
+ *  (never computed) — the box itself is omitted when none are set. */
+export type TripFacts = {
+  duration?: string;
+  difficulty?: string;
+  maxAltitude?: string;
+  bestSeason?: string;
+  groupSize?: string;
+  accommodation?: string;
+  meals?: string;
+  trekDistance?: string;
+  startEndPoint?: string;
+};
+
+/** One FAQ entry (also emitted as FAQPage JSON-LD — see FaqJsonLd). */
+export type Faq = { question: string; answer: string };
+
 const REGION_LABELS: Record<RegionKey, string> = {
   everest: "Everest Region",
   annapurna: "Annapurna Region",
@@ -170,6 +197,14 @@ type PackageData = {
   /** Present when the package's content/packages/<slug>.md has an itinerary
    *  (itineraryDays or itinerarySchedule). Absent otherwise. */
   itinerary?: Itinerary;
+  /** Present when any Trip Facts sub-field is set. Absent otherwise. */
+  tripFacts?: TripFacts;
+  /** Present when the package has a non-empty `includes` list. Absent otherwise. */
+  includes?: string[];
+  /** Present when the package has a non-empty `excludes` list. Absent otherwise. */
+  excludes?: string[];
+  /** Present when the package has a non-empty `faqs` list. Absent otherwise. */
+  faqs?: Faq[];
 };
 
 /**
@@ -190,6 +225,10 @@ export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
   price: p.price,
   featured: p.featured,
   itinerary: p.itinerary,
+  tripFacts: p.tripFacts,
+  includes: p.includes,
+  excludes: p.excludes,
+  faqs: p.faqs,
 }));
 
 export const totalPackages = packages.length; // 25
