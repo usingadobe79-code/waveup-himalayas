@@ -42,6 +42,11 @@ export type BlogPost = {
   coverImage: string;
   author: string;
   draft: boolean;
+  /** Writer-picked package slugs for the "Recommended treks" sidebar/drawer
+   *  on the post (see components/sections/BlogRecommendedSidebar.tsx and
+   *  BlogRecommendedDrawer.tsx). Optional — defaults to [] when absent, in
+   *  which case the post renders with no sidebar/drawer at all. */
+  relatedPackages: string[];
   /** Rendered markdown body — only populated by getPost(), not the list. */
   contentHtml: string;
 };
@@ -56,6 +61,7 @@ type PostFrontmatter = {
   coverImage: string;
   author: string;
   draft?: boolean;
+  relatedPackages?: string[];
 };
 
 /**
@@ -107,6 +113,7 @@ export function getAllPosts(): BlogPost[] {
         coverImage: data.coverImage,
         author: data.author,
         draft: data.draft ?? false,
+        relatedPackages: data.relatedPackages ?? [],
         contentHtml: "",
       };
       return post;
@@ -129,6 +136,7 @@ export function getPost(slug: string): BlogPost | undefined {
     coverImage: data.coverImage,
     author: data.author,
     draft: data.draft ?? false,
+    relatedPackages: data.relatedPackages ?? [],
     contentHtml: marked.parse(content, { async: false }),
   };
 }

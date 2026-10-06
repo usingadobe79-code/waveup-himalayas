@@ -5,8 +5,10 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
+import { BlogRecommendedSidebar } from "@/components/sections/BlogRecommendedSidebar";
+import { BlogRecommendedDrawer } from "@/components/sections/BlogRecommendedDrawer";
 import { getPost, getPostSlugs, formatDate } from "@/lib/blog";
-import { business } from "@/lib/content";
+import { business, getPackage, type Package } from "@/lib/content";
 
 // Only the known post slugs are valid routes; anything else 404s.
 export const dynamicParams = false;
@@ -53,6 +55,14 @@ export default async function BlogPostPage({
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) notFound();
+
+  // Writer-picked "Recommended treks" (optional) — resolve each slug to its
+  // Package, dropping any that no longer exist. Empty when the post has none,
+  // in which case the sidebar/drawer below render nothing and the body keeps
+  // its original single-column layout.
+  const recommended = post.relatedPackages
+    .map((pkgSlug) => getPackage(pkgSlug))
+    .filter((p): p is Package => p !== undefined);
 
   return (
     <>
@@ -103,23 +113,50 @@ export default async function BlogPostPage({
           />
         </div>
 
-        {/* Body */}
+        {/* Body — a plain centered column when the post has no recommended
+            treks (unchanged); a two-column grid with a sticky sidebar from
+            `lg` up when it does (BlogRecommendedDrawer covers mobile). */}
         <section className="section-y bg-surface">
           <div className="container-page">
-            <div className="prose-blog mx-auto max-w-[68ch]">
-              <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-            </div>
+            {recommended.length > 0 ? (
+              <div className="grid gap-12 lg:grid-cols-[1fr_320px] lg:gap-16">
+                <div className="max-w-[68ch]">
+                  <div className="prose-blog">
+                    <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+                  </div>
 
-            <div className="mx-auto mt-12 max-w-[68ch] border-t border-border pt-6 text-center">
-              <Link
-                href="/blog"
-                className="type-small font-semibold text-accent-ink underline-offset-4 hover:underline"
-              >
-                ← Back to all posts
-              </Link>
-            </div>
+                  <div className="mt-12 border-t border-border pt-6 text-center">
+                    <Link
+                      href="/blog"
+                      className="type-small font-semibold text-accent-ink underline-offset-4 hover:underline"
+                    >
+                      ← Back to all posts
+                    </Link>
+                  </div>
+                </div>
+
+                <BlogRecommendedSidebar packages={recommended} />
+              </div>
+            ) : (
+              <>
+                <div className="prose-blog mx-auto max-w-[68ch]">
+                  <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+                </div>
+
+                <div className="mx-auto mt-12 max-w-[68ch] border-t border-border pt-6 text-center">
+                  <Link
+                    href="/blog"
+                    className="type-small font-semibold text-accent-ink underline-offset-4 hover:underline"
+                  >
+                    ← Back to all posts
+                  </Link>
+                </div>
+              </>
+            )}
           </div>
         </section>
+
+        {recommended.length > 0 && <BlogRecommendedDrawer packages={recommended} />}
       </main>
       <Footer />
     </>

@@ -26,6 +26,15 @@ collections:
       - { label: "Cover image", name: "coverImage", widget: "image" }
       - { label: "Author", name: "author", widget: "string", default: "WaveUp Himalayas" }
       - { label: "Draft (keep hidden from the site)", name: "draft", widget: "boolean", default: false }
+      - label: "Recommended treks (shown in the sidebar)"
+        name: "relatedPackages"
+        widget: "relation"
+        collection: "packages"
+        value_field: "{{slug}}"
+        search_fields: ["title"]
+        display_fields: ["title"]
+        multiple: true
+        required: false
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "packages"
