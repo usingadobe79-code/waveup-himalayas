@@ -162,9 +162,17 @@ function resolveDisplay(src) {
   return fs.existsSync(onDisk) ? webpPath : src;
 }
 
+/**
+ * Reads one package's frontmatter, or returns undefined when it's marked
+ * `draft: true` — drafts never enter packages.data.json, so (unlike blog
+ * drafts, which still get a page built — see lib/blog.ts) a draft package
+ * gets no page built and is absent from every listing/count/sitemap that
+ * derives from that data (see main()).
+ */
 function readPackage(slug) {
   const raw = fs.readFileSync(path.join(PACKAGES_DIR, `${slug}.md`), "utf8");
   const { data } = matter(raw);
+  if (data.draft === true) return undefined;
   const itinerary = readItinerary(data);
   const tripFacts = readTripFacts(data);
   const image = data.image || null;
@@ -221,18 +229,26 @@ function main() {
 
   const orderedSlugs = [...knownOrder, ...extra];
 
-  const packages = orderedSlugs.map((slug) => {
-    try {
-      return readPackage(slug);
-    } catch (err) {
-      throw new Error(`Failed to process content/packages/${slug}.md: ${err.message}`);
-    }
-  });
+  const packages = orderedSlugs
+    .map((slug) => {
+      try {
+        return readPackage(slug);
+      } catch (err) {
+        throw new Error(`Failed to process content/packages/${slug}.md: ${err.message}`);
+      }
+    })
+    .filter((p) => p !== undefined);
+
+  const draftCount = orderedSlugs.length - packages.length;
 
   fs.mkdirSync(path.dirname(OUTPUT_FILE), { recursive: true });
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(packages, null, 2) + "\n", "utf8");
 
-  console.log(`Generated ${OUTPUT_FILE} (${packages.length} packages)`);
+  console.log(
+    `Generated ${OUTPUT_FILE} (${packages.length} packages${
+      draftCount > 0 ? `, ${draftCount} skipped as draft` : ""
+    })`,
+  );
 }
 
 main();
