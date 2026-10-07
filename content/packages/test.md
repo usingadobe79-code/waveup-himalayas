@@ -10,6 +10,7 @@ blurb: Hello world
 seoTitle: ''
 seoDescription: ''
 featured: false
+draft: true
 itinerarySummary: TEST HELLO WORLD
 itineraryHighlights:
   - This is test.
@@ -21,6 +22,7 @@ itineraryDays:
     altitude: test
     duration: test
     description: HELLO WORLD
+    image: ''
     highlights: HEY
 itineraryPeaks: []
 itinerarySchedule: []
