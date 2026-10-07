@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/generate-packages.mjs && next dev",
-    "build": "node scripts/generate-packages.mjs && next build",
+    "dev": "node scripts/generate-packages.mjs && node scripts/generate-offers.mjs && next dev",
+    "build": "node scripts/generate-packages.mjs && node scripts/generate-offers.mjs && next build",
     "start": "next start",
     "lint": "eslint"
   },

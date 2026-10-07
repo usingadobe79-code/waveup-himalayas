@@ -7,6 +7,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { SaleBadge } from "@/components/ui/SaleBadge";
 import { PriceTag } from "@/components/ui/PriceTag";
+import { WishlistButton } from "@/components/ui/WishlistButton";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
 import { featuredPackages, totalPackages, whatsappEnquiry } from "@/lib/content";
@@ -69,10 +70,13 @@ export function FeaturedPackages() {
                     className="transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.08]"
                   />
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface-darker/55 to-transparent" />
-                  <span className="type-small absolute left-4 top-4 rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
-                    {pkg.region}
-                  </span>
-                  <SaleBadge pkg={pkg} className="absolute right-4 top-4" />
+                  <div className="absolute left-4 top-4 z-10 flex flex-col items-start gap-1.5">
+                    <span className="type-small rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
+                      {pkg.region}
+                    </span>
+                    <SaleBadge pkg={pkg} />
+                  </div>
+                  <WishlistButton slug={pkg.slug} className="absolute right-4 top-4 z-10" />
                 </div>
 
                 {/* Body */}

@@ -2,14 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { MessageCircle, Menu, X, ChevronDown } from "lucide-react";
+import { MessageCircle, Menu, X, ChevronDown, Heart } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
 import { EASE_OUT_EXPO } from "@/lib/motion";
 import { useReducedMotion } from "@/lib/useReducedMotion";
+import { useWishlist } from "@/lib/useWishlist";
 import { contact, services, regions, serviceCount } from "@/lib/content";
 
 type NavItem = { label: string; href: string; count?: number };
@@ -78,6 +80,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const navRef = useRef<HTMLElement | null>(null);
   const reduced = useReducedMotion();
+  const { count } = useWishlist();
   const pathname = usePathname();
   const onHome = pathname === "/";
   const frosted = scrolled || open || solid;
@@ -301,6 +304,22 @@ export function Header({ solid = false }: { solid?: boolean }) {
             <MessageCircle className="h-4 w-4" />
             Book Now
           </Button>
+
+          {/* Saved treks — client-side wishlist (lib/useWishlist.ts), no
+              server/db. Count starts at 0 until mount (hydration-safe) and
+              self-corrects right after, same as every heart button. */}
+          <Link
+            href="/wishlist"
+            aria-label={count > 0 ? `Saved treks (${count})` : "Saved treks"}
+            className="relative inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10"
+          >
+            <Heart className="h-5 w-5" aria-hidden="true" />
+            {count > 0 && (
+              <span className="absolute right-1 top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-accent px-1 text-[0.65rem] font-semibold leading-none text-surface-darker">
+                {count}
+              </span>
+            )}
+          </Link>
 
           {/*
             Hamburger — everything below xl. The old -mr-1 pulled it into the

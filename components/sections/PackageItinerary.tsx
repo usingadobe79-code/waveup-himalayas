@@ -3,8 +3,9 @@ import type { Itinerary } from "@/lib/content";
 /**
  * Renders a package itinerary using only existing design-system tokens (no new
  * visual style). Two layouts:
- *  - "days"     → a numbered day-by-day timeline (route, altitude · duration,
- *                 description and/or highlights), plus any trip notes.
+ *  - "days"     → a day-by-day accordion (route, altitude · duration,
+ *                 description and/or highlights, optional photo), plus any
+ *                 trip notes.
  *  - "schedule" → time → activity rows for flight/heli tours, plus peaks & notes.
  * All values come straight from content.ts (client-supplied; nothing computed).
  */
@@ -16,55 +17,87 @@ export function PackageItinerary({ itinerary }: { itinerary: Itinerary }) {
   );
 }
 
+/**
+ * Day-by-day accordion — plain `<details>/<summary>` per day (same
+ * static-safe approach as PackageFaq, so it needs no JS and works unchanged
+ * in the static export). The first day starts expanded; the rest start
+ * collapsed. Each day's description/highlights and optional photo
+ * (`imageDisplay`) are revealed on expand.
+ */
 function DaysView({ itinerary }: { itinerary: Extract<Itinerary, { kind: "days" }> }) {
   const { days, notes } = itinerary;
   return (
     <div className="mt-6">
-      <ol>
+      <div className="space-y-3">
         {days.map((d, i) => {
           const meta = [d.altitude, d.duration].filter((x) => x && x !== "—");
           const main = d.description ?? d.highlights;
           // Only when a day has BOTH a description and separate highlights.
           const extra = d.description && d.highlights ? d.highlights : null;
-          const last = i === days.length - 1;
           return (
-            <li key={d.day} className="flex gap-4 sm:gap-5">
-              {/* Day marker + connecting rail */}
-              <div className="flex flex-col items-center">
-                <span className="z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent/10 text-sm font-semibold text-accent-ink">
-                  {d.day}
+            <details
+              key={d.day}
+              open={i === 0}
+              className="group rounded-card border border-border bg-surface-alt p-5"
+            >
+              <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
+                <span>
+                  <span className="type-small block font-semibold uppercase tracking-wide text-muted">
+                    Day {d.day}
+                  </span>
+                  <span className="type-body mt-0.5 block font-semibold text-ink">
+                    {d.route}
+                  </span>
+                  {meta.length > 0 && (
+                    <span className="type-small mt-1 block text-muted">
+                      {meta.map((m, mi) => (
+                        <span key={`${m}-${mi}`}>
+                          {mi > 0 && <span className="px-1.5 text-accent-ink">·</span>}
+                          {m}
+                        </span>
+                      ))}
+                    </span>
+                  )}
                 </span>
-                {!last && <span aria-hidden="true" className="w-px flex-1 bg-border" />}
-              </div>
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 20 20"
+                  className="mt-1 h-5 w-5 shrink-0 text-accent transition-transform duration-200 group-open:rotate-180"
+                  fill="none"
+                >
+                  <path
+                    d="M5 7.5l5 5 5-5"
+                    stroke="currentColor"
+                    strokeWidth={1.75}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </summary>
 
-              {/* Day content */}
-              <div className={last ? "pb-1" : "pb-8"}>
-                <p className="type-small font-semibold uppercase tracking-wide text-muted">
-                  Day {d.day}
-                </p>
-                <h3 className="type-body mt-0.5 font-semibold text-ink">{d.route}</h3>
-                {meta.length > 0 && (
-                  <p className="type-small mt-1 text-muted">
-                    {meta.map((m, mi) => (
-                      <span key={`${m}-${mi}`}>
-                        {mi > 0 && <span className="px-1.5 text-accent-ink">·</span>}
-                        {m}
-                      </span>
-                    ))}
-                  </p>
-                )}
-                {main && <p className="type-small mt-2 text-muted">{main}</p>}
-                {extra && (
-                  <p className="type-small mt-1.5 text-muted">
-                    <span className="font-medium text-accent-ink">Highlights — </span>
-                    {extra}
-                  </p>
-                )}
-              </div>
-            </li>
+              {(main || extra || d.imageDisplay) && (
+                <div className="mt-3">
+                  {main && <p className="type-small text-muted">{main}</p>}
+                  {extra && (
+                    <p className="type-small mt-1.5 text-muted">
+                      <span className="font-medium text-accent-ink">Highlights — </span>
+                      {extra}
+                    </p>
+                  )}
+                  {d.imageDisplay && (
+                    <img
+                      src={d.imageDisplay}
+                      alt={`Day ${d.day} — ${d.route}`}
+                      loading="lazy"
+                      className="mt-3 max-h-80 w-full rounded-card object-cover"
+                    />
+                  )}
+                </div>
+              )}
+            </details>
           );
         })}
-      </ol>
+      </div>
 
       {notes && notes.length > 0 && <Notes notes={notes} />}
     </div>

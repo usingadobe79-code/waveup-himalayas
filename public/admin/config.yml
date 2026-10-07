@@ -112,6 +112,11 @@ collections:
           - { label: "Altitude (optional)", name: "altitude", widget: "string", required: false }
           - { label: "Duration / hours (optional)", name: "duration", widget: "string", required: false }
           - { label: "Description (optional)", name: "description", widget: "text", required: false }
+          - label: "Photo (optional)"
+            name: "image"
+            widget: "image"
+            required: false
+            hint: "Optional photo for this day — shows when the day is expanded."
           - { label: "Day highlights (optional)", name: "highlights", widget: "string", required: false }
       - label: "Itinerary — peaks you'll see (heli / flight tours)"
         name: "itineraryPeaks"
@@ -198,3 +203,30 @@ collections:
         widget: "markdown"
         required: false
         hint: "Optional fitness/training guidance, shown as a \"How to prepare\" section on the trip page."
+
+  - name: "siteContent"
+    label: "Homepage sections"
+    files:
+      - name: "offers"
+        label: "Current Offers (homepage)"
+        description: "Edit the 'Current Offers' section on the homepage. Click Publish and the site updates in a couple of minutes."
+        file: "content/offers.md"
+        media_folder: "/public/images/offers"
+        public_folder: "/images/offers"
+        fields:
+          - { label: "Eyebrow (small label above the heading)", name: "eyebrow", widget: "string", default: "Limited Time" }
+          - { label: "Heading", name: "title", widget: "string", default: "Current Offers" }
+          - { label: "Intro text", name: "intro", widget: "text" }
+          - label: "Offer cards"
+            name: "offers"
+            widget: "list"
+            label_singular: "Offer"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Badge (e.g. '-20%')", name: "label", widget: "string", hint: "Free text — shown in the gold badge, followed by the word 'off'." }
+              - { label: "Offer title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Button text", name: "buttonText", widget: "string", default: "Claim This Offer" }
+              - { label: "Custom link (optional)", name: "customUrl", widget: "string", required: false, hint: "Leave blank to send enquiries to WhatsApp (default). Set this to override the button's link with a custom URL instead." }
+              - { label: "Photo (optional)", name: "image", widget: "image", required: false }
+              - { label: "Valid until / note (optional)", name: "validUntil", widget: "string", required: false, hint: "e.g. 'Valid until 30 Nov' — shown as a small note under the description." }

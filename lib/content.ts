@@ -12,6 +12,7 @@
  * import below is the only link to the filesystem-backed source.
  */
 import packagesData from "./packages.data.json";
+import offersData from "./offers.data.json";
 
 export const business = {
   name: "WaveUp Himalayas",
@@ -69,19 +70,67 @@ export const services = [
   { key: "custom-trips", title: "Custom Trips", blurb: "Fully customized packages, permits, bus tickets & info." },
 ] as const;
 
-/** Current offers (from Tourist.com). */
-export const offers = [
-  {
-    badge: "-20%",
-    title: "Everest Base Camp Heli Tour with Breakfast",
-    detail: "20% off for Tourist “Plus” members.",
-  },
-  {
-    badge: "-10%",
-    title: "All Himalayan Adventures",
-    detail: "10% off trekking, city tours & jungle safari.",
-  },
-] as const;
+/**
+ * Current offers section (homepage) — editable via the CMS "Homepage
+ * sections" singleton, backed by content/offers.md and generated at build
+ * time into ./offers.data.json by scripts/generate-offers.mjs (run via the
+ * `dev` and `build` npm scripts, alongside generate-packages.mjs). This file
+ * is imported by client components too ("use client" — see
+ * components/sections/Offers.tsx), so it must stay free of `fs`/Node-only
+ * APIs — the JSON import below is the only link to the filesystem-backed
+ * source.
+ */
+export const offersSection = {
+  eyebrow: offersData.eyebrow,
+  title: offersData.title,
+  intro: offersData.intro,
+};
+
+/** One promo card in the "Current Offers" section.
+ *  - badge/title/detail: the original fields — kept so Offers.tsx's prior
+ *    shape still works unchanged.
+ *  - buttonText: defaults to "Claim This Offer" when unset.
+ *  - customUrl: writer-set link override — when set, the card's button goes
+ *    here instead of the default WhatsApp enquiry. Omitted when unset.
+ *  - image/imageDisplay: optional card photo — see `imageDisplay` on
+ *    `Package` for how the `.webp` display path is resolved. Omitted
+ *    together when no image is set.
+ *  - validUntil: optional free-text note (e.g. an expiry date). Omitted
+ *    when unset. */
+export type Offer = {
+  badge: string;
+  title: string;
+  detail: string;
+  buttonText: string;
+  customUrl?: string;
+  image?: string;
+  imageDisplay?: string;
+  validUntil?: string;
+};
+
+type OfferData = {
+  label: string;
+  title: string;
+  description: string;
+  buttonText: string;
+  customUrl?: string;
+  image?: string;
+  imageDisplay?: string;
+  validUntil?: string;
+};
+
+/** Current offers (from Tourist.com) — see `offersSection` above for the
+ *  section header. */
+export const offers: Offer[] = (offersData.offers as OfferData[]).map((o) => ({
+  badge: o.label,
+  title: o.title,
+  detail: o.description,
+  buttonText: o.buttonText,
+  customUrl: o.customUrl,
+  image: o.image,
+  imageDisplay: o.imageDisplay,
+  validUntil: o.validUntil,
+}));
 
 /* ==========================================================================
    Packages — ONE canonical list. featuredPackages + regions derive from it.

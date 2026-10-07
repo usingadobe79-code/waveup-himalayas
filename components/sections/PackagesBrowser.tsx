@@ -6,6 +6,7 @@ import { MapPin, Clock } from "lucide-react";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { SaleBadge } from "@/components/ui/SaleBadge";
 import { PriceTag } from "@/components/ui/PriceTag";
+import { WishlistButton } from "@/components/ui/WishlistButton";
 import { packages, regions, services, packageService, type ServiceKey } from "@/lib/content";
 import { cn } from "@/lib/cn";
 
@@ -112,10 +113,13 @@ export function PackagesBrowser() {
                         className="transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.06]"
                       />
                       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface-darker/55 to-transparent" />
-                      <span className="type-small absolute left-4 top-4 rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
-                        {p.region}
-                      </span>
-                      <SaleBadge pkg={p} className="absolute right-4 top-4" />
+                      <div className="absolute left-4 top-4 z-10 flex flex-col items-start gap-1.5">
+                        <span className="type-small rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
+                          {p.region}
+                        </span>
+                        <SaleBadge pkg={p} />
+                      </div>
+                      <WishlistButton slug={p.slug} className="absolute right-4 top-4 z-10" />
                     </div>
                     <div className="flex flex-1 flex-col p-5">
                       <h3 className="type-h3 text-ink">{p.title}</h3>

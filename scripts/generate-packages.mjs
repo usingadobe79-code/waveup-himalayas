@@ -107,6 +107,10 @@ function readItinerary(data) {
     if (d.altitude) day.altitude = d.altitude;
     if (d.duration) day.duration = d.duration;
     if (d.description) day.description = d.description;
+    if (d.image) {
+      day.image = d.image;
+      day.imageDisplay = resolveDisplay(d.image);
+    }
     if (d.highlights) day.highlights = d.highlights;
     return day;
   });

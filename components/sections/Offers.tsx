@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { EASE_OUT_EXPO } from "@/lib/motion";
-import { offers, whatsappEnquiry } from "@/lib/content";
+import { offers, offersSection, whatsappEnquiry } from "@/lib/content";
 
 /**
  * Offers — 2 promo cards (docs/01 §6). The cards slide in from opposite sides;
@@ -29,9 +30,9 @@ export function Offers() {
       <div className="container-page">
         <SectionHeading
           onDark
-          eyebrow="Limited Time"
-          title="Current Offers"
-          intro="Seasonal savings on our most-requested adventures. Verified offers via Tourist.com — message us to claim."
+          eyebrow={offersSection.eyebrow}
+          title={offersSection.title}
+          intro={offersSection.intro}
         />
 
         <div className="mt-12 grid gap-6 md:mt-16 md:grid-cols-2">
@@ -66,6 +67,18 @@ export function Offers() {
                 />
 
                 <div className="relative flex h-full flex-col items-start">
+                  {offer.imageDisplay && (
+                    <div className="relative mb-6 h-40 w-full overflow-hidden rounded-xl">
+                      <Image
+                        src={offer.imageDisplay}
+                        alt={offer.title}
+                        fill
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
+
                   <motion.span
                     {...badge}
                     viewport={{ once: true, amount: 0.6 }}
@@ -77,23 +90,27 @@ export function Offers() {
 
                   <h3 className="type-h3 mt-6 text-on-dark">{offer.title}</h3>
                   <p className="type-body mt-3 flex-1 text-on-dark/65">{offer.detail}</p>
+                  {offer.validUntil && (
+                    <p className="type-small mt-2 text-on-dark/50">{offer.validUntil}</p>
+                  )}
 
                   <Button
-                    href={whatsappEnquiry(offer.title)}
+                    href={offer.customUrl || whatsappEnquiry(offer.title)}
                     target="_blank"
                     rel="noopener noreferrer"
                     variant="gold"
                     className="mt-8"
                     /**
-                     * Every offer's button reads "Claim This Offer", so anyone
-                     * navigating by link — screen reader users especially — hears
-                     * the same phrase repeatedly with no way to tell which offer
-                     * is which. The visible label stays short; the accessible
-                     * name names the offer.
+                     * Every offer's button reads the same buttonText (default
+                     * "Claim This Offer"), so anyone navigating by link —
+                     * screen reader users especially — hears the same phrase
+                     * repeatedly with no way to tell which offer is which. The
+                     * visible label stays short; the accessible name names the
+                     * offer.
                      */
-                    aria-label={`Claim This Offer — ${offer.title}`}
+                    aria-label={`${offer.buttonText} — ${offer.title}`}
                   >
-                    Claim This Offer
+                    {offer.buttonText}
                   </Button>
                 </div>
               </motion.article>
