@@ -15,6 +15,6 @@ offers:
     description: 10% off trekking, city tours & jungle safari.
     buttonText: Claim This Offer
     customUrl: ''
-    image: ''
+    image: https://waveuphimalayas.com/images/blog/Everest-Base-Camp-Header.jpg
     validUntil: ''
 ---
