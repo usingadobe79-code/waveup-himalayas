@@ -4,10 +4,10 @@ import { getAllPosts } from "@/lib/blog";
 
 /**
  * sitemap.xml — home, the packages index, all 25 detail pages, the blog
- * index, and every published post. URLs derive from the real package slugs
- * and the real post slugs (see content.ts / lib/blog.ts); origin from
- * `siteUrl` (see content.ts). lastModified is intentionally omitted (no real
- * per-page change dates to report).
+ * index, every published post, and the About page. URLs derive from the real
+ * package slugs and the real post slugs (see content.ts / lib/blog.ts);
+ * origin from `siteUrl` (see content.ts). lastModified is intentionally
+ * omitted (no real per-page change dates to report).
  *
  * URLs carry a trailing slash to match `trailingSlash: true` in next.config.ts —
  * that is the form the export actually serves, so listing the bare path here
@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/`, changeFrequency: "monthly", priority: 1 },
     { url: `${siteUrl}/packages/`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/blog/`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/about/`, changeFrequency: "monthly", priority: 0.6 },
   ];
   for (const p of packages) {
     routes.push({

@@ -41,7 +41,9 @@ const regionsMenu: NavItem[] = regions.map((r) => ({
   count: r.packages.length,
 }));
 
-/** About dropdown — section anchors, resolved off-home via resolve(). */
+/** About dropdown — section anchors, resolved off-home via resolve(). The
+ *  "View all" row below links to the standalone /about page (company intro,
+ *  mission, Why Choose Us and Our Team). */
 const aboutMenu: NavItem[] = [
   { label: "Why Us", href: "#why-us" },
   { label: "Gallery", href: "#gallery" },
@@ -52,7 +54,7 @@ const aboutMenu: NavItem[] = [
 const navGroups: NavGroup[] = [
   { key: "packages", label: "Packages", items: packagesMenu, viewAll: { label: "View all packages", href: "/packages" } },
   { key: "regions", label: "Regions", items: regionsMenu },
-  { key: "about", label: "About", items: aboutMenu },
+  { key: "about", label: "About", items: aboutMenu, viewAll: { label: "About WaveUp Himalayas", href: "/about" } },
 ];
 
 const blogLink: NavItem = { label: "Blog", href: "/blog" };

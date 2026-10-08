@@ -231,3 +231,66 @@ collections:
               - { label: "Custom link (optional)", name: "customUrl", widget: "string", required: false, hint: "Leave blank to send enquiries to WhatsApp (default). Set this to override the button's link with a custom URL instead." }
               - { label: "Photo (optional)", name: "image", widget: "image", required: false }
               - { label: "Valid until / note (optional)", name: "validUntil", widget: "string", required: false, hint: "e.g. 'Valid until 30 Nov' — shown as a small note under the description." }
+
+      - name: "about"
+        label: "About Page"
+        description: "Edit the /about page — company intro, mission and Why Choose Us. Click Publish and the site updates in a couple of minutes."
+        file: "content/about.md"
+        fields:
+          - { label: "Eyebrow (small label above the heading)", name: "eyebrow", widget: "string", default: "About Us" }
+          - { label: "Heading", name: "title", widget: "string", default: "About WaveUp Himalayas" }
+          - label: "Introduction"
+            name: "intro"
+            widget: "markdown"
+            hint: "A few paragraphs introducing the company — who you are, where you're based and how you work. Keep it general and truthful (no invented stats, years or awards)."
+          - label: "Our Mission — 3 points"
+            name: "mission"
+            widget: "list"
+            label_singular: "Point"
+            summary: "{{fields.title}}"
+            hint: "Designed for exactly 3 points."
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Why Choose Us — 6 features"
+            name: "whyUs"
+            widget: "list"
+            label_singular: "Feature"
+            summary: "{{fields.title}}"
+            hint: "Designed for exactly 6 features, shown as a grid of cards."
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Icon (optional)"
+                name: "icon"
+                widget: "select"
+                required: false
+                hint: "Leave blank for a default icon."
+                options:
+                  - { label: "Map pin — local knowledge", value: "map-pinned" }
+                  - { label: "Shield check — safety / licensed", value: "shield-check" }
+                  - { label: "Sliders — customizable", value: "sliders-horizontal" }
+                  - { label: "Mountain — treks & trips", value: "mountain-snow" }
+                  - { label: "Message bubble — communication", value: "message-circle" }
+                  - { label: "Heart handshake — care & support", value: "heart-handshake" }
+                  - { label: "Users — team & guides", value: "users" }
+                  - { label: "Globe — local expertise", value: "globe" }
+                  - { label: "Compass — planning", value: "compass" }
+                  - { label: "Clock — availability", value: "clock" }
+
+  - name: "team"
+    label: "Team"
+    label_singular: "Team member"
+    description: "Add or edit a team member shown on the About page. Click Publish and the site updates in a couple of minutes."
+    folder: "content/team"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["order", "name"]
+    media_folder: "/public/images/team"
+    public_folder: "/images/team"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role / title", name: "role", widget: "string" }
+      - { label: "Photo (optional)", name: "photo", widget: "image", required: false }
+      - { label: "Order (lower numbers show first)", name: "order", widget: "number", required: false, value_type: "int", hint: "Optional — leave blank to sort by name." }
+      - { label: "Short bio (optional)", name: "bio", widget: "text", required: false }
