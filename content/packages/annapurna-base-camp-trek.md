@@ -2,7 +2,7 @@
 title: Annapurna Base Camp Trek
 regionKey: annapurna
 serviceKey: trekking
-price: 900
+price: 700
 originalPrice: 100
 offerLabel: ''
 image: /images/packages/37bbb1b4-0f3e-46c9-be40-38d98ea8b44d.png
@@ -124,7 +124,18 @@ includes:
   - 'Porter: Porters as required, with a standard ratio of 1 porter for every 2 trekkers.'
   - 'Transportation: Comfortable vehicle/jeep as per the itinerary, including Pokhara to trailhead and return.'
   - 'Trekking Equipment: Duffel bag, sleeping bag, and trekking map (if needed, returnable after trek).'
-excludes: []
+  - 'Accommodation: Twin-sharing teahouse/lodge during the trek.'
+  - 'Staff Insurance & Salary: Guide and porter insurance, wages, food, gear.'
+  - 'Government Taxes: All applicable taxes and official expenses.'
+  - 'Meals: All meals during trekking days (breakfast, lunch, dinner).'
+excludes:
+  - 'International Airfare: Flights to/from Kathmandu.'
+  - 'Nepal Entry Visa: Obtain on arrival.'
+  - 'Travel Insurance: Must cover high-altitude rescue, helicopter evacuation, medical, trip cancellation.'
+  - 'Personal Expenses: Wi-Fi, charging, hot showers, laundry, drinks, snacks.'
+  - 'Personal Trekking Gear: Clothing, boots, backpacks, medical kit.'
+  - 'Tips: For guide, porter, and driver.'
+  - 'Filming Permits: Drones and special cameras.'
 faqs:
   - question: Where is Annapurna Base Camp?
     answer: Annapurna Base Camp is located in the Annapurna Sanctuary, a high glacial basin in the Gandaki Province of Nepal, north of Pokhara.
@@ -132,11 +143,42 @@ faqs:
     answer: The trek typically takes 7 to 12 days, depending on your starting point, pace, and itinerary. Most trekkers complete it in 7–10 days.
   - question: What is the maximum altitude of the ABC Trek?
     answer: The maximum altitude is 4,130 m (13,550 ft) at Annapurna Base Camp.
+  - question: Do I need a permit for the ABC Trek?
+    answer: Yes. You need an ACAP (Annapurna Conservation Area Permit) and usually a TIMS card. ACAP costs about NPR 3,000 (USD 23) and TIMS about NPR 2,000 (USD 15–17). Wave Up Himalayas arranges all permits for our clients.
+  - question: What is the best time to trek to Annapurna Base Camp?
+    answer: The best seasons are Spring (March–May) and Autumn (September–November) for clear skies and stable weather.
+  - question: Is altitude sickness a risk on the ABC Trek?
+    answer: Yes, but it is manageable. Ascend slowly, stay hydrated, avoid alcohol, and listen to your body. If symptoms worsen, descend immediately. Our guides are trained in altitude safety.
+  - question: What kind of accommodation is available on the ABC Trek?
+    answer: Accommodation is in teahouses or local lodges. Rooms are usually twin-sharing with basic beds.
+  - question: What should I pack for the ABC Trek?
+    answer: Essentials include thermal layers, fleece, down jacket, waterproof jacket, trekking boots, sleeping bag, trekking poles, headlamp, sunscreen, and personal medication.
+  - question: Can I trek ABC without a guide?
+    answer: No. The Nepal government requires all trekkers in the Annapurna region to be accompanied by a licensed guide.
+  - question: How hard is the Annapurna Base Camp Trek?
+    answer: The ABC Trek is rated moderate. You will walk 4–7 hours per day with many stone steps and steep sections. Good fitness and preparation are recommended.
 gallery:
   - /images/packages/6dba290a-7669-466a-a953-b31bbb5e169a_Annapurna-Base-Camp (1).webp
   - /images/packages/abc-trekking.webp
   - /images/packages/icp7qnrra14endexo1ub.webp
 routeMap: /images/packages/1lDxo-annapurna-base-camp-trek-map-1.jpg
-packingList: []
-preparation: ''
+packingList:
+  - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
+  - Layered Clothing – Thermal base layers, fleece mid-layer, and waterproof/windproof hardshell jacket.
+  - Down Jacket – Essential for cold mornings and nights, especially at Base Camp.
+  - Sleeping Bag – 4-season sleeping bag rated to at least 0°C for teahouse nights.
+  - Water Bottle / Hydration Bladder – Stay hydrated with 3–4 liters of water per day.
+  - Personal Medical Kit – Including altitude sickness medication, painkillers, blister care, and any personal prescriptions.
+  - Sunscreen & Lip Balm – High SPF for strong Himalayan sun at altitude.
+  - Power Bank & Charging Cables – Charging costs extra at teahouses; keep your devices powered.
+preparation: |-
+  - **Start Physical Training Early** – Begin cardio and strength training **8–12 weeks before** your trek. Focus on walking, stairs, squats, and lunges.
+  - **Break In Your Trekking Boots** – Wear your boots for at least **2–3 weeks** before departure to avoid blisters and foot pain.
+  - **Arrange Travel Insurance** – Mandatory insurance covering **helicopter evacuation up to 5,000 m**, medical treatment, and trip cancellation.
+  - **Get a Health Check-Up** – Consult your doctor, complete vaccinations, and ask about **altitude sickness medication** like Diamox.
+  - **Prepare Your Packing List** – Aim for **10–11 kg base pack weight**. Bring layers, down jacket, sleeping bag, poles, headlamp, sunscreen, and personal medical kit.
+  - **Carry Enough Cash** – There are **no ATMs on the trail**. Carry Nepali Rupees for hot showers, charging, Wi-Fi, snacks, drinks, and tips.
+  - **Train on Hills with a Backpack** – Do practice hikes with a loaded pack on consecutive days to prepare for **4–7 hours of daily walking**.
+  - **Learn About Altitude Sickness** – Know the symptoms (headache, nausea, dizziness), ascend slowly, hydrate, and **descend immediately if symptoms worsen**.
+  - **Trust Your Guide** – **Wave Up Himalayas** provides licensed guides trained in altitude safety, first aid, and emergency response. Listen to their advice.
 ---
