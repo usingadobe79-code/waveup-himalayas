@@ -3,9 +3,14 @@ title: Annapurna Base Camp Trek
 regionKey: annapurna
 serviceKey: trekking
 price: 800
+originalPrice: null
+offerLabel: ''
 image: /images/packages/37bbb1b4-0f3e-46c9-be40-38d98ea8b44d.png
 blurb: Climb through terraced valleys and rhododendron forest into the sweeping mountain amphitheatre of the Annapurna sanctuary.
+seoTitle: ''
+seoDescription: ''
 featured: true
+draft: false
 itinerarySummary: |-
   The Annapurna Base Camp Trek is a spectacular Himalayan adventure that takes you deep into the heart of Nepal’s Annapurna region. Starting from the beautiful surroundings of Pokhara, the trail passes through traditional villages, lush forests, terraced fields, waterfalls, and dramatic mountain landscapes before reaching Annapurna Base Camp at 4,130 metres.
 
@@ -36,61 +41,84 @@ itineraryDays:
     altitude: 822m
     duration: 6–7 hrs drive / 25 min flight
     description: Scenic journey to Pokhara. Relax by Lakeside with Annapurna views.
+    image: ''
     highlights: Travel from Kathmandu to Pokhara by scenic road journey or a short domestic flight. Along the way, enjoy beautiful views of Nepal’s green hills, winding rivers, terraced fields, traditional villages, and mountain landscapes. Once you arrive in Pokhara, relax by the peaceful Phewa Lake, explore the lively Lakeside area, and enjoy the stunning views of the surrounding Himalayas.
   - day: 2
     route: Pokhara → Jhinu → Chhomrong
     altitude: 2,170m
     duration: 2–3 hrs drive + 5–6 hrs trek
     description: Drive to Jhinu, trek to Chhomrong, a Gurung village with mountain views.
+    image: ''
     highlights: ''
   - day: 3
     route: Chhomrong → Bamboo
     altitude: 2,310m
     duration: 5–6 hrs
     description: Descend stone steps, trek through lush forests along the Modi Khola.
+    image: ''
     highlights: ''
   - day: 4
     route: Bamboo → Deurali
     altitude: 3,200m
     duration: 5–6 hrs
     description: Bamboo and rhododendron forest; gradual transition to alpine terrain.
+    image: ''
     highlights: ''
   - day: 5
     route: Deurali → MBC → ABC
     altitude: 4,130m
     duration: 5–6 hrs
     description: Trek to Machhapuchhre Base Camp, continue to ABC. Stunning panorama.
+    image: ''
     highlights: ''
   - day: 6
     route: ABC → Bamboo
     altitude: 2,310m
     duration: 6–7 hrs
     description: Sunrise at ABC, then descend through valleys and forests.
+    image: ''
     highlights: ''
   - day: 7
     route: Bamboo → Jhinu Danda
     altitude: 1,780m
     duration: 5–6 hrs
     description: Trek down to Jhinu. Natural hot spring beside the river.
+    image: ''
     highlights: ''
   - day: 8
     route: Jhinu → Pokhara
     altitude: 822m
     duration: 3 hrs trek + 2–3 hrs drive
     description: Short trek and drive back to Pokhara.
+    image: ''
     highlights: ''
   - day: 9
     route: Pokhara → Kathmandu
     altitude: 1,400m
     duration: 6–7 hrs drive / 25 min flight
     description: Return to Kathmandu. Optional sightseeing or rest.
+    image: ''
     highlights: ''
   - day: 10
     route: Final departure
     altitude: —
     duration: —
     description: Transfer to airport for onward journey.
+    image: ''
     highlights: ''
 itineraryPeaks: []
 itinerarySchedule: []
+tripFacts: null
+includes:
+  - 'Permits: All required trekking permits, including ACAP (Annapurna Conservation Area Permit) and TIMS card.'
+  - 'Guide: Government-licensed, English-speaking trekking guide.'
+  - 'Porter: Porters as required, with a standard ratio of 1 porter for every 2 trekkers.'
+  - 'Transportation: Comfortable vehicle/jeep as per the itinerary, including Pokhara to trailhead and return.'
+  - 'Trekking Equipment: Duffel bag, sleeping bag, and trekking map (if needed, returnable after trek).'
+excludes: []
+faqs: []
+gallery: []
+routeMap: ''
+packingList: []
+preparation: ''
 ---
