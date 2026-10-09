@@ -108,7 +108,16 @@ itineraryDays:
     highlights: ''
 itineraryPeaks: []
 itinerarySchedule: []
-tripFacts: null
+tripFacts:
+  duration: '10'
+  difficulty: Easy
+  maxAltitude: 4,130 m / 13,550 ft (Annapurna Base Camp)
+  bestSeason: Autumn and Spring
+  groupSize: '10'
+  accommodation: Teahouses / local lodges (twin-sharing)
+  meals: 3 meals per day during trekking days (included in package)
+  trekDistance: 60–100 km (37–62 miles) round trip
+  startEndPoint: Begins and ends in Pokhara
 includes:
   - 'Permits: All required trekking permits, including ACAP (Annapurna Conservation Area Permit) and TIMS card.'
   - 'Guide: Government-licensed, English-speaking trekking guide.'
@@ -116,8 +125,17 @@ includes:
   - 'Transportation: Comfortable vehicle/jeep as per the itinerary, including Pokhara to trailhead and return.'
   - 'Trekking Equipment: Duffel bag, sleeping bag, and trekking map (if needed, returnable after trek).'
 excludes: []
-faqs: []
-gallery: []
+faqs:
+  - question: Where is Annapurna Base Camp?
+    answer: Annapurna Base Camp is located in the Annapurna Sanctuary, a high glacial basin in the Gandaki Province of Nepal, north of Pokhara.
+  - question: How long is the Annapurna Base Camp Trek?
+    answer: The trek typically takes 7 to 12 days, depending on your starting point, pace, and itinerary. Most trekkers complete it in 7–10 days.
+  - question: What is the maximum altitude of the ABC Trek?
+    answer: The maximum altitude is 4,130 m (13,550 ft) at Annapurna Base Camp.
+gallery:
+  - /images/packages/6dba290a-7669-466a-a953-b31bbb5e169a_Annapurna-Base-Camp (1).webp
+  - /images/packages/abc-trekking.webp
+  - /images/packages/icp7qnrra14endexo1ub.webp
 routeMap: /images/packages/1lDxo-annapurna-base-camp-trek-map-1.jpg
 packingList: []
 preparation: ''
