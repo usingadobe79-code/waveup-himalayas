@@ -166,56 +166,6 @@ At **WaveUp Himalayas**, these are the tips we give every trekker preparing for 
 
 ***
 
-## FAQs
-
-**Q. Is it safe to trek in Nepal now?**
-
-A. YES. With a **licensed guide**, flexible itinerary, and reputable agency, Nepal remains safe. **Climate change** adds risks, but preparation is key.
-
-***
-
-**Q. What is the best time to trek Nepal?**
-
-A. **Spring (March–May)** and **autumn (late September–November)** remain best. Aim for November for stable autumn weather.
-
-***
-
-**Q. How is climate change affecting trekking?**
-
-A. The monsoon now extends into October, snowfall is erratic, and glaciers are melting—increasing **rockfall, avalanches, and GLOF** risks on trails.
-
-***
-
-**Q. Do I need a guide?**
-
-A. YES. Since April 2023, a **licensed guide is mandatory** on all major routes. The **1:7 rule** applies (one guide per seven trekkers).
-
-***
-
-**Q. What permits do I need?**
-
-A. A **TIMS card** and **National Park/Conservation Area permit**. TIMS cards are only issued through licensed agencies.
-
-***
-
-**Q. What should I pack?**
-
-A. Layers for all seasons—waterproof shell, down jacket, 4-season sleeping bag, micro spikes. **Nepal trekking weather** changes fast.
-
-***
-
-**Q. Is travel insurance necessary?**
-
-A. YES. It must cover **high-altitude trekking and helicopter evacuation** (minimum USD 500,000).
-
-***
-
-**Q. Can I still trek Everest Base Camp and Annapurna?**
-
-A. YES. Both remain open. Expect more weather variability. Consider **Upper Mustang** as a stable alternative.
-
-***
-
 **If you are looking for Tour Packages please** [**click here**](https://waveuphimalayas.com/#packages)
 
 **If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** [**info@waveuphimalayas.com**](mailto:info@waveuphimalayas.com)  **Phone** [**(Whatsapp or Viber +977 9861992878)**](https://wa.me/+9779861992878)
