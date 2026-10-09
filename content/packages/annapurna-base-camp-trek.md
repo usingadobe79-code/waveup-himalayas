@@ -11,10 +11,7 @@ seoTitle: ''
 seoDescription: ''
 featured: true
 draft: false
-itinerarySummary: |-
-  The Annapurna Base Camp Trek is a spectacular Himalayan adventure that takes you deep into the heart of Nepal’s Annapurna region. Starting from the beautiful surroundings of Pokhara, the trail passes through traditional villages, lush forests, terraced fields, waterfalls, and dramatic mountain landscapes before reaching Annapurna Base Camp at 4,130 metres.
-
-  With WaveUp Himalayas, you can experience the breathtaking beauty of the Annapurna region while discovering the rich culture and warm hospitality of local communities. Along the journey, enjoy stunning views of Annapurna I, Annapurna South, Machhapuchhre (Fishtail), Hiunchuli, and other Himalayan peaks.
+itinerarySummary: The Annapurna Base Camp Trek is one of Nepal’s most iconic Himalayan adventures. Also known as the ABC Trek, it takes you deep into the Annapurna Sanctuary—a stunning glacial amphitheater surrounded by towering peaks like Annapurna I (8,091 m), Machhapuchhre (Fishtail), and Annapurna South. Starting and ending in Pokhara, this moderate teahouse trek typically lasts 7 to 12 days and reaches a maximum altitude of 4,130 m (13,550 ft) at Annapurna Base Camp.
 itineraryHighlights:
   - Spectacular views of Annapurna and Machhapuchhre
   - Spectacular views of Annapurna and Machhapuchhre
