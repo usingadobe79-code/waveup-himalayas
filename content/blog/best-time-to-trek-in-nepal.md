@@ -121,7 +121,7 @@ Spring, especially March and April, is one of the **best time to trek in Nepal**
 
 ***
 
-# Winter (December to February)
+## Winter (December to February)
 
 Winter is a quieter season for trekking in Nepal, offering peaceful trails, beautiful snow-covered mountains, and fewer crowds on many routes. From December to February, temperatures drop significantly, especially at higher elevations, and heavy snowfall can affect some trekking trails and mountain passes. However, winter trekking in Nepal can be a rewarding experience for travelers who prefer less crowded routes and are prepared for cold weather. Lower-altitude treks are generally more suitable during this season.
 
@@ -150,7 +150,7 @@ Winter, from December to February, is a good time to enjoy quieter trails, peace
 
 ***
 
-# Monsoon (June–August)
+## Monsoon (June–August)
 
 The monsoon season in Nepal runs mainly from June to August and brings heavy rainfall to many parts of the country. Although this is generally not the best time for trekking in Nepal, it can still be a good option for travelers who choose suitable destinations. The rain makes forests greener, rivers fuller, and landscapes more vibrant. However, muddy trails, leeches, landslides, and cloudy mountain views can make trekking more challenging. Upper Mustang and selected routes in Dolpo are popular alternatives because they lie in the rain shadow of the Himalayas and receive less rainfall than many other trekking regions.
 
