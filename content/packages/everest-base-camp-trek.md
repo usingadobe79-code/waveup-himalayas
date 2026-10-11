@@ -141,7 +141,7 @@ tripFacts:
   bestSeason: Autumn and Spring
   groupSize: '10'
   accommodation: 3-star hotel in Kathmandu + teahouses / local lodges (twin-sharing)
-  meals: 3 meals per day during trekking days (included in package)
+  meals: Breakfast everyday (included in package)
   trekDistance: 100–130 km (62–81 miles) round trip
   startEndPoint: Begins and ends in Kathmandu
 includes:
