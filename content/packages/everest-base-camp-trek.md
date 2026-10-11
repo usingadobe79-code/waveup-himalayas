@@ -207,7 +207,7 @@ gallery:
   - /images/packages/ebc_view_of_summit.jpg
   - /images/packages/gorakshep-to-kalapatthar-1024x768.jpg
   - /images/packages/1653287230_ebc-c5hp0XiZDKvr6pLMNSUCPm0ibYD9kQnZDoIR3DU8.jpg
-routeMap: /images/packages/39f09a4e-ced1-4f43-ad0d-019d6cf42da1.png
+routeMap: /images/packages/aee3aaab-c2c1-4469-a464-68c46c4dad62.png
 packingList:
   - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
   - Layered Clothing – Thermal base layers, fleece mid-layer, and waterproof/windproof hardshell jacket.
