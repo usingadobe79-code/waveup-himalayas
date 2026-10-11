@@ -2,13 +2,13 @@
 title: Everest Base Camp Trek
 regionKey: everest
 serviceKey: trekking
-price: null
+price: 1250
 originalPrice: null
 offerLabel: ''
-image: /images/packages/everest-base-camp.jpg
-blurb: The iconic walk through Sherpa country to the foot of the highest mountain on earth.
-seoTitle: ''
-seoDescription: ''
+image: /images/packages/12-Days-Everest-base-Camp-trek.jpeg
+blurb: Trek to Everest Base Camp with Wave Up Himalayas. 13-day guided EBC trek from Kathmandu with permits, teahouses & expert Sherpa guides. Book 2026/2027 now.
+seoTitle: Everest Base Camp Trek – 13 Days Guided Trek in Nepal
+seoDescription: Trek to Everest Base Camp with Wave Up Himalayas. 13-day guided EBC trek from Kathmandu with permits, teahouses & expert Sherpa guides. Book 2026/2027 now.
 featured: true
 draft: false
 itinerarySummary: The Everest Base Camp Trek is a 13-day guided Himalayan journey to the base of the world's highest mountain. Starting with a scenic flight to Lukla, you'll trek through Sherpa villages, cross suspension bridges, visit Tengboche Monastery, and reach Everest Base Camp (5,364 m) and Kala Patthar (5,555 m) for sunrise views of Everest. With acclimatization days, teahouse lodging, and expert guides, this moderate-to-challenging EBC Trek is safe, scenic, and unforgettable. Wave Up Himalayas customizes every Everest Base Camp Trek package — tell us your dates and pace, and we'll shape the itinerary around you.
@@ -202,7 +202,13 @@ faqs:
     answer: Wi-Fi is available at most teahouses for a fee, but speeds are slow. Mobile coverage (Ncell/NTC) works up to Tengboche and is limited beyond that. Everest Link cards offer internet at higher villages. Expect to be mostly offline above Dingboche.
   - question: Can I customize my Everest Base Camp Trek itinerary?
     answer: Absolutely. Every Wave Up Himalayas trip is fully customizable. You can add rest days, upgrade to luxury lodges, include a helicopter return from Everest Base Camp, combine the trek with Gokyo Lakes, or choose private departures for your preferred dates.
-gallery: []
+gallery:
+  - /images/packages/Hikers-make-the-final-push-to-Gorekshep-the-highest-vilage-on-the-EBC-trail.-Image-credit-Sarah-Reid-1.jpg
+  - /images/packages/Everest-Base-Camp-Trek.png
+  - /images/packages/everest-base-camp-trek.jpg
+  - /images/packages/ebc_view_of_summit.jpg
+  - /images/packages/gorakshep-to-kalapatthar-1024x768.jpg
+  - /images/packages/1653287230_ebc-c5hp0XiZDKvr6pLMNSUCPm0ibYD9kQnZDoIR3DU8.jpg
 routeMap: /images/packages/1a6d290c-f447-46ff-9d1d-84f7ebe56e76-1.png
 packingList:
   - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
