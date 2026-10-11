@@ -203,7 +203,7 @@ faqs:
   - question: Can I customize my Everest Base Camp Trek itinerary?
     answer: Absolutely. Every Wave Up Himalayas trip is fully customizable. You can add rest days, upgrade to luxury lodges, include a helicopter return from Everest Base Camp, combine the trek with Gokyo Lakes, or choose private departures for your preferred dates.
 gallery: []
-routeMap: /images/packages/1a6d290c-f447-46ff-9d1d-84f7ebe56e76.png
+routeMap: /images/packages/1a6d290c-f447-46ff-9d1d-84f7ebe56e76-1.png
 packingList:
   - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
   - Layered Clothing – Thermal base layers, fleece mid-layer, and waterproof/windproof hardshell jacket.
