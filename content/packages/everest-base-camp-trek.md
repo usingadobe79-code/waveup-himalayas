@@ -2,7 +2,7 @@
 title: Everest Base Camp Trek
 regionKey: everest
 serviceKey: trekking
-price: null
+price: 1550
 originalPrice: null
 offerLabel: ''
 image: /images/packages/12-Days-Everest-base-Camp-trek.jpeg
