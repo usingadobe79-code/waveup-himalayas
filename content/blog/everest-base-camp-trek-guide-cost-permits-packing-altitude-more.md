@@ -9,11 +9,33 @@ relatedPackages:
   - annapurna-base-camp-heli-tour
   - everest-base-camp-trek
   - manaslu-circuit-trek
-seoTitle: ''
+seoTitle: 'Everest Base Camp Trek Guide: Cost, Permits, Packing, Altitude & More'
 seoDescription: Plan your Everest Base Camp trek with our ultimate guide. Covers cost, permits, packing, altitude, itinerary, safety & more. By WaveUp Himalayas.
 faqs:
   - question: How difficult is the Everest Base Camp Trek?
     answer: The Everest Base Camp Trek is challenging but not technical. No climbing skills are required. The main challenges are altitude, long walking days (5–7 hours), and consecutive days on the trail. Most trekkers rate it around 7 out of 10 in difficulty.
+  - question: How long does the Everest Base Camp Trek take?
+    answer: A classic Everest Base Camp Trek takes around two weeks from Lukla, including acclimatization days. The exact duration depends on your itinerary, rest days, weather and flight schedules.
+  - question: What is the Everest Base Camp Trek elevation?
+    answer: Everest Base Camp sits at approximately 5,364 metres above sea level. The highest point of the trek is Kala Patthar at 5,545 metres, which offers the best views of Mount Everest.
+  - question: What is the best time to trek to Everest Base Camp?
+    answer: Spring (March to May) and autumn (September to November) offer the best conditions. Autumn brings the clearest mountain views, while spring offers warmer weather and blooming rhododendron forests. Winter is possible but very cold, and monsoon is not recommended.
+  - question: How much does the Everest Base Camp Trek cost?
+    answer: Most trekkers budget between USD 1,800 and 2,500 for a guided trek with a licensed guide and porter. Costs vary depending on trek style, season, group size and what is included in your package.
+  - question: Do I need a guide for Everest Base Camp?
+    answer: Yes. A licensed guide is mandatory for all foreign trekkers on the EBC route. Regulations can change, so always confirm current requirements before departure. A guide also provides valuable support with navigation, altitude awareness and emergencies.
+  - question: What permits do I need for Everest Base Camp?
+    answer: 'You need two permits: the Sagarmatha National Park Entry Permit and the Khumbu Pasang Lhamu Rural Municipality Permit. Total cost is approximately NPR 6,000 (USD 37–46).'
+  - question: Can beginners do the Everest Base Camp Trek?
+    answer: Yes. Beginners can complete the trek with proper physical preparation, a sensible itinerary, gradual acclimatization, appropriate gear and a licensed guide. The altitude is the biggest factor — but it is manageable with the right approach.
+  - question: What should I pack for Everest Base Camp?
+    answer: Your packing list should include thermal base layers, a down jacket, waterproof jacket and trousers, broken-in trekking boots, a sleeping bag, trekking poles, sunglasses, sunscreen, personal medication, water purification and a power bank. Keep your total weight under 8–10 kg.
+  - question: Do I need travel insurance for Everest Base Camp?
+    answer: Yes. Standard travel insurance does not cover high-altitude trekking. You need specialist trekking insurance that covers helicopter evacuation up to 6,000 m, emergency medical treatment and trip cancellation. We require proof of insurance before departure.
+  - question: Is there wifi and charging on the EBC trek?
+    answer: Yes, but it costs extra and speeds are slow. Wifi cards cost around USD 3–15, and device charging costs USD 1–5 per charge. Prices rise with altitude.
+  - question: What is the food like on the Everest Base Camp Trek?
+    answer: Food is simple but filling. Common meals include dal bhat, noodles, fried rice, pasta, momos, soups and eggs. Dal bhat is the best value and most recommended meal. Budget USD 25–45 per day for food.
 ---
 
 The **Everest Base Camp Trek** is one of the most popular and unforgettable trekking adventures in Nepal, taking you through the beautiful Khumbu region, traditional Sherpa villages, ancient monasteries, and spectacular Himalayan landscapes. From the lively trails of Namche Bazaar to the breathtaking views of Mount Everest, Ama Dablam, Lhotse, and the Khumbu Glacier, every part of the journey offers a unique experience. At **WaveUp Himalayas**, we help travelers prepare for this incredible adventure with practical information about the **Everest Base Camp Trek itinerary, cost, difficulty, best time to trek, altitude, permits, packing list, accommodation, and safety tips**, so you can plan your journey with confidence before heading into the Himalayas.
@@ -379,80 +401,6 @@ The Everest Base Camp trek is safe when approached with respect, preparation, an
 ***
 
 The [**Everest Base Camp Trek** ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)is more than reaching a point on a map — it's a journey through breathtaking Himalayan landscapes, Sherpa culture, and a personal challenge that stays with you forever. With proper preparation and a trusted local team, this adventure is within reach for beginners and seasoned trekkers alike. **Ready to begin?** Contact **WaveUp Himalayas** and start planning your Everest Base Camp Trek in Nepal today.
-
-***
-
-## FAQs
-
-**Q: How difficult is the Everest Base Camp Trek?**
-
-**A:** The Everest Base Camp Trek is challenging but not technical. No climbing skills are required. The main challenges are altitude, long walking days (5–7 hours), and consecutive days on the trail. Most trekkers rate it around 7 out of 10 in difficulty.
-
-***
-
-**Q: How long does the Everest Base Camp Trek take?**
-
-**A:** A classic Everest Base Camp Trek takes around two weeks from Lukla, including acclimatization days. The exact duration depends on your itinerary, rest days, weather and flight schedules.
-
-***
-
-**Q: What is the Everest Base Camp Trek elevation?**
-
-**A:** Everest Base Camp sits at approximately **5,364 metres** above sea level. The highest point of the trek is **Kala Patthar at 5,545 metres**, which offers the best views of Mount Everest.
-
-***
-
-**Q: What is the best time to trek to Everest Base Camp?**
-
-**A:** Spring (March to May) and autumn (September to November) offer the best conditions. Autumn brings the clearest mountain views, while spring offers warmer weather and blooming rhododendron forests. Winter is possible but very cold, and monsoon is not recommended.
-
-***
-
-**Q: How much does the Everest Base Camp Trek cost?**
-
-**A:** Most trekkers budget between **USD 1,800 and 2,500** for a guided trek with a licensed guide and porter. Costs vary depending on trek style, season, group size and what is included in your package.
-
-***
-
-**Q: Do I need a guide for Everest Base Camp?**
-
-**A:** Yes. A licensed guide is mandatory for all foreign trekkers on the EBC route. Regulations can change, so always confirm current requirements before departure. A guide also provides valuable support with navigation, altitude awareness and emergencies.
-
-***
-
-**Q: What permits do I need for Everest Base Camp?**
-
-**A:** You need two permits: the **Sagarmatha National Park Entry Permit** and the **Khumbu Pasang Lhamu Rural Municipality Permit**. Total cost is approximately NPR 6,000 (USD 37–46). At WaveUp Himalayas, we arrange both as part of your trek package.
-
-***
-
-**Q: Can beginners do the Everest Base Camp Trek?**
-
-**A:** Yes. Beginners can complete the trek with proper physical preparation, a sensible itinerary, gradual acclimatization, appropriate gear and a licensed guide. The altitude is the biggest factor — but it is manageable with the right approach.
-
-***
-
-**Q: What should I pack for Everest Base Camp?**
-
-**A:** Your packing list should include thermal base layers, a down jacket, waterproof jacket and trousers, broken-in trekking boots, a sleeping bag, trekking poles, sunglasses, sunscreen, personal medication, water purification and a power bank. Keep your total weight under 8–10 kg.
-
-***
-
-**Q: Do I need travel insurance for Everest Base Camp?**
-
-**A:** Yes. Standard travel insurance does not cover high-altitude trekking. You need specialist trekking insurance that covers **helicopter evacuation up to 6,000 m**, emergency medical treatment and trip cancellation. We require proof of insurance before departure.
-
-***
-
-**Q: Is there wifi and charging on the EBC trek?**
-
-**A:** Yes, but it costs extra and speeds are slow. Wifi cards cost around USD 3–15, and device charging costs USD 1–5 per charge. Prices rise with altitude.
-
-***
-
-**Q: What is the food like on the Everest Base Camp Trek?**
-
-**A:** Food is simple but filling. Common meals include dal bhat, noodles, fried rice, pasta, momos, soups and eggs. Dal bhat is the best value and most recommended meal. Budget USD 25–45 per day for food.
 
 ***
 
