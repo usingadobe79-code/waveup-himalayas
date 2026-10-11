@@ -11,7 +11,7 @@ seoTitle: Everest Base Camp Trek – 13 Days Guided Trek in Nepal
 seoDescription: Trek to Everest Base Camp with Wave Up Himalayas. 13-day guided EBC trek from Kathmandu with permits, teahouses & expert Sherpa guides. Book 2026/2027 now.
 featured: true
 draft: false
-itinerarySummary: The Everest Base Camp Trek is a 13-day guided Himalayan journey to the base of the world's highest mountain. Starting with a scenic flight to Lukla, you'll trek through Sherpa villages, cross suspension bridges, visit Tengboche Monastery, and reach Everest Base Camp (5,364 m) and Kala Patthar (5,555 m) for sunrise views of Everest. With acclimatization days, teahouse lodging, and expert guides, this moderate-to-challenging EBC Trek is safe, scenic, and unforgettable. Wave Up Himalayas customizes every Everest Base Camp Trek package — tell us your dates and pace, and we'll shape the itinerary around you.
+itinerarySummary: The Everest Base Camp Trek is a 13-day guided Himalayan journey to the base of the world's highest mountain. Starting with a scenic flight to Lukla, you'll trek through Sherpa villages, cross suspension bridges, visit Tengboche Monastery, and reach Everest Base Camp (5,364 m) and Kala Patthar (5,555 m) for sunrise views of Everest. With acclimatization days, teahouse lodging, and expert guides, this moderate-to-challenging EBC Trek is safe, scenic, and unforgettable.
 itineraryHighlights:
   - Stand at Everest Base Camp (5,364 m) — the closest you can get to the world's highest mountain without climbing
   - Catch sunrise from Kala Patthar (5,555 m) with a 360-degree panorama of Everest, Nuptse, and Pumori
