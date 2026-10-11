@@ -63,7 +63,7 @@ Spring and autumn are generally the best seasons for trekking in Nepal, but the 
 
 Autumn is considered one of the **best seasons for trekking in Nepal** because of its pleasant weather, clear mountain views, and generally stable trail conditions. After the monsoon season, the rain gradually decreases, the air becomes clearer, and the Himalayan landscapes look fresh and beautiful. October and November are especially popular months for trekking, making autumn an excellent choice for travelers who want to enjoy Nepal's mountains and natural scenery.
 
-![](/images/blog/AnnapurnaBaseCampTrekkingMulti-dayMountainGlacierTour.jpg)
+![](/images/blog/v%20dv%20lkd.jpg)
 
 - **Clear Mountain Views:** October and November often offer clear skies and spectacular views of the Himalayas, including Mount Everest, Annapurna, and Machhapuchhre.
 - **Pleasant Weather:** Daytime temperatures are generally comfortable for walking, although mornings and nights can be cold, especially at higher elevations.
