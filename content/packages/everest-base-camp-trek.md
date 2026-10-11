@@ -34,7 +34,7 @@ itineraryNotes:
   - 'Flight Delays: Lukla flights can be delayed or cancelled due to weather. We recommend keeping 1–2 spare days after the trek.'
   - 'Seasonal Flights: During peak seasons, Lukla flights may operate from Manthali/Ramechhap instead of Kathmandu.'
   - 'Accommodation: Teahouses are basic but comfortable. Rooms are twin-sharing with shared bathrooms. Hot showers and charging cost extra above Namche.'
-  - 'Food & Water: Three meals a day are included. Drink only boiled or purified water. Avoid alcohol and caffeine at high altitude.'
+  - 'Food & Water: Breakfast is included every day. Lunch and dinner are available at teahouses for an additional cost. Drink only boiled or purified water. Avoid alcohol and caffeine at high altitude.'
   - 'Money: There are no ATMs above Namche. Carry enough Nepali Rupees for personal expenses and tips.'
   - 'Connectivity: Wi-Fi is available at most teahouses for a fee. Mobile network coverage is limited above Tengboche.'
   - 'Travel Insurance: Comprehensive insurance covering helicopter evacuation up to 6,000 m is mandatory.'
