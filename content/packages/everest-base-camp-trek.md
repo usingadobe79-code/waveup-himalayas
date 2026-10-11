@@ -2,7 +2,7 @@
 title: Everest Base Camp Trek
 regionKey: everest
 serviceKey: trekking
-price: 1250
+price: null
 originalPrice: null
 offerLabel: ''
 image: /images/packages/12-Days-Everest-base-Camp-trek.jpeg
@@ -147,13 +147,11 @@ tripFacts:
 includes:
   - 'Permits: All required trekking permits, including Sagarmatha National Park Permit and Khumbu Pasanglhamu Rural Municipality Permit.'
   - 'Guide: Government-licensed, English-speaking trekking guide.'
-  - 'Porter: Porters as required, with a standard ratio of 1 porter for every 2 trekkers.'
   - 'Transportation: Domestic flights Kathmandu–Lukla–Kathmandu, plus all airport transfers and ground transportation as per the itinerary.'
-  - 'Trekking Equipment: Duffel bag, sleeping bag, and trekking map (if needed, returnable after trek).'
-  - 'Accommodation: 2 nights in a 3-star hotel in Kathmandu and twin-sharing teahouse/lodge during the trek.'
+  - 'Accommodation: 2 nights in a 3-star hotel in Kathmandu and teahouse/lodge during the trek.'
   - 'Staff Insurance & Salary: Guide and porter insurance, wages, food, gear.'
   - 'Government Taxes: All applicable taxes and official expenses.'
-  - 'Meals: All meals during trekking days (breakfast, lunch, dinner), plus welcome dinner in Kathmandu.'
+  - 'Meals: Breakfast everyday, plus welcome dinner in Kathmandu.'
 excludes:
   - 'International Airfare: Flights to/from Kathmandu.'
   - 'Nepal Entry Visa: Obtain on arrival.'
