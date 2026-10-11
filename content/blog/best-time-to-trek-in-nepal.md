@@ -90,7 +90,7 @@ Autumn, especially October and November, is one of the **best time to trek in Ne
 
 ***
 
-### Spring (March to May)
+## Spring (March to May)
 
 Spring is one of the best seasons for trekking in Nepal, offering warmer temperatures, colorful rhododendron forests, and beautiful Himalayan scenery. As winter ends, the weather gradually becomes warmer, making many trekking routes more enjoyable. March and April are especially popular for nature lovers, while May can bring warmer temperatures and occasional afternoon clouds.
 
