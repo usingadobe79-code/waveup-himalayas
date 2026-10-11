@@ -137,6 +137,7 @@ gallery:
   - /images/packages/276d884b-6b22-4afa-80ba-22ed1d3dc501.jpg
   - /images/packages/patan_5790080_1920-1624806189.jpg
   - /images/packages/nagarkot.jpg
+  - /images/packages/8da5d92b82a626cb8d54d6b596cbab62ac9bf129f81193aff2c4077c045279ea.avif
 routeMap: /images/packages/c8ca6232-ec02-4910-a92d-c11516ec14f8.png
 packingList:
   - 'Hiking Shoes: Sturdy, comfortable shoes with good grip for the Sankhu–Nagarkot hike.'
