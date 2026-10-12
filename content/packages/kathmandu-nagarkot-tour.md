@@ -49,14 +49,14 @@ itineraryDays:
     altitude: 1,400 m / 4,593 ft
     duration: 5–6 hours sightseeing
     description: 'Guided tour of four UNESCO World Heritage Sites: Swayambhunath, Kathmandu Durbar Square, Pashupatinath, and Boudhanath. (Meals: Breakfast)'
-    image: /images/packages/Pashupatinath-Temple-Kathmandu.jpg
+    image: ''
     highlights: Today, you will explore four UNESCO World Heritage Sites. Climb the 365 steps to Swayambhunath (Monkey Temple) for panoramic valley views, then discover the historic royal palace complex of Kathmandu Durbar Square. Witness sacred Hindu rituals at Pashupatinath Temple on the Bagmati River, and walk clockwise around Boudhanath Stupa, one of the largest Buddhist stupas in the world. Return to your hotel for an overnight stay.
   - day: 3
     route: Drive to Sankhu & Hike to Nagarkot
     altitude: 2,195 m / 7,201 ft
     duration: 4–5 hours hiking (approx. 14 km)
     description: 'Drive to Sankhu, then hike to Nagarkot. Enjoy Himalayan views. Sunset from Nagarkot View Tower. (Meals: Breakfast)'
-    image: /images/packages/nagarkot.jpg
+    image: ''
     highlights: After driving to the ancient Newari trade town of Sankhu, you will embark on a beautiful 4-5 hour hike through terraced farmlands, oak and pine forests, and traditional settlements. Enjoy stunning Himalayan panoramas of Langtang, Ganesh Himal, and Dorje Lakpa as you ascend. Arrive at the hill station of Nagarkot to witness a breathtaking sunset from the View Tower before relaxing at your 3-star hotel.
   - day: 4
     route: Nagarkot Sunrise, Bhaktapur & Patan Tour, Return to Kathmandu
