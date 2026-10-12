@@ -2,8 +2,8 @@
 title: Manaslu Circuit Trek
 regionKey: manaslu-langtang
 serviceKey: trekking
-price: null
-originalPrice: 1200
+price: 1200
+originalPrice: null
 offerLabel: ''
 image: /images/packages/Larke-La-pass-1.webp
 blurb: Book the 14-day Manaslu Circuit Trek with Wave Up Himalayas. Cross Larkya La Pass (5,106 m), explore Tibetan villages, permits & guides included.
