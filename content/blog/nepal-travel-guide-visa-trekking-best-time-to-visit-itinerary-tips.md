@@ -9,7 +9,7 @@ relatedPackages:
   - a-week-to-nepal
   - lumbini-historical-tour
   - annapurna-base-camp-trek
-seoTitle: 'Nepal Travel Guide: Visa, Trekking, Best Time to Visit & Itinerary Tips'
+seoTitle: 'Nepal Travel Guide: Visa, Trekking, Best Time to Visit'
 seoDescription: 'Plan your Nepal trip with our complete travel guide: visa, best time to visit, trekking permits, Everest Base Camp, Annapurna, Kathmandu, Pokhara & more.'
 faqs:
   - question: What is the best time to visit Nepal?
