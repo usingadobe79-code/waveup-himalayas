@@ -51,7 +51,9 @@ Planning your first trip to Nepal? Here's what you need to know before you go. F
 
 ***
 
-## Nepal Visa & Entry Requirements
+## Nepal Visa & Entry 
+
+## Requirements
 
 Most travelers can get a **Nepal visa on arrival** at Tribhuvan International Airport in Kathmandu and at major land border crossings. Citizens of the **US, UK, EU, Australia, Canada**, and many other countries qualify. **Indian citizens do not need a visa** to enter Nepal.
 
@@ -270,7 +272,7 @@ Everest Base Camp, Namche Bazaar, Tengboche Monastery, and Khumbu Glacier. Best 
 
 **Annapurna Region**
 
-![](/images/blog/AnnapurnaBaseCampTrekkingMulti-dayMountainGlacierTour.jpg "Annapurna Base Camp")
+![](/images/blog/Annaourna%20base%20camp%20trek%20in%20spring.webp "Annapurna Base Camp")
 
 Poon Hill, Thorong La Pass, Annapurna Base Camp, and Ghorepani. Best for varied treks and mountain views.
 
