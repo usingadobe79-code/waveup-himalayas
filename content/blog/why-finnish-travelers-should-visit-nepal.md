@@ -5,7 +5,11 @@ excerpt: Discover why Nepal is a perfect destination for Finnish travelers. Expl
 coverImage: /images/blog/5398f99a-bef6-41d3-affa-ba1b950c4743 (1).png
 author: Gaurav Lamichhane
 draft: false
-relatedPackages: []
+relatedPackages:
+  - kathmandu-nagarkot-tour
+  - everest-base-camp-trek
+  - family-tour-nepal
+  - manaslu-circuit-trek
 seoTitle: Why Finnish Travelers Should Visit Nepal
 seoDescription: Discover why Nepal is a perfect destination for Finnish travelers. Explore Himalayan trekking, nature, culture, wildlife and adventure with WaveUp Himalayas.
 faqs:
