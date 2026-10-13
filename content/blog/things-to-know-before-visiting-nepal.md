@@ -51,9 +51,7 @@ Planning your first trip to Nepal? Here's what you need to know before you go. F
 
 ***
 
-## Nepal Visa & Entry 
-
-## Requirements
+## Nepal Visa & Entry Requirements
 
 Most travelers can get a **Nepal visa on arrival** at Tribhuvan International Airport in Kathmandu and at major land border crossings. Citizens of the **US, UK, EU, Australia, Canada**, and many other countries qualify. **Indian citizens do not need a visa** to enter Nepal.
 
@@ -244,13 +242,11 @@ Nepal packs incredible variety into a small country. Here are the top places to 
 
 ![](/images/blog/Kathmandu.jpg "Kathmandu")
 
-
 Seven UNESCO World Heritage Sites, including Kathmandu, Patan, and Bhaktapur Durbar Squares, Swayambhunath, Boudhanath, and Pashupatinath. Best for culture and history.
 
 **Pokhara**
 
 ![](/images/blog/Pokhara_Travel_Guide_e0a6b33f57.avif "Pokhara")
-
 
 Lakeside city with Phewa Lake, Sarangkot sunrise views, World Peace Pagoda, and Devi's Fall. Gateway to Annapurna treks. Best for relaxation and adventure.
 
@@ -258,13 +254,11 @@ Lakeside city with Phewa Lake, Sarangkot sunrise views, World Peace Pagoda, and 
 
 ![](/images/blog/chitwan-jungle-safari-2.webp "Chitwan National Park")
 
-
 UNESCO Natural World Heritage Site. Spot one-horned rhinos, Bengal tigers, and 525 bird species on jungle safaris. Best for wildlife.
 
 **Lumbini**
 
 ![](/images/blog/images%20%285%29.jpg)
-
 
 Birthplace of Lord Buddha. UNESCO site with Mayadevi Temple, Ashokan Pillar, and international monasteries. Best for spiritual travel.
 
@@ -272,20 +266,17 @@ Birthplace of Lord Buddha. UNESCO site with Mayadevi Temple, Ashokan Pillar, and
 
 ![](/images/blog/Everest-Base-Camp-trek-1024x768.jpg "Everest Base Camp")
 
-
 Everest Base Camp, Namche Bazaar, Tengboche Monastery, and Khumbu Glacier. Best for trekking and Sherpa culture.
 
 **Annapurna Region**
 
 ![](/images/blog/AnnapurnaBaseCampTrekkingMulti-dayMountainGlacierTour.jpg "Annapurna Base Camp")
 
-
 Poon Hill, Thorong La Pass, Annapurna Base Camp, and Ghorepani. Best for varied treks and mountain views.
 
 **Hidden Gems**
 
 ![](/images/blog/rara-lake-by-jeep.webp "Rara Lake")
-
 
 Phoksundo Lake (Dolpa), Rara Lake (Mugu), Tsum Valley, Nar Phu Valley, Bandipur, and Ilam. Best for solitude and authentic culture.
 
