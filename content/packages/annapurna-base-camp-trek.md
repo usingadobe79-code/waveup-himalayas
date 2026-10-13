@@ -2,7 +2,7 @@
 title: Annapurna Base Camp Trek
 regionKey: annapurna
 serviceKey: trekking
-price: 700
+price: 800
 originalPrice: 100
 offerLabel: ''
 image: /images/packages/37bbb1b4-0f3e-46c9-be40-38d98ea8b44d.png
