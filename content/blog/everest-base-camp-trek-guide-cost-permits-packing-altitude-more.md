@@ -1,5 +1,5 @@
 ---
-title: 'Everest Base Camp Trek Guide: Cost, Permits, Packing, Altitude & More'
+title: 'Everest Base Camp Trek Guide: Cost, Permits & Packing'
 date: 2026-10-02
 excerpt: Plan your Everest Base Camp trek with our ultimate guide. Covers cost, permits, packing, altitude, itinerary, safety & more. By WaveUp Himalayas.
 coverImage: /images/blog/Old-Everest-Base-Camp-Trek.webp
@@ -9,7 +9,7 @@ relatedPackages:
   - annapurna-base-camp-heli-tour
   - everest-base-camp-trek
   - manaslu-circuit-trek
-seoTitle: 'Everest Base Camp Trek Guide: Cost, Permits, Packing, Altitude & More'
+seoTitle: 'Everest Base Camp Trek Guide: Cost, Permits & Packing'
 seoDescription: Plan your Everest Base Camp trek with our ultimate guide. Covers cost, permits, packing, altitude, itinerary, safety & more. By WaveUp Himalayas.
 faqs:
   - question: How difficult is the Everest Base Camp Trek?
