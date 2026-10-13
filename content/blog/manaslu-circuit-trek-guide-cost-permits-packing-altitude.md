@@ -1,5 +1,5 @@
 ---
-title: 'Manaslu Circuit Trek Guide: Cost, Permits, Packing & Altitude'
+title: 'Manaslu Circuit Trek Guide: Cost, Permits & Packing'
 date: 2026-10-04
 excerpt: Complete Manaslu Circuit Trek guide for 2026. Learn about permits, cost, packing list, altitude, itinerary, best time, accommodation, food, and more.
 coverImage: /images/blog/manaslu_circuit_trek.webp
@@ -9,7 +9,7 @@ relatedPackages:
   - manaslu-circuit-trek
   - langtang-valley-trek
   - annapurna-base-camp-heli-tour
-seoTitle: 'Manaslu Circuit Trek Guide: Cost, Permits, Packing & Altitude'
+seoTitle: 'Manaslu Circuit Trek Guide: Cost, Permits & Packing'
 seoDescription: Complete Manaslu Circuit Trek guide for 2026. Learn about permits, cost, packing list, altitude, itinerary, best time, accommodation, food, and more.
 faqs:
   - question: What permits are needed for the Manaslu Circuit?
