@@ -1,7 +1,7 @@
 ---
 title: Things to Know Before Visiting Nepal
 date: 2026-10-13
-excerpt: Planning your first trip to Nepal? Discover visa requirements, trekking permits, altitude sickness tips, the best time to visit, culture, currency, and essential Nepal travel tips for 2026.
+excerpt: Planning your first trip to Nepal? This 2026 guide covers visa on arrival, trekking permits, altitude sickness, culture, best time to visit & packing tips.
 coverImage: /images/blog/s js.jpg
 author: Gaurav Lamichhane
 draft: false
@@ -10,8 +10,8 @@ relatedPackages:
   - kathmandu-nagarkot-tour
   - ghorepani-poon-hill-trek
   - manaslu-circuit-trek
-seoTitle: 'Things to Know Before Visiting Nepal: Complete 2026 Travel Guide'
-seoDescription: Planning your first trip to Nepal? Discover visa requirements, trekking permits, altitude sickness tips, the best time to visit, culture, currency, and essential Nepal travel tips for 2026.
+seoTitle: Things to Know Before Visiting Nepal 2026 | WaveUp Himalayas
+seoDescription: Planning your first trip to Nepal? This 2026 guide covers visa on arrival, trekking permits, altitude sickness, culture, best time to visit & packing tips.
 faqs:
   - question: Do I need a visa for Nepal?
     answer: "Most nationalities can get a Nepal visa on arrival at Kathmandu airport and major land borders. Fees: USD 30 (15 days), USD 50 (30 days), USD 125 (90 days). Indian citizens don't need a visa."
