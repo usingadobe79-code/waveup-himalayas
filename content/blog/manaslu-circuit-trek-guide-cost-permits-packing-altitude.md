@@ -1,5 +1,5 @@
 ---
-title: 'Manaslu Circuit Trek Guide: Cost, Permits & Packing | WaveUp'
+title: 'Manaslu Circuit Trek Guide: Cost, Permits & Packing'
 date: 2026-10-04
 excerpt: 'Plan your Manaslu Circuit Trek with this complete guide: cost, permits, packing, altitude, itinerary, best time & Larkya La Pass tips. Prepare with WaveUp.'
 coverImage: /images/blog/manaslu_circuit_trek.webp
