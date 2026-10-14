@@ -10,7 +10,7 @@ relatedPackages:
   - langtang-valley-trek
   - annapurna-base-camp-heli-tour
 seoTitle: 'Manaslu Circuit Trek Guide: Cost, Permits & Packing | WaveUp'
-seoDescription: Complete Manaslu Circuit Trek guide for 2026. Learn about permits, cost, packing list, altitude, itinerary, best time, accommodation, food, and more.
+seoDescription: 'Plan your Manaslu Circuit Trek with this complete guide: cost, permits, packing, altitude, itinerary, best time & Larkya La Pass tips. Prepare with WaveUp.'
 faqs:
   - question: What permits are needed for the Manaslu Circuit?
     answer: 'You need the Manaslu Restricted Area Permit (RAP), Manaslu Conservation Area Permit (MCAP), Annapurna Conservation Area Permit (ACAP), and the Chum-Nubri Local Development Fee. Total permit cost: USD 150–265.'
