@@ -188,6 +188,76 @@ When you trek with **WaveUp Himalayas**, your ACAP permit, TIMS card, and guide'
 
 ***
 
+## Annapurna Base Camp Trek Itinerary
+
+The Annapurna Base Camp Trek typically takes **7 to 12 days**, depending on your starting point, pace, and itinerary. Below is a classic **10-day itinerary** — the most popular route via Chhomrong and Jhinu Danda.
+
+**Day 1: Kathmandu → Pokhara**
+
+- **Altitude:** 822 m
+- **Travel:** 6–7 hours drive / 25 minutes flight
+- **Highlights:** Scenic journey through green hills, winding rivers, terraced fields, and traditional villages. Relax by Phewa Lake in Pokhara and enjoy Annapurna views from Lakeside.
+
+**Day 2: Pokhara → Jhinu → Chhomrong**
+
+- **Altitude:** 2,170 m
+- **Trek:** 2–3 hours drive + 5–6 hours trek
+- **Highlights:** Drive to Jhinu, then trek to Chhomrong — a traditional Gurung village with spectacular mountain views.
+
+**Day 3: Chhomrong → Bamboo**
+
+- **Altitude:** 2,310 m
+- **Trek:** 5–6 hours
+- **Highlights:** Descend the famous stone steps and trek through lush forests along the Modi Khola river.
+
+**Day 4: Bamboo → Deurali**
+
+- **Altitude:** 3,200 m
+- **Trek:** 5–6 hours
+- **Highlights:** Walk through bamboo and rhododendron forest as the trail gradually transitions to alpine terrain.
+
+**Day 5: Deurali → Machhapuchhre Base Camp → Annapurna Base Camp**
+
+- **Altitude:** 4,130 m
+- **Trek:** 5–6 hours
+- **Highlights:** Trek to Machhapuchhre Base Camp, then continue to Annapurna Base Camp. Enjoy the stunning 360° panorama of Annapurna I, Annapurna South, Hiunchuli, and Machhapuchhre.
+
+**Day 6: Annapurna Base Camp → Bamboo**
+
+- **Altitude:** 2,310 m
+- **Trek:** 6–7 hours
+- **Highlights:** Catch the sunrise at ABC, then descend through valleys and forests back to Bamboo.
+
+**Day 7: Bamboo → Jhinu Danda**
+
+- **Altitude:** 1,780 m
+- **Trek:** 5–6 hours
+- **Highlights:** Trek down to Jhinu Danda and relax in the natural riverside hot springs — the perfect reward after reaching Base Camp.
+
+**Day 8: Jhinu → Pokhara**
+
+- **Altitude:** 822 m
+- **Trek:** 3 hours trek + 2–3 hours drive
+- **Highlights:** Short trek and drive back to Pokhara. Celebrate your achievement by the lake.
+
+**Day 9: Pokhara → Kathmandu**
+
+- **Altitude:** 1,400 m
+- **Travel:** 6–7 hours drive / 25 minutes flight
+- **Highlights:** Return to Kathmandu. Optional sightseeing or rest.
+
+**Day 10: Final Departure**
+
+- **Transfer:** Airport transfer for onward journey.
+
+**Shorter & Longer Options**
+
+- **7-day ABC Trek:** Skip the Kathmandu–Pokhara travel days. Start directly from Pokhara and use a faster route via Ghandruk or Kimche.
+- **12-day ABC Trek:** Add extra acclimatization nights at Deurali or MBC, or include the Poon Hill extension via Ghorepani.
+- **ABC with Poon Hill:** Add 2–3 days for the Ghorepani and Poon Hill sunrise (3,210 m).
+
+***
+
 ## **Annapurna Base Camp Trek Cost**
 
 The [**Annapurna Base Camp Trek** ](https://waveuphimalayas.com/packages/annapurna-base-camp-trek/)**Cost** depends on how you choose to travel. At **WaveUp Himalayas**, our pricing is transparent—no hidden fees, no surprises on the trail.
@@ -266,7 +336,7 @@ Life on the ABC trail runs on Nepal's famous **teahouse system**—family-run mo
 
 A teahouse is part guesthouse, part family home, and part community hub. Most are built from stone and painted in bright blues, greens, and whites, with prayer flags strung across the front and a warm dining hall at the centre of daily life.
 
-![](/images/blog/annapurna-base-camp-trail.webp "Tea House in ABC Trek")
+![](/images/blog/annapurna-base-camp-trail-001.webp "Tea House in ABC Trek")
 
 **Your room** is simple and functional: two single beds, a pillow, and thick blankets folded at the foot. Walls are thin—sometimes just plywood—so you will hear your neighbours. There is no heating in the rooms, and no insulation to speak of. At higher altitudes, the temperature inside can drop close to freezing at night. This is why we insist every trekker carries a sleeping bag rated for **-10°C to -15°C**, along with a down jacket for the evenings.
 
