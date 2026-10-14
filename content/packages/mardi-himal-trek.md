@@ -6,9 +6,9 @@ price: 800
 originalPrice: null
 offerLabel: ''
 image: /images/packages/mardi-package.webp
-blurb: Join WaveUp Himalayas for a 9-day Mardi Himal Trek. Reach the 4,200m Upper Viewpoint, enjoy rhododendron forests, and expert guides. Book your adventure today!
-seoTitle: 9-Day Mardi Himal Trek 2026 | WaveUp Himalayas
-seoDescription: Join WaveUp Himalayas for a 9-day Mardi Himal Trek. Reach the 4,200m Upper Viewpoint, enjoy rhododendron forests, and expert guides. Book your adventure today!
+blurb: Join WaveUp Himalayas for a 9-day Mardi Himal Trek in Annapurna. Reach the 4,200m Upper Viewpoint, enjoy rhododendron forests and expert guides. Book today!
+seoTitle: Mardi Himal Trek 2026 | 9-Day Guided Trek – WaveUp Himalayas
+seoDescription: Join WaveUp Himalayas for a 9-day Mardi Himal Trek in Annapurna. Reach the 4,200m Upper Viewpoint, enjoy rhododendron forests and expert guides. Book today!
 featured: false
 draft: false
 itinerarySummary: The Mardi Himal Trek is a 9-day guided Himalayan journey to the hidden ridge beneath Machhapuchhre (Fishtail), one of Nepal's most iconic and sacred peaks. Starting with a scenic drive to Pokhara, you'll trek through rhododendron forests, traditional Gurung villages, and open alpine ridges to reach the Mardi Himal Upper Viewpoint at 4,200 m. With teahouse lodging, expert guides, and a perfectly paced itinerary, this moderate trek is safe, scenic, and unforgettable—ideal for beginners and seasoned trekkers alike.
