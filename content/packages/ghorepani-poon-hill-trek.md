@@ -6,9 +6,9 @@ price: 720
 originalPrice: null
 offerLabel: ''
 image: /images/packages/R.jpg
-blurb: '8-day Ghorepani Poon Hill Trek: sunrise at 3,210m, ACAP & TIMS permits, licensed guide, breakfast & farewell dinner. Easy-moderate.'
-seoTitle: Ghorepani Poon Hill Trek – 8 Days | WaveUp Himalayas
-seoDescription: '8-day Ghorepani Poon Hill Trek: sunrise at 3,210m, ACAP & TIMS permits, licensed guide, breakfast & farewell dinner. Easy-moderate. Book with WaveUp Himalayas.'
+blurb: Book the 8-day Ghorepani Poon Hill Trek 2026/2027. Sunrise at 3,210m, ACAP & TIMS permits, licensed guide, breakfast & farewell dinner. Easy-moderate.
+seoTitle: Ghorepani Poon Hill Trek 2026/2027 – 8 Days Guided Trek | WaveUp Himalayas
+seoDescription: Book the 8-day Ghorepani Poon Hill Trek 2026/2027. Sunrise at 3,210m, ACAP & TIMS permits, licensed guide, breakfast & farewell dinner. Easy-moderate.
 featured: true
 draft: false
 itinerarySummary: The Ghorepani Poon Hill Trek is an 8-day Annapurna Poon Hill Trek in Nepal, ideal for beginners, families, and anyone seeking a short trek in Nepal with a Poon Hill sunrise at 3,210 m. Starting with a scenic Pokhara to Poon Hill route, you'll trek through rhododendron forests and traditional Magar and Gurung villages, climb the famous 3,300 stone steps to Ulleri, and enjoy panoramic views of Dhaulagiri, Annapurna South, Machhapuchhre, and Nilgiri. This Ghorepani Ghandruk Trek includes a licensed guide, ACAP and TIMS permits, teahouse lodging, breakfast daily, a farewell dinner, and private transfers. With an easy-to-moderate trail and the best seasons from March to May and October to November, it's the perfect Himalayan escape.
