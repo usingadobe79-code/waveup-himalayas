@@ -9,7 +9,7 @@ relatedPackages:
   - manaslu-circuit-trek
   - langtang-valley-trek
   - annapurna-base-camp-heli-tour
-seoTitle: 'Manaslu Circuit Trek Guide: Cost, Permits & Packing'
+seoTitle: 'Manaslu Circuit Trek Guide: Cost, Permits & Packing | WaveUp'
 seoDescription: Complete Manaslu Circuit Trek guide for 2026. Learn about permits, cost, packing list, altitude, itinerary, best time, accommodation, food, and more.
 faqs:
   - question: What permits are needed for the Manaslu Circuit?
