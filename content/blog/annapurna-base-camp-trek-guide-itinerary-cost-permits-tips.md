@@ -44,7 +44,7 @@ faqs:
     answer: No. Flying drones in Nepal requires special permission from the Civil Aviation Authority of Nepal (CAAN), and the Annapurna Conservation Area has additional restrictions. Unauthorised drone use can result in confiscation, fines, or legal action. If you want aerial footage, arrange permits well in advance through a registered agency.
 ---
 
-The [**Annapurna Base Camp Trek**](https://waveuphimalayas.com/packages/annapurna-base-camp-trek/) is one of Nepal’s most iconic and accessible Himalayan adventures, offering a perfect blend of breathtaking scenery, rich Gurung culture, and a truly achievable challenge for trekkers of all levels. As a trusted **Annapurna Base Camp Trek Guide**, **WaveUp Himalayas** leads you from the lakeside city of Pokhara through charming villages like **Ghandruk** and **Chhomrong**, and into the heart of the **Annapurna Sanctuary** at 4,130 metres. This **ABC Trek Nepal** is famous for its moderate difficulty, stunning sunrise views of **Annapurna I** and **Machhapuchhre**, comfortable teahouse accommodation, and flexible itineraries ranging from 7 to 12 days. 
+Plan your **Annapurna Base Camp Trek** with this complete **ABC Trek Nepal Guide** from **WaveUp Himalayas**. Inside you'll find the **itinerary**, **best time to trek**, **permit requirements**, **cost estimates**, **difficulty ratings**, **packing list**, and **altitude** advice. The **Annapurna Base Camp Trek** takes you from **Pokhara** through **Ghandruk** and **Chhomrong** into the **Annapurna Sanctuary** at **4,130 metres**, beneath **Annapurna I**, **Machhapuchhre**, and **Annapurna South**. 
 
 ***
 
