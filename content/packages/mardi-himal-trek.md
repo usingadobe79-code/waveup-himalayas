@@ -7,7 +7,7 @@ originalPrice: null
 offerLabel: ''
 image: /images/packages/mardi-package.webp
 blurb: Join WaveUp Himalayas for a 9-day Mardi Himal Trek. Reach the 4,200m Upper Viewpoint, enjoy rhododendron forests, and expert guides. Book your adventure today!
-seoTitle: 9-Day Mardi Himal Trek | WaveUp Himalayas
+seoTitle: 9-Day Mardi Himal Trek 2026 | WaveUp Himalayas
 seoDescription: Join WaveUp Himalayas for a 9-day Mardi Himal Trek. Reach the 4,200m Upper Viewpoint, enjoy rhododendron forests, and expert guides. Book your adventure today!
 featured: false
 draft: false
