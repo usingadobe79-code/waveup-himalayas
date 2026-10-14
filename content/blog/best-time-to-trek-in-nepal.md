@@ -1,7 +1,7 @@
 ---
 title: Best Time to Trek in Nepal
 date: 2026-09-23
-excerpt: Discover the best time to trek in Nepal with Wave Up Himalayas. Explore spring and autumn trekking seasons, monthly weather, and the best months for Everest Base Camp and Annapurna treks.
+excerpt: Discover the best time to trek in Nepal. Compare spring vs autumn, monthly weather, and best months for Everest Base Camp & Annapurna treks. Plan your trip!
 coverImage: /images/blog/Everest-Base-Camp-Trek-1.jpeg
 author: Gaurav Lamichhane
 draft: false
