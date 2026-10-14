@@ -51,9 +51,7 @@ Planning your first trip to Nepal? Here's what you need to know before you go. F
 
 ***
 
-## Nepal Visa & Entry 
-
-## Requirements
+## Nepal Visa & Entry Requirements
 
 Most travelers can get a **Nepal visa on arrival** at Tribhuvan International Airport in Kathmandu and at major land border crossings. Citizens of the **US, UK, EU, Australia, Canada**, and many other countries qualify. **Indian citizens do not need a visa** to enter Nepal.
 
