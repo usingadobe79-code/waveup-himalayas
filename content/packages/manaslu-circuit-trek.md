@@ -6,9 +6,9 @@ price: 1200
 originalPrice: null
 offerLabel: ''
 image: /images/packages/Larke-La-pass-1.webp
-blurb: Book the 14-day Manaslu Circuit Trek with Wave Up Himalayas. Cross Larkya La Pass (5,106 m), explore Tibetan villages, permits & guides included.
-seoTitle: Manaslu Circuit Trek 14 Days | Wave Up Himalayas
-seoDescription: Book the 14-day Manaslu Circuit Trek with Wave Up Himalayas. Cross Larkya La Pass (5,106 m), explore Tibetan villages, permits & guides included.
+blurb: Book the 14-day Manaslu Circuit Trek 2026/2027 with Wave Up Himalayas. Cross Larkya La Pass (5,106 m), explore Tibetan villages, permits & guides included.
+seoTitle: Manaslu Circuit Trek 2026 – 14 Days Guided | Wave Up Himalayas
+seoDescription: Book the 14-day Manaslu Circuit Trek 2026/2027 with Wave Up Himalayas. Cross Larkya La Pass (5,106 m), explore Tibetan villages, permits & guides included.
 featured: true
 draft: false
 itinerarySummary: The Manaslu Circuit Trek is a 14-day guided Himalayan journey around the world's eighth-highest mountain, Mount Manaslu (8,163 m), beginning with a scenic drive from Kathmandu through Tibetan-influenced villages, across suspension bridges over the Budhi Gandaki River, past ancient monasteries, and over the dramatic Larkya La Pass (5,106 m). With built-in acclimatization, teahouse lodging, and expert local guides, this moderate-to-challenging trek is remote, culturally rich, and unforgettable. Often called the best alternative to the Annapurna Circuit, the Manaslu Circuit Trek offers a quieter, wilder experience inside the protected Manaslu Conservation Area.
