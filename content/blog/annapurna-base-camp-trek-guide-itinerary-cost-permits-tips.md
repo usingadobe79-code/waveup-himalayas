@@ -44,7 +44,7 @@ faqs:
     answer: No. Flying drones in Nepal requires special permission from the Civil Aviation Authority of Nepal (CAAN), and the Annapurna Conservation Area has additional restrictions. Unauthorised drone use can result in confiscation, fines, or legal action. If you want aerial footage, arrange permits well in advance through a registered agency.
 ---
 
-Plan your **Annapurna Base Camp Trek** with this complete **ABC Trek Nepal Guide** from **WaveUp Himalayas**. Inside you'll find the **itinerary**, **best time to trek**, **permit requirements**, **cost estimates**, **difficulty ratings**, **packing list**, and **altitude** advice. The **Annapurna Base Camp Trek** takes you from **Pokhara** through **Ghandruk** and **Chhomrong** into the **Annapurna Sanctuary** at **4,130 metres**, beneath **Annapurna I**, **Machhapuchhre**, and **Annapurna South**. 
+Planning your **Annapurna Base Camp Trek Guide** begins with understanding the **Annapurna Base Camp Trek Itinerary**, **Annapurna Base Camp Trek Cost**, and **Annapurna Base Camp Trek Permits**, along with the **Best Time to Trek Annapurna Base Camp** and the **Annapurna Base Camp Trek Difficulty**. At WaveUp Himalayas, we also help you prepare with a complete **Annapurna Base Camp Trek Packing List**, a clear **Annapurna Base Camp Trek Map**, and the full **Annapurna Base Camp Trek from Pokhara** experience.
 
 ***
 
@@ -172,63 +172,25 @@ When you trek with **WaveUp Himalayas**, your ACAP permit, TIMS card, and guide'
 
 The Annapurna Base Camp Trek typically takes **7 to 12 days**, depending on your starting point, pace, and itinerary. Below is a classic **10-day itinerary** — the most popular route via Chhomrong and Jhinu Danda.
 
-**Day 1: Kathmandu → Pokhara**
+**Day 1: Kathmandu → Pokhara** — Drive or fly to Pokhara (822 m). Relax by Phewa Lake.
 
-- **Altitude:** 822 m
-- **Travel:** 6–7 hours drive / 25 minutes flight
-- **Highlights:** Scenic journey through green hills, winding rivers, terraced fields, and traditional villages. Relax by Phewa Lake in Pokhara and enjoy Annapurna views from Lakeside.
+**Day 2: Pokhara → Jhinu → Chhomrong** — Drive to Jhinu, trek to Chhomrong (2,170 m). 5–6 hours.
 
-**Day 2: Pokhara → Jhinu → Chhomrong**
+**Day 3: Chhomrong → Bamboo** — Descend stone steps, follow the Modi Khola river. Overnight at Bamboo (2,310 m). 5–6 hours.
 
-- **Altitude:** 2,170 m
-- **Trek:** 2–3 hours drive + 5–6 hours trek
-- **Highlights:** Drive to Jhinu, then trek to Chhomrong — a traditional Gurung village with spectacular mountain views.
+**Day 4: Bamboo → Deurali** — Trek through bamboo and rhododendron forest into alpine terrain. Overnight at Deurali (3,200 m). 5–6 hours.
 
-**Day 3: Chhomrong → Bamboo**
+**Day 5: Deurali → MBC → Annapurna Base Camp** — Pass Machhapuchhre Base Camp and reach ABC (4,130 m). Enjoy 360° views of Annapurna I, Annapurna South, Hiunchuli, and Machhapuchhre. 5–6 hours.
 
-- **Altitude:** 2,310 m
-- **Trek:** 5–6 hours
-- **Highlights:** Descend the famous stone steps and trek through lush forests along the Modi Khola river.
+**Day 6: ABC → Bamboo** — Catch sunrise at ABC, then descend to Bamboo (2,310 m). 6–7 hours.
 
-**Day 4: Bamboo → Deurali**
+**Day 7: Bamboo → Jhinu Danda** — Trek down to Jhinu Danda (1,780 m) and relax in the natural hot springs. 5–6 hours.
 
-- **Altitude:** 3,200 m
-- **Trek:** 5–6 hours
-- **Highlights:** Walk through bamboo and rhododendron forest as the trail gradually transitions to alpine terrain.
+**Day 8: Jhinu → Pokhara** — Short trek to the road, then drive back to Pokhara (822 m). 3 hours trek + 2–3 hours drive.
 
-**Day 5: Deurali → Machhapuchhre Base Camp → Annapurna Base Camp**
+**Day 9: Pokhara → Kathmandu** — Return to Kathmandu by drive or flight.
 
-- **Altitude:** 4,130 m
-- **Trek:** 5–6 hours
-- **Highlights:** Trek to Machhapuchhre Base Camp, then continue to Annapurna Base Camp. Enjoy the stunning 360° panorama of Annapurna I, Annapurna South, Hiunchuli, and Machhapuchhre.
-
-**Day 6: Annapurna Base Camp → Bamboo**
-
-- **Altitude:** 2,310 m
-- **Trek:** 6–7 hours
-- **Highlights:** Catch the sunrise at ABC, then descend through valleys and forests back to Bamboo.
-
-**Day 7: Bamboo → Jhinu Danda**
-
-- **Altitude:** 1,780 m
-- **Trek:** 5–6 hours
-- **Highlights:** Trek down to Jhinu Danda and relax in the natural riverside hot springs — the perfect reward after reaching Base Camp.
-
-**Day 8: Jhinu → Pokhara**
-
-- **Altitude:** 822 m
-- **Trek:** 3 hours trek + 2–3 hours drive
-- **Highlights:** Short trek and drive back to Pokhara. Celebrate your achievement by the lake.
-
-**Day 9: Pokhara → Kathmandu**
-
-- **Altitude:** 1,400 m
-- **Travel:** 6–7 hours drive / 25 minutes flight
-- **Highlights:** Return to Kathmandu. Optional sightseeing or rest.
-
-**Day 10: Final Departure**
-
-- **Transfer:** Airport transfer for onward journey.
+**Day 10: Final Departure** — Airport transfer.
 
 **Shorter & Longer Options**
 
@@ -301,10 +263,6 @@ If you can comfortably walk **15–20 km in a day** and have trained for **4–6
 - Hire a porter to carry your heavy pack
 - Walk slowly and steadily; "bistari bistari" is the local wisdom
 - Listen to your body and descend if altitude symptoms worsen
-
-**Altitude Sickness**
-
-AMS is a real risk above 3,000 m. Watch for headaches, nausea, dizziness, and breathlessness at rest. Drink 3–4 litres of water daily, avoid alcohol at altitude, and never push through worsening symptoms. Our guides carry oximeters and first-aid kits and are trained to act quickly.
 
 ***
 
