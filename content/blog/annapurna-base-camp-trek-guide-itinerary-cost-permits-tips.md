@@ -82,7 +82,7 @@ Autumn is widely considered the **best time to trek to Annapurna Base Camp**. Th
 **Spring (March–May)**
 
 ![](/images/blog/images%20%288%29.jpg)
- 
+
 Spring is the second-best season for the **Annapurna Base Camp Trek**. The trail between **Ghandruk** and **Chhomrong** erupts in rhododendron blooms, creating one of the most beautiful forest walks in Nepal. Temperatures are milder than autumn, though haze can reduce visibility in April and May.
 
 - **Pros:** Beautiful flowers, warmer weather, good trail conditions.
@@ -114,11 +114,40 @@ Understanding the **Annapurna Base Camp Trek elevation** is essential for planni
 
 ![](/images/blog/6d3e1881-f638-45e3-8271-f72ef9bf3dbe%20%281%29.png "ABC Trek Elevation")
 
-From Nayapul (1,070 m) to **Annapurna Base Camp (4,130 m)**, the total elevation gain is approximately **3,060 metres**. However, because the trail involves many ups and downs—particularly the descent to the Chhomrong Khola and the climb back up—your actual cumulative elevation gain will be higher, often over **5,000 metres** across the entire trek.
+### Key Altitude Milestones
+
+- **Nayapul (trailhead):** 1,070 m
+- **Tikhedhunga:** 1,540 m
+- **Ulleri:** 1,960 m
+- **Ghorepani:** 2,860 m
+- **Poon Hill (optional):** 3,210 m
+- **Tadapani:** 2,630 m
+- **Chhomrong:** 2,170 m
+- **Bamboo:** 2,310 m
+- **Deurali:** 3,230 m
+- **Machhapuchhre Base Camp (MBC):** 3,700 m
+- **Annapurna Base Camp (ABC):** 4,130 m
+- **Jhinu Danda:** 1,780 m
+
+**Where Does Altitude Sickness Risk Begin?**
+
+Altitude sickness (AMS) can start above 2,500 m, but the risk increases significantly above 3,000 m. On the ABC Trek, Deurali (3,230 m), MBC (3,700 m), and ABC (4,130 m) are the stages where most trekkers feel the altitude.
+
+Watch for headaches, nausea, dizziness, and breathlessness at rest — and tell your guide immediately if symptoms worsen. Never push through; descending is the fastest treatment.
+
+**How to Acclimatize Safely**
+
+- Ascend gradually — a 10–12 day itinerary is safer than a rushed 7-day push
+- Sleep low, climb high — walk to ABC and back to MBC to sleep if you feel good
+- Drink 3–4 litres of water daily
+- Avoid alcohol above 3,000 m
+- Eat well, even if you lose appetite
+- Walk slowly — "bistari bistari" is the local wisdom
+- Consider Diamox only if prescribed by your doctor
 
 **Final Thoughts on Annapurna Base Camp Elevation**
 
-The **Annapurna Base Camp Trek elevation** profile is one of the reasons this trek is so popular. It offers a genuine high-altitude adventure—standing at **4,130 metres** beneath **Annapurna I (8,091m)**—without the severe altitude challenges of longer expeditions. With proper preparation, gradual ascent, and awareness of AMS, most trekkers can reach **Annapurna Base Camp** safely and enjoy one of the most spectacular mountain panoramas on Earth.
+The **Annapurna Base Camp Trek elevation** profile is one of the reasons this trek is so popular. It offers a genuine high-altitude adventure—standing at **4,130 metres** beneath \*\*Annapurna I (8,091m)\*\*—without the severe altitude challenges of longer expeditions. With proper preparation, gradual ascent, and awareness of AMS, most trekkers can reach **Annapurna Base Camp** safely and enjoy one of the most spectacular mountain panoramas on Earth.
 
 ***
 
