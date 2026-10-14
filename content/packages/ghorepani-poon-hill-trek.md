@@ -110,7 +110,7 @@ tripFacts:
 includes:
   - 'Permits: All required trekking permits, including Annapurna Conservation Area Permit (ACAP) and TIMS Card.'
   - 'Guide: Government-licensed, English-speaking trekking guide.'
-  - 'Porter: Porter service as required (1 porter for every 2 trekkers, carrying up to 20–25 kg).'
+  - 'Porter: Porter service as required'
   - 'Accommodation: 2 nights in a 3-star hotel in Kathmandu, 2 nights in a 3-star hotel in Pokhara, and teahouse/lodge accommodation during the trek (twin-sharing).'
   - 'Meals: Breakfast every day + farewell dinner in Kathmandu.'
   - 'Transportation: Airport pick-up and drop-off by private transport, Kathmandu–Pokhara–Kathmandu by tourist bus, Pokhara–Birethanti and Ghandruk–Pokhara by private vehicle.'
