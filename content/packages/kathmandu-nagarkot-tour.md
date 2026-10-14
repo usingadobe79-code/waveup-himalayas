@@ -6,10 +6,10 @@ price: 650
 originalPrice: null
 offerLabel: ''
 image: /images/packages/Pashupatinath-Temple-Kathmandu.jpg
-blurb: Book a 5-day Kathmandu Nagarkot tour package! Enjoy UNESCO heritage tours, a Sankhu to Nagarkot hike, a Himalayan sunrise & a comfortable B.B. stay.
-seoTitle: Kathmandu Tour with Nagarkot Day Hike - 5 Days | Wave Up Himalayas
-seoDescription: Book a 5-day Kathmandu Nagarkot tour package! Enjoy UNESCO heritage tours, a Sankhu to Nagarkot hike, a Himalayan sunrise & a comfortable B.B. stay.
-featured: false
+blurb: Book a 5-day Kathmandu Nagarkot tour package for 2026/2027! Enjoy UNESCO heritage tours, a Sankhu to Nagarkot hike, a Himalayan sunrise & a comfortable B&B stay.
+seoTitle: Kathmandu Nagarkot Day Hike 2026 – 5 Days | WaveUp Himalayas
+seoDescription: Book a 5-day Kathmandu Nagarkot tour package for 2026/2027! Enjoy UNESCO heritage tours, a Sankhu to Nagarkot hike, a Himalayan sunrise & a comfortable B&B stay.
+featured: true
 draft: false
 itinerarySummary: The Kathmandu Tour with Nagarkot Day Hike is a 5-day guided journey through Nepal's living heritage and its most accessible Himalayan viewpoint. Explore four UNESCO World Heritage Sites in the Kathmandu Valley, then hike from the ancient Newari town of Sankhu to Nagarkot (2,195 m) for a sunrise panorama that includes Langtang, Ganesh Himal, and on clear mornings, Mount Everest itself. This easy-grade tour is ideal for first-time visitors, families, and anyone who wants culture and mountain views without a long trek.
 itineraryHighlights:
