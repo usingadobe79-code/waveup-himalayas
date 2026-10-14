@@ -9,7 +9,7 @@ relatedPackages:
   - annapurna-base-camp-trek
   - everest-mountain-flight
   - manaslu-circuit-trek
-seoTitle: Mistakes to Avoid as First Time Trekker
+seoTitle: Mistakes to Avoid as a First Time Trekker | WaveUp Himalayas
 seoDescription: Avoid first-time trekker mistakes with this essential guide. Learn to train, pack light, prevent blisters, and manage altitude for a safe Himalayan trek.
 faqs:
   - question: What is the biggest mistake first-time trekkers make?
