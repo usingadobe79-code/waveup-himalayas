@@ -1,7 +1,7 @@
 ---
 title: 'Everest Base Camp Trek Guide: Cost, Permits & Packing'
 date: 2026-10-02
-excerpt: Plan your Everest Base Camp trek with our ultimate guide. Covers cost, permits, packing, altitude, itinerary, safety & more. By WaveUp Himalayas.
+excerpt: 'Plan your Everest Base Camp Trek with this complete guide: cost, permits, packing, altitude, itinerary, difficulty, best time & Kala Patthar sunrise tips.'
 coverImage: /images/blog/Old-Everest-Base-Camp-Trek.webp
 author: Gaurav Lamichhane
 draft: false
@@ -10,7 +10,7 @@ relatedPackages:
   - everest-base-camp-trek
   - manaslu-circuit-trek
 seoTitle: 'Everest Base Camp Trek Guide: Cost, Permits & Packing'
-seoDescription: Plan your Everest Base Camp trek with our ultimate guide. Covers cost, permits, packing, altitude, itinerary, safety & more. By WaveUp Himalayas.
+seoDescription: '-Plan your Everest Base Camp Trek with this complete guide: cost, permits, packing, altitude, itinerary, difficulty, best time & Kala Patthar sunrise tips.'
 faqs:
   - question: How difficult is the Everest Base Camp Trek?
     answer: The Everest Base Camp Trek is challenging but not technical. No climbing skills are required. The main challenges are altitude, long walking days (5–7 hours), and consecutive days on the trail. Most trekkers rate it around 7 out of 10 in difficulty.
