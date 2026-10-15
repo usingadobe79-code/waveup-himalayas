@@ -6,9 +6,9 @@ coverImage: /images/blog/Everest-Base-Camp-Trek-1.jpeg
 author: Gaurav Lamichhane
 draft: false
 relatedPackages:
-  - annapurna-base-camp-trek
-  - everest-mountain-flight
+  - everest-base-camp-trek
   - manaslu-circuit-trek
+  - annapurna-base-camp-trek
 seoTitle: Mistakes to Avoid as a First Time Trekker | WaveUp Himalayas
 seoDescription: Avoid first-time trekker mistakes with this essential guide. Learn to train, pack light, prevent blisters, and manage altitude for a safe Himalayan trek.
 faqs:
