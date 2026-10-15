@@ -6,9 +6,11 @@ coverImage: /images/blog/Everest-Base-Camp-trek-1024x768.jpg
 author: Gaurav Lamichhane
 draft: false
 relatedPackages:
-  - annapurna-base-camp-trek
-  - manaslu-circuit-trek
   - everest-base-camp-trek
+  - manaslu-circuit-trek
+  - mardi-himal-trek
+  - annapurna-base-camp-trek
+  - ghorepani-poon-hill-trek
 seoTitle: 'Climate Change & Nepal Trekking: Best Time to Visit Himalayas'
 seoDescription: How is climate change affecting the best time to visit the Himalayas? Explore Nepal's changing trekking seasons and plan your adventure with WaveUp Himalayas.
 faqs:
