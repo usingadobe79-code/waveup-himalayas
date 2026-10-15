@@ -2,7 +2,7 @@
 title: How Difficult is Everest Base Camp Trek?
 date: 2026-10-15
 excerpt: How difficult is Everest Base Camp Trek? WaveUp Himalayas breaks down the EBC Trek difficulty, fitness requirements, altitude challenges, training, and more. Plan your trek today!
-coverImage: /images/blog/Everest-Base-Camp-Trek-1.jpeg
+coverImage: /images/blog/Old-Everest-Base-Camp-Trek.webp
 author: WaveUp Himalayas
 draft: false
 relatedPackages:
