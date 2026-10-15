@@ -133,7 +133,7 @@ For true wilderness, the **Karnali River** in western Nepal offers a remote, mul
 
 ### 3. Paragliding in Pokhara
 
-![](/images/blog/1280px-Arial_view_of_Pokhara_05.jpg "Rafting in Pokhara ")
+![](/images/blog/1280px-Arial_view_of_Pokhara_05.jpg "Rafting in Pokhara")
 
 **Paragliding in Pokhara** is a bucket-list experience. Launch from Sarangkot and soar over **Phewa Lake** with the majestic **Annapurna range** as your backdrop. Flights are tandem with certified pilots, so no experience is needed. Sessions last 25–45 minutes.
 
@@ -191,7 +191,7 @@ With its rocky terrain, Nepal offers excellent **rock climbing** opportunities. 
 
 ***
 
-# Best Time for Adventure Activities in Nepal
+## Best Time for Adventure Activities in Nepal
 
 Timing is everything when planning your **Nepal adventure**. The Himalayas have four distinct seasons, and each one transforms the trails, the rivers, and the views. Whether you dream of **trekking to Everest Base Camp**, **paragliding over Pokhara**, **rafting Himalayan rivers**, or **safari in Chitwan**, choosing the right season can make your trip unforgettable. At **WaveUp Himalayas**, we've guided adventurers through every season—here's our complete guide to the **best time for adventure activities in Nepal**.
 
