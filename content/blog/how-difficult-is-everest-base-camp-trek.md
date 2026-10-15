@@ -112,8 +112,6 @@ The **Everest Base Camp Trek weather** varies dramatically. At high altitudes, t
 | Winter | December to February | Extreme cold, fewer crowds |
 | Monsoon | June to August | Rainy, cloudy, risky |
 
-***
-
 ### 5. Mental Resilience
 
 The **Everest Base Camp Trek challenge** isn't just physical. Mental toughness is crucial. You'll face:
@@ -132,7 +130,6 @@ A positive attitude and determination often matter more than fitness. Many trekk
 ## Everest Base Camp Trek Difficulty Level: How Hard Is It Really?
 
 The [**Everest Base Camp Trek** ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)is one of the world's most rewarding adventures—but it's not easy. The question isn't whether it's hard, but how hard. The answer depends on your fitness, preparation, and mindset. Let's break down the **Everest Base Camp Trek difficulty level** so you know exactly what to expect.
-
 
 ### Everest Base Camp Trek Difficulty by Numbers
 
@@ -386,7 +383,6 @@ Shorter itineraries (10–12 days) skip acclimatization days and increase the ri
 ## How to Make the Everest Base Camp Trek Easier
 
 The **Everest Base Camp Trek** is challenging, but it doesn't have to be overwhelming. With the right preparation, mindset, and support, you can reduce the difficulty and enjoy the journey. Here are 10 practical tips to make your **EBC Trek** easier.
-
 
 - **Train Properly Before You Go:** Start training **8–12 weeks** before your trek. Focus on cardio (hiking, stair climbing, cycling), leg strength (squats, lunges, step-ups), and long practice hikes on consecutive days. The fitter you are, the easier the trek feels.
 - **Choose a Longer Itinerary:** Shorter itineraries increase the risk of altitude sickness. A **13-day itinerary** with two acclimatization days (Namche and Dingboche) gives your body time to adjust safely.
