@@ -17,6 +17,18 @@ const inputClasses =
   "placeholder:text-muted/60 transition-colors focus:border-accent focus:outline-none " +
   "focus:ring-2 focus:ring-accent/70";
 
+/** Turn a month picker value ("2026-10") into a clean label ("October 2026"). */
+function formatTravelMonth(v: string): string | null {
+  const t = v.trim();
+  if (!t) return null;
+  const m = /^(\d{4})-(\d{2})$/.exec(t);
+  if (!m) return t;
+  const d = new Date(Number(m[1]), Number(m[2]) - 1, 1);
+  return Number.isNaN(d.getTime())
+    ? t
+    : d.toLocaleDateString("en-GB", { month: "long", year: "numeric" });
+}
+
 /**
  * "Write a review" form for a trip. Saves straight to Supabase: the photo (if
  * any) is uploaded to the public `review-photos` bucket, then a row is
@@ -88,7 +100,7 @@ export function ReviewForm({ tripTitle, tripSlug }: { tripTitle: string; tripSlu
         name: name.trim(),
         location: location.trim() || null,
         rating,
-        travel_month: travelMonth.trim() || null,
+        travel_month: formatTravelMonth(travelMonth),
         title: title.trim() || null,
         quote: quote.trim(),
         photo_paths: photoPaths,
@@ -176,9 +188,7 @@ export function ReviewForm({ tripTitle, tripSlug }: { tripTitle: string; tripSlu
               <input
                 id={`review-travel-${tripSlug}`}
                 name="travel_month"
-                type="text"
-                placeholder="e.g. October 2026"
-                maxLength={40}
+                type="month"
                 value={travelMonth}
                 onChange={(e) => setTravelMonth(e.target.value)}
                 className={inputClasses}
