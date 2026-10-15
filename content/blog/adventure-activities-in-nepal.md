@@ -46,7 +46,7 @@ Looking for the best **adventure activities in Nepal**? **WaveUp Himalayas** bri
 
 ## Why Nepal is the Ultimate Adventure Destination
 
-epal isn't just a country—it's a calling for every adventurer. Home to eight of the world's fourteen highest peaks, glacier-fed rivers, deep gorges, subtropical jungles, and ancient cultures, Nepal has rightfully earned its title as one of the greatest **adventure destinations** on Earth. At **WaveUp Himalayas**, we've guided countless thrill-seekers through this Himalayan wonderland, and here's why Nepal stands unmatched.
+Nepal isn't just a country—it's a calling for every adventurer. Home to eight of the world's fourteen highest peaks, glacier-fed rivers, deep gorges, subtropical jungles, and ancient cultures, Nepal has rightfully earned its title as one of the greatest **adventure destinations** on Earth. At **WaveUp Himalayas**, we've guided countless thrill-seekers through this Himalayan wonderland, and here's why Nepal stands unmatched.
 
 **Eight of the World's 10 Highest Peaks**
 
@@ -133,7 +133,7 @@ For true wilderness, the **Karnali River** in western Nepal offers a remote, mul
 
 ### 3. Paragliding in Pokhara
 
-![](/images/blog/1280px-Arial_view_of_Pokhara_05.jpg "Rafting in Pokhara")
+![](/images/blog/1280px-Arial_view_of_Pokhara_05.jpg "Paragliding")
 
 **Paragliding in Pokhara** is a bucket-list experience. Launch from Sarangkot and soar over **Phewa Lake** with the majestic **Annapurna range** as your backdrop. Flights are tandem with certified pilots, so no experience is needed. Sessions last 25–45 minutes.
 
