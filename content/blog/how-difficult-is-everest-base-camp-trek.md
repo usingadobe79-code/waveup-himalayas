@@ -11,7 +11,23 @@ relatedPackages:
   - everest-base-camp-three-passes-trek
 seoTitle: How Difficult is Everest Base Camp Trek? | WaveUp Himalayas
 seoDescription: How difficult is Everest Base Camp Trek? WaveUp Himalayas breaks down the EBC Trek difficulty, fitness requirements, altitude challenges, training, and more. Plan your trek today!
-faqs: []
+faqs:
+  - question: How difficult is the Everest Base Camp Trek?
+    answer: The Everest Base Camp Trek is rated moderate to challenging. You'll walk 5–8 hours per day at high altitude, with steep ascents and descents. No technical climbing skills are required, but good fitness, mental determination, and proper acclimatization are essential. With our 13-day itinerary, the pace is gradual and includes acclimatization days to help you adjust safely.
+  - question: How many days does the Everest Base Camp Trek take?
+    answer: Our Everest Base Camp Trek is a 13-day itinerary, including arrival and departure days in Kathmandu. Most trekkers find 12–14 days ideal, as it allows enough time for acclimatization. Shorter versions are possible by helicopter return from Gorak Shep or by skipping rest days.
+  - question: What is the best season for the Everest Base Camp Trek?
+    answer: The best seasons are spring (March–May) and autumn (September–November) . Spring offers warmer temperatures and blooming rhododendrons, while autumn brings clear skies and stable weather. Winter treks (December–February) are possible but much colder, and the monsoon (June–August) brings rain, clouds, and flight delays.
+  - question: How high is Everest Base Camp and Kala Patthar?
+    answer: Everest Base Camp sits at 5,364m (17,598ft) , and Kala Patthar reaches 5,555m (18,225ft) —the highest point of the trek. Most trekkers find Kala Patthar more rewarding for views, as Everest itself is not visible from Base Camp.
+  - question: Do I need travel insurance for the Everest Base Camp Trek?
+    answer: Yes—comprehensive travel insurance is mandatory. Your policy must cover high-altitude trekking up to at least 6,000m, helicopter evacuation, medical treatment, and trip cancellation. We'll ask for your policy details before departure.
+  - question: What permits are required for the Everest Base Camp Trek?
+    answer: 'You need two permits: the Sagarmatha National Park Permit and the Khumbu Pasanglhamu Rural Municipality Permit. Both are included in your WaveUp Himalayas package—we handle all paperwork for you.'
+  - question: How fit do I need to be for the Everest Base Camp Trek?
+    answer: You should be in good physical shape and able to walk 5–8 hours per day with a light daypack. We recommend starting cardio and strength training 8–12 weeks before your trek, including hill walks with a loaded backpack. Prior trekking experience is helpful but not required.
+  - question: What is the risk of altitude sickness on the Everest Base Camp Trek?
+    answer: Altitude sickness (AMS) is a real risk above 3,000m. Our itinerary includes two acclimatization days (Namche and Dingboche) and a "climb high, sleep low" approach. Your guide will monitor your oxygen levels daily with an oximeter. If symptoms worsen, the only safe treatment is to descend immediately.
 ---
 
 The[ **Everest Base Camp Trek** ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)is one of the most iconic journeys on Earth. Standing at the foot of the world's highest peak is a dream for countless adventurers. But before you book your flight to Lukla, one question looms large: **How difficult is the Everest Base Camp Trek?**
