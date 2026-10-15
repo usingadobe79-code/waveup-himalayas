@@ -6,6 +6,7 @@ import { MapPin, Clock } from "lucide-react";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { SaleBadge } from "@/components/ui/SaleBadge";
 import { PriceTag } from "@/components/ui/PriceTag";
+import { RatingBadge } from "@/components/ui/Rating";
 import { WishlistButton } from "@/components/ui/WishlistButton";
 import { packages, regions, services, packageService, type ServiceKey } from "@/lib/content";
 import { cn } from "@/lib/cn";
@@ -134,6 +135,7 @@ export function PackagesBrowser() {
                             {p.tripFacts.duration}
                           </span>
                         )}
+                          <RatingBadge average={p.ratingAverage} count={p.reviewCount} />
                       </div>
                       {p.blurb && <p className="type-small mt-2 flex-1 text-muted">{p.blurb}</p>}
                       <div className="mt-4 flex items-center justify-between gap-3">

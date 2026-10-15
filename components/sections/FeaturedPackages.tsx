@@ -7,6 +7,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { SaleBadge } from "@/components/ui/SaleBadge";
 import { PriceTag } from "@/components/ui/PriceTag";
+import { RatingBadge } from "@/components/ui/Rating";
 import { WishlistButton } from "@/components/ui/WishlistButton";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
@@ -104,6 +105,7 @@ export function FeaturedPackages() {
                         {pkg.tripFacts.duration}
                       </span>
                     )}
+                    <RatingBadge average={pkg.ratingAverage} count={pkg.reviewCount} />
                   </div>
                   {pkg.blurb && (
                     <p className="type-small mt-2 flex-1 text-muted">{pkg.blurb}</p>

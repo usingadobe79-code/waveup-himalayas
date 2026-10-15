@@ -13,6 +13,7 @@
  */
 import packagesData from "./packages.data.json";
 import offersData from "./offers.data.json";
+import reviewsData from "./reviews.data.json";
 
 export const business = {
   name: "WaveUp Himalayas",
@@ -198,6 +199,12 @@ export type Package = {
   excludes?: string[];
   /** Per-trip FAQs — renders the FAQ accordion + FAQPage JSON-LD when present. */
   faqs?: Faq[];
+  /** Owner-approved customer reviews (Supabase, build time) — Reviews section + Review JSON-LD. */
+  reviews?: Review[];
+  /** Number of valid reviews — present whenever `reviews` is. */
+  reviewCount?: number;
+  /** Mean star rating, 1 decimal — present whenever `reviews` is. */
+  ratingAverage?: number;
   /** Extra trip photos — renders a "Photo gallery" grid when present. */
   gallery?: string[];
   /** On-page display paths for `gallery` — see `imageDisplay`. Present
@@ -269,6 +276,27 @@ export type TripFacts = {
 /** One FAQ entry (also emitted as FAQPage JSON-LD — see FaqJsonLd). */
 export type Faq = { question: string; answer: string };
 
+/** One owner-approved customer review, fetched from Supabase at build time
+ *  (see scripts/generate-reviews.mjs). */
+export type Review = {
+  name: string;
+  location?: string;
+  /** 1–5 */
+  rating: number;
+  title?: string;
+  quote: string;
+  /** ISO YYYY-MM-DD */
+  date?: string;
+  /** Full public URLs of the review's photos. */
+  photoUrls?: string[];
+  /** The owner's reply, shown beneath the review. */
+  reply?: string;
+  /** Owner-confirmed traveller (set in the Supabase dashboard; never by default). */
+  verified?: boolean;
+  /** Free-text travel month, e.g. "October 2026". */
+  travelMonth?: string;
+};
+
 const REGION_LABELS: Record<RegionKey, string> = {
   everest: "Everest Region",
   annapurna: "Annapurna Region",
@@ -331,6 +359,18 @@ type PackageData = {
  * + blurb today; the rest carry null (branded placeholder + "details on
  * enquiry") until real assets/copy are supplied. No invented detail.
  */
+/** Reviews for a package slug from the build-time Supabase snapshot. */
+function reviewFields(slug: string) {
+  const reviews = (reviewsData as Record<string, Review[]>)[slug] ?? [];
+  if (!reviews.length) return { reviews, reviewCount: 0 };
+  const sum = reviews.reduce((acc, r) => acc + r.rating, 0);
+  return {
+    reviews,
+    reviewCount: reviews.length,
+    ratingAverage: Math.round((sum / reviews.length) * 10) / 10,
+  };
+}
+
 export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
   slug: p.slug,
   title: p.title,
@@ -351,6 +391,7 @@ export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
   includes: p.includes,
   excludes: p.excludes,
   faqs: p.faqs,
+  ...reviewFields(p.slug),
   gallery: p.gallery,
   galleryDisplay: p.galleryDisplay,
   routeMap: p.routeMap,

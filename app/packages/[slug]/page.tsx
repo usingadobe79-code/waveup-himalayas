@@ -11,6 +11,7 @@ import { PriceTag } from "@/components/ui/PriceTag";
 import { PackageItinerary } from "@/components/sections/PackageItinerary";
 import { TripFacts } from "@/components/sections/TripFacts";
 import { PackageFaq } from "@/components/sections/PackageFaq";
+import { PackageReviews } from "@/components/sections/PackageReviews";
 import { PackageGallery } from "@/components/sections/PackageGallery";
 import { SimilarTreks } from "@/components/sections/SimilarTreks";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
@@ -140,6 +141,8 @@ export default async function PackageDetailPage({
         path={`/packages/${pkg.slug}`}
         touristType={touristType}
         price={pkg.price}
+        reviews={pkg.reviews}
+        ratingAverage={pkg.ratingAverage}
       />
       {pkg.faqs && pkg.faqs.length > 0 && <FaqJsonLd faqs={pkg.faqs} />}
       <Header solid />
@@ -339,6 +342,10 @@ export default async function PackageDetailPage({
                   <PackageGallery images={pkg.galleryDisplay ?? pkg.gallery} title={pkg.title} />
                 </div>
               )}
+
+              {/* Reviews — approved reviews when present; the "Write a review"
+                  form always renders. */}
+              <PackageReviews pkg={pkg} />
             </div>
 
             {/* Booking card */}

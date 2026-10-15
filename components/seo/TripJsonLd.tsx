@@ -1,4 +1,4 @@
-import { PRICE_CURRENCY, siteUrl } from "@/lib/content";
+import { PRICE_CURRENCY, siteUrl, type Review } from "@/lib/content";
 
 type TripJsonLdProps = {
   name: string;
@@ -10,6 +10,9 @@ type TripJsonLdProps = {
   touristType: string;
   /** Real price only — null (price-on-enquiry) omits `offers` entirely. */
   price: number | null;
+  /** Real owner-approved reviews only — omitted entirely when none. */
+  reviews?: Review[];
+  ratingAverage?: number;
 };
 
 /**
@@ -17,7 +20,16 @@ type TripJsonLdProps = {
  * emitted when `price` is a real number — prices are null ("Price on
  * enquiry") for most packages today, and we never fabricate one.
  */
-export function TripJsonLd({ name, description, image, path, touristType, price }: TripJsonLdProps) {
+export function TripJsonLd({
+  name,
+  description,
+  image,
+  path,
+  touristType,
+  price,
+  reviews,
+  ratingAverage,
+}: TripJsonLdProps) {
   const data: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
@@ -36,6 +48,24 @@ export function TripJsonLd({ name, description, image, path, touristType, price 
       priceCurrency: PRICE_CURRENCY,
       availability: "https://schema.org/InStock",
     };
+  }
+
+  if (reviews && reviews.length > 0 && ratingAverage != null) {
+    data.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: ratingAverage,
+      reviewCount: reviews.length,
+      bestRating: 5,
+      worstRating: 1,
+    };
+    data.review = reviews.map((r) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: r.name },
+      reviewRating: { "@type": "Rating", ratingValue: r.rating, bestRating: 5, worstRating: 1 },
+      reviewBody: r.quote,
+      ...(r.title ? { name: r.title } : {}),
+      ...(r.date ? { datePublished: r.date } : {}),
+    }));
   }
 
   return (
