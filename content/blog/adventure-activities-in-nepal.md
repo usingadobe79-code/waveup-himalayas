@@ -243,7 +243,7 @@ The **best time for adventure activities in Nepal** depends on what you want to 
 
 ***
 
-# Essential Tips for Adventure in Nepal
+## Essential Tips for Adventure in Nepal
 
 Nepal is a paradise for thrill-seekers, but the Himalayas demand respect. Whether you're **trekking to Everest Base Camp**, **rafting the Bhote Koshi**, **paragliding over Pokhara**, or on a **Chitwan jungle safari**, proper preparation is the key to a safe and unforgettable adventure. Here are our top tip**Train Before You Arrive** – Start fitness training 2–3 months in advance. Focus on cardio, leg strength, and endurance.
 
