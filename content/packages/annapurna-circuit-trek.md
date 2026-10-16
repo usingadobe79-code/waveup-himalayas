@@ -94,7 +94,7 @@ itineraryDays:
     duration: 9–11 km / 6–7 miles · 3–4 hrs trek
     description: Trek above the Marsyangdi Valley through Tengi and Gunsang to the high alpine settlement of Yak Kharka.
     image: /images/packages/x2O2CV5zr8gapGDFdUWbMETv9Mxvo3arS_kMomcF4eRT5W1-UmwPlis0Ip8yIIsRwY4FwuaQ_PmKcKWIsNqCFHHcQ7gfyUnuykVy1F1uYKVK5X5LY4LjsfeQ2B0Uqiljlf5TJ7R-PHeCXf8ZtsETgjfc6Dqz-b0kgfTZ9shY7Hw_3dS-prAjo1.jpg
-    highlights: fter breakfast, leave Manang and begin trekking toward the higher alpine section of the Annapurna Circuit. The trail climbs gradually above the Marsyangdi Valley, passing Tengi and continuing toward Gunsang. As you move higher, the landscape becomes more open and rugged — trees become fewer, the valley widens, and the trail passes through grazing areas used by yak herders during the warmer months. From Gunsang, the route continues toward Yak Kharka through alpine meadows and high mountain terrain. Along the way, you may see yaks, blue sheep, mule trains, and distant views of Chulu East, Chulu West, and surrounding snow-covered peaks. Overnight at a local lodge in Yak Kharka.
+    highlights: After breakfast, leave Manang and begin trekking toward the higher alpine section of the Annapurna Circuit. The trail climbs gradually above the Marsyangdi Valley, passing Tengi and continuing toward Gunsang. As you move higher, the landscape becomes more open and rugged — trees become fewer, the valley widens, and the trail passes through grazing areas used by yak herders during the warmer months. From Gunsang, the route continues toward Yak Kharka through alpine meadows and high mountain terrain. Along the way, you may see yaks, blue sheep, mule trains, and distant views of Chulu East, Chulu West, and surrounding snow-covered peaks. Overnight at a local lodge in Yak Kharka.
   - day: 9
     route: Yak Kharka to Thorong Phedi
     altitude: 4,450m
@@ -117,7 +117,7 @@ itineraryDays:
     image: /images/packages/XA-SsKLDiPpR0_aJZOZ0URgi45lCDm3qAC0sCfmn4axStQPtFVWVb0BJw5LlTxGRr4laTLLO1_u0pHGJEQ100sdQErXKMz3khrysqogsxjQLDJ48b10SguDk5Gih-O4BiSynYJyA1KS_El9QAVmw6b5mY5gzWt-A7kA2DHe4vvIZFZ2qQeFOe-.jpg
     highlights: After breakfast in Muktinath, the trail follows the quieter Lupra Valley route instead of staying on the busier road to Jomsom, giving the final trekking day a better trail experience with open Mustang landscapes and wide mountain views. The route passes near Jharkot before climbing steadily toward Lupra Pass, where you can see Dhaulagiri and the surrounding Mustang valley. After crossing the pass, the trail descends to Lupra, a village known for its strong Bon cultural influence. From Lupra, the trail continues toward Jomsom through the dry Kali Gandaki Valley, which can be windy and dusty later in the day. By reaching Jomsom, you complete the main walking section of the Annapurna Circuit Trek. Overnight at a local lodge in Jomsom.
   - day: 12
-    route: Flight to Pokhara
+    route: Flight from Jomsom to Pokhara
     altitude: 820m
     duration: 70 km / 43 miles · 20–25 mins flight
     description: Fly from Jomsom to Pokhara with aerial views of the Kali Gandaki Valley, Nilgiri, and Dhaulagiri.
