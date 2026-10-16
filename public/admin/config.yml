@@ -46,6 +46,31 @@ collections:
         fields:
           - { label: "Question", name: "question", widget: "string" }
           - { label: "Answer", name: "answer", widget: "text" }
+      - label: "Tables"
+        name: "tables"
+        widget: "list"
+        required: false
+        label_singular: "Table"
+        summary: "{{fields.caption}}"
+        hint: "Fill in boxes — no symbols. To place a table at a specific spot in your post, type {{table1}} (or {{table2}}…) in the Body where you want it; otherwise tables appear after your article."
+        fields:
+          - { label: "Caption (optional)", name: "caption", widget: "string", required: false, hint: "Shown above the table." }
+          - label: "Column headers"
+            name: "headers"
+            widget: "list"
+            hint: "Add one per column, e.g. Day, Route, Altitude, Hours"
+            field: { label: "Header", name: "header", widget: "string" }
+          - label: "Rows"
+            name: "rows"
+            widget: "list"
+            required: false
+            label_singular: "Row"
+            fields:
+              - label: "Cells"
+                name: "cells"
+                widget: "list"
+                hint: "One cell per column, in header order."
+                field: { label: "Cell", name: "cell", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "packages"

@@ -413,3 +413,11 @@ html.lenis body {
     scroll-behavior: auto !important;
   }
 }
+.prose-blog table caption {
+  caption-side: top;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-muted, inherit);
+}

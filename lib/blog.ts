@@ -64,6 +64,12 @@ marked.use({
   },
 });
 
+export type BlogTable = {
+  caption?: string;
+  headers: string[];
+  rows: string[][];
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -90,6 +96,9 @@ export type BlogPost = {
    *  components/seo/FaqJsonLd.tsx). Undefined when absent, in which case the
    *  section is omitted entirely. */
   faqs?: Faq[];
+  /** Writer-set tables (fill-in-the-boxes in the CMS). Rendered into
+   *  `contentHtml` by getPost(); kept here for reference. */
+  tables?: BlogTable[];
   /** Rendered markdown body — only populated by getPost(), not the list. */
   contentHtml: string;
 };
@@ -108,6 +117,7 @@ type PostFrontmatter = {
   seoTitle?: string;
   seoDescription?: string;
   faqs?: Faq[];
+  tables?: BlogTable[];
 };
 
 /**
@@ -128,6 +138,85 @@ function parseFaqs(raw: unknown): Faq[] | undefined {
       (f as Faq).answer.trim() !== "",
   );
   return faqs.length > 0 ? faqs : undefined;
+}
+
+/**
+ * Normalise frontmatter `tables` (CMS shape:
+ * `[{caption, headers: [..], rows: [{cells: [..]}]}]`) into a clean
+ * BlogTable[], or undefined when nothing usable. Never throws; tables with no
+ * headers AND no rows are dropped.
+ */
+function parseTables(raw: unknown): BlogTable[] | undefined {
+  if (!Array.isArray(raw)) return undefined;
+  const str = (v: unknown): string =>
+    typeof v === "string" ? v.trim() : typeof v === "number" ? String(v) : "";
+  const tables: BlogTable[] = [];
+  for (const t of raw) {
+    if (typeof t !== "object" || t === null) continue;
+    const { caption, headers, rows } = t as Record<string, unknown>;
+    const h = Array.isArray(headers) ? headers.map(str) : [];
+    const r = (Array.isArray(rows) ? rows : [])
+      .map((row) => {
+        const cells =
+          Array.isArray(row) ? row : (row as { cells?: unknown } | null)?.cells;
+        return Array.isArray(cells) ? cells.map(str) : [];
+      })
+      .filter((cells) => cells.some((c) => c !== ""));
+    if (h.every((x) => x === "") && r.length === 0) continue;
+    tables.push({ caption: str(caption) || undefined, headers: h, rows: r });
+  }
+  return tables.length > 0 ? tables : undefined;
+}
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+/** Table -> HTML matching the Markdown-table DOM so `.prose-blog table` CSS
+ *  applies. Rows are padded/truncated to the header count. All text escaped. */
+function renderTable(t: BlogTable): string {
+  const cols = t.headers.length || Math.max(0, ...t.rows.map((r) => r.length));
+  const fit = (cells: string[]) =>
+    Array.from({ length: cols }, (_, i) => cells[i] ?? "");
+  const head = t.headers.length
+    ? `<thead><tr>${fit(t.headers)
+        .map((c) => `<th>${escapeHtml(c)}</th>`)
+        .join("")}</tr></thead>`
+    : "";
+  const body = `<tbody>${t.rows
+    .map(
+      (r) =>
+        `<tr>${fit(r)
+          .map((c) => `<td>${escapeHtml(c)}</td>`)
+          .join("")}</tr>`,
+    )
+    .join("")}</tbody>`;
+  const caption = t.caption ? `<caption>${escapeHtml(t.caption)}</caption>` : "";
+  return `<div class="prose-table-wrap"><table>${caption}${head}${body}</table></div>`;
+}
+
+/** Replace `{{tableN}}` tokens (1-indexed) with rendered tables, drop tokens
+ *  for missing tables, and append any table never referenced, in order. */
+function injectTables(html: string, tables: BlogTable[] | undefined): string {
+  const list = tables ?? [];
+  const used = new Set<number>();
+  const sub = (_m: string, n: string) => {
+    const i = Number(n) - 1;
+    if (!list[i]) return "";
+    used.add(i);
+    return renderTable(list[i]);
+  };
+  let out = html
+    .replace(/<p>\s*\{\{\s*table(\d+)\s*\}\}\s*<\/p>/gi, sub)
+    .replace(/\{\{\s*table(\d+)\s*\}\}/gi, sub);
+  list.forEach((t, i) => {
+    if (!used.has(i)) out += renderTable(t);
+  });
+  return out;
 }
 
 /**
@@ -183,6 +272,7 @@ export function getAllPosts(): BlogPost[] {
         seoTitle: data.seoTitle || undefined,
         seoDescription: data.seoDescription || undefined,
         faqs: parseFaqs(data.faqs),
+        tables: parseTables(data.tables),
         contentHtml: "",
       };
       return post;
@@ -197,6 +287,7 @@ export function getPost(slug: string): BlogPost | undefined {
   const parsed = readPost(slug);
   if (!parsed) return undefined;
   const { data, content } = parsed;
+  const tables = parseTables(data.tables);
   return {
     slug,
     title: data.title,
@@ -209,7 +300,8 @@ export function getPost(slug: string): BlogPost | undefined {
     seoTitle: data.seoTitle || undefined,
     seoDescription: data.seoDescription || undefined,
     faqs: parseFaqs(data.faqs),
-    contentHtml: marked.parse(content, { async: false }),
+    tables,
+    contentHtml: injectTables(marked.parse(content, { async: false }), tables),
   };
 }
 
