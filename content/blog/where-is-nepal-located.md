@@ -2,7 +2,7 @@
 title: Where is Nepal Located?
 date: 2026-10-16
 excerpt: Nepal is located in South Asia, between India and China. Learn Nepal's location, map, borders, best trekking seasons & plan your Himalayan adventure with WaveUp Himalayas.
-coverImage: /images/blog/a-magnifying-glass-on-nepal-of-the-world-map-zoom-nepal-map-with-gradient-background-and-nepal-flag-on-map-art-vector-001.jpg
+coverImage: /images/blog/a-magnifying-glass-on-nepal-of-the-world-map-zoom-nepal-map-with-gradient-background-and-nepal-flag-on-map-art-vector-002.jpg
 author: Gaurav Lamichhane
 draft: false
 relatedPackages:
