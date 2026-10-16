@@ -31,6 +31,7 @@ faqs:
     answer: Nepal weather by month varies greatly. Autumn and spring are stable; winter is cold and dry; monsoon is rainy. Check it to decide when to visit Nepal.
   - question: When is the worst time to visit Nepal?
     answer: The monsoon (June–August) is generally the worst time for most trips, though it’s good for rain-shadow regions like Upper Mustang. Winter at high altitude is also challenging.
+tables: []
 ---
 
 At **Wave Up Himalayas**, we know the **best time to visit Nepal** depends on your travel goals. The **best season to visit Nepal** is usually autumn (October–November), often called the **best month to visit Nepal**—so if you’re asking **is October a good time to visit Nepal**, yes, it’s excellent for clear skies and trekking. Spring is a close second and a great **best time to visit Nepal for trekking**, including the **best time to visit Everest Base Camp**. To decide **when to visit Nepal**, check **Nepal weather by month**, and remember the **best time to visit Kathmandu** and **best time to visit Pokhara** can vary by season. Wave Up Himalayas helps you match your dates to your perfect Nepal adventure.
@@ -93,7 +94,12 @@ Monsoon isn't the **best time to visit Nepal**, **best season to visit Nepal**, 
 
 Understanding **Nepal weather by month** is the key to choosing the **best time to visit Nepal**. It helps you decide **when to visit Nepal** and match your trip to the **best season to visit Nepal**.
 
-![](/images/blog/659e3761-526a-4c40-93bf-8c6f0c9ae3fc.png)
+| Season | Best For | Weather | Watch Out For |
+| --- | --- | --- | --- |
+| **Autumn** (Oct – Nov) | Trekking, festivals, sightseeing | Clear, mild, dry | Crowds, higher prices |
+| **Spring** (Mar – Apr) | Trekking, wildlife, rhododendrons | Warm, hazy, occasional pre-monsoon rain | Haze, crowds |
+| **Winter** (Dec – Feb) | Culture, lower hikes, solitude | Cold, dry, foggy | Cold at altitude, some closures |
+| **Monsoon** (Jun – Aug) | Mustang, Dolpo, budget travel | Rainy, humid, lush | Landslides, travel delays, limited mountain views |
 
 **Autumn (Oct–Nov):**
 
