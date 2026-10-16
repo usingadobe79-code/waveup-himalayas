@@ -40,102 +40,102 @@ itineraryNotes:
   - 'Currency: Nepali Rupee (NPR). USD and EUR can be exchanged in Kathmandu and Pokhara.'
 itineraryDays:
   - day: 1
-    route: Arrive in Kathmandu
+    route: Arrival in Kathmandu
     altitude: 1,400m
     duration: Transfer 20–30 mins
     description: Arrive at Tribhuvan International Airport and transfer to your hotel in Kathmandu.
-    image: ''
-    highlights: Meet our representative outside the arrival terminal holding a WaveUp Himalayas placard and transfer to your 3-star hotel. In the evening, join your trek leader for a pre-trip briefing covering the Annapurna Circuit route, daily walking plan, altitude considerations, weather, packing, and safety procedures. Receive your trekking equipment — duffel bag, down jacket, sleeping bag, and sun cap — and complete a final gear check before departing for the Annapurna region the next morning. Overnight at a 3-star hotel in Kathmandu.
+    image: /images/packages/pznPBkmmlWdax14gIKJqjodJ-DsUhxuFhxGd7X4rTBlkX5pKu8YE78gOz65E7BMCTGwgqpWehrrbFYvkn8FgKVtQYUf19dWEH-4HRD32uaTOZLwd3Jawn-zhGzCU7bRzU0DSTYPif48qQyyAJ2VwiKR6hoJubc8_C3Egc_xUj3AGdMxiqUPY3U.jpg
+    highlights: At the scheduled time, our representative will welcome you at Tribhuvan International Airport and transfer you to your hotel. After check-in, relax or explore the nearby streets depending on your arrival time. Your trekking guide will brief you on the upcoming Annapurna Circuit Trek and help you prepare for the journey.
   - day: 2
     route: Drive to Dharapani from Kathmandu
     altitude: 1,860m
     duration: 228 km / 142 miles · 8–9 hrs drive
     description: Drive from Kathmandu through river valleys and terraced farmland to Dharapani, the starting point of the trek.
-    image: ''
+    image: /images/packages/daGUOXoMATCvhB027S1QsZx2Pk271B8izBVb_83uF0ZHf1FMVp5nqkoeGEI8qPTwB3F7vUjqa3EjWTqzBqSoR0IDbcQGulG4YNNLvwtTa8NpTLfRda5qkfz4eVH4KkIQfbFpCCLStT83anu_KhHa6UGMfQyMyZQh_4ktWyN-EE5b6gl3yY2LaE.jpg
     highlights: After an early breakfast, drive from Kathmandu toward Dharapani, following the highway through river valleys, roadside towns, and rural settlements before reaching Besisahar, the gateway to the Annapurna Circuit. After Besisahar, the road becomes narrower and more mountainous as it enters the Marsyangdi Valley, passing villages, waterfalls, suspension bridges, and cliff-side sections through Jagat and Chamje. By evening, reach Dharapani, a mountain village marking the beginning of the main walking section of the Annapurna Circuit Trek. Overnight at a local guesthouse in Dharapani.
   - day: 3
-    route: Trek to Chame from Dharapani
+    route: Dharapani to Chame
     altitude: 2,670m
     duration: 15–16 km / 9–10 miles · 6 hrs trek
     description: Trek through pine and fir forests, stone villages, and prayer flags along the Marsyangdi Valley to Chame.
-    image: ''
+    image: /images/packages/T5iL_QwtQ2KDF1eaw3C2YlviQ6OocEB5FJsaedeiXlS8qeiDXaqNZrudkKKEjH1wN9BKab6EpVH62Q_IG-EFhrPgOXb2nlaj0yZq3VcPKyRT-ZJmI3DmjS5bYGGUxzNn9QDKaXOICZNEGVAKF8NCty_LyoCWS7oyern0U0B8mqY3S9ZHDRa6AG-001.jpg
     highlights: Begin the first walking day of the Annapurna Circuit Trek along the Marsyangdi Valley. The route passes Bagarchhap and Danaque before climbing steadily toward Timang, one of the first noticeable uphill sections of the trek. As you gain height, views of Manaslu, Lamjung Himal, and surrounding snow-covered peaks open up on clear days. After Timang, the trail becomes more gradual and continues through forested sections and mountain road crossings toward Thanchok, Koto, and Chame, the administrative center of Manang District. If time allows, visit the nearby natural hot spring. Overnight at a local guesthouse in Chame.
   - day: 4
-    route: Trek to Upper Pisang from Chame
+    route: Chame to Upper Pisang
     altitude: 3,300m
     duration: 14–15 km / 9–10 miles · 5–6 hrs trek
     description: Trek through pine forests, narrow valleys, and dramatic rock cliffs to the high village of Upper Pisang.
-    image: ''
+    image: /images/packages/evw3z7Md63-n--WEjmQ595FJU6lwKcSAA58GdNMeNaLV52eauAqs327hAhUzezuEZTAYiBjO7QFnDPNLknTfCHqGqs036KdoQ8d5GqUw8ZiVV2auZGwuI3UGHfvfLJdmTMEGr7cvvPt8_QqOn3By1LU3QvllR432pkQ82Lg6iItdyOCgrtXq9R.jpg
     highlights: After breakfast, continue through pine forests, narrow valleys, and dramatic rock cliffs as the valley opens toward the higher Manang region. The route first reaches Bhratang, a well-known stop for apple orchards and fresh local apple products. After Bhratang, cross a long suspension bridge and climb through pine forest toward Dhukur Pokhari, with striking views of Pisang Peak, Annapurna II, and surrounding ridgelines. Upper Pisang sits higher above the valley than Lower Pisang and offers better views, a quieter village atmosphere, and better accommodation options. If time allows, visit Pisang Monastery for wide views of the valley and surrounding peaks. Overnight at a local lodge in Upper Pisang
   - day: 5
-    route: Trek to Ngawal from Upper Pisang via Gyaru
+    route: Upper Pisang to Ngawal
     altitude: 3,660m
     duration: 10–12 km / 6–7 miles · 4–5 hrs trek
     description: Follow the scenic upper trail via Gyaru to Ngawal, one of the most rewarding sections of the Annapurna Circuit.
-    image: ''
+    image: /images/packages/8jGgmJ6l3NEMvn71B4PgbLwlTQ0NWXwMkLDuS8vyXp479yrp9Xg-XArMX-kpyQIbo3kcqQ-HBd_kjIiQktETa3yZ7GkHbrOyJYugIEfHKfePH7yGzttkzfMd3SRp-87moqxKkypubE2H-X_cDvF8oYP5JbPgvZ4UOf_vYLyNERu_-so40tUCok.jpg
     highlights: After breakfast in Upper Pisang, follow the scenic upper trail toward Gyaru and Ngawal. The climb toward Gyaru is the main challenge of the day, rising through long switchbacks that can feel demanding under the morning sun. The effort is well rewarded with wide views of Annapurna II, Annapurna III, Pisang Peak, and the Manang Valley. Gyaru is a beautiful highland village with stone houses, prayer flags, and strong Tibetan Buddhist influence. From Gyaru, the trail continues across open alpine terrain toward Ngawal. Staying overnight in Ngawal breaks the upper trail into a better-paced section and supports gradual acclimatization before reaching Manang. Overnight at a local lodge in Ngawal.
   - day: 6
-    route: Trek to Manang from Ngawal
+    route: Ngawal to Manang
     altitude: 3,540m
     duration: 8–10 km / 5–6 miles · 4–5 hrs trek
     description: Trek across the drier upper Manang landscape through Julu, Humde, and Braga to Manang village.
-    image: ''
+    image: /images/packages/cTbkRLMiSlrV2Vekgan8dahUJaD17z3irBI9gfN9e1028KnR3SX6ACbHKlkGr0w5Mev9nKiF8qyHYZgfsMMUzaN5Y-ggts1EaxSHntS5mPv-pSxqN5qKwZ4tJcqD4kw5GPO3TUxxFrni_PwMfJ_3P5LTnhfkazDYshtWeVY0922ybBFZqnDN2S.jpg
     highlights: Leaving Ngawal, the trail descends gradually from the high village and continues across the drier upper Manang landscape. The route passes through small settlements such as Julu and Humde before reaching Braga, one of the most important cultural stops on this section of the Annapurna Circuit, home to the historic Samgag Samling Monastery. From Braga, the trail continues toward Manang, the largest and most active village on this side of the pass. The walk is not very long, but it is an important transition day as you enter the main acclimatization zone before climbing toward Yak Kharka, Thorong Phedi, and Thorong La Pass. Overnight at a local lodge in Manang.
   - day: 7
     route: Acclimatization Day in Manang
     altitude: 3,540m
     duration: Optional 2–4 hrs hike
     description: Rest and acclimatize in Manang with a short hike to Gangapurna Lake, Braga Monastery, or nearby viewpoints.
-    image: ''
+    image: /images/packages/HUM5SxOzb3y9LLRw-z3Sr71ni6zW52qoys3gHPsRydUtJiwfBIFylk5uRudwHRddtQ9FPpQBoVXs6aXfGIW2XtYK-0YTVVtKZfdAdwmVEBa7VTDGf8L7wJoLDG_ULyl3NwWb53lsuklppJ9b2db-VShSfk9tW1i2dP7atuywGuxriH4zD_t0hX.jpg
     highlights: Today is an important acclimatization day in Manang before the trail climbs toward Yak Kharka, Thorong Phedi, and Thorong La Pass. After breakfast, your guide will recommend a suitable acclimatization walk based on the group's fitness, weather, and response to altitude. Common options include Gangapurna Lake, the Gangapurna Glacier viewpoint, Braga Monastery, or nearby viewpoints above the village. These short hikes follow the "climb high, sleep low" approach, allowing you to gain some elevation during the day and return to sleep in Manang. In the evening, you may attend the Himalayan Rescue Association's altitude awareness briefing. Overnight at a local lodge in Manang.
   - day: 8
-    route: Trek to Yak Kharka from Manang
+    route: Manang to Yak Kharka
     altitude: 4,050m
     duration: 9–11 km / 6–7 miles · 3–4 hrs trek
     description: Trek above the Marsyangdi Valley through Tengi and Gunsang to the high alpine settlement of Yak Kharka.
-    image: ''
+    image: /images/packages/x2O2CV5zr8gapGDFdUWbMETv9Mxvo3arS_kMomcF4eRT5W1-UmwPlis0Ip8yIIsRwY4FwuaQ_PmKcKWIsNqCFHHcQ7gfyUnuykVy1F1uYKVK5X5LY4LjsfeQ2B0Uqiljlf5TJ7R-PHeCXf8ZtsETgjfc6Dqz-b0kgfTZ9shY7Hw_3dS-prAjo1.jpg
     highlights: fter breakfast, leave Manang and begin trekking toward the higher alpine section of the Annapurna Circuit. The trail climbs gradually above the Marsyangdi Valley, passing Tengi and continuing toward Gunsang. As you move higher, the landscape becomes more open and rugged — trees become fewer, the valley widens, and the trail passes through grazing areas used by yak herders during the warmer months. From Gunsang, the route continues toward Yak Kharka through alpine meadows and high mountain terrain. Along the way, you may see yaks, blue sheep, mule trains, and distant views of Chulu East, Chulu West, and surrounding snow-covered peaks. Overnight at a local lodge in Yak Kharka.
   - day: 9
-    route: Trek to Thorong Phedi from Yak Kharka
+    route: Yak Kharka to Thorong Phedi
     altitude: 4,450m
     duration: 6–7 km / 4 miles · 3–4 hrs trek
     description: Trek across open alpine slopes and cross the Jarsang Khola to Thorong Phedi, the final stop before the pass.
-    image: ''
+    image: /images/packages/IO7_GKPw0nvDB0Zf5nokVPLPDuI2xFEFg5knID6F3sMBMHVKWohOcJ8TYgAxXqww513ERg79cia8Gowh-0Rzad64IO8qH074QCM6vX7rdpjWsZNe5Hwx0mDKSfgiOnERdJlHlh9H5KEctaW74bSt53EI9sDELDMK9PiUGrq_gEb-pyMBDSzU0v.jpg
     highlights: After breakfast, the trail continues toward Thorong Phedi, the final overnight stop before crossing Thorong La Pass. The route first climbs gradually across open alpine slopes toward Ledar, where the landscape becomes more rugged with sparse vegetation and wide mountain views. After crossing the Jarsang Khola by suspension bridge, the path follows a narrow hillside section above the valley, requiring careful footing where the trail crosses loose rock and exposed slopes. After arrival, the rest of the day is used for rest, hydration, early dinner, and preparation for the pre-dawn start the following morning. Overnight at a local lodge in Thorong Phedi.
   - day: 10
-    route: Cross Thorong La Pass → Trek to Muktinath
+    route: Thorong La Pass to Muktinath
     altitude: 5,416m
     duration: 6–7 hrs
     description: Cross Thorong La Pass (5,416 m), the highest point of the trek, and descend to the sacred site of Muktinath.
-    image: ''
+    image: /images/packages/72ey6dcJ7_Zg00JzBJpCXoVOEJvVdmPqN7JbfZbnYkoktWFY2I5VUQpvchekZfcJPu5kZ8ylKpgFbZ-kqHgR6crwFpBGVVrUsLtiNhFUEtQuUydP_2Tmkij92_SEc2TVG6H_n_0ksEjUa0wSjieKmPwwffi4GwMP17PUXUMV1zU8aPas6vcWTE.jpg
     highlights: This is the highest and most demanding day of the Annapurna Circuit Trek. The day begins before sunrise, usually around 4:00 to 4:30 AM. With headlamps lighting the trail, climb slowly from Thorong Phedi toward High Camp and continue across rocky, high-altitude terrain toward Thorong La Pass. The morning can be very cold, and the trail may have snow or icy sections depending on the season. At this altitude, a steady pace is more important than speed. Reaching the top at 5,416 m is the greatest achievement of the trek, marked by prayer flags and a signboard with views of the Annapurna range, Dhaulagiri, and surrounding peaks on clear days. After a short stop at the top, begin the long descent toward Muktinath. Trekking poles are very helpful on this section. Visit Muktinath, an important sacred site for Hindus and Buddhists, known for its temple, 108 water spouts, and eternal flame. Overnight at a local lodge in Muktinath.
   - day: 11
-    route: Trek to Jomsom from Muktinath via Lupra Valley
+    route: Muktinath to Jomsom via Lupra
     altitude: 2,720m
     duration: 'Distance: 16–17 km / 10–11 miles · 5–6 hrs trek'
     description: Trek through the quieter Lupra Valley with open Mustang scenery and Dhaulagiri views to Jomsom.
-    image: ''
+    image: /images/packages/XA-SsKLDiPpR0_aJZOZ0URgi45lCDm3qAC0sCfmn4axStQPtFVWVb0BJw5LlTxGRr4laTLLO1_u0pHGJEQ100sdQErXKMz3khrysqogsxjQLDJ48b10SguDk5Gih-O4BiSynYJyA1KS_El9QAVmw6b5mY5gzWt-A7kA2DHe4vvIZFZ2qQeFOe-.jpg
     highlights: After breakfast in Muktinath, the trail follows the quieter Lupra Valley route instead of staying on the busier road to Jomsom, giving the final trekking day a better trail experience with open Mustang landscapes and wide mountain views. The route passes near Jharkot before climbing steadily toward Lupra Pass, where you can see Dhaulagiri and the surrounding Mustang valley. After crossing the pass, the trail descends to Lupra, a village known for its strong Bon cultural influence. From Lupra, the trail continues toward Jomsom through the dry Kali Gandaki Valley, which can be windy and dusty later in the day. By reaching Jomsom, you complete the main walking section of the Annapurna Circuit Trek. Overnight at a local lodge in Jomsom.
   - day: 12
-    route: Drive to Kathmandu from Pokhara
+    route: Flight to Pokhara
     altitude: 820m
     duration: 70 km / 43 miles · 20–25 mins flight
     description: Fly from Jomsom to Pokhara with aerial views of the Kali Gandaki Valley, Nilgiri, and Dhaulagiri.
-    image: ''
+    image: /images/packages/zyIngIZMYvWl8UTsGiwvV3KqzJBA_gMkvpubwdXBqhTbaWfFRJfBebSuicxfOxCArk-LK4GXfymR6VNCEf3VRDprF4YgGCy3bZPwc4T-UiwlzlMp2HKcGK-D3nRKqFIJAjgocs8clEuHjfZZh8vJADLzJyZguvYraKuqpWSexHZN6iruqO51Zv.jpg
     highlights: After breakfast, take a scenic flight from Jomsom to Pokhara, enjoying breathtaking aerial views of the Kali Gandaki Valley and surrounding Himalayan peaks, including Nilgiri and Dhaulagiri. The flight takes approximately 20–25 minutes and operates in the morning due to strong afternoon winds in Jomsom. Upon arrival in Pokhara, transfer to your hotel. The rest of the day is free to relax by Phewa Lake, explore the lakeside area, or simply rest after the trek. If flights are delayed or cancelled due to weather, WaveUp Himalayas will arrange alternative road transportation via the Kali Gandaki Valley, passing through Marpha, Ghasa, Tatopani, and Beni. Overnight at a 3-star hotel in Pokhara.
   - day: 13
     route: Drive to Kathmandu from Pokhara
     altitude: 1,400m
     duration: 200 km / 124 miles · 7–8 hrs drive
     description: Drive along the Prithvi Highway back to Kathmandu and celebrate your trek with a farewell dinner.
-    image: ''
+    image: /images/packages/WEF6JlkMDEIfx3mg7wgCvIuo_uoJM5mP4xqqQaLDL_kLaOraFOblR80dxEsDGCi9Mu7CyfTYzxJ74RBUfcbZae-tkFCbk9ZFDVOk76mZABaN9z3FF1KX99YpR5F6SmApbnmT5Notky7Rmobb51NtP9BUqpoPz8mnIdqOyGttf5ijZqrK13uZ7z.jpg
     highlights: After breakfast, begin the return journey to Kathmandu by tourist bus along the Prithvi Highway, passing river valleys, roadside towns, terraced hillsides, and rural settlements. From the road, you may see the Trishuli River, hillside villages, and the cable car route leading toward Manakamana Temple. Upon arrival in Kathmandu, transfer to your hotel. In the evening, enjoy a farewell dinner with your guide and fellow trekkers. During a post-trek feedback session, WaveUp Himalayas will provide your trek completion certificate in recognition of your Annapurna Circuit journey and Thorong La Pass crossing. Overnight at a 3-star hotel in Kathmandu.
   - day: 14
     route: Final Departure from Kathmandu
     altitude: 1,400m
     duration: Airport transfer 20–30 mins
     description: Transfer to Tribhuvan International Airport for your onward flight home.
-    image: ''
+    image: /images/packages/Tribhuvan-International-Airport-In-Nepal.jpg
     highlights: At the scheduled time, our representative will transfer you from your hotel to Tribhuvan International Airport, usually about three hours before your flight, giving enough time for check-in, security, and departure formalities. Your Annapurna Circuit Trek with WaveUp Himalayas concludes with your final airport transfer. If the above itinerary does not meet your needs, we can design individualized travel plans based on your preferences and specifications.
 itineraryPeaks: []
 itinerarySchedule: []
