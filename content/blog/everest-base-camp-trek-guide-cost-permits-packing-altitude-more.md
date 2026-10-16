@@ -36,6 +36,7 @@ faqs:
     answer: Yes, but it costs extra and speeds are slow. Wifi cards cost around USD 3–15, and device charging costs USD 1–5 per charge. Prices rise with altitude.
   - question: What is the food like on the Everest Base Camp Trek?
     answer: Food is simple but filling. Common meals include dal bhat, noodles, fried rice, pasta, momos, soups and eggs. Dal bhat is the best value and most recommended meal. Budget USD 25–45 per day for food.
+tables: []
 ---
 
 The **Everest Base Camp Trek** is one of the most popular and unforgettable trekking adventures in Nepal, taking you through the beautiful Khumbu region, traditional Sherpa villages, ancient monasteries, and spectacular Himalayan landscapes. From the lively trails of Namche Bazaar to the breathtaking views of Mount Everest, Ama Dablam, Lhotse, and the Khumbu Glacier, every part of the journey offers a unique experience. At **WaveUp Himalayas**, we help travelers prepare for this incredible adventure with practical information about the **Everest Base Camp Trek itinerary, cost, difficulty, best time to trek, altitude, permits, packing list, accommodation, and safety tips**, so you can plan your journey with confidence before heading into the Himalayas.
@@ -202,11 +203,14 @@ For the best combination of weather, mountain views, and trekking conditions, we
 
 The[ **Everest Base Camp Trek**](https://waveuphimalayas.com/packages/everest-base-camp-trek/) **cost** depends on several factors — Lukla flights, permits, guide, porter, teahouse accommodation, meals, insurance, gear, tips, and personal expenses.
 
-Here's a general overview for a 12–14 day trek from Lukla:
+**Everest Base Camp Trek — Estimated Cost by Style**
 
-![](/images/blog/ebc_trek_cost_table_fixed.png)
-
-Most trekkers budget **$1,800–$2,500** for a comfortable, well-organized EBC trek with a licensed guide and porter.
+| Trek Style | Estimated Cost (USD) |
+| --- | --- |
+| Budget / Independent | $1,200 – $1,600 |
+| Mid-Range (Guided) | $1,400 – $1,800 |
+| Premium Guided | $2,800 – $4,000+ |
+| Luxury Package | $5,000 – $8,000+ |
 
 **What's Included in the Cost**
 
