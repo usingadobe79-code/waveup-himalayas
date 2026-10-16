@@ -192,7 +192,7 @@ Hydration is a habit, not an afterthought. Sip steadily, replace your electrolyt
 
 **Major Nepal Trekking Routes and Maximum Altitude**
 
-![](/images/blog/20261016-095828.png)
+![](/images/blog/download.png)
 
 Altitude doesn't care how fit you are. It's the single most serious risk on a Himalayan trek—and the most underestimated.
 
