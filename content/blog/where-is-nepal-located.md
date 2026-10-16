@@ -59,6 +59,8 @@ So, if you’ve been searching for **Nepal location**, **Nepal on world map**, o
 
 If you open a **Nepal world map**, you’ll find Nepal in **South Asia**, in the heart of the **Himalayas**. It sits like a long, slightly tilted rectangle between two giant neighbors: **China** to the north and **India** to the south, east, and west.
 
+![](/images/blog/nepal-on-world-map-20158%20%281%29.opt.webp "Nepal on a World Map")
+
 On a **Nepal on world map** view, you’ll notice a few important things:
 
 - **To the north:** The Tibet Autonomous Region of **China**.
@@ -75,8 +77,6 @@ So when someone asks, **“Where is Nepal located on the map?”** — the answe
 ***
 
 ## What Country Is Nepal In?
-
-![](/images/blog/nepal-on-world-map-20158%20%281%29.jpg)
 
 The answer surprises some people, but it’s simple: **Nepal is not in another country. Nepal is its own country.** Nepal is a **sovereign, independent nation** in **South Asia**. It has its own government, constitution, president, flag, army, currency, and passport. It is a member of the United Nations and has been an independent state for centuries. Nepal is **not a state of India**, and it is **not part of China**.
 
