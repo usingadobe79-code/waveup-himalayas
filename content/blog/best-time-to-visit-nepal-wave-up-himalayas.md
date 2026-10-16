@@ -3,7 +3,7 @@ title: Best Time to Visit Nepal
 date: 2026-09-20
 excerpt: Plan your Nepal trip with our season-by-season guide. Autumn (Oct–Nov) offers clear skies, spring (Mar–Apr) brings rhododendrons. Find the best month for your trek.
 coverImage: /images/blog/temple-5790082_1280.jpgdfafa.jpg
-author: Gaurav Lamichhane -  Gaurav Lamichhane is a Content Writer at Wave Up Himalayas, responsible for creating engaging content that showcases Nepal's natural beauty, culture, and travel experiences. Currently pursuing a bachelor's degree in International Business in Finland, he combines his interest in tourism, digital marketing, and international cultures to promote Nepal as a travel destination for visitors from around the world.
+author: Gaurav Lamichhane
 draft: false
 relatedPackages:
   - family-tour-nepal
