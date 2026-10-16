@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useEffect, useState, type CSSProperties } from "react";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/Button";
@@ -43,12 +43,12 @@ export function HeroContent() {
   const delay = (seconds: number) => ({ "--d": `${seconds}s` }) as CSSProperties;
 
   return (
-    <div className="relative z-10 mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-6 py-24 text-center text-white">
+    <div className="relative z-10 mx-auto flex min-h-svh max-w-5xl flex-col items-center justify-center px-6 py-24 text-center text-white">
       {/* Localized navy wash behind the copy — darkens just the text zone (incl.
           the bright warm sky behind the gold word) without dimming the whole image. */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[60vmin] w-[min(100%,72rem)] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[radial-gradient(ellipse_at_center,rgba(17,28,51,0.68)_0%,rgba(17,28,51,0.45)_48%,transparent_78%)] blur-2xl"
+        className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[60vmin] w-[min(100%,72rem)] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[radial-gradient(ellipse_at_center,rgba(17,28,51,0.68)_0%,rgba(17,28,51,0.45)_48%,transparent_78%)]"
       />
 
       {/* Self-drawing gold peak mark — echo of the logo, sits cleanly above all copy */}
@@ -105,21 +105,21 @@ export function HeroContent() {
       </div>
 
       {/* Scroll chevron — gentle infinite bounce, fades on first scroll */}
-      <motion.div
+      <m.div
         aria-hidden="true"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60"
         initial={{ opacity: 0 }}
         animate={{ opacity: scrolled ? 0 : 1 }}
         transition={{ duration: 0.4, delay: scrolled ? 0 : 1, ease: EASE_OUT_EXPO }}
       >
-        <motion.span
+        <m.span
           className="block"
           animate={reduced ? {} : { y: [0, 8, 0] }}
           transition={reduced ? {} : { duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
         >
           <ChevronDown className="h-6 w-6" />
-        </motion.span>
-      </motion.div>
+        </m.span>
+      </m.div>
     </div>
   );
 }

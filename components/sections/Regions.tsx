@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { EASE_OUT_EXPO } from "@/lib/motion";
@@ -55,7 +55,7 @@ export function Regions() {
                 className="relative rounded-full px-4 py-2.5 text-sm font-medium transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 focus-visible:ring-offset-2"
               >
                 {selected && (
-                  <motion.span
+                  <m.span
                     layoutId="region-pill"
                     aria-hidden="true"
                     transition={pillTransition}
@@ -73,7 +73,7 @@ export function Regions() {
         {/* Panel — real package titles for the active region */}
         <div className="mt-10 md:mt-12">
           <AnimatePresence mode="wait">
-            <motion.div
+            <m.div
               key={current.key}
               initial={reduced ? { opacity: 0 } : { opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ export function Regions() {
                   </Link>
                 ))}
               </div>
-            </motion.div>
+            </m.div>
           </AnimatePresence>
         </div>
       </div>

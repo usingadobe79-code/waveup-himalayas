@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import { MessageCircle, Menu, X, ChevronDown, Heart } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
@@ -168,9 +168,9 @@ export function Header({ solid = false }: { solid?: boolean }) {
     <>
       <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-[height,background-color,backdrop-filter] duration-500 ease-[var(--ease-out-expo)]",
+        "fixed inset-x-0 top-0 z-50 transition-[height,background-color] duration-500 ease-[var(--ease-out-expo)]",
         frosted
-          ? "h-[60px] bg-navy/85 shadow-[0_1px_0_0_rgba(255,255,255,0.06)] backdrop-blur-md"
+          ? "h-[60px] bg-navy/85 shadow-[0_1px_0_0_rgba(255,255,255,0.06)] md:backdrop-blur-md"
           : "h-[72px] bg-transparent",
       )}
     >
@@ -244,7 +244,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                     `tabIndex={-1}` while closed keeps keyboard users from
                     tabbing into an invisible panel.
                   */}
-                  <motion.div
+                  <m.div
                     initial={false}
                     animate={isOpen ? "open" : "closed"}
                     variants={{
@@ -282,7 +282,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                         {group.viewAll.label}
                       </a>
                     )}
-                  </motion.div>
+                  </m.div>
                 </div>
               );
             })}
@@ -364,7 +364,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
           <AnimatePresence>
             {open && (
               <div className="fixed inset-0 z-[60] xl:hidden">
-                <motion.div
+                <m.div
                   className="absolute inset-0 bg-navy-deep/80 backdrop-blur-sm"
                   onClick={() => setOpen(false)}
                   initial={{ opacity: 0 }}
@@ -377,7 +377,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                     content-sized (no h-full) so the panel hangs from the top like
                     a card; the full-screen scrim behind still dims the rest and
                     closes on tap. Rounded bottom-left finishes the hanging edge. */}
-                <motion.aside
+                <m.aside
                   {...drawerMotion}
                   className="absolute right-0 top-0 flex max-h-full w-[82%] max-w-sm flex-col overflow-y-auto rounded-bl-2xl bg-navy/60 px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)] backdrop-blur-2xl"
                 >
@@ -417,7 +417,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                           </button>
                           <AnimatePresence initial={false}>
                             {expanded && (
-                              <motion.div
+                              <m.div
                                 initial={{ height: 0, opacity: 0 }}
                                 animate={{ height: "auto", opacity: 1 }}
                                 exit={{ height: 0, opacity: 0 }}
@@ -448,7 +448,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                                     </a>
                                   )}
                                 </div>
-                              </motion.div>
+                              </m.div>
                             )}
                           </AnimatePresence>
                         </div>
@@ -472,7 +472,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                     <MessageCircle className="h-4 w-4" />
                     Book Now
                   </Button>
-                </motion.aside>
+                </m.aside>
               </div>
             )}
           </AnimatePresence>,

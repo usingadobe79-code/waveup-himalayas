@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { UserRound } from "lucide-react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
@@ -32,18 +32,18 @@ export function OurTeam({ members }: { members: TeamMember[] }) {
   return (
     <section id="our-team" className="section-y bg-surface">
       <div className="container-page">
-        <motion.div {...groupProps}>
-          <motion.div variants={item}>
+        <m.div {...groupProps}>
+          <m.div variants={item}>
             <SectionHeading
               eyebrow="The People Behind Your Trip"
               title="Our Team"
               intro="The local team you'll actually be talking to — on WhatsApp, on email, and on the trail."
             />
-          </motion.div>
+          </m.div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 md:mt-16 lg:grid-cols-3">
             {members.map((member) => (
-              <motion.div
+              <m.div
                 key={member.slug}
                 variants={item}
                 className="card flex flex-col items-center p-6 text-center sm:p-8"
@@ -66,10 +66,10 @@ export function OurTeam({ members }: { members: TeamMember[] }) {
                 <h3 className="type-h3 mt-5 text-ink">{member.name}</h3>
                 <p className="type-small mt-1 font-semibold text-accent-ink">{member.role}</p>
                 {member.bio && <p className="type-small mt-3 text-muted">{member.bio}</p>}
-              </motion.div>
+              </m.div>
             ))}
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

@@ -17,7 +17,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
 import type { WhyUsFeature } from "@/lib/about";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 /**
  * Icon keys match the `icon` select options on the `whyUs` field in
@@ -64,30 +64,30 @@ export function WhyChooseUs({ items }: { items: WhyUsFeature[] }) {
   return (
     <section id="why-choose-us" className="section-y bg-surface-alt">
       <div className="container-page">
-        <motion.div {...groupProps}>
-          <motion.div variants={item}>
+        <m.div {...groupProps}>
+          <m.div variants={item}>
             <SectionHeading
               eyebrow="What Sets Us Apart"
               title="Why Choose Us"
               intro="A small, local team handling your trip end to end — from the first message to the trail itself."
             />
-          </motion.div>
+          </m.div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 md:mt-16 lg:grid-cols-3">
             {items.map((feature) => {
               const Icon = (feature.icon && ICONS[feature.icon]) || Compass;
               return (
-                <motion.div key={feature.title} variants={item} className="card p-6 sm:p-8">
+                <m.div key={feature.title} variants={item} className="card p-6 sm:p-8">
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
                     <Icon className="h-6 w-6" strokeWidth={1.75} aria-hidden="true" />
                   </span>
                   <h3 className="type-h3 mt-5 text-ink">{feature.title}</h3>
                   <p className="type-body mt-2 text-muted">{feature.description}</p>
-                </motion.div>
+                </m.div>
               );
             })}
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

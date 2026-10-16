@@ -51,3 +51,6 @@ next-env.d.ts
 
 # generated at build time from Supabase approved reviews — see scripts/generate-reviews.mjs
 /lib/reviews.data.json
+
+# generated at build time by scripts/optimize-images.mjs (resized WebP derivatives)
+*.opt.webp

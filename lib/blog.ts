@@ -23,9 +23,35 @@ const POSTS_DIR = path.join(process.cwd(), "content", "blog");
  * non-empty, which would otherwise override `token.text` back to "" before
  * falling through to it via `return false`.
  */
+/**
+ * Returns the build-time optimized derivative (`X.opt.webp`, made by
+ * scripts/optimize-images.mjs) of a public image path when it exists on
+ * disk, else the path unchanged. Decodes `%20` before the fs check and
+ * re-encodes the emitted URL when the input was encoded.
+ */
+export function resolveOptimized(src: string): string {
+  if (!src || !src.startsWith("/")) return src;
+  let decoded = src;
+  try {
+    decoded = decodeURIComponent(src);
+  } catch {
+    return src;
+  }
+  const opt = decoded.replace(/\.(jpe?g|png|webp)$/i, ".opt.webp");
+  if (opt === decoded) return src;
+  if (!fs.existsSync(path.join(process.cwd(), "public", opt))) return src;
+  return decoded !== src ? encodeURI(opt) : opt;
+}
+
 marked.use({
+  hooks: {
+    postprocess(html) {
+      return html.replace(/<img /g, '<img loading="lazy" decoding="async" ');
+    },
+  },
   renderer: {
     image(token) {
+      token.href = resolveOptimized(token.href);
       if (!token.text && token.title) {
         token.text = token.title;
         token.tokens = [{ type: "text", raw: token.title, text: token.title, escaped: false }];

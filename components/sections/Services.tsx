@@ -2,7 +2,7 @@
 
 import { useRef, type CSSProperties } from "react";
 import Link from "next/link";
-import { motion, useInView } from "framer-motion";
+import { m, useInView } from "framer-motion";
 import {
   MountainSnow,
   Landmark,
@@ -55,20 +55,20 @@ export function Services() {
   return (
     <section id="services" className="section-y bg-surface">
       <div className="container-page">
-        <motion.div {...groupProps}>
-          <motion.div variants={item}>
+        <m.div {...groupProps}>
+          <m.div variants={item}>
             <SectionHeading
               eyebrow="What We Do"
               title="Our Services"
               intro="From first steps on the trail to summit helicopter flights — everything for your Himalayan journey, arranged end to end."
             />
-          </motion.div>
+          </m.div>
 
           <div ref={gridRef} className="mt-12 grid grid-cols-2 gap-6 md:mt-16 md:grid-cols-3">
             {services.map((service, i) => {
               const Icon = ICONS[service.key] ?? Route;
               return (
-                <motion.div key={service.key} variants={item} className="h-full">
+                <m.div key={service.key} variants={item} className="h-full">
                   {/* Each card links to /packages filtered to this service — the
                       browser there reads the hash and opens on the matching pill. */}
                   <Link
@@ -95,11 +95,11 @@ export function Services() {
                       View packages
                     </span>
                   </Link>
-                </motion.div>
+                </m.div>
               );
             })}
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

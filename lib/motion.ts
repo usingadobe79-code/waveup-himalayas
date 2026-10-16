@@ -12,8 +12,8 @@ export const REVEAL = {
   rise: 24, // px the children rise from
   stagger: 0.08,
   duration: 0.6,
-  /** trigger when 20% in view, play once */
-  viewport: { once: true, amount: 0.2 } as const,
+  /** trigger as soon as any part is in view (a % threshold never fires on tall mobile wrappers), play once */
+  viewport: { once: true, amount: "some" } as const,
 };
 
 export const baseTransition: Transition = {
@@ -33,19 +33,4 @@ export const staggerContainer: Variants = {
 export const fadeRise: Variants = {
   hidden: { opacity: 0, y: REVEAL.rise },
   show: { opacity: 1, y: 0, transition: baseTransition },
-};
-
-/** Words rising into the hero headline (stagger 0.1s, start 0.3s). */
-export const wordRise: Variants = {
-  hidden: { opacity: 0, y: "0.4em" },
-  show: { opacity: 1, y: 0, transition: baseTransition },
-};
-
-/**
- * Reduced-motion variants: instant opacity, no transform.
- * Components swap to these when prefers-reduced-motion is set.
- */
-export const fadeOnly: Variants = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { duration: 0 } },
 };

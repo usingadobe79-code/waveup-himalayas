@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type ChangeEvent, type FormEvent } from "react";
-import { CheckCircle2, Star } from "lucide-react";
+import { CheckCircle2, ChevronDown, Star } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
 import { contact } from "@/lib/content";
@@ -9,6 +9,38 @@ import { supabase } from "@/lib/supabaseClient";
 
 const BUCKET = "review-photos";
 const MAX_PHOTO_BYTES = 5 * 1024 * 1024;
+const MAX_PHOTO_SIDE = 1600;
+
+/**
+ * Downscale a photo in the browser (longest side <= 1600px, never upscaled) and
+ * re-encode as WebP (JPEG fallback) at 0.8. Falls back to the original file if
+ * anything fails, so submission is never blocked.
+ */
+async function shrinkPhoto(file: File): Promise<{ body: Blob; contentType: string; ext: string | null }> {
+  const original = { body: file as Blob, contentType: file.type, ext: null };
+  try {
+    const bitmap = await createImageBitmap(file);
+    const scale = Math.min(1, MAX_PHOTO_SIDE / Math.max(bitmap.width, bitmap.height));
+    const w = Math.max(1, Math.round(bitmap.width * scale));
+    const h = Math.max(1, Math.round(bitmap.height * scale));
+    const canvas = document.createElement("canvas");
+    canvas.width = w;
+    canvas.height = h;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return original;
+    ctx.drawImage(bitmap, 0, 0, w, h);
+    bitmap.close?.();
+    const toBlob = (type: string) =>
+      new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, type, 0.8));
+    const webp = await toBlob("image/webp");
+    if (webp && webp.type === "image/webp") return { body: webp, contentType: "image/webp", ext: "webp" };
+    const jpeg = await toBlob("image/jpeg");
+    if (jpeg && jpeg.type === "image/jpeg") return { body: jpeg, contentType: "image/jpeg", ext: "jpg" };
+    return original;
+  } catch {
+    return original;
+  }
+}
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -17,16 +49,19 @@ const inputClasses =
   "placeholder:text-muted/60 transition-colors focus:border-accent focus:outline-none " +
   "focus:ring-2 focus:ring-accent/70";
 
-/** Turn a month picker value ("2026-10") into a clean label ("October 2026"). */
-function formatTravelMonth(v: string): string | null {
-  const t = v.trim();
-  if (!t) return null;
-  const m = /^(\d{4})-(\d{2})$/.exec(t);
-  if (!m) return t;
-  const d = new Date(Number(m[1]), Number(m[2]) - 1, 1);
-  return Number.isNaN(d.getTime())
-    ? t
-    : d.toLocaleDateString("en-GB", { month: "long", year: "numeric" });
+const MONTHS = Array.from({ length: 12 }, (_, i) =>
+  new Date(2000, i, 1).toLocaleDateString("en-GB", { month: "long" }),
+);
+const THIS_YEAR = new Date().getFullYear();
+const YEARS = Array.from({ length: 10 }, (_, i) => THIS_YEAR + 1 - i);
+
+/** Build a clean label ("October 2026") only when both month and year are chosen. */
+function formatTravelMonth(month: string, year: string): string | null {
+  if (!month || !year) return null;
+  return new Date(Number(year), Number(month) - 1, 1).toLocaleDateString("en-GB", {
+    month: "long",
+    year: "numeric",
+  });
 }
 
 /**
@@ -40,6 +75,7 @@ export function ReviewForm({ tripTitle, tripSlug }: { tripTitle: string; tripSlu
   const [location, setLocation] = useState("");
   const [rating, setRating] = useState(0);
   const [travelMonth, setTravelMonth] = useState("");
+  const [travelYear, setTravelYear] = useState("");
   const [title, setTitle] = useState("");
   const [quote, setQuote] = useState("");
   const [botcheck, setBotcheck] = useState("");
@@ -86,11 +122,13 @@ export function ReviewForm({ tripTitle, tripSlug }: { tripTitle: string; tripSlu
 
       const photoPaths: string[] = [];
       if (photo) {
-        const safeName = photo.name.replace(/[^a-zA-Z0-9._-]/g, "_");
+        const shrunk = await shrinkPhoto(photo);
+        let safeName = photo.name.replace(/[^a-zA-Z0-9._-]/g, "_");
+        if (shrunk.ext) safeName = `${safeName.replace(/\.[^.]*$/, "")}.${shrunk.ext}`;
         const path = `${tripSlug}/${Date.now()}-${safeName}`;
         const { data, error: uploadError } = await supabase.storage
           .from(BUCKET)
-          .upload(path, photo, { contentType: photo.type, upsert: false });
+          .upload(path, shrunk.body, { contentType: shrunk.contentType, upsert: false });
         if (uploadError) throw uploadError;
         photoPaths.push(data.path);
       }
@@ -100,7 +138,7 @@ export function ReviewForm({ tripTitle, tripSlug }: { tripTitle: string; tripSlu
         name: name.trim(),
         location: location.trim() || null,
         rating,
-        travel_month: formatTravelMonth(travelMonth),
+        travel_month: formatTravelMonth(travelMonth, travelYear),
         title: title.trim() || null,
         quote: quote.trim(),
         photo_paths: photoPaths,
@@ -112,6 +150,7 @@ export function ReviewForm({ tripTitle, tripSlug }: { tripTitle: string; tripSlu
       setLocation("");
       setRating(0);
       setTravelMonth("");
+      setTravelYear("");
       setTitle("");
       setQuote("");
       setPhoto(null);
@@ -185,14 +224,49 @@ export function ReviewForm({ tripTitle, tripSlug }: { tripTitle: string; tripSlu
               <label htmlFor={`review-travel-${tripSlug}`} className="type-small font-medium text-ink">
                 When did you travel? <span className="text-muted">(optional)</span>
               </label>
-              <input
-                id={`review-travel-${tripSlug}`}
-                name="travel_month"
-                type="month"
-                value={travelMonth}
-                onChange={(e) => setTravelMonth(e.target.value)}
-                className={inputClasses}
-              />
+              <div className="grid grid-cols-2 gap-3">
+                <div className="relative">
+                  <select
+                    id={`review-travel-${tripSlug}`}
+                    name="travel_month"
+                    value={travelMonth}
+                    onChange={(e) => setTravelMonth(e.target.value)}
+                    className={cn(inputClasses, "appearance-none pr-10")}
+                  >
+                    <option value="">Month</option>
+                    {MONTHS.map((m, i) => (
+                      <option key={m} value={String(i + 1)}>
+                        {m}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown
+                    className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="relative">
+                  <select
+                    id={`review-travel-year-${tripSlug}`}
+                    name="travel_year"
+                    aria-label="Year of travel"
+                    value={travelYear}
+                    onChange={(e) => setTravelYear(e.target.value)}
+                    className={cn(inputClasses, "appearance-none pr-10")}
+                  >
+                    <option value="">Year</option>
+                    {YEARS.map((y) => (
+                      <option key={y} value={String(y)}>
+                        {y}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown
+                    className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
             </div>
 
             <fieldset>

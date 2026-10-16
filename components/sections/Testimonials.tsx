@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { MessageCircle, BadgeCheck, ChevronLeft, ChevronRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -94,7 +94,7 @@ export function Testimonials() {
         />
 
         {hasReviews ? (
-          <motion.div
+          <m.div
             {...reveal}
             viewport={{ once: true, amount: 0.2 }}
             className="mt-12 md:mt-16"
@@ -179,10 +179,10 @@ export function Testimonials() {
                 <ChevronRight className="h-5 w-5" aria-hidden="true" />
               </button>
             </div>
-          </motion.div>
+          </m.div>
         ) : (
           /* Honest empty state — no fabricated reviews. */
-          <motion.div
+          <m.div
             {...reveal}
             viewport={{ once: true, amount: 0.3 }}
             className="mx-auto mt-12 max-w-2xl rounded-card border border-border bg-surface-alt p-10 text-center shadow-card md:mt-16 md:p-14"
@@ -215,7 +215,7 @@ export function Testimonials() {
               <MessageCircle className="h-4 w-4" />
               Travelled with us? Share your story
             </Button>
-          </motion.div>
+          </m.div>
         )}
       </div>
     </section>

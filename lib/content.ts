@@ -541,18 +541,6 @@ export const testimonials: { quote: string; author: string; country?: string; tr
   },
 ];
 
-/** Photo assets the client provided (placeholders in v1). */
-export const photoAssets = [
-  "Annapurna Base Camp — group at “NAMASTE / ABC 4130m” sign, full peak backdrop",
-  "Poon Hill sunrise — Dhaulagiri range, trekkers at viewpoint",
-  "Swayambhunath (Monkey Temple) stupa, prayer flags",
-  "Bhaktapur Durbar Square — pagoda temples",
-  "Helicopter on ridge, snow peaks behind",
-  "Chitwan jungle safari — elephant-back ride with one-horned rhinos",
-  "Chitwan riverside — two rhinos by water",
-  "Hero dashboard image — Himalayan peak at sunset (provided)",
-] as const;
-
 /**
  * Typical inclusions shown on the detail page. These are GENERIC and editable —
  * not a per-package guarantee. Marked as such in the UI so nothing is implied
@@ -563,14 +551,6 @@ export const typicalInclusions = [
   "Required permits & paperwork",
   "Airport / hotel transfers",
 ] as const;
-
-/** CTA destinations — bookings always route to WhatsApp or email. */
-export const cta = {
-  whatsapp: contact.whatsapp,
-  email: `mailto:${contact.email}`,
-  enquireLabel: "Enquire",
-  requestQuoteLabel: "Request a Quote",
-} as const;
 
 /** Phone digits only, for building wa.me deep links. */
 const WHATSAPP_DIGITS = "9779861992878";

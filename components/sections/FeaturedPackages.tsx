@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { MessageCircle, MapPin, Clock } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PackageImage } from "@/components/ui/PackageImage";
@@ -41,18 +41,18 @@ export function FeaturedPackages() {
   return (
     <section id="packages" className="section-y bg-surface-alt">
       <div className="container-page">
-        <motion.div {...groupProps}>
-          <motion.div variants={itemVariants}>
+        <m.div {...groupProps}>
+          <m.div variants={itemVariants}>
             <SectionHeading
               eyebrow="Featured Packages"
               title="Popular Adventures"
               intro="A handful of our most-loved journeys across the Nepal Himalayas. Every trip is fully customizable — tell us what you have in mind."
             />
-          </motion.div>
+          </m.div>
 
           <div className="mt-12 grid gap-6 md:mt-16 sm:grid-cols-2 lg:grid-cols-3">
             {featuredPackages.map((pkg, i) => (
-              <motion.article
+              <m.article
                 key={pkg.slug}
                 variants={itemVariants}
                 className="card card-hover group relative flex flex-col overflow-hidden"
@@ -127,20 +127,20 @@ export function FeaturedPackages() {
                     </a>
                   </div>
                 </div>
-              </motion.article>
+              </m.article>
             ))}
           </div>
 
           {/* View All — gold text + underline on hover/focus → the /packages index. */}
-          <motion.div variants={itemVariants} className="mt-16 flex justify-center">
+          <m.div variants={itemVariants} className="mt-16 flex justify-center">
             <Link
               href="/packages"
               className="type-body rounded-sm font-semibold text-ink underline-offset-4 transition-colors hover:text-accent hover:underline focus-visible:text-accent focus-visible:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
             >
               View All {totalPackages} Packages
             </Link>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       </div>
     </section>
   );

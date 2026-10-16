@@ -280,21 +280,6 @@ html.lenis body {
   overflow: hidden;
 }
 
-/* Gentle Ken Burns for the static hero poster (mobile / reduced-power fallback) */
-@keyframes kenburns-soft {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.04);
-  }
-}
-.ken-burns-soft {
-  animation: kenburns-soft 24s ease-in-out infinite alternate;
-  transform-origin: center 55%;
-  will-change: transform;
-}
-
 /* Service-card icon line-draw (docs/01 §4) */
 @keyframes icon-draw {
   from {

@@ -2,7 +2,7 @@ import { MessageSquareText } from "lucide-react";
 import type { Package } from "@/lib/content";
 import { Stars } from "@/components/ui/Rating";
 import { ReviewsCarousel } from "@/components/sections/ReviewsCarousel";
-import { ReviewForm } from "@/components/sections/ReviewForm";
+import { ReviewFormLazy } from "@/components/sections/ReviewFormLazy";
 
 /**
  * Reviews section for a trip page: eyebrow + heading, a ratings summary panel
@@ -75,7 +75,7 @@ export function PackageReviews({ pkg }: { pkg: Package }) {
       )}
 
       <div className="mt-8">
-        <ReviewForm tripTitle={pkg.title} tripSlug={pkg.slug} />
+        <ReviewFormLazy tripTitle={pkg.title} tripSlug={pkg.slug} />
       </div>
     </section>
   );

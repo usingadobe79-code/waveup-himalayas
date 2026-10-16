@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   MapPinned,
   ShieldCheck,
@@ -49,20 +49,20 @@ export function WhyUs() {
   return (
     <section id="why-us" className="section-y bg-surface-alt">
       <div className="container-page">
-        <motion.div {...groupProps}>
-          <motion.div variants={item}>
+        <m.div {...groupProps}>
+          <m.div variants={item}>
             <SectionHeading
               eyebrow="Why WaveUp"
               title="Why Travel With Us"
               intro="A small, local team that builds each trip around you — with the licences, knowledge and care to do it right."
             />
-          </motion.div>
+          </m.div>
 
           <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 md:mt-16">
             {whyUs.map((point, i) => {
               const Icon = ICONS[i] ?? MapPinned;
               return (
-                <motion.div key={point.title} variants={item} className="flex gap-5">
+                <m.div key={point.title} variants={item} className="flex gap-5">
                   <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
                     <Icon className="h-6 w-6" strokeWidth={1.75} aria-hidden="true" />
                   </span>
@@ -70,11 +70,11 @@ export function WhyUs() {
                     <h3 className="type-h3 text-ink">{point.title}</h3>
                     <p className="type-body mt-2 text-muted">{point.detail}</p>
                   </div>
-                </motion.div>
+                </m.div>
               );
             })}
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

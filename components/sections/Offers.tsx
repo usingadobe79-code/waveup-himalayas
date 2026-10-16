@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { useReducedMotion } from "@/lib/useReducedMotion";
@@ -54,7 +54,7 @@ export function Offers() {
                 };
 
             return (
-              <motion.article
+              <m.article
                 key={offer.title}
                 {...card}
                 viewport={{ once: true, amount: 0.3 }}
@@ -79,14 +79,14 @@ export function Offers() {
                     </div>
                   )}
 
-                  <motion.span
+                  <m.span
                     {...badge}
                     viewport={{ once: true, amount: 0.6 }}
                     className="type-h2 inline-flex items-baseline gap-1 rounded-badge bg-accent px-4 py-2 font-semibold text-surface-darker shadow-[0_8px_24px_-8px_rgba(184,146,62,0.6)]"
                   >
                     {offer.badge}
                     <span className="type-small font-medium">off</span>
-                  </motion.span>
+                  </m.span>
 
                   <h3 className="type-h3 mt-6 text-on-dark">{offer.title}</h3>
                   <p className="type-body mt-3 flex-1 text-on-dark/65">{offer.detail}</p>
@@ -113,7 +113,7 @@ export function Offers() {
                     {offer.buttonText}
                   </Button>
                 </div>
-              </motion.article>
+              </m.article>
             );
           })}
         </div>

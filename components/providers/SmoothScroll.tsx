@@ -1,18 +1,14 @@
 "use client";
 
-import { createContext, useContext, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 
 /**
  * Smooth inertia scroll via Lenis (lerp ~0.1), per docs/01 §Global.
- * Exposes the Lenis instance through context so scroll-driven 3D (the Rise
- * sequence) can read progress and GSAP ScrollTrigger can sync to it.
- * Disabled entirely when prefers-reduced-motion is set.
+ * Disabled entirely when prefers-reduced-motion is set or on touch /
+ * coarse-pointer devices (native momentum scroll is smoother there).
  */
-const LenisContext = createContext<Lenis | null>(null);
-
-export const useLenis = () => useContext(LenisContext);
 
 export function SmoothScroll({ children }: { children: React.ReactNode }) {
   const reduced = useReducedMotion();
@@ -20,7 +16,8 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
   const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
-    if (reduced) return; // reduced motion → native scroll, no Lenis
+    // reduced motion or touch/coarse pointer → native scroll, no Lenis, no rAF loop
+    if (reduced || window.matchMedia("(pointer: coarse)").matches) return;
 
     const instance = new Lenis({ lerp: 0.1, smoothWheel: true });
     setLenis(instance);
@@ -115,5 +112,5 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
     };
   }, [lenis]);
 
-  return <LenisContext.Provider value={lenis}>{children}</LenisContext.Provider>;
+  return <>{children}</>;
 }

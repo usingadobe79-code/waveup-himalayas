@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { displaySrc } from "@/lib/img";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useReducedMotion } from "@/lib/useReducedMotion";
@@ -62,12 +62,12 @@ export function Gallery() {
           intro="A glimpse of where our trips lead — the peaks, the light, and the wildlife along the way."
         />
 
-        <motion.div
+        <m.div
           {...groupProps}
           className="mt-12 gap-4 [column-fill:_balance] columns-2 md:mt-16 md:columns-3"
         >
           {SHOTS.map((shot) => (
-            <motion.figure
+            <m.figure
               key={shot.src}
               variants={item}
               className="group relative mb-4 break-inside-avoid overflow-hidden rounded-card"
@@ -90,9 +90,9 @@ export function Gallery() {
               <figcaption className="absolute bottom-4 left-4 right-4 type-small font-medium text-on-dark drop-shadow-[0_1px_4px_rgba(17,28,51,0.8)]">
                 {shot.caption}
               </figcaption>
-            </motion.figure>
+            </m.figure>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

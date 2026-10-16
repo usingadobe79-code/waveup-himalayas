@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
+import { MotionProvider } from "@/components/providers/MotionProvider";
 import { JsonLd, WebsiteJsonLd } from "@/components/seo/JsonLd";
 import { Analytics } from "@/components/seo/Analytics";
 import { business, brand, siteUrl } from "@/lib/content";
@@ -65,7 +66,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-surface text-ink">
         <JsonLd />
         <WebsiteJsonLd />
-        <SmoothScroll>{children}</SmoothScroll>
+        <MotionProvider>
+          <SmoothScroll>{children}</SmoothScroll>
+        </MotionProvider>
         <Analytics />
       </body>
     </html>

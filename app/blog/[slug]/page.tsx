@@ -9,7 +9,7 @@ import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
 import { PackageFaq } from "@/components/sections/PackageFaq";
 import { BlogRecommendedSidebar } from "@/components/sections/BlogRecommendedSidebar";
 import { BlogRecommendedDrawer } from "@/components/sections/BlogRecommendedDrawer";
-import { getPost, getPostSlugs, formatDate } from "@/lib/blog";
+import { getPost, getPostSlugs, formatDate, resolveOptimized } from "@/lib/blog";
 import { business, getPackage, type Package } from "@/lib/content";
 
 // Only the known post slugs are valid routes; anything else 404s.
@@ -115,7 +115,9 @@ export default async function BlogPostPage({
         {/* Cover image */}
         <div className="container-page -mt-8 md:-mt-10">
           <img
-            src={post.coverImage}
+            src={resolveOptimized(post.coverImage)}
+            fetchPriority="high"
+            decoding="async"
             alt={post.title}
             className="aspect-[16/9] w-full rounded-card object-cover shadow-card"
           />

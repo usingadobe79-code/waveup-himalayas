@@ -10,7 +10,7 @@ import { HeroContent } from "./HeroContent";
  */
 export function HeroRise() {
   return (
-    <section id="rise" className="relative h-screen w-full overflow-hidden bg-navy-deep">
+    <section id="rise" className="relative h-svh w-full overflow-hidden bg-navy-deep">
       <div className="absolute inset-0" aria-hidden="true">
         <Image
           src="/images/hero.webp"

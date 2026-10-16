@@ -28,10 +28,14 @@ const OUTPUT_FILE = path.join(process.cwd(), "lib", "offers.data.json");
  * (not imported from there — that script has in-flight edits of its own).
  */
 function resolveDisplay(src) {
+  const publicDir = path.join(process.cwd(), "public");
+  // 1. Build-time optimized derivative (scripts/optimize-images.mjs).
+  const optPath = src.replace(/\.(jpe?g|png|webp)$/i, ".opt.webp");
+  if (optPath !== src && fs.existsSync(path.join(publicDir, optPath))) return optPath;
+  // 2. Committed hand-made .webp twin.
   const webpPath = src.replace(/\.jpe?g$/i, ".webp");
-  if (webpPath === src) return src; // not a .jpg/.jpeg — nothing to resolve
-  const onDisk = path.join(process.cwd(), "public", webpPath);
-  return fs.existsSync(onDisk) ? webpPath : src;
+  if (webpPath === src) return src; // not a .jpg/.jpeg — nothing more to resolve
+  return fs.existsSync(path.join(publicDir, webpPath)) ? webpPath : src;
 }
 
 /**
