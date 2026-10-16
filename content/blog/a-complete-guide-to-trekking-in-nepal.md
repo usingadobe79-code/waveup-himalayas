@@ -34,6 +34,7 @@ faqs:
     answer: Yes. Your insurance must cover high-altitude trekking and helicopter evacuation. Mountain rescue in Nepal is expensive, and helicopters will not take off without guaranteed payment.
   - question: What should I pack for a Nepal trek?
     answer: Layered clothing, waterproof hiking boots, a 4-season sleeping bag, trekking poles, a headlamp, water purification, a first-aid kit, and your permits and insurance details.
+tables: []
 ---
 
 Trekking in Nepal is the adventure of a lifetime—a journey through Himalayan giants, ancient villages, rhododendron forests, and high mountain passes. From the iconic Everest Base Camp trek to the classic Annapurna Circuit and the sunrise views of Ghorepani Poon Hill, Nepal offers trails for every level of adventurer.
@@ -65,7 +66,7 @@ The **best time to trek in Nepal** depends on where you go, what you want to see
 
 **Autumn: The Peak Season**
 
-![](/images/blog/annapurna-poonhill-viewtreks.webp "Annapurna Base Camp in Autumn")
+![](/images/blog/annapurna-poonhill-viewtreks-001.webp "Annapurna Base Camp in Autumn")
 
 October and November are the most popular months for **Nepal trekking**. The monsoon has cleared, the air is crisp, and the mountain views are spectacular. This is the best time for the **Everest Base Camp trek**, **Annapurna Circuit trek**, **Manaslu Circuit trek**, and most high-altitude routes. Trails are lively, teahouses are full, and the weather is generally stable. The trade-off is higher prices and more crowds, so book early.
 
@@ -87,7 +88,15 @@ June to September is generally not recommended for high-altitude trekking. Rain,
 
 **Nepal trekking permits** are essential for every foreign trekker, and the rules have changed significantly in recent years. Since April 2023, hiring a **licensed guide** is mandatory for all foreign trekkers, and as of March 2026, solo trekkers can now obtain permits for restricted areas—but only through a registered agency with a licensed guide. One guide can lead a maximum of seven trekkers. Permit rules, fees, and checkpoint requirements change often, so always confirm current details with **Waveup Himalayas** before you travel.
 
-![](/images/blog/70dab322-b11f-4a89-aeea-861ebc77deaa.png)
+**Permit at a Glance**
+
+| Trek / Region | Required Permits | Estimated Cost (Foreign) | TIMS Needed? |
+| --- | --- | --- | --- |
+| **Everest Base Camp** | Sagarmatha National Park + Khumbu Pasang Lhamu fee | \~NPR 6,000 (\~USD 45-50) | No |
+| **Annapurna Circuit / ABC / Poon Hill** | ACAP | NPR 3,000 (\~USD 23) | No (discontinued at checkpoints) |
+| **Langtang Valley** | Langtang National Park + TIMS | \~USD 35-40 total | Yes |
+| **Manaslu Circuit** | Restricted Area Permit + MCAP + ACAP | USD 100/week (peak) + \~USD 60 | Yes |
+| **Upper Mustang** | Restricted Area Permit + ACAP | USD 50/day + NPR 3,000 | Yes |
 
 **The Guide Requirement**
 
@@ -125,11 +134,24 @@ A 14-day trek from your home country often costs between **USD 2,000 and USD 2,5
 
 **Typical Guided Trek Package Ranges**
 
-![](/images/blog/ef8c7680-f23f-4cb1-be6c-49eca710e100%20%281%29.png)
+| Category | Budget Range |
+| --- | --- |
+| Guide | USD 25–50 per day |
+| Porter | USD 20–25 per day |
+| Teahouse accommodation | USD 5–25 per night |
+| Food | USD 18–40 per day |
+| Permits | Varies by region |
+| Hot shower / charging | USD 3–5 each at altitude |
 
 **Typical Guided Trek Package Ranges**
 
-![](/images/blog/510b4241-300d-49c3-b9c4-e72b263586d1%20%281%29.png)
+| Trek | Duration | Typical Guided Cost |
+| --- | --- | --- |
+| Everest Base Camp | 12–14 days | USD 1,200–3,000 |
+| Annapurna Circuit | 12–18 days | USD 820–3,160 |
+| Annapurna Base Camp | 7–11 days | USD 715–2,500 |
+| Ghorepani Poon Hill | 3–5 days | USD 270–2,100 |
+| Manaslu Circuit | 14–18 days | USD 745–2,800 |
 
 These ranges vary by agency, group size, and service level. Private treks cost more than group departures, and peak season pushes prices higher.
 
