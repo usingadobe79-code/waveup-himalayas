@@ -46,7 +46,10 @@ export function resolveOptimized(src: string): string {
 marked.use({
   hooks: {
     postprocess(html) {
-      return html.replace(/<img /g, '<img loading="lazy" decoding="async" ');
+      return html
+        .replace(/<img /g, '<img loading="lazy" decoding="async" ')
+        .replace(/<table[^>]*>/g, '<div class="prose-table-wrap">$&')
+        .replace(/<\/table>/g, '</table></div>');
     },
   },
   renderer: {

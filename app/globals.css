@@ -263,6 +263,43 @@
   border: none;
   padding: 0;
 }
+/* Tables: wrapped by lib/blog.ts so only the table scrolls on narrow screens */
+.prose-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  margin: 2em 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+.prose-blog table {
+  width: 100%;
+  min-width: 32rem;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.prose-blog thead th {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+.prose-blog th,
+.prose-blog td {
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-border);
+}
+.prose-blog tbody tr:last-child td {
+  border-bottom: none;
+}
+.prose-blog tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--color-surface) 60%, transparent);
+}
 
 /* ==========================================================================
    Motion utilities
