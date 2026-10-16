@@ -2,16 +2,11 @@
 
 import Link from "next/link";
 import { m } from "framer-motion";
-import { MessageCircle, MapPin, Clock } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { PackageImage } from "@/components/ui/PackageImage";
-import { SaleBadge } from "@/components/ui/SaleBadge";
-import { PriceTag } from "@/components/ui/PriceTag";
-import { RatingBadge } from "@/components/ui/Rating";
-import { WishlistButton } from "@/components/ui/WishlistButton";
+import { TrekCard } from "@/components/sections/TrekCard";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
-import { featuredPackages, totalPackages, whatsappEnquiry } from "@/lib/content";
+import { featuredPackages, totalPackages } from "@/lib/content";
 
 /**
  * "Popular Adventures" — 6 featured packages in a responsive grid (docs/01 §5).
@@ -52,82 +47,10 @@ export function FeaturedPackages() {
 
           <div className="mt-12 grid gap-6 md:mt-16 sm:grid-cols-2 lg:grid-cols-3">
             {featuredPackages.map((pkg, i) => (
-              <m.article
-                key={pkg.slug}
-                variants={itemVariants}
-                className="card card-hover group relative flex flex-col overflow-hidden"
-              >
-                {/* Fixed-ratio image frame. The real photo (or branded
-                    placeholder) is the base layer; a subtle BOTTOM-ONLY scrim
-                    sits above it for badge legibility — never a full-card overlay. */}
-                <div className="relative aspect-[3/2] overflow-hidden">
-                  <PackageImage
-                    src={pkg.imageDisplay ?? null}
-                    alt={pkg.title}
-                    // First card is above the fold (LCP) — load it eagerly with
-                    // a preload; the rest stay lazy. Branded placeholder if null.
-                    priority={i === 0}
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.08]"
-                  />
-                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface-darker/55 to-transparent" />
-                  <div className="absolute left-4 top-4 z-10 flex flex-col items-start gap-1.5">
-                    <span className="type-small rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
-                      {pkg.region}
-                    </span>
-                    <SaleBadge pkg={pkg} />
-                  </div>
-                  <WishlistButton slug={pkg.slug} className="absolute right-4 top-4 z-10" />
-                </div>
-
-                {/* Body */}
-                <div className="flex flex-1 flex-col p-6">
-                  {/* Stretched link: the title's ::before covers the whole card,
-                      so the card opens the detail page. The WhatsApp "Enquire"
-                      link below sits above it (z-10) as a separate action. */}
-                  <h3 className="type-h3 text-ink">
-                    <Link
-                      href={`/packages/${pkg.slug}`}
-                      className="rounded-card before:absolute before:inset-0 before:z-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
-                      aria-label={`View details for ${pkg.title}`}
-                    >
-                      {pkg.title}
-                    </Link>
-                  </h3>
-                  <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 type-small text-muted">
-                    <span className="inline-flex items-center gap-1">
-                      <MapPin className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
-                      {pkg.region}
-                    </span>
-                    {pkg.tripFacts?.duration && (
-                      <span className="inline-flex items-center gap-1">
-                        <Clock className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
-                        {pkg.tripFacts.duration}
-                      </span>
-                    )}
-                    <RatingBadge average={pkg.ratingAverage} count={pkg.reviewCount} />
-                  </div>
-                  {pkg.blurb && (
-                    <p className="type-small mt-2 flex-1 text-muted">{pkg.blurb}</p>
-                  )}
-                  <PriceTag pkg={pkg} size="sm" className="mt-3" />
-                  <div className="mt-5 flex items-center justify-between gap-3">
-                    <span className="type-small font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">
-                      View Details
-                    </span>
-                    <a
-                      href={whatsappEnquiry(pkg.title)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="relative z-10 type-small inline-flex items-center gap-1.5 font-medium text-muted transition-colors hover:text-accent-ink"
-                      aria-label={`Enquire about ${pkg.title} on WhatsApp`}
-                    >
-                      <MessageCircle className="h-4 w-4" />
-                      Enquire
-                    </a>
-                  </div>
-                </div>
-              </m.article>
+              <m.div key={pkg.slug} variants={itemVariants}>
+                {/* First card is above the fold (LCP) — load it eagerly. */}
+                <TrekCard pkg={pkg} featured priority={i === 0} />
+              </m.div>
             ))}
           </div>
 

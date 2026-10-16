@@ -7,7 +7,7 @@ import { discountPercent, type Package } from "@/lib/content";
  * `offerLabel` when set, else "{X}% OFF" (from `discountPercent`). Renders
  * nothing when the package has neither, so callers can drop it in
  * unconditionally as an absolutely-positioned corner badge over a card's
- * cover image. See lib/content.ts `discountPercent`/`isOnSale`.
+ * cover image. See lib/content.ts `discountPercent`.
  */
 export function SaleBadge({ pkg, className }: { pkg: Package; className?: string }) {
   const pct = discountPercent(pkg);

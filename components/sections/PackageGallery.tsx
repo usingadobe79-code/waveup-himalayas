@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
@@ -41,6 +41,28 @@ export function PackageGallery({ images, title }: { images: string[]; title: str
   const step = (delta: number) =>
     setOpenIndex((i) => (i === null ? i : (i + delta + count) % count));
 
+  // Touch swipe: horizontal-dominant drag past SWIPE_MIN px steps prev/next.
+  const SWIPE_MIN = 45;
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const swiped = useRef(false);
+  const onTouchStart = (e: React.TouchEvent) => {
+    const t = e.touches[0];
+    touchStart.current = e.touches.length === 1 ? { x: t.clientX, y: t.clientY } : null;
+    swiped.current = false;
+  };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    const start = touchStart.current;
+    touchStart.current = null;
+    if (!start || count < 2) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - start.x;
+    const dy = t.clientY - start.y;
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > SWIPE_MIN) {
+      swiped.current = true;
+      step(dx < 0 ? 1 : -1);
+    }
+  };
+
   const controlClass =
     "absolute flex h-11 w-11 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10 focus-visible:bg-white/10";
 
@@ -72,7 +94,16 @@ export function PackageGallery({ images, title }: { images: string[]; title: str
           aria-modal="true"
           aria-label={`${title} photo gallery`}
           className="fixed inset-0 z-[70] flex items-center justify-center bg-black/90 p-4"
-          onClick={() => setOpenIndex(null)}
+          onTouchStart={onTouchStart}
+          onTouchEnd={onTouchEnd}
+          onClick={() => {
+            // A swipe's synthesized click must not close the lightbox.
+            if (swiped.current) {
+              swiped.current = false;
+              return;
+            }
+            setOpenIndex(null);
+          }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

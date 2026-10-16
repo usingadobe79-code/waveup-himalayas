@@ -428,11 +428,6 @@ export function discountPercent(pkg: Package): number | null {
   return Math.round(((originalPrice - price) / originalPrice) * 100);
 }
 
-/** Whether a package has a genuine discount to show — see `discountPercent`. */
-export function isOnSale(pkg: Package): boolean {
-  return discountPercent(pkg) != null;
-}
-
 /** Look up a package by slug (used by the detail route + links). */
 export function getPackage(slug: string): Package | undefined {
   return packages.find((p) => p.slug === slug);

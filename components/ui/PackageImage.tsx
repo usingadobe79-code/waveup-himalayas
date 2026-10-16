@@ -46,7 +46,7 @@ export function PackageImage({
  * Standalone branded placeholder (navy gradient + gold peak mark + wordmark).
  * Fills its positioned parent. Exported so other missing-image spots can reuse it.
  */
-export function BrandedPlaceholder({ label }: { label?: string }) {
+function BrandedPlaceholder({ label }: { label?: string }) {
   return (
     <div
       role="img"

@@ -182,7 +182,7 @@ export default async function PackageDetailPage({
         <section className="section-y bg-surface">
           <div className="container-page grid gap-12 lg:grid-cols-3 lg:gap-16">
             {/* Main column */}
-            <div className="space-y-12 lg:col-span-2">
+            <div className="min-w-0 space-y-12 lg:col-span-2">
               <div>
                 <h2 className="type-h3 text-ink">Overview</h2>
                 <p className="type-body-lg mt-4 text-muted">{overview}</p>
@@ -349,7 +349,7 @@ export default async function PackageDetailPage({
             </div>
 
             {/* Booking card */}
-            <aside className="lg:col-span-1">
+            <aside className="min-w-0 lg:col-span-1">
               <div className="card sticky top-24 p-6 lg:p-8">
                 <p className="type-eyebrow">Price</p>
                 <PriceTag pkg={pkg} size="lg" className="mt-2" />

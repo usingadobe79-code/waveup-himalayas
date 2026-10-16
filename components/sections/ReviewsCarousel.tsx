@@ -55,8 +55,8 @@ function ReviewCard({ r }: { r: Review }) {
       </div>
 
       <div className="relative mt-5 border-l-2 border-accent/60 pl-4">
-        {r.title && <p className="type-h3 text-ink">{r.title}</p>}
-        <p className={cn("type-body whitespace-pre-line text-muted", r.title && "mt-2")}>{r.quote}</p>
+        {r.title && <p className="type-h3 break-words text-ink">{r.title}</p>}
+        <p className={cn("type-body whitespace-pre-line break-words text-muted", r.title && "mt-2")}>{r.quote}</p>
       </div>
 
       {r.photoUrls && r.photoUrls.length > 0 && (
@@ -94,7 +94,7 @@ function ReviewCard({ r }: { r: Review }) {
             </span>
             <p className="type-small font-semibold text-accent-ink">Response from WaveUp Himalayas</p>
           </div>
-          <p className="type-small mt-3 whitespace-pre-line text-ink">{r.reply}</p>
+          <p className="type-small mt-3 whitespace-pre-line break-words text-ink">{r.reply}</p>
         </div>
       )}
     </div>
@@ -141,7 +141,7 @@ export function ReviewsCarousel({ reviews }: { reviews: Review[] }) {
     "inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-ink transition-colors hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70";
 
   return (
-    <div className="mt-6">
+    <div className="mt-6 min-w-0 max-w-full">
       <div
         ref={trackRef}
         onScroll={onTrackScroll}
