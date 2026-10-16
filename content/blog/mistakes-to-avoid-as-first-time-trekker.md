@@ -32,6 +32,7 @@ faqs:
     answer: Summit fever is the obsession with reaching the destination regardless of the cost—weather, injury, or illness. It leads to accidents and miserable experiences. The goal of your first trek is to enjoy the journey, not conquer the mountain. Be willing to turn back.
   - question: How do I prepare for my first trek?
     answer: Start 8–12 weeks in advance. Train with cardio, strength, and weighted walks. Buy and break in your boots early. Pack light and follow a trek-specific list. Learn about altitude, hydration, and nutrition. Most importantly, keep a humble mindset—respect the mountain, and it will respect you.
+tables: []
 ---
 
 Your first Himalayan trek should be unforgettable—for the right reasons. At WaveUp Himalayas, we've guided countless **trekking for beginners** and seen how **common trekking mistakes** like **overpacking for a trek**, **altitude sickness mistakes**, and **trekking gear mistakes** can ruin an otherwise amazing adventure. From **first time trekking preparation mistakes** to **hydration mistakes on the trail**, most **first time trekker mistakes** are preventable. This guide covers the **mistakes to avoid on your first trek**, offering essential **first trek tips** so you can avoid **beginner trekker errors** and enjoy every step. Whether you're researching **hiking mistakes for beginners** or wondering **how to prepare for your first trek**, let WaveUp Himalayas help you make your first trek memorable for all the right reasons.
@@ -189,7 +190,9 @@ Hydration is a habit, not an afterthought. Sip steadily, replace your electrolyt
 
 ## Not Respecting the Altitude
 
-![](/images/blog/ef5fd489-6967-418f-9c67-4fccc365a0d5.png)
+**Major Nepal Trekking Routes and Maximum Altitude**
+
+![](/images/blog/20261016-095828.png)
 
 Altitude doesn't care how fit you are. It's the single most serious risk on a Himalayan trek—and the most underestimated.
 
