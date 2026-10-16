@@ -30,6 +30,7 @@ faqs:
     answer: Ascend slowly, acclimatize, drink water, avoid alcohol, and consider Diamox (consult your doctor). If symptoms worsen, descend immediately.
   - question: What should I pack for Nepal?
     answer: Layers, down jacket, rain gear, trekking shoes, sunscreen, first aid, power bank, and universal adapter. Gear can be rented in Kathmandu or Pokhara
+tables: []
 ---
 
 Planning your Nepal trip? This **Nepal travel guide** from **Waveup Himalayas** covers everything you need before you visit—from **Nepal visa requirements** and the **best time to visit Nepal** to **Nepal itinerary** ideas, **Nepal trekking** permits, the **Everest Base Camp trek**, the **Annapurna Circuit trek**, and essential **Kathmandu** and **Pokhara travel guide** tips. Whether you’re dreaming of a Himalayan adventure, a cultural **Nepal holiday**, or a safe, well-planned trek, these essential tips will help you travel smarter and more confidently. Ready to begin? **Waveup Himalayas** is here to plan every step with you.
@@ -63,7 +64,12 @@ The **best time to visit Nepal** depends on what you want to do—trekking, cult
 
 **Quick Season Overview**
 
-![](/images/blog/63a97be3-969e-4d48-8a00-631cdc8b5521.png)
+| Season | Months | Best For | Pros | Cons |
+| --- | --- | --- | --- | --- |
+| **Autumn** | Oct–Nov | Trekking, mountain views, festivals | Clear skies, pleasant temps, peak season | Crowds, higher prices |
+| **Spring** | Mar–May | Trekking, rhododendrons, wildlife | Warm, blooms, good visibility | Haze builds, busy |
+| **Monsoon** | Jun–Sep | Cultural tours, fewer crowds | Lush, quiet, cheap | Rain, landslides, leeches |
+| **Winter** | Dec–Feb | Low-altitude treks, city tours | Clear skies, quiet | Cold, high passes snowed out |
 
 This is the **best time to visit Nepal** for most travelers. The monsoon has cleared, leaving **crystal-clear mountain views**, comfortable temperatures, and dry trails.
 
@@ -101,7 +107,18 @@ Winter brings cold temperatures, especially at altitude. High passes like Thoron
 
 **Best Time by Activity**
 
-![](/images/blog/nepal_activity_months_compact_table.png)
+| Activity | Best Months |
+| --- | --- |
+| **Everest Base Camp trek** | Mar–May, Oct–Nov |
+| **Annapurna Circuit trek** | Mar–May, Oct–Nov |
+| **Annapurna Base Camp trek** | Oct–Nov, Mar–Apr |
+| **Poon Hill trek** | Oct–Nov, Mar–Apr, Dec–Feb |
+| **Mardi Himal trek** | Oct–Nov, Mar–Apr |
+| **Upper Mustang trek** | Jun–Sep (rain shadow) |
+| **Chitwan safari** | Oct–Mar |
+| **Kathmandu & Pokhara city tours** | Year-round |
+| **Nepal paragliding** | Oct–Nov, Mar–Apr |
+| **Nepal rafting** | Oct–Nov, Mar–Apr |
 
 **Festivals to Consider**
 
