@@ -174,7 +174,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
           : "h-[72px] bg-transparent",
       )}
     >
-      <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-5 sm:px-6">
+      <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-2 px-4 sm:gap-4 sm:px-6">
         <a
           href={onHome ? "#top" : "/"}
           aria-label="WaveUp Himalayas — home"
@@ -186,12 +186,12 @@ export function Header({ solid = false }: { solid?: boolean }) {
               "origin-left transition-transform duration-500 ease-[var(--ease-out-expo)]",
               // Smaller base size so the lockup never crowds the controls on a
               // narrow phone; it steps back up once there is room for it.
-              scrolled || solid ? "scale-90 text-base sm:text-lg" : "scale-100 text-lg sm:text-xl",
+              scrolled || solid ? "scale-90 text-base sm:text-lg" : "scale-100 text-base sm:text-xl",
             )}
           />
         </a>
 
-        <div className="flex items-center gap-4 xl:gap-5">
+        <div className="flex items-center gap-1 sm:gap-4 xl:gap-5">
           {/*
             Inline nav appears at xl, not lg. At lg the four groups, their 2rem
             gaps and the Book Now pill totalled roughly the full 1024px, leaving
