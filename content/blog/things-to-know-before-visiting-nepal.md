@@ -45,6 +45,7 @@ faqs:
     answer: Nepali Rupee (NPR) . Exchange rate roughly NPR 152 per 1 USD. Bring crisp USD bills for exchange.
   - question: How do I get around Nepal?
     answer: Domestic flights between major cities, tourist buses ($10–15), private transfers, and local taxis. Agree on fares before getting in.
+tables: []
 ---
 
 Planning your first trip to Nepal? Here's what you need to know before you go. From **Nepal visa on arrival** requirements and **trekking permits** to understanding **altitude sickness**, local **culture and etiquette**, and the **best time to visit Nepal**—this comprehensive **Nepal travel guide** covers everything first-time visitors need. Whether you're dreaming of **Everest Base Camp**, exploring Kathmandu's ancient temples, or discovering the **best Nepal treks**, these essential **Nepal travel tips** will help you prepare for an unforgettable journey. Let **WaveUp Himalayas** be your trusted guide to this magical Himalayan nation.
@@ -190,7 +191,7 @@ Most treks in Nepal require at least one permit—some need two or three. Rules 
 
 **Annapurna Region (Circuit, Base Camp, Poon Hill, Mardi Himal)**
 
-![](/images/blog/annapurna-poonhill-viewtreks.webp "Annapurna Poonhill Trek")
+![](/images/blog/annapurna-poonhill-viewtreks-001.webp "Annapurna Poonhill Trek")
 
 - ACAP Permit — NPR 3,000
 - TIMS Card — NPR 1,000–2,000 (enforcement inconsistent—confirm with agency)
