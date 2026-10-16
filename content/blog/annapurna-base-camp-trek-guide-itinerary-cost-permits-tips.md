@@ -42,6 +42,7 @@ faqs:
     answer: Yes. Popular extensions include Chitwan National Park for wildlife safaris, Pokhara for paragliding and lakeside relaxation, Kathmandu Valley for heritage sites, and the Annapurna Circuit for a longer trek. Many trekkers also add Poon Hill before or after ABC, or continue to Mardi Himal for a quieter Himalayan experience.
   - question: Can I fly a drone on the Annapurna Base Camp Trek?
     answer: No. Flying drones in Nepal requires special permission from the Civil Aviation Authority of Nepal (CAAN), and the Annapurna Conservation Area has additional restrictions. Unauthorised drone use can result in confiscation, fines, or legal action. If you want aerial footage, arrange permits well in advance through a registered agency.
+tables: []
 ---
 
 Planning your **Annapurna Base Camp Trek Guide** begins with understanding the **Annapurna Base Camp Trek Itinerary**, **Annapurna Base Camp Trek Cost**, and **Annapurna Base Camp Trek Permits**, along with the **Best Time to Trek Annapurna Base Camp** and the **Annapurna Base Camp Trek Difficulty**. At WaveUp Himalayas, we also help you prepare with a complete **Annapurna Base Camp Trek Packing List**, a clear **Annapurna Base Camp Trek Map**, and the full **Annapurna Base Camp Trek from Pokhara** experience.
@@ -112,7 +113,7 @@ No matter when you go, the **Annapurna Base Camp Trek** is a life-changing exper
 
 The **Annapurna Base Camp (ABC) Trek** takes you from Nepal’s green foothills to an impressive altitude of **4,130 metres (13,550 feet)**. Understanding the elevation helps you plan your trek, prepare for altitude changes, and enjoy the journey safely.
 
-![](/images/blog/6d3e1881-f638-45e3-8271-f72ef9bf3dbe%20%281%29.png "ABC Trek Elevation")
+![](/images/blog/c38ab32a-9c06-4c92-bfcd-85d246489300.png)
 
 **Key Altitude Stops**
 
@@ -206,7 +207,14 @@ The [**Annapurna Base Camp Trek** ](https://waveuphimalayas.com/packages/annapur
 
 **Typical Cost Per Person**
 
-![](/images/blog/6e189fe5-37a8-4f2c-80ce-4f83588604a1.png)
+| Features | Budget Package | Standard Package | Premium Package |
+| --- | --- | --- | --- |
+| Cost | $550–$750 | $800–$1,200 | $1,200–$1,800+ |
+| Trek Type | Group trek | Private guide | Private departure |
+| Guide | Travel with other trekkers | Personalized support and experience | Your own group, flexible schedule |
+| Accommodation | Basic teahouses – simple and comfortable stays | Better lodges – more comfort and privacy | Best lodges – mountain lodges with great views |
+| Porter | Carry your own pack | Porter option – lighter load, easier trek | Dedicated porter – full support, more comfort |
+| Meals | Simple meals – local and basic food options | Three meals a day – breakfast, lunch and dinner | Full service – meals, permits, transport and more |
 
 **What Drives the Cost**
 
