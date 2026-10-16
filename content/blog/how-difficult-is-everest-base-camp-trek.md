@@ -28,6 +28,7 @@ faqs:
     answer: You should be in good physical shape and able to walk 5–8 hours per day with a light daypack. We recommend starting cardio and strength training 8–12 weeks before your trek, including hill walks with a loaded backpack. Prior trekking experience is helpful but not required.
   - question: What is the risk of altitude sickness on the Everest Base Camp Trek?
     answer: Altitude sickness (AMS) is a real risk above 3,000m. Our itinerary includes two acclimatization days (Namche and Dingboche) and a "climb high, sleep low" approach. Your guide will monitor your oxygen levels daily with an oximeter. If symptoms worsen, the only safe treatment is to descend immediately.
+tables: []
 ---
 
 The[ **Everest Base Camp Trek** ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)is one of the most iconic journeys on Earth. Standing at the foot of the world's highest peak is a dream for countless adventurers. But before you book your flight to Lukla, one question looms large: **How difficult is the Everest Base Camp Trek?**
@@ -57,6 +58,8 @@ Several factors combine to make the **Everest Base Camp Trek** a serious underta
 ### 1. High Altitude: The Biggest Challenge
 
 The primary reason **Everest Base Camp Trek is difficult** is altitude. The trek reaches **5,364m (17,598ft)** at Base Camp and **5,545m (18,193ft)** at Kala Patthar.
+
+![](/images/blog/everest-base-camp-trek-distance-altitude-map.jpg "Everest Base Camp Altitude")
 
 At these elevations, oxygen levels drop to roughly **50% of sea-level oxygen**. This makes every step harder, even on flat ground. Simple tasks like tying your shoes or climbing stairs at the teahouse leave you breathless.
 
@@ -130,6 +133,8 @@ A positive attitude and determination often matter more than fitness. Many trekk
 ## Everest Base Camp Trek Difficulty Level: How Hard Is It Really?
 
 The [**Everest Base Camp Trek** ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)is one of the world's most rewarding adventures—but it's not easy. The question isn't whether it's hard, but how hard. The answer depends on your fitness, preparation, and mindset. Let's break down the **Everest Base Camp Trek difficulty level** so you know exactly what to expect.
+
+![](/images/blog/media-9659a703-1766911880-001.jpg)
 
 ### Everest Base Camp Trek Difficulty by Numbers
 
