@@ -47,6 +47,7 @@ export function RatingBadge({
   if (!average || !count) return null;
   return (
     <span
+      role="img"
       className={cn("inline-flex items-center gap-1", className)}
       aria-label={`Rated ${average} out of 5 from ${count} ${count === 1 ? "review" : "reviews"}`}
     >
