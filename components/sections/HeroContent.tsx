@@ -48,7 +48,7 @@ export function HeroContent() {
           the bright warm sky behind the gold word) without dimming the whole image. */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[60vmin] w-[min(100%,72rem)] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[radial-gradient(ellipse_at_center,rgba(17,28,51,0.68)_0%,rgba(17,28,51,0.45)_48%,transparent_78%)]"
+        className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[60vmin] w-[min(100%,72rem)] -translate-x-1/2 -translate-y-1/2 rounded-[50%] blur-2xl bg-[radial-gradient(ellipse_at_center,rgba(17,28,51,0.68)_0%,rgba(17,28,51,0.45)_48%,transparent_78%)]"
       />
 
       {/* Self-drawing gold peak mark — echo of the logo, sits cleanly above all copy */}
