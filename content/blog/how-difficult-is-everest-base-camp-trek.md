@@ -74,7 +74,7 @@ At these elevations, oxygen levels drop to roughly **50% of sea-level oxygen**. 
 
 If left untreated, AMS can progress to **HAPE (High Altitude Pulmonary Edema)** or **HACE (High Altitude Cerebral Edema)** —both life-threatening conditions.
 
-### 2. Long Trekking Days
+### **2. Long Trekking Days**
 
 The **Everest Base Camp Trek duration** typically ranges from **12 to 16 days**, depending on your itinerary. During this time, you'll walk **6 to 8 hours per day** on consecutive days—sometimes up to 9 hours.
 
@@ -88,7 +88,7 @@ Most trekkers cover:
 
 The cumulative fatigue is real. Your body never fully recovers between days, making rest, nutrition, and hydration critical.
 
-### 3. Rugged Terrain and Steep Climbs
+### **3. Rugged Terrain and Steep Climbs**
 
 The **Everest Base Camp Trek route** is not a stroll. You'll encounter:
 
@@ -102,7 +102,7 @@ The climb from **Namche Bazaar** to **Tengboche** and the final push from **Gora
 
 The **hardest part of Everest Base Camp Trek** for many is the **Namche Hill**—a relentless series of switchbacks that greets you on Day 2. It's a mental and physical test right at the start.
 
-### 4. Weather and Cold
+### **4. Weather and Cold**
 
 The **Everest Base Camp Trek weather** varies dramatically. At high altitudes, temperatures can drop to **-20°C (-4°F)** or lower at night. Teahouses are basic, with no central heating. You'll sleep in cold rooms and use shared bathrooms.
 
@@ -115,7 +115,7 @@ The **Everest Base Camp Trek weather** varies dramatically. At high altitudes, t
 | Winter | December to February | Extreme cold, fewer crowds |
 | Monsoon | June to August | Rainy, cloudy, risky |
 
-### 5. Mental Resilience
+### **5. Mental Resilience**
 
 The **Everest Base Camp Trek challenge** isn't just physical. Mental toughness is crucial. You'll face:
 
@@ -177,31 +177,6 @@ EBC is significantly harder. Annapurna Base Camp sits at 4,130m, while EBC reach
 **Everest Base Camp vs Island Peak Difficulty**
 
 Island Peak is a technical climb requiring ropes, crampons, and ice axes. EBC is a trek—no technical skills needed. However, many trekkers combine EBC with Island Peak for the ultimate Himalayan experience.
-
-### How Hard Is Everest Base Camp Trek Day by Day?
-
-The **Everest Base Camp Trek difficulty** varies throughout the journey. Here's a day-by-day breakdown:
-
-| Day | Route | Difficulty | Why |
-| --- | --- | --- | --- |
-| 1 | Lukla to Phakding | Easy-Moderate | Gentle descent, short day |
-| 2 | Phakding to Namche | Hard | Steep switchbacks, long climb |
-| 3 | Namche (Acclimatization) | Easy | Rest day, short hike |
-| 4 | Namche to Tengboche | Moderate | Rolling terrain, some climbs |
-| 5 | Tengboche to Dingboche | Moderate | Gradual ascent, open valley |
-| 6 | Dingboche (Acclimatization) | Moderate | Short hike to Nangkartshang |
-| 7 | Dingboche to Lobuche | Moderate-Hard | Altitude increasing, rocky path |
-| 8 | Lobuche to Gorak Shep to EBC | Hard | Long day, glacial terrain, high altitude |
-| 9 | Kala Patthar to Pheriche | Hard | Early start, steep climb, long descent |
-| 10-14 | Descent to Lukla | Moderate | Long days but easier breathing |
-
-**Hardest Part of Everest Base Camp Trek**
-
-The **hardest part of Everest Base Camp Trek** is typically:
-
-1. **Namche Hill** (Day 2) — Steep switchbacks at the start
-2. **Gorak Shep to EBC** (Day 8) — High altitude, rocky moraine
-3. **Kala Patthar** (Day 9) — Early morning climb at 5,545m
 
 ### Everest Base Camp Trek Difficulty by Trekker Profile
 
