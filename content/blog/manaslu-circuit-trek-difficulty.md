@@ -235,7 +235,7 @@ Technically, yes—but on Manaslu the margin for error is smaller. The trek is *
 
 The **Manaslu Circuit Trek fitness requirements** are achievable. You don't need to be young or athletic—you need to be prepared. With **8–12 weeks of focused training**, including weighted hill hiking and long endurance days, you can build the fitness you need.
 
-> **Want to see exactly what you're training for?** View our full [**Manaslu Circuit Trek guide and itinerary**](https://waveuphimalayas.com/blog/manaslu-circuit-trek-guide-cost-permits-packing-altitude/)[ f](https://waveuphimalayas.com/blog/manaslu-circuit-trek-guide-cost-permits-packing-altitude/)or day-by-day details, acclimatization stops, and departure dates.
+> **Want to see exactly what you're training for?** View our full [**Manaslu Circuit Trek guide and itinerary**](https://waveuphimalayas.com/blog/manaslu-circuit-trek-guide-cost-permits-packing-altitude/)[ f](https://waveuphimalayas.com/blog/manaslu-circuit-trek-guide-cost-permits-packing-altitude/)or day-by-day details, acclimatization stops, permit information, and packing recommendations.
 
 ***
 
