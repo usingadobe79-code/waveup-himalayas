@@ -3,7 +3,7 @@ title: How Difficult is Everest Base Camp Trek?
 date: 2026-10-15
 excerpt: How difficult is Everest Base Camp Trek? WaveUp Himalayas breaks down the EBC Trek difficulty, fitness requirements, altitude challenges, training, and more. Plan your trek today!
 coverImage: /images/blog/Old-Everest-Base-Camp-Trek.webp
-author: WaveUp Himalayas
+author: Gaurav Lamichhane
 draft: false
 relatedPackages:
   - everest-base-camp-trek
@@ -401,8 +401,6 @@ The **Everest Base Camp Trek** is challenging, but it doesn't have to be overwhe
 - **Hire a Guide and Porter:** A licensed guide and porter make the trek significantly easier. Your guide handles logistics, monitors your health, and keeps you motivated. Your porter carries your heavy bag. At **WaveUp Himalayas**, we provide experienced guides and porters for every trek.
 
 The **Everest Base Camp Trek** is challenging, but with proper training, a longer itinerary, slow pacing, good gear, and the right support, you can make it easier and more enjoyable. Preparation is the key—and with **WaveUp Himalayas** by your side, you'll be ready for the adventure of a lifetime.
-
-***
 
 **If you are looking for Tour Packages please** [**click here**](https://waveuphimalayas.com/#packages)
 
