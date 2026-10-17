@@ -40,7 +40,7 @@ At **WaveUp Himalayas**, we've guided trekkers of every level across **Larkya La
 
 ### 1. High Altitude and the Larkya La Pass
 
-![](/images/blog/25ae7de7-f31b-4934-a6be-a3a13a1ec87f.png "Manaslu Circuit Trek Elevation")
+![](/images/blog/71d324db-8436-4e18-806b-2144be3880e5.opt.webp "Manaslu Circuit Trek Elevation")
 
 **Larkya La Pass** is the crux of the **Manaslu Circuit difficulty**. At **5,106 meters (16,752 feet)**, it is not technically difficult to cross, but it is an **extremely long and sustained high-altitude undertaking**. The crossing day from **Dharamsala (4,460 m)** to **Bimthang (3,590 m)** typically takes **8 to 10 hours**, and can stretch to **11 or 12 hours in snow**. Some estimates put the full crossing distance at **22 to 26 km**, with roughly **700 meters of ascent** to the pass and **1,570 meters of descent** on the far side.
 
