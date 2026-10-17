@@ -228,7 +228,7 @@ The monsoon brings heavy rain, muddy trails, and cloudy skies—but it's the **b
 
 **Expect:** Rain, leeches, flight delays, landslides, and some teahouses closed.
 
-### Best Time by Activity
+### **Best Time by Activity**
 
 - **Trekking (Everest, Annapurna, Manaslu, Langtang):** Autumn and Spring
 - **Peak Climbing:** Spring (April–May)
