@@ -101,7 +101,7 @@ All tourist visas are **multiple-entry**.
 
 ### Autumn (Mid-October to Mid-November)
 
-Autumn is widely considered the **best time to visit Nepal**, offering clear skies, stable weather, and vibrant festivals.
+Autumn is widely considered the [**best time to visit Nepal,**](https://waveuphimalayas.com/blog/best-time-to-visit-nepal-wave-up-himalayas/) offering clear skies, stable weather, and vibrant festivals.
 
 ![](/images/blog/Autumn%20trkking%20in%20Nepal%20%281%29.webp)
 
