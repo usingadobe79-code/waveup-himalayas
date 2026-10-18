@@ -225,16 +225,33 @@ packingList:
   - Duffel Bag – A durable duffel bag for porters to carry your gear.
   - Daypack – A 30–40L daypack for daily essentials.
 preparation: |-
-  - **Start Physical Training Early** – Begin cardio and strength training 8–12 weeks before your trek. Focus on walking, stairs, squats, and lunges. High-altitude trekking demands more than flat-land walking.
+  Getting ready for Everest Base Camp is as much about mental readiness as physical fitness. Use the quick pointers below, with links to our detailed guides where helpful.
+
+  ### Training & Fitness
+
+  - **Start Physical Training Early** – Begin cardio and strength training 8–12 weeks before your trek. Focus on walking, stairs, squats, and lunges. Before you start, understand [how difficult the Everest Base Camp trek](https://waveuphimalayas.com/blog/how-difficult-is-everest-base-camp-trek/) really is.
+  - **Train on Hills with a Backpack** – Do practice hikes with a loaded pack on consecutive days to prepare for 5–8 hours of daily walking at altitude, and read the [mistakes to avoid as a first-time trekker](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-first-time-trekker/).
+
+  ### Gear & Packing
+
   - **Break In Your Trekking Boots** – Wear your boots for at least 2–3 weeks before departure to avoid blisters and foot pain.
-  - **Arrange Travel Insurance** – Mandatory insurance covering helicopter evacuation up to 6,000 m, medical treatment, and trip cancellation.
-  - **Get a Health Check-Up** – Consult your doctor, complete vaccinations, and ask about altitude sickness medication like Diamox.
   - **Prepare Your Packing List** – Aim for 10–11 kg base pack weight. Bring layers, down jacket, sleeping bag, poles, headlamp, sunscreen, and personal medical kit.
+
+  ### Health, Safety & Altitude
+
+  - **Get a Health Check-Up** – Consult your doctor, complete vaccinations, and ask about altitude sickness medication like Diamox.
+  - **Arrange Travel Insurance** – Mandatory insurance covering helicopter evacuation up to 6,000 m, medical treatment, and trip cancellation.
+  - **Learn About Altitude Sickness** – Know the symptoms (headache, nausea, dizziness), ascend slowly, hydrate, and descend immediately if symptoms worsen. Our [Everest Base Camp trek guide](https://waveuphimalayas.com/blog/everest-base-camp-trek-guide-cost-permits-packing-altitude-more/) explains how altitude is managed day by day.
+
+  ### Logistics & Planning
+
   - **Carry Enough Cash** – There are no ATMs above Namche. Carry Nepali Rupees for hot showers, charging, Wi-Fi, snacks, drinks, and tips.
-  - **Train on Hills with a Backpack** – Do practice hikes with a loaded pack on consecutive days to prepare for 5–8 hours of daily walking at altitude.
-  - **Learn About Altitude Sickness** – Know the symptoms (headache, nausea, dizziness), ascend slowly, hydrate, and descend immediately if symptoms worsen.
+  - **Book in Advance** – Peak seasons fill up quickly. Choose the right time to trek by checking the [best time for Everest Base Camp](https://waveuphimalayas.com/blog/best-time-for-everest-base-camp-trek/), then book your package at least 3–6 months ahead.
+  - **Understand Permits** – Your package includes the necessary permits, but it helps to know which [permits for Everest Base Camp](https://waveuphimalayas.com/blog/permits-for-everest-base-camp-trek/) are required and why.
+
+  ### Mindset & Culture
+
   - **Mental Preparation** – The EBC Trek is as much a mental challenge as a physical one. Stay positive, be patient, and embrace the journey.
   - **Respect Local Culture** – Learn basic Nepali phrases, respect Sherpa traditions, and walk clockwise around mani walls and monasteries.
-  - **Leave No Trace** – Carry out what you carry in. Use biodegradable products and avoid single-use plastics.
-  - **Book in Advance** – Peak seasons (March–May, September–November) fill up quickly. Book your Everest Base Camp Trek package at least 3–6 months in advance.
+  - **Leave No Trace** – Carry out what you carry in. Use biodegradable products and avoid single-use plastics. Read [things to know before visiting Nepal](https://waveuphimalayas.com/blog/things-to-know-before-visiting-nepal/) for a broader cultural and practical primer.
 ---
