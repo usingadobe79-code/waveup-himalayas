@@ -7,7 +7,7 @@ originalPrice: null
 offerLabel: ''
 image: /images/packages/12-Days-Everest-base-Camp-trek.jpeg
 blurb: Trek to Everest Base Camp (5,364m) with WaveUp Himalayas. 13-day guided EBC trek from Kathmandu with permits, teahouses & Sherpa guides. Book 2026/2027 now.
-seoTitle: Everest Base Camp Trek 2026 – 13 Days Guided | WaveUp Himalayas
+seoTitle: Everest Base Camp Trek – 13 Days Guided | WaveUp Himalayas
 seoDescription: Trek to Everest Base Camp (5,364m) with WaveUp Himalayas. 13-day guided EBC trek from Kathmandu with permits, teahouses & Sherpa guides. Book 2026/2027 now.
 featured: true
 draft: false
