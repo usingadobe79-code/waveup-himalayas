@@ -7,7 +7,7 @@ originalPrice: null
 offerLabel: ''
 image: /images/packages/Larke-La-pass-1.webp
 blurb: Book the 14-day Manaslu Circuit Trek 2026/2027 with Wave Up Himalayas. Cross Larkya La Pass (5,106 m), explore Tibetan villages, permits & guides included.
-seoTitle: Manaslu Circuit Trek 2026 – 14 Days Guided | Wave Up Himalayas
+seoTitle: Manaslu Circuit Trek – 14 Days Guided | Wave Up Himalayas
 seoDescription: Book the 14-day Manaslu Circuit Trek 2026/2027 with Wave Up Himalayas. Cross Larkya La Pass (5,106 m), explore Tibetan villages, permits & guides included.
 featured: true
 draft: false
