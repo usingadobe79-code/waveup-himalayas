@@ -65,13 +65,11 @@ At both the Kathmandu NTB office and the trail counters, you will need:
 
 Your permits will be **stamped at Monjo** on your way up, and the stamp is **checked again on your descent**. Carry the originals with you at all times—not in your checked duffel or with a porter.
 
-***
-
-### 
-
 ### The TIMS Card Myth—Debunked
 
 If you've been searching for **"TIMS card Everest Base Camp,"** you're not alone. Many older guides still list it. Here's the truth: **the TIMS card is NOT required for the Everest Base Camp trek**. The Khumbu Pasang Lhamu Rural Municipality withdrew from the national TIMS system in 2018 and introduced its own local permit instead. If a trekking agency tries to charge you for a TIMS card on this route, ask questions—you likely don't need it.
+
+***
 
 ## The Two Mandatory Permits: A Complete Breakdown
 
@@ -152,7 +150,7 @@ The process is quick—typically **2 to 5 minutes per trekker**. The officer ver
 
 ### Checkpoint 2: Monjo / Jorsale (Day 2) — Both Permits Stamped
 
-![](/images/blog/e41a544cb956226279bd4f3ebe9ad13a-large.webp "Monjo CheckPoint ")
+![](/images/blog/e41a544cb956226279bd4f3ebe9ad13a-large.webp "Monjo CheckPoint")
 
 The main event happens on **Day 2**, roughly two days' walk from Lukla. You will pass through the **Monjo checkpoint** (also referred to as the Jorsale checkpoint), which is the official **entry gate to Sagarmatha National Park**, situated between Phakding and Namche Bazaar.
 
