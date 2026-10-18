@@ -105,7 +105,7 @@ The exact route can vary depending on weather, flight schedules, trekking condit
 
 ## Everest Base Camp Trek Permits
 
-To trek to Everest Base Camp, you need **two mandatory permits** — the **Sagarmatha National Park Entry Permit** and the **Khumbu Pasang Lhamu Rural Municipality Permit**. Both are checked at multiple points along the trail.
+The[ **Everest Base Camp permit**](https://waveuphimalayas.com/blog/permits-for-everest-base-camp-trek/) requires two mandatory passes — the Sagarmatha National Park Entry Permit and the Khumbu Pasang Lhamu Rural Municipality Permit. Both are checked at multiple points along the trail.
 
 **Permit Costs**
 
