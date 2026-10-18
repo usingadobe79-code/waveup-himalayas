@@ -177,7 +177,7 @@ The rapid increase in elevation is one of the main challenges of the **Everest B
 
 ## Best Time for Everest Base Camp Trek
 
-The **best time for the** [**E**](https://waveuphimalayas.com/packages/everest-base-camp-trek/)**verest Base Camp Trek** is generally during **spring (March to May)** and **autumn (September to November)**. These seasons offer more stable weather, clearer mountain views, and better trekking conditions in the Everest region. Autumn, especially **October and November**, is known for clear skies and excellent views of Mount Everest and the surrounding Himalayas. Spring brings warmer days, blooming rhododendrons, and beautiful scenery along the trail.
+The [**best time for the** **Everest Base Camp Trek**](https://waveuphimalayas.com/blog/best-time-for-everest-base-camp-trek/) is generally during **spring (March to May)** and **autumn (September to November)**. These seasons offer more stable weather, clearer mountain views, and better trekking conditions in the Everest region. Autumn, especially **October and November**, is known for clear skies and excellent views of Mount Everest and the surrounding Himalayas. Spring brings warmer days, blooming rhododendrons, and beautiful scenery along the trail.
 
 **Autumn: September to November**
 
