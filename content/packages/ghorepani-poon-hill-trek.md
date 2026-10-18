@@ -7,7 +7,7 @@ originalPrice: null
 offerLabel: ''
 image: /images/packages/R.jpg
 blurb: Book the 8-day Ghorepani Poon Hill Trek 2026/2027. Sunrise at 3,210m, ACAP & TIMS permits, licensed guide, breakfast & farewell dinner. Easy-moderate.
-seoTitle: Ghorepani Poon Hill Trek 2026/2027 – 8 Days Guided Trek | WaveUp Himalayas
+seoTitle: Ghorepani Poon Hill Trek 2026/2027 – 8 Days Guided Trek
 seoDescription: Book the 8-day Ghorepani Poon Hill Trek 2026/2027. Sunrise at 3,210m, ACAP & TIMS permits, licensed guide, breakfast & farewell dinner. Easy-moderate.
 featured: true
 draft: false
