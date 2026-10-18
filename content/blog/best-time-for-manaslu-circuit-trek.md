@@ -3,7 +3,7 @@ title: Best Time for Manaslu Circuit Trek
 date: 2026-10-19
 excerpt: Discover the best time for Manaslu Circuit Trek. Compare spring vs autumn, monthly weather, Larkya La Pass conditions, winter risks & least crowded windows. WaveUp Himalayas guide.
 coverImage: /images/blog/manaslu-circuit-trek-all-you-need-to-know1.webp
-author: WaveUp Himalayas
+author: Gaurav Lamichhane
 draft: false
 relatedPackages:
   - manaslu-circuit-trek
