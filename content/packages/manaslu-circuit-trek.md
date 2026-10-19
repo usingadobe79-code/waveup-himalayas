@@ -233,11 +233,33 @@ packingList:
   - Duffel Bag – A durable duffel bag for porters to carry your gear.
   - Daypack – A 25–35L daypack for daily essentials.
 preparation: |-
-  - **Build your fitness (start 6–8 weeks ahead)** – Running, cycling, swimming or brisk hiking, 3–4 times a week. Add squats, lunges and core work for the long climbs and descents. Practise hiking on hills carrying your daypack.
-  - **Prepare for altitude** – Follow the itinerary's gradual ascent and acclimatisation days. Stay hydrated, keep a steady pace, and tell your guide early if you feel unwell. Ask your doctor about altitude medication (such as Diamox) before you travel.
-  - **Arrange travel insurance** – Mandatory insurance covering helicopter evacuation up to 6,000 m, medical treatment, and trip cancellation.
-  - **Prepare your packing list** – Aim for 10–11 kg base pack weight. Bring layers, down jacket, sleeping bag, poles, headlamp, sunscreen, and personal medical kit.
-  - **Carry enough cash** – There are no ATMs above Arughat. Carry Nepali Rupees for lunch, dinner, hot showers, charging, Wi-Fi, snacks, drinks, and tips. Budget roughly NPR 2,000–3,500 per day for meals.
-  - **Mindset** – Days are long and remote, with basic teahouse comforts. Come ready for a real adventure — the rewards are huge.
-  - **Book in advance** – Peak seasons (March–May, September–November) fill up quickly. Book your Manaslu Circuit Trek package at least 3–6 months in advance.
+  Getting ready for the Manaslu Circuit Trek is as much about mental readiness as physical fitness. Use the quick pointers below to prepare for the remote trails, high-altitude conditions, and Larkya La Pass, with links to our detailed guides where helpful.
+
+  ### Training & Fitness
+
+  - **Start Physical Training Early** – Begin cardio and strength training 8–12 weeks before your trek. Focus on uphill walking, stairs, squats, and lunges. Before you start, understand the [difficulty of the Manaslu Circuit Trek](https://waveuphimalayas.com/blog/manaslu-circuit-trek-difficulty/).
+  - **Train on Hills with a Backpack** – Do practice hikes with a loaded pack on consecutive days to prepare for long walking days, steep ascents, and descents. Also, read our guide to [mistakes to avoid as a first-time trekker](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-first-time-trekker/).
+
+  ### Gear & Packing
+
+  - **Break In Your Trekking Boots** – Wear your boots for at least 2–3 weeks before departure to reduce the risk of blisters and foot pain on rocky and uneven trails.
+  - **Prepare Your Packing List** – Pack thermal layers, a warm down jacket, waterproof clothing, a suitable sleeping bag, trekking poles, a headlamp, sunscreen, and a personal medical kit. Our [Manaslu Circuit Trek guide](https://waveuphimalayas.com/blog/manaslu-circuit-trek-guide-cost-permits-packing-altitude/) covers packing essentials and other important preparations.
+
+  ### Health, Safety & Altitude
+
+  - **Get a Health Check-Up** – Consult your doctor about high-altitude trekking, recommended vaccinations, and whether altitude sickness medication such as Diamox is suitable for you.
+  - **Arrange Travel Insurance** – Choose insurance that explicitly covers high-altitude trekking above 5,000 m, emergency helicopter evacuation, medical treatment, and trip cancellation. Check the policy exclusions before departure.
+  - **Learn About Altitude Sickness** – Know the symptoms, including headache, nausea, and dizziness. Ascend gradually, follow your acclimatisation schedule, and descend promptly if symptoms worsen. Our [Manaslu Circuit Trek guide](https://waveuphimalayas.com/blog/manaslu-circuit-trek-guide-cost-permits-packing-altitude/) provides more information about altitude and trek preparation.
+
+  ### Logistics & Planning
+
+  - **Carry Enough Cash** – Carry sufficient Nepali rupees for hot showers, charging, Wi-Fi, snacks, drinks, and tips. Banking facilities are limited along the remote Manaslu trail, so do not rely on ATMs.
+  - **Book in Advance** – Spring and autumn are popular trekking seasons. Check the [best time for the Manaslu Circuit Trek](https://waveuphimalayas.com/blog/best-time-for-manaslu-circuit-trek/) and arrange your guide, accommodation, transport, and permits well in advance.
+  - **Understand Permits** – The Manaslu region has restricted-area trekking requirements, and permits must be arranged according to current regulations. Read our guide to [Manaslu Circuit Trek permits, costs, and how to obtain them](https://waveuphimalayas.com/blog/manaslu-circuit-trek-permits-what-you-need-what-they-cost-and-how-to-get-them/) before departure.
+
+  ### Mindset & Culture
+
+  - **Mental Preparation** – The Manaslu Circuit Trek can be physically and mentally demanding, particularly during the approach to Larkya La Pass at approximately 5,106 m. Stay patient, maintain a steady pace, and be prepared for changing weather and basic facilities.
+  - **Respect Local Culture** – Learn basic Nepali greetings, respect local Buddhist traditions, and walk clockwise around mani walls and chortens where customary. Take time to appreciate the region's villages, monasteries, and local communities.
+  - **Leave No Trace** – Carry out your rubbish, avoid unnecessary single-use plastics, and respect the natural environment. You can also read our guide to [climate change and trekking in Nepal](https://waveuphimalayas.com/blog/climate-change-nepal-trekking-best-time-to-visit-himalayas/) to understand why protecting the Himalayan environment matters.
 ---
