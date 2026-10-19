@@ -2,8 +2,8 @@
 title: 'Manaslu Circuit Trek Permits: What You Need, What They Cost, and How to Get Them'
 date: 2026-10-19
 excerpt: Everything you need to know about Manaslu Circuit Trek permits in 2026—costs, the guide rule, checkpoints, and how Wave Up Himalayas handles it all.
-coverImage: /images/blog/manaslu_circuit_trek.webp
-author: WaveUp Himalayas
+coverImage: /images/blog/1bcb4dbb-2ed2-443a-aed0-cf379aed2ba1.png
+author: Gaurav Lamichhhane
 draft: false
 relatedPackages:
   - manaslu-circuit-trek
