@@ -118,11 +118,11 @@ For a 14-day trek, the **Manaslu Circuit guide cost** typically ranges from **US
 
 ## Manaslu Circuit Permits: Everything You Need to Know
 
-The **Manaslu Circuit Trek** requires several permits because it passes through **restricted and conservation areas**. Here's a complete breakdown of the **Manaslu permit requirements** for 2026.
+The **Manaslu Circuit Trek** requires several permits because it passes through **restricted and conservation areas**. Here's a complete breakdown of the [**Manaslu permit requirements** ](https://waveuphimalayas.com/blog/manaslu-circuit-trek-permits-what-you-need-what-they-cost-and-how-to-get-them/)for 2026.
 
 | Permit | Cost (Foreign Nationals) | Notes |
 | --- | --- | --- |
-| Manaslu Restricted Area Permit (RAP) | • Autumn (Sep–Nov): USD 100 for first 7 days, then USD 15/day\n• Off-season (Dec–Aug): USD 75 for first 7 days, then USD 10/day | Main permit for restricted zone |
+| Manaslu Restricted Area Permit (RAP) | • Autumn (Sep–Nov): USD 100 for first 7 days, then USD 15/day\n\n\n• Off-season (Dec–Aug): USD 75 for first 7 days, then USD 10/day | Main permit for restricted zone |
 | Manaslu Conservation Area Permit (MCAP) | NPR 3,000 (approx. USD 23–30) | [For Manaslu Conservation Area entry] |
 | Annapurna Conservation Area Permit (ACAP) | NPR 3,000 (approx. USD 23–30) | [For final section in Annapurna region] |
 | Chum-Nubri Local Development Fee | NPR 1,000–2,000 (approx. USD 8–15) | Collected locally at Jagat |
