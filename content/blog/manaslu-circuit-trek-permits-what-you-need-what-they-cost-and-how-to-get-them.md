@@ -51,8 +51,6 @@ The practical takeaway: your Manaslu trek starts with choosing the right agency,
 
 Every foreign trekker on the Manaslu Circuit needs three separate permits. They serve different purposes and are checked at different points along the route.
 
-![](/images/blog/manaslu-permit-checkpost.png "Manaslu Circuit Trek Permit Checkpoint")
-
 ### 1. Manaslu Restricted Area Permit (RAP)
 
 This is the core permit and the reason the Manaslu Circuit operates under tighter rules than other Nepal treks. The RAP governs access to the restricted zone around Mount Manaslu and is priced by season, not by trekker nationality.
@@ -113,6 +111,8 @@ For solo trekkers on a budget, joining a fixed group departure is often the most
 ## Where Your Permits Are Checked on the Trail
 
 Your Manaslu Circuit Trek permits are verified at four main checkpoints along the route. Knowing where they sit—and what each one inspects—helps you understand why every document must be correct before you start walking.
+
+![](/images/blog/manaslu-permit-checkpost.png "Manaslu Circuit Trek Permit Checkpoint")
 
 | Checkpoint | Altitude | Permits Checked | What Happens Here |
 | --- | --- | --- | --- |
