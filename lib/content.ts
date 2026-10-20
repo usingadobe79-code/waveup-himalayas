@@ -20,7 +20,7 @@ export const business = {
   alsoTradesAs: "Wave Up Nepal Holidays",
   base: "Thamel, Kathmandu, Nepal",
   registeredAddress:
-    "Nepal, Kathmandu, Nagarjun, Raniban, Radhakrishna Mandir, 001",
+    "350 Amrit Marg, Thamel, Kathmandu, Bagmati Province 44600",
   coords: { lat: 27.7300148, lng: 85.2874875 },
   touristDotCom: {
     since: "2026",

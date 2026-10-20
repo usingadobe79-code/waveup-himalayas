@@ -3,9 +3,9 @@ import { business, contact, siteUrl } from "@/lib/content";
 /**
  * TravelAgency (a LocalBusiness subtype) structured data — REAL data only.
  * No priceRange / ratings / founding claims (none are known). The address is
- * split conservatively from business.registeredAddress
- * ("Nepal, Kathmandu, Nagarjun, Raniban, Radhakrishna Mandir, 001"); addressRegion
- * is omitted because it isn't in our source data.
+ * split from business.registeredAddress
+ * ("350 Amrit Marg, Thamel, Kathmandu, Bagmati Province 44600"); addressRegion
+ * ("Bagmati Province") and postalCode ("44600") are included.
  */
 export function JsonLd() {
   const data = {
@@ -18,15 +18,17 @@ export function JsonLd() {
     image: `${siteUrl}/images/hero.jpg`,
     telephone: contact.phone,
     email: contact.email,
-    // Split conservatively from business.registeredAddress
-    // ("Nepal, Kathmandu, Nagarjun, Raniban, Radhakrishna Mandir, 001").
+    // Split from business.registeredAddress
+    // ("350 Amrit Marg, Thamel, Kathmandu, Bagmati Province 44600").
     // NOTE: keep in sync if registeredAddress ever changes (it's the source of truth).
-    // postalCode is intentionally omitted: the trailing "001" is not a valid Nepal
-    // postal code (those are 5 digits) — we don't publish a guessed/placeholder ZIP.
+    // addressRegion ("Bagmati Province") and postalCode ("44600", a valid 5-digit
+    // Nepal postal code) are now included.
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Raniban, Radhakrishna Mandir, Nagarjun",
+      streetAddress: "350 Amrit Marg, Thamel",
       addressLocality: "Kathmandu",
+      addressRegion: "Bagmati Province",
+      postalCode: "44600",
       addressCountry: "NP",
     },
     geo: {

@@ -6,8 +6,8 @@ prices, or details not listed here.
 ## Business identity
 - **Name:** WaveUp Himalayas (also trades as "Wave Up Nepal Holidays")
 - **Base:** Thamel, Kathmandu, Nepal
-- **Registered address:** Nepal, Kathmandu, Nagarjun, Raniban, Radhakrishna Mandir, 001
-  (coords 27.7300148, 85.2874875)
+- **Registered address:** 350 Amrit Marg, Thamel, Kathmandu, Bagmati Province 44600
+  (coords 27.7300148, 85.2874875 — STILL the old Nagarjun location; update to the Thamel pin once the Google Business Profile is set)
 - **On Tourist.com since:** 2026, status "Tourist Friendly" (verified by tourist.com)
 - **Tourist.com listing:** https://tourist.com/p/33425/wave_up_nepal_holidays
 
