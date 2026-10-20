@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Lenis from "lenis";
+import type Lenis from "lenis";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 
 /**
@@ -19,18 +19,39 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
     // reduced motion or touch/coarse pointer → native scroll, no Lenis, no rAF loop
     if (reduced || window.matchMedia("(pointer: coarse)").matches) return;
 
-    const instance = new Lenis({ lerp: 0.1, smoothWheel: true });
-    setLenis(instance);
+    let cancelled = false;
+    let instance: Lenis | null = null;
+    let idleId: number | null = null;
+    let timeoutId: number | null = null;
 
     const raf = (time: number) => {
-      instance.raf(time);
+      instance?.raf(time);
       rafRef.current = requestAnimationFrame(raf);
     };
-    rafRef.current = requestAnimationFrame(raf);
+
+    // Lenis is fetched only here, past the guard, so touch / reduced-motion
+    // users never download it. Wait for idle so it doesn't compete with load.
+    const load = () => {
+      import("lenis").then(({ default: LenisCtor }) => {
+        if (cancelled) return;
+        instance = new LenisCtor({ lerp: 0.1, smoothWheel: true });
+        setLenis(instance);
+        rafRef.current = requestAnimationFrame(raf);
+      });
+    };
+
+    if (typeof window.requestIdleCallback === "function") {
+      idleId = window.requestIdleCallback(load);
+    } else {
+      timeoutId = window.setTimeout(load, 200); // Safari fallback
+    }
 
     return () => {
+      cancelled = true;
+      if (idleId !== null) window.cancelIdleCallback(idleId);
+      if (timeoutId !== null) clearTimeout(timeoutId);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      instance.destroy();
+      instance?.destroy();
       setLenis(null);
     };
   }, [reduced]);

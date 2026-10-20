@@ -12,7 +12,7 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-DJGG3LQXX2";
  *
  * Google's own snippet says to paste this immediately after <head>, which would
  * put a blocking third-party request ahead of the page's own content. next/script
- * with `afterInteractive` loads it once the page is usable instead. Nothing is
+ * with `lazyOnload` loads it once the page is usable instead. Nothing is
  * lost: gtag queues the initial page_view and sends it when the library arrives.
  *
  * SPA navigations are covered by GA4's enhanced measurement, which listens for
@@ -26,9 +26,9 @@ export function Analytics() {
     <>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="ga-init" strategy="afterInteractive">
+      <Script id="ga-init" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

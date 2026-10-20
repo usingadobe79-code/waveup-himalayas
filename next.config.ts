@@ -18,6 +18,14 @@ const nextConfig: NextConfig = {
    */
   trailingSlash: true,
 
+  /**
+   * `lucide-react` is already optimized by Next's defaults, so only
+   * `framer-motion` needs listing here.
+   */
+  experimental: {
+    optimizePackageImports: ["framer-motion"],
+  },
+
   images: {
     /**
      * The Next.js image optimizer is a server feature and cannot run on a

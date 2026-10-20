@@ -129,8 +129,8 @@ export default async function BlogPostPage({
         <section className="section-y bg-surface">
           <div className="container-page">
             {recommended.length > 0 ? (
-              <div className="grid gap-12 lg:grid-cols-[1fr_320px] lg:gap-16">
-                <div className="max-w-[68ch]">
+              <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-16">
+                <div className="min-w-0 max-w-[68ch]">
                   <div className="prose-blog">
                     <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
                   </div>

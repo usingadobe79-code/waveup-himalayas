@@ -296,16 +296,17 @@ export function Header({ solid = false }: { solid?: boolean }) {
             </a>
           </nav>
 
-          <Button
-            href={contact.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
-            size="sm"
-            className="hidden xl:inline-flex"
-          >
-            <MessageCircle className="h-4 w-4" />
-            Book Now
-          </Button>
+          <div className="hidden xl:block">
+            <Button
+              href={contact.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              size="sm"
+            >
+              <MessageCircle className="h-4 w-4" />
+              Book Now
+            </Button>
+          </div>
 
           {/* Saved treks — client-side wishlist (lib/useWishlist.ts), no
               server/db. Count starts at 0 until mount (hydration-safe) and

@@ -161,7 +161,7 @@ export function ReviewForm({ tripTitle, tripSlug }: { tripTitle: string; tripSlu
   }
 
   return (
-    <div className="card p-6 sm:p-8">
+    <div className="card overflow-x-clip p-6 sm:p-8">
       <h3 className="type-h3 text-ink">Write a review</h3>
       <p className="type-small mt-2 text-muted">
         Been on the {tripTitle}? Tell others how it went. Reviews are published once we&rsquo;ve
