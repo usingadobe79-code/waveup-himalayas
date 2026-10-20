@@ -13,7 +13,8 @@ export function JsonLd() {
     "@type": "TravelAgency",
     "@id": `${siteUrl}/#travelagency`,
     name: business.name,
-    alternateName: business.alsoTradesAs,
+    // Brand-name spelling variants, so search engines tie them to one entity
+    alternateName: business.alternateNames,
     url: siteUrl,
     image: `${siteUrl}/images/hero.jpg`,
     telephone: contact.phone,

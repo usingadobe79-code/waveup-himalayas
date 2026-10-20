@@ -18,6 +18,13 @@ import reviewsData from "./reviews.data.json";
 export const business = {
   name: "WaveUp Himalayas",
   alsoTradesAs: "Wave Up Nepal Holidays",
+  alternateNames: [
+    "WaveUp",
+    "Wave Up Himalayas",
+    "Waveuphimalayas",
+    "Wave Up Himalaya",
+    "Wave Up Nepal Holidays",
+  ],
   base: "Thamel, Kathmandu, Nepal",
   registeredAddress:
     "350 Amrit Marg, Thamel, Kathmandu, Bagmati Province 44600",
