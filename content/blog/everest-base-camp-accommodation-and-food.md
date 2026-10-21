@@ -129,7 +129,7 @@ The simplest food on the trek. Potatoes and stored root vegetables are about all
 
 AT the highest villages, menus narrow considerably. Dal bhat, thukpa, garlic soup, and porridge become the mainstays. This is exactly why experienced guides often recommend **switching to vegetarian meals above Namche**. Fresh meat cannot survive the journey without refrigeration, and plant-based dishes are more likely to be cooked fresh to order.
 
-### **Vegetarian and Vegan Options**
+### Vegetarian and Vegan Options
 
 The EBC trek is one of the easiest high-altitude routes in the world for vegetarians and vegans. Every teahouse along the trail serves **dal bhat, vegetable noodles, fried rice, momos, soup, and potato dishes** every single day.
 
