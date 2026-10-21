@@ -173,7 +173,7 @@ faqs:
   - question: What kind of accommodation is available during the trek?
     answer: You'll stay in teahouses (mountain lodges) in twin-sharing rooms with shared bathrooms. Rooms are basic but comfortable, with blankets provided. Hot showers, Wi-Fi, and device charging cost extra above Namche. In Kathmandu, you'll stay in a 3-star hotel with breakfast included.
   - question: What food and water is available on the Everest Base Camp Trek?
-    answer: Three meals a day (breakfast, lunch, dinner) are included during trekking days. Menus offer Nepali staples like dal bhat, plus noodles, pasta, soups, and eggs. Drink only boiled, filtered, or purified water — avoid untreated tap water. We recommend carrying a reusable bottle and purification tablets.
+    answer: Breakfast is included every day at the teahouses. Lunch and dinner are not included in the package but can be purchased at the teahouses, where menus offer Nepali staples like dal bhat, plus noodles, pasta, soups, and eggs. For water, drink only boiled, filtered, or purified water — avoid untreated tap water. We highly recommend carrying a reusable water bottle and purification tablets (like SteriPEN or chlorine drops) to stay hydrated safely.
   - question: How much does the Everest Base Camp Trek cost?
     answer: The cost depends on group size, season, and services included. Our Everest Base Camp Trek package covers permits, Lukla flights, accommodation, meals, guide, and porters. Contact Wave Up Himalayas for a customized quote for 2026 or 2027 departures.
   - question: Can I do the Everest Base Camp Trek solo?
