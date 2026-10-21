@@ -23,10 +23,14 @@ faqs:
     answer: Yes. Dal bhat is naturally vegetarian, and most menus include vegetable noodles, fried rice, soups, potatoes, and egg dishes. Vegan options are more limited but manageable with dal bhat, plain rice, and vegetable soups. If you have strict dietary requirements, let your guide know in advance so they can help you choose suitable teahouses.
   - question: How much extra should I budget for hot showers, charging, and Wi-Fi?
     answer: Plan for roughly USD 3 to 6 per hot shower and small daily amounts for charging and Wi-Fi. These extras add up over a 12-day trek, so a contingency of USD 50 to 80 is sensible, on top of your food budget.
+  - question: Can I charge my devices and get Wi-Fi on the Everest Base Camp trek?
+    answer: Yes, but both are limited and usually paid extras. Charging is available at most teahouses for a small fee, and Wi-Fi is offered in many lodges but is slower and less reliable as you gain altitude. Above Dingboche, expect charging to be more expensive and Wi-Fi to be intermittent or unavailable. Bring a power bank and download offline maps before you leave Namche.
+  - question: What are the toilets like in Everest Base Camp teahouses?
+    answer: Lower villages such as Lukla and Namche usually have Western-style flush toilets. Above Dingboche, shared squat toilets become more common, and at Gorak Shep facilities are basic and often outdoors. Carry your own toilet paper and hand sanitiser, as these are not always provided, and expect a small fee for toilet paper at some higher-altitude lodges.
+  - question: Is alcohol available on the trek, and is it safe at altitude?
+    answer: Some teahouses sell beer, raksi, and other drinks, but alcohol is best avoided or kept to a minimum above Namche. It dehydrates you and can mask or worsen the symptoms of altitude sickness. If you do drink, do so only at lower altitudes, stay well hydrated, and never use alcohol as a way to cope with headaches or poor sleep at high altitude.
 tables: []
 ---
-
-# Everest Base Camp Accommodation and Food: What to Expect in Teahouses
 
 If you are planning the trek of a lifetime, understanding **Everest Base Camp accommodation and food** is one of the most practical steps you can take before you fly to Nepal. The good news is that you will not be camping or surviving on energy bars. The standard EBC route is a teahouse trek, meaning you sleep in family-run mountain lodges and eat freshly cooked meals every day, all the way from Lukla to Gorak Shep. The experience is simple, warm, and deeply connected to Sherpa hospitality. But it does change as you climb, and knowing what to expect prevents the common disappointment of imagining hotel comfort at 5,000 metres.
 
