@@ -6,13 +6,13 @@ price: 1550
 originalPrice: null
 offerLabel: ''
 image: /images/packages/12-Days-Everest-base-Camp-trek.jpeg
-blurb: Trek to Everest Base Camp (5,364m) with WaveUp Himalayas. 13-day guided EBC trek from Kathmandu with permits, teahouses & Sherpa guides. Book 2026/2027 now.
+blurb: Book a 13-day guided Everest Base Camp Trek with WaveUp Himalayas. Includes permits, teahouses, Lukla flights & 2 acclimatization days. Enquire for 2026/2027.
 overview: |-
   Book the **Everest Base Camp Trek** with Wave Up Himalayas — a **13-day guided EBC Trek package** that takes you from the scenic flight to Lukla to the base of the world's highest mountain. This **all-inclusive Everest Base Camp Trek package** covers **Everest Base Camp (5,364 m)** and **Kala Patthar (5,555 m)**, with accommodation in Kathmandu and teahouses, all permits, and Kathmandu–Lukla flights arranged for you.
 
   Our **13-day Everest Base Camp itinerary** is designed for **first-time trekkers and experienced hikers** alike, with **two acclimatization days** in Namche Bazaar and Dingboche, **government-licensed guides**, and porter support included. Rated **moderate to challenging** and running **March–May and September–November**, this is one of the best-value **guided Everest Base Camp treks in Nepal** — safe, well-paced, and unforgettable. **Enquire today for 2026 and 2027 departure dates.**
 seoTitle: Everest Base Camp Trek – 13 Days Guided | WaveUp Himalayas
-seoDescription: Trek to Everest Base Camp (5,364m) with WaveUp Himalayas. 13-day guided EBC trek from Kathmandu with permits, teahouses & Sherpa guides. Book 2026/2027 now.
+seoDescription: Book a 13-day guided Everest Base Camp Trek with WaveUp Himalayas. Includes permits, teahouses, Lukla flights & 2 acclimatization days. Enquire for 2026/2027.
 featured: true
 draft: false
 itinerarySummary: ''
