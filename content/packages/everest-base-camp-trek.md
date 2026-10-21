@@ -212,8 +212,6 @@ packingList:
   - Duffel Bag – A durable duffel bag for porters to carry your gear.
   - Daypack – A 30–40L daypack for daily essentials.
 preparation: |-
-  Trekking to Everest Base Camp is as much about preparation as it is about fitness. Here is everything you need to know about the altitude, logistics, and teahouse routine before you go.
-
   ### Altitude, Fitness & Acclimatization
 
   - **Maximum Altitude:** 5,555 m at Kala Patthar.
@@ -222,21 +220,23 @@ preparation: |-
   - **Train on Hills:** Simulate the trek by doing practice hikes on hills or long staircases with a loaded daypack on consecutive days. Read the [mistakes to avoid as a first-time trekker](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-a-first-time-trekker/) to pace yourself properly.
   - **Altitude Sickness:** Know the symptoms (headache, nausea, dizziness) and tell your guide immediately if they appear. Our [Everest Base Camp trek guide](https://waveuphimalayas.com/blog/everest-base-camp-trek-guide-cost-permits-packing-altitude-more/) explains how altitude is managed day by day.
 
-  ### Permits, Guides & Insurance
+  ### Permits, Visas & Insurance
 
   - **Permits:** You need two permits: the Sagarmatha National Park Permit and the Khumbu Pasanglhamu Rural Municipality Permit. Both are included in your package. (Read more about [permits for Everest Base Camp](https://waveuphimalayas.com/blog/permits-for-everest-base-camp-trek/)).
-  - **Guide & Porter:** Hiring a licensed guide and porter is essential for safety and comfort. Porters carry your main duffel (usually 10–12 kg), while you carry a 30–40L daypack.
+  - **Visa:** A Nepal visa can be obtained on arrival at Tribhuvan International Airport.
   - **Travel Insurance:** Comprehensive insurance covering helicopter evacuation up to 6,000 m, medical treatment, and trip cancellation is **mandatory**.
+  - **Guide & Porter:** Hiring a licensed guide and porter is essential for safety and comfort. Porters carry your main duffel (usually 10–12 kg), while you carry a 30–40L daypack.
 
   ### Accommodation, Food & Connectivity
 
   - **Accommodation:** Teahouses are basic but comfortable. Rooms are twin-sharing with shared bathrooms. Hot showers and device charging cost extra above Namche.
   - **Food & Water:** Breakfast is included every day. Lunch and dinner are available at teahouses for an additional cost. Drink only boiled or purified water, and avoid alcohol and caffeine at high altitude.
   - **Connectivity:** Wi-Fi is available at most teahouses for a fee. Mobile network coverage is limited above Tengboche.
+
+  ### Money & Logistics
+
+  - **Currency:** The local currency is the Nepali Rupee (NPR). USD and EUR can be exchanged in Kathmandu and Namche.
   - **Money:** There are no ATMs above Namche. Carry enough Nepali Rupees for personal expenses and tips.
-
-  ### Flights & Logistics
-
   - **Flight Delays:** Lukla flights are weather-dependent and can be delayed or cancelled. We strongly recommend keeping 1–2 spare days after the trek.
   - **Seasonal Flights:** During peak seasons, Lukla flights may operate from Manthali/Ramechhap instead of Kathmandu.
   - **Best Seasons:** March–May and September–November. Check the [best time for Everest Base Camp](https://waveuphimalayas.com/blog/best-time-for-everest-base-camp-trek/) to plan your dates, and book 3–6 months in advance.
