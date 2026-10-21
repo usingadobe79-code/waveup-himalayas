@@ -71,6 +71,8 @@ Here's the detail many trekkers miss: the Manaslu Circuit doesn't end in Manaslu
 
 The ACAP is checked at Dharapani on your way out. Without it, you cannot legally exit through that checkpoint.
 
+***
+
 ## Manaslu Circuit Trek Permit Costs in 2026
 
 Let's put the numbers together. For a standard 12-to-14-day trek in peak season, your total government permit cost looks like this:
