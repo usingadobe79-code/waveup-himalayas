@@ -1,5 +1,5 @@
 ---
-title: 'Manaslu Circuit Trek Permits: What You Need, What They Cost, and How to Get Them'
+title: Manaslu Circuit Trek Permits
 date: 2026-10-19
 excerpt: Everything you need to know about Manaslu Circuit Trek permits in 2026—costs, the guide rule, checkpoints, and how Wave Up Himalayas handles it all.
 coverImage: /images/blog/1bcb4dbb-2ed2-443a-aed0-cf379aed2ba1.png
@@ -30,6 +30,8 @@ faqs:
     answer: Yes. Every foreign trekker—regardless of age—requires their own RAP, MCAP, and ACAP, each issued against their individual passport. There are no child or senior discounts on Manaslu permits. That said, the trek's difficulty (including the 5,160m Larkya La crossing) makes it unsuitable for young children, and trekkers over 60 should carry a doctor's clearance and build extra acclimatisation days into their itinerary.
 tables: []
 ---
+
+# Manaslu Circuit Trek Permits: What You Need, What They Cost, and How to Get Them
 
 If you're planning the Manaslu Circuit Trek, the permit system is the first thing to understand—because it works differently from almost every other trek in Nepal. You cannot simply show up in Kathmandu, buy a permit, and start walking. The **Manaslu Circuit Trek permits** are tied to a restricted-area system that requires a registered Nepali agency and a licensed guide before you even leave the city.
 
@@ -160,10 +162,10 @@ Submit these to your agency at least six to eight weeks before departure, especi
 
 ## Let Wave Up Himalayas Handle Your Manaslu Permits
 
-The permit process for the [**Manaslu Circuit Trek**](https://waveuphimalayas.com/packages/manaslu-circuit-trek/) is not complicated once you understand it—but it is unforgiving of mistakes. Missing paperwork, an unregistered operator, or a last-minute booking can mean watching your departure date pass while you're still sorting documents in Kathmandu.
+The permit process for the **[Manaslu Circuit Trek](https://waveuphimalayas.com/packages/manaslu-circuit-trek/)** is not complicated once you understand it—but it is unforgiving of mistakes. Missing paperwork, an unregistered operator, or a last-minute booking can mean watching your departure date pass while you're still sorting documents in Kathmandu.
 
 At **Wave Up Himalayas**, permits are part of every [**Manaslu package.** ](https://waveuphimalayas.com/packages/#manaslu-langtang)We collect your documents, process the RAP, MCAP, and ACAP through our registered agency partnership, and confirm everything is in order before you meet your guide. You focus on training and packing; we handle the bureaucracy.
 
-**If you are looking for Tour Packages please** [**click here**](https://waveuphimalayas.com/#packages)
+**If you are looking for Tour Packages please** **[click here](https://waveuphimalayas.com/#packages)**
 
-**If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** [**info@waveuphimalayas.com**](mailto:info@waveuphimalayas.com)  **Phone** [**(Whatsapp or Viber +977 9861992878)**](https://wa.me/+9779861992878)
+**If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** **[info@waveuphimalayas.com](mailto:info@waveuphimalayas.com)**  **Phone** **[(Whatsapp or Viber +977 9861992878)](https://wa.me/+9779861992878)**
