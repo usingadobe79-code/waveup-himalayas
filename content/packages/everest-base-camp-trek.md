@@ -8,7 +8,7 @@ offerLabel: ''
 image: /images/packages/12-Days-Everest-base-Camp-trek.jpeg
 blurb: Book a 13-day guided Everest Base Camp Trek with WaveUp Himalayas. Includes permits, teahouses, Lukla flights & 2 acclimatization days. Enquire for 2026/2027.
 overview: |-
-  Book the **Everest Base Camp Trek** with Wave Up Himalayas — a **13-day guided EBC Trek package** that takes you from the scenic flight to Lukla to the base of the world's highest mountain. This **all-inclusive Everest Base Camp Trek package** covers **Everest Base Camp (5,364 m)** and **Kala Patthar (5,555 m)**, with accommodation in Kathmandu and teahouses, all permits, and Kathmandu–Lukla flights arranged for you.
+  Book the **Everest Base Camp Trek** with Wave Up Himalayas — a **13-day guided EBC Trek package** that takes you from the scenic flight to Lukla to the base of the world's highest mountain. This **all-inclusive Everest Base Camp Trek package** covers **Everest Base Camp (5,364 m)** and **Kala Patthar (5,545 m)**, with accommodation in Kathmandu and teahouses, all permits, and Kathmandu–Lukla flights arranged for you.
 
   Our **13-day Everest Base Camp itinerary** is designed for **first-time trekkers and experienced hikers** alike, with **two acclimatization days** in Namche Bazaar and Dingboche, **government-licensed guides**, and porter support included. Rated **moderate to challenging** and running **March–May and September–November**, this is one of the best-value **guided Everest Base Camp treks in Nepal** — safe, well-paced, and unforgettable. **Enquire today for 2026 and 2027 departure dates.**
 seoTitle: Everest Base Camp Trek – 13 Days Guided | WaveUp Himalayas
@@ -18,7 +18,7 @@ draft: false
 itinerarySummary: ''
 itineraryHighlights:
   - Stand at Everest Base Camp (5,364 m) — the closest you can get to the world's highest mountain without climbing
-  - Catch sunrise from Kala Patthar (5,555 m) with a 360-degree panorama of Everest, Nuptse, and Pumori
+  - Catch sunrise from Kala Patthar (5,545 m) with a 360-degree panorama of Everest, Nuptse, and Pumori
   - Experience the thrilling scenic mountain flight to Lukla — one of the world's most dramatic airport approaches
   - Explore Namche Bazaar, the vibrant trading hub of the Khumbu region
   - Visit the historic Tengboche Monastery, the largest in the Everest region
@@ -93,7 +93,7 @@ itineraryDays:
     highlights: This is the most anticipated day of the trek. Walk along the Khumbu Glacier to Everest Base Camp (5,364 m). Standing at the base of the world's highest mountain is an unforgettable experience. After celebrating, return to Gorak Shep for the night. Overnight at a teahouse.
   - day: 10
     route: Kala Patthar → Pheriche
-    altitude: 5,555m
+    altitude: 5,545m
     duration: 7–8 hrs hike + trek
     description: Sunrise hike to Kala Patthar for the best close-up panorama of Everest. Descend to Pheriche.
     image: ''
@@ -156,7 +156,7 @@ faqs:
   - question: What is the best season for the Everest Base Camp Trek?
     answer: The best seasons are spring (March–May) and autumn (September–November). Spring offers warmer temperatures and blooming rhododendrons, while autumn brings clear skies and stable weather. Winter treks (December–February) are possible but much colder, and the monsoon (June–August) brings rain, clouds, and flight delays.
   - question: How high is Everest Base Camp and Kala Patthar?
-    answer: Everest Base Camp sits at 5,364 m (17,598 ft), and Kala Patthar reaches 5,555 m (18,225 ft) — the highest point of the trek. Most trekkers find Kala Patthar more rewarding for views, as Everest itself is not visible from Base Camp.
+    answer: Everest Base Camp sits at approximately 5,364 m (17,598 ft), while Kala Patthar reaches approximately 5,545 m (18,192 ft), the highest point of this trekking itinerary. Many trekkers consider Kala Patthar one of the best viewpoints for seeing Mount Everest, as the mountain's summit is not clearly visible from Everest Base Camp itself.
   - question: Do I need travel insurance for the Everest Base Camp Trek?
     answer: Yes — comprehensive travel insurance is mandatory. Your policy must cover high-altitude trekking up to at least 6,000 m, helicopter evacuation, medical treatment, and trip cancellation. We'll ask for your policy details before departure.
   - question: What permits are required for the Everest Base Camp Trek?
@@ -214,7 +214,7 @@ packingList:
 preparation: |-
   ### Altitude, Fitness & Acclimatization
 
-  - **Maximum Altitude:** 5,555 m at Kala Patthar.
+  - **Maximum Altitude:** 5,545 m at Kala Patthar.
   - **Acclimatization is Critical:** Proper hydration, a steady pace, and two built-in acclimatization days (in Namche and Dingboche) are essential for your safety.
   - **Fitness Level:** A good level of fitness is recommended, as the trek involves 5–8 hours of walking per day at high altitude. Start your cardio and strength training 8–12 weeks before departure, and first understand [how difficult the Everest Base Camp trek](https://waveuphimalayas.com/blog/how-difficult-is-everest-base-camp-trek/) really is.
   - **Train on Hills:** Simulate the trek by doing practice hikes on hills or long staircases with a loaded daypack on consecutive days. Read the [mistakes to avoid as a first-time trekker](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-a-first-time-trekker/) to pace yourself properly.
