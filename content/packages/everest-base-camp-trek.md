@@ -200,7 +200,7 @@ gallery:
   - /images/packages/wp2540884.jpg
   - /images/packages/wp2540777.jpg
   - /images/packages/Namche-Bazaar.jpg
-routeMap: /images/packages/1c53a452-fddb-4160-a3b1-896fa5697873.jpg
+routeMap: /images/packages/88c6752b-065a-4d39-9677-de516cf2ae87 (1).jpg
 packingList:
   - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
   - Layered Clothing – Thermal base layers, fleece mid-layer, and waterproof/windproof hardshell jacket.
@@ -235,8 +235,8 @@ preparation: |-
 
   ### Accommodation, Food & Connectivity
 
-  - **Accommodation:** Teahouses are basic but comfortable. Rooms are twin-sharing with shared bathrooms. Hot showers and device charging cost extra above Namche.
-  - **Food & Water:** Breakfast is included every day. Lunch and dinner are available at teahouses for an additional cost. Drink only boiled or purified water, and avoid alcohol and caffeine at high altitude.
+  - **Accommodation:** Teahouses are basic but comfortable. Rooms are twin-sharing with shared bathrooms. Hot showers and device charging cost extra above Namche. [See what teahouse rooms are really like at different altitudes.](https://waveuphimalayas.com/blog/everest-base-camp-accommodation-and-food/)
+  - **Food & Water:** Breakfast is included every day. Lunch and dinner are available at teahouses for an additional cost. Drink only boiled or purified water, and avoid alcohol and caffeine at high altitude. [Read our full guide to EBC food, menus, and daily budgets.](https://waveuphimalayas.com/blog/everest-base-camp-accommodation-and-food/)
   - **Connectivity:** Wi-Fi is available at most teahouses for a fee. Mobile network coverage is limited above Tengboche.
 
   ### Money & Logistics
