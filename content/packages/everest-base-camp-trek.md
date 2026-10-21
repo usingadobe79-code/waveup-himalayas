@@ -7,11 +7,15 @@ originalPrice: null
 offerLabel: ''
 image: /images/packages/12-Days-Everest-base-Camp-trek.jpeg
 blurb: Trek to Everest Base Camp (5,364m) with WaveUp Himalayas. 13-day guided EBC trek from Kathmandu with permits, teahouses & Sherpa guides. Book 2026/2027 now.
+overview: |-
+  Book the **Everest Base Camp Trek** with Wave Up Himalayas — a **13-day guided EBC Trek package** that takes you from the scenic flight to Lukla to the base of the world's highest mountain. This **all-inclusive Everest Base Camp Trek package** covers **Everest Base Camp (5,364 m)** and **Kala Patthar (5,555 m)**, with accommodation in Kathmandu and teahouses, all permits, and Kathmandu–Lukla flights arranged for you.
+
+  Our **13-day Everest Base Camp itinerary** is designed for **first-time trekkers and experienced hikers** alike, with **two acclimatization days** in Namche Bazaar and Dingboche, **government-licensed guides**, and porter support included. Rated **moderate to challenging** and running **March–May and September–November**, this is one of the best-value **guided Everest Base Camp treks in Nepal** — safe, well-paced, and unforgettable. **Enquire today for 2026 and 2027 departure dates.**
 seoTitle: Everest Base Camp Trek – 13 Days Guided | WaveUp Himalayas
 seoDescription: Trek to Everest Base Camp (5,364m) with WaveUp Himalayas. 13-day guided EBC trek from Kathmandu with permits, teahouses & Sherpa guides. Book 2026/2027 now.
 featured: true
 draft: false
-itinerarySummary: The Everest Base Camp Trek is a 13-day guided Himalayan journey to the base of the world's highest mountain. Starting with a scenic flight to Lukla, you'll trek through Sherpa villages, cross suspension bridges, visit Tengboche Monastery, and reach Everest Base Camp (5,364 m) and Kala Patthar (5,555 m) for sunrise views of Everest. With acclimatization days, teahouse lodging, and expert guides, this moderate-to-challenging EBC Trek is safe, scenic, and unforgettable.
+itinerarySummary: The Everest Base Camp Trek is a 13-day guided journey to the base of the world's highest mountain. From the scenic flight to Lukla, you'll trek through Sherpa villages and suspension bridges to Everest Base Camp (5,364 m) and Kala Patthar (5,555 m) for sunrise views of Everest. With acclimatization days, teahouse lodging, and expert guides, this moderate-to-challenging EBC Trek is safe, scenic, and unforgettable.
 itineraryHighlights:
   - Stand at Everest Base Camp (5,364 m) — the closest you can get to the world's highest mountain without climbing
   - Catch sunrise from Kala Patthar (5,555 m) with a 360-degree panorama of Everest, Nuptse, and Pumori
@@ -225,33 +229,33 @@ packingList:
   - Duffel Bag – A durable duffel bag for porters to carry your gear.
   - Daypack – A 30–40L daypack for daily essentials.
 preparation: |-
-  Getting ready for Everest Base Camp is as much about mental readiness as physical fitness. Use the quick pointers below, with links to our detailed guides where helpful.
+  Trekking to Everest Base Camp is as much about preparation as fitness. Here's what to know before you go, with links to our detailed guides where helpful.
 
   ### Training & Fitness
 
-  - **Start Physical Training Early** – Begin cardio and strength training 8–12 weeks before your trek. Focus on walking, stairs, squats, and lunges. Before you start, understand [how difficult the Everest Base Camp trek](https://waveuphimalayas.com/blog/how-difficult-is-everest-base-camp-trek/) really is.
-  - **Train on Hills with a Backpack** – Do practice hikes with a loaded pack on consecutive days to prepare for 5–8 hours of daily walking at altitude, and read the [mistakes to avoid as a first-time trekker](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-first-time-trekker/).
+  - **Start Physical Training Early** – Begin cardio and strength training 8–12 weeks before departure, focusing on walking, stairs, squats, and lunges. The air at altitude holds roughly half the oxygen you're used to, so build up gradually — first understand [how difficult the Everest Base Camp trek](https://waveuphimalayas.com/blog/how-difficult-is-everest-base-camp-trek/) really is.
+  - **Train on Hills with a Backpack** – Do practice hikes on hills or long staircases with a loaded daypack on consecutive days to simulate back-to-back trekking days. Read the [mistakes to avoid as a first-time trekker](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-a-first-time-trekker/) to pace yourself properly.
 
   ### Gear & Packing
 
-  - **Break In Your Trekking Boots** – Wear your boots for at least 2–3 weeks before departure to avoid blisters and foot pain.
-  - **Prepare Your Packing List** – Aim for 10–11 kg base pack weight. Bring layers, down jacket, sleeping bag, poles, headlamp, sunscreen, and personal medical kit.
+  - **Break In Your Trekking Boots** – Wear your boots for at least 2–3 weeks before departure to avoid blisters and foot pain. Waterproof boots with good ankle support are your most important piece of gear.
+  - **Prepare Your Packing List** – Aim for a 10–11 kg base pack weight: layered clothing, down jacket, four-season sleeping bag, poles, headlamp, sunscreen, and a personal medical kit. Porters carry your duffel, while you carry a 30–40L daypack.
 
   ### Health, Safety & Altitude
 
-  - **Get a Health Check-Up** – Consult your doctor, complete vaccinations, and ask about altitude sickness medication like Diamox.
-  - **Arrange Travel Insurance** – Mandatory insurance covering helicopter evacuation up to 6,000 m, medical treatment, and trip cancellation.
-  - **Learn About Altitude Sickness** – Know the symptoms (headache, nausea, dizziness), ascend slowly, hydrate, and descend immediately if symptoms worsen. Our [Everest Base Camp trek guide](https://waveuphimalayas.com/blog/everest-base-camp-trek-guide-cost-permits-packing-altitude-more/) explains how altitude is managed day by day.
+  - **Get a Health Check-Up** – See your doctor several weeks before booking, especially if you have heart, lung, or blood pressure conditions. Confirm vaccinations are current and ask whether Diamox is appropriate for you.
+  - **Arrange Travel Insurance** – Comprehensive insurance is mandatory. Your policy must cover high-altitude trekking up to 6,000 m, helicopter evacuation, medical treatment, and trip cancellation — standard policies often exclude trekking above 3,000–4,000 m.
+  - **Learn About Altitude Sickness** – Know the symptoms — headache, nausea, dizziness, disturbed sleep — and never ignore them. Ascend slowly, hydrate, avoid alcohol, and tell your guide immediately if symptoms appear. Our [Everest Base Camp trek guide](https://waveuphimalayas.com/blog/everest-base-camp-trek-guide-cost-permits-packing-altitude-more/) explains how altitude is managed day by day.
 
   ### Logistics & Planning
 
-  - **Carry Enough Cash** – There are no ATMs above Namche. Carry Nepali Rupees for hot showers, charging, Wi-Fi, snacks, drinks, and tips.
-  - **Book in Advance** – Peak seasons fill up quickly. Choose the right time to trek by checking the [best time for Everest Base Camp](https://waveuphimalayas.com/blog/best-time-for-everest-base-camp-trek/), then book your package at least 3–6 months ahead.
-  - **Understand Permits** – Your package includes the necessary permits, but it helps to know which [permits for Everest Base Camp](https://waveuphimalayas.com/blog/permits-for-everest-base-camp-trek/) are required and why.
+  - **Carry Enough Cash** – There are no ATMs above Namche Bazaar. Carry enough Nepali Rupees for hot showers, charging, Wi-Fi, snacks, drinks, and tips — costs rise the higher you go.
+  - **Book in Advance** – Peak seasons fill up quickly, and Lukla flights and good guides are limited. Check the [best time for Everest Base Camp](https://waveuphimalayas.com/blog/best-time-for-everest-base-camp-trek/) and book 3–6 months ahead.
+  - **Understand Permits** – Your package includes the necessary permits, but it helps to know which [permits for Everest Base Camp](https://waveuphimalayas.com/blog/permits-for-everest-base-camp-trek/) are required. You need the Sagarmatha National Park Permit and the Khumbu Pasang Lhamu Rural Municipality Permit — the TIMS card is not required.
 
   ### Mindset & Culture
 
-  - **Mental Preparation** – The EBC Trek is as much a mental challenge as a physical one. Stay positive, be patient, and embrace the journey.
-  - **Respect Local Culture** – Learn basic Nepali phrases, respect Sherpa traditions, and walk clockwise around mani walls and monasteries.
-  - **Leave No Trace** – Carry out what you carry in. Use biodegradable products and avoid single-use plastics. Read [things to know before visiting Nepal](https://waveuphimalayas.com/blog/things-to-know-before-visiting-nepal/) for a broader cultural and practical primer.
+  - **Mental Preparation** – The EBC Trek is as much a mental challenge as a physical one. Long days, cold nights, and thin air will test your patience — stay positive, accept a slow pace, and celebrate small milestones.
+  - **Respect Local Culture** – Learn basic Nepali phrases, walk clockwise around mani walls and monasteries, ask before photographing people, and dress modestly at religious sites. Read [things to know before visiting Nepal](https://waveuphimalayas.com/blog/things-to-know-before-visiting-nepal/) for a broader primer.
+  - **Leave No Trace** – Carry out what you carry in, use biodegradable soap, avoid single-use plastics, and refill a reusable bottle with purified water rather than buying bottled water.
 ---
