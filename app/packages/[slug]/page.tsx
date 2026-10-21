@@ -183,15 +183,6 @@ export default async function PackageDetailPage({
           <div className="container-page grid gap-12 lg:grid-cols-3 lg:gap-16">
             {/* Main column */}
             <div className="min-w-0 space-y-12 lg:col-span-2">
-              <div>
-                <h2 className="type-h3 text-ink">Overview</h2>
-                <p className="type-body-lg mt-4 text-muted">{overview}</p>
-                <p className="type-body mt-4 text-muted">
-                  Every WaveUp trip is fully customizable — tell us your dates, pace and
-                  group size and we&rsquo;ll shape the itinerary around you.
-                </p>
-              </div>
-
               {/* Trip facts — only for trips that supplied at least one fact */}
               {pkg.tripFacts && (
                 <div>
@@ -201,6 +192,19 @@ export default async function PackageDetailPage({
                   </div>
                 </div>
               )}
+
+              {/* Overview — rich Markdown body when supplied, else the short summary/blurb. */}
+              <div>
+                <h2 className="type-h3 text-ink">Overview</h2>
+                {pkg.overviewHtml ? (
+                  <div
+                    className="prose-blog mt-4"
+                    dangerouslySetInnerHTML={{ __html: pkg.overviewHtml }}
+                  />
+                ) : (
+                  <p className="type-body-lg mt-4 text-muted">{overview}</p>
+                )}
+              </div>
 
               {/* Highlights — only for trips that supplied a highlights list */}
               {tripHighlights && tripHighlights.length > 0 && (
@@ -219,6 +223,24 @@ export default async function PackageDetailPage({
                   </ul>
                 </div>
               )}
+
+              {/* Itinerary — real timeline when supplied, else the placeholder. */}
+              <div>
+                <h2 className="type-h3 text-ink">Itinerary</h2>
+                {pkg.itinerary ? (
+                  <PackageItinerary itinerary={pkg.itinerary} />
+                ) : (
+                  <div className="mt-5 rounded-card border border-dashed border-border bg-surface-alt p-6 text-center">
+                    <p className="type-body font-medium text-ink">
+                      Detailed itinerary on enquiry
+                    </p>
+                    <p className="type-small mt-2 text-muted">
+                      We build a day-by-day plan around your dates and preferences — message
+                      us and we&rsquo;ll send a tailored itinerary for the {pkg.title}.
+                    </p>
+                  </div>
+                )}
+              </div>
 
               {/* What's included — real per-trip inclusions when supplied, else the
                   generic typicalInclusions placeholder (unchanged for existing trips). */}
@@ -260,24 +282,6 @@ export default async function PackageDetailPage({
                 </div>
               )}
 
-              {/* Itinerary — real timeline when supplied, else the placeholder. */}
-              <div>
-                <h2 className="type-h3 text-ink">Itinerary</h2>
-                {pkg.itinerary ? (
-                  <PackageItinerary itinerary={pkg.itinerary} />
-                ) : (
-                  <div className="mt-5 rounded-card border border-dashed border-border bg-surface-alt p-6 text-center">
-                    <p className="type-body font-medium text-ink">
-                      Detailed itinerary on enquiry
-                    </p>
-                    <p className="type-small mt-2 text-muted">
-                      We build a day-by-day plan around your dates and preferences — message
-                      us and we&rsquo;ll send a tailored itinerary for the {pkg.title}.
-                    </p>
-                  </div>
-                )}
-              </div>
-
               {/* Route map — only for trips that supplied one. object-contain
                   (not the card-grid's object-cover) so no part of the map is
                   cropped out. */}
@@ -314,24 +318,16 @@ export default async function PackageDetailPage({
                 </div>
               )}
 
-              {/* How to prepare — only for trips that supplied preparation
+              {/* Know before you go — only for trips that supplied preparation
                   notes; preparationHtml is pre-rendered from Markdown by
                   scripts/generate-packages.mjs (same technique as blog posts). */}
               {pkg.preparationHtml && (
                 <div>
-                  <h2 className="type-h3 text-ink">How to prepare</h2>
+                  <h2 className="type-h3 text-ink">Know before you go</h2>
                   <div
                     className="prose-blog mt-5"
                     dangerouslySetInnerHTML={{ __html: pkg.preparationHtml }}
                   />
-                </div>
-              )}
-
-              {/* FAQ — only for trips that supplied faqs (see FaqJsonLd above). */}
-              {pkg.faqs && pkg.faqs.length > 0 && (
-                <div>
-                  <h2 className="type-h3 text-ink">Frequently asked questions</h2>
-                  <PackageFaq faqs={pkg.faqs} />
                 </div>
               )}
 
@@ -346,6 +342,14 @@ export default async function PackageDetailPage({
               {/* Reviews — approved reviews when present; the "Write a review"
                   form always renders. */}
               <PackageReviews pkg={pkg} />
+
+              {/* FAQ — only for trips that supplied faqs (see FaqJsonLd above). */}
+              {pkg.faqs && pkg.faqs.length > 0 && (
+                <div>
+                  <h2 className="type-h3 text-ink">Frequently asked questions</h2>
+                  <PackageFaq faqs={pkg.faqs} />
+                </div>
+              )}
             </div>
 
             {/* Booking card */}

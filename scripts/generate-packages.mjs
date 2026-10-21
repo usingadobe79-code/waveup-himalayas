@@ -210,6 +210,9 @@ function readPackage(slug) {
       ? { routeMap: data.routeMap, routeMapDisplay: resolveDisplay(data.routeMap) }
       : {}),
     ...(data.packingList && data.packingList.length ? { packingList: data.packingList } : {}),
+    ...(data.overview
+      ? { overviewHtml: marked.parse(data.overview, { async: false }) }
+      : {}),
     ...(data.preparation
       ? { preparationHtml: marked.parse(data.preparation, { async: false }) }
       : {}),

@@ -227,6 +227,8 @@ export type Package = {
   /** "How to prepare" body, pre-rendered from Markdown to HTML by
    *  scripts/generate-packages.mjs — renders a "How to prepare" section when present. */
   preparationHtml?: string;
+  /** Rich "Overview" body, pre-rendered from Markdown to HTML. */
+  overviewHtml?: string;
 };
 
 /* ---- Itinerary shapes ----
@@ -357,6 +359,8 @@ type PackageData = {
   /** Present when the package's content/packages/<slug>.md has a `preparation`
    *  Markdown body, pre-rendered to HTML. Absent otherwise. */
   preparationHtml?: string;
+  /** Rich "Overview" body, pre-rendered from Markdown to HTML. */
+  overviewHtml?: string;
 };
 
 /**
@@ -405,6 +409,7 @@ export const packages: Package[] = (packagesData as PackageData[]).map((p) => ({
   routeMapDisplay: p.routeMapDisplay,
   packingList: p.packingList,
   preparationHtml: p.preparationHtml,
+  overviewHtml: p.overviewHtml,
 }));
 
 export const totalPackages = packages.length; // 25

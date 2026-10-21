@@ -110,11 +110,12 @@ collections:
       - { label: "Offer label (badge)", name: "offerLabel", widget: "string", required: false, hint: "e.g. 'Autumn Special' or 'Early Bird' — shows as a small badge. Optional." }
       - { label: "Cover photo", name: "image", widget: "image", required: false }
       - { label: "Short description (shown on trip cards)", name: "blurb", widget: "text", required: false }
+      - { label: "Overview", name: "overview", widget: "markdown", required: false, hint: "Main overview of the trek. Use headings, bold, bullets, links." }
       - { label: "SEO title (Google title — optional)", name: "seoTitle", widget: "string", required: false, hint: "Custom title for Google results, ~60 characters. Leave blank to use the default." }
       - { label: "SEO description (Google snippet — optional)", name: "seoDescription", widget: "text", required: false, hint: "Custom description for Google, ~155 characters. Leave blank to use the short description/excerpt." }
       - { label: "Show on homepage (Popular Adventures)", name: "featured", widget: "boolean", default: false }
       - { label: "Draft (keep hidden from the site)", name: "draft", widget: "boolean", default: false }
-      - { label: "Itinerary — overview", name: "itinerarySummary", widget: "text", required: false }
+      - { label: "Itinerary — short summary (optional)", name: "itinerarySummary", widget: "text", required: false, hint: "Optional one-line summary; used as the Overview fallback when the Overview field above is empty." }
       - label: "Itinerary — trip highlights"
         name: "itineraryHighlights"
         widget: "list"
@@ -224,11 +225,11 @@ collections:
         widget: "list"
         required: false
         field: { label: "Item", name: "item", widget: "string" }
-      - label: "How to prepare (fitness/training)"
+      - label: "Know before you go"
         name: "preparation"
         widget: "markdown"
         required: false
-        hint: "Optional fitness/training guidance, shown as a \"How to prepare\" section on the trip page."
+        hint: "Optional fitness/training guidance, shown as a \"Know before you go\" section on the trip page."
 
   - name: "siteContent"
     label: "Homepage sections"
