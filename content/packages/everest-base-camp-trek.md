@@ -26,12 +26,7 @@ itineraryHighlights:
   - Immerse yourself in Sherpa culture, hospitality, and mountain traditions
   - Cross thrilling suspension bridges draped in colorful prayer flags
   - Acclimatize with a rewarding hike to Nangkartshang Peak (5,083 m) for views of Makalu, Lhotse, and Ama Dablam
-itineraryNotes:
-  - 'Money: There are no ATMs above Namche. Carry enough Nepali Rupees for personal expenses and tips.'
-  - 'Connectivity: Wi-Fi is available at most teahouses for a fee. Mobile network coverage is limited above Tengboche.'
-  - 'Travel Insurance: Comprehensive insurance covering helicopter evacuation up to 6,000 m is mandatory.'
-  - 'Visa: Nepal visa can be obtained on arrival at Tribhuvan International Airport.'
-  - 'Currency: Nepali Rupee (NPR). USD and EUR can be exchanged in Kathmandu and Namche.'
+itineraryNotes: []
 itineraryDays:
   - day: 1
     route: Arrival in Kathmandu
