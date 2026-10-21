@@ -194,7 +194,13 @@ gallery:
   - /images/packages/ebc_view_of_summit.jpg
   - /images/packages/gorakshep-to-kalapatthar-1024x768.jpg
   - /images/packages/1653287230_ebc-c5hp0XiZDKvr6pLMNSUCPm0ibYD9kQnZDoIR3DU8.jpg
-routeMap: /images/packages/9c80169c-efce-4cd8-a860-358adcdd0097 (1).jpg
+  - /images/packages/ebc-trek-in-may (1).jpg
+  - /images/packages/namche-bazaar-ebc-trek-scaled-1-1024x678.jpg
+  - /images/packages/everest-base-camp-trek-1-scaled-1 (1).jpg
+  - /images/packages/wp2540884.jpg
+  - /images/packages/wp2540777.jpg
+  - /images/packages/Namche-Bazaar.jpg
+routeMap: /images/packages/17548f2b-faac-49ab-9f92-6a4c8503e3c2.jpg
 packingList:
   - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
   - Layered Clothing – Thermal base layers, fleece mid-layer, and waterproof/windproof hardshell jacket.
