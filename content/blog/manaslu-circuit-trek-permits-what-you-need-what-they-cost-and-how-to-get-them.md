@@ -1,5 +1,5 @@
 ---
-title: Manaslu Circuit Trek Permits
+title: 'Manaslu Circuit Trek Permits: What You Need, What They Cost, and How to Get Them'
 date: 2026-10-19
 excerpt: Everything you need to know about Manaslu Circuit Trek permits in 2026—costs, the guide rule, checkpoints, and how Wave Up Himalayas handles it all.
 coverImage: /images/blog/1bcb4dbb-2ed2-443a-aed0-cf379aed2ba1.png
@@ -30,8 +30,6 @@ faqs:
     answer: Yes. Every foreign trekker—regardless of age—requires their own RAP, MCAP, and ACAP, each issued against their individual passport. There are no child or senior discounts on Manaslu permits. That said, the trek's difficulty (including the 5,160m Larkya La crossing) makes it unsuitable for young children, and trekkers over 60 should carry a doctor's clearance and build extra acclimatisation days into their itinerary.
 tables: []
 ---
-
-# Manaslu Circuit Trek Permits: What You Need, What They Cost, and How to Get Them
 
 If you're planning the Manaslu Circuit Trek, the permit system is the first thing to understand—because it works differently from almost every other trek in Nepal. You cannot simply show up in Kathmandu, buy a permit, and start walking. The **Manaslu Circuit Trek permits** are tied to a restricted-area system that requires a registered Nepali agency and a licensed guide before you even leave the city.
 
