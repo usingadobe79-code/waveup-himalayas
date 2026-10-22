@@ -560,7 +560,7 @@ export const typicalInclusions = [
 ] as const;
 
 /** Phone digits only, for building wa.me deep links. */
-const WHATSAPP_DIGITS = "9779861992878";
+export const WHATSAPP_DIGITS = "9779861992878";
 
 /**
  * Build a WhatsApp deep link with a prefilled enquiry message about `subject`

@@ -15,7 +15,7 @@ export function RecommendedTrekCard({ pkg }: { pkg: Package }) {
   return (
     <Link
       href={`/packages/${pkg.slug}`}
-      className="card card-hover group flex flex-col overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
+      className="card card-hover group flex flex-col overflow-hidden hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
     >
       <div className="relative aspect-[3/2] overflow-hidden">
         <PackageImage
@@ -31,7 +31,7 @@ export function RecommendedTrekCard({ pkg }: { pkg: Package }) {
         <SaleBadge pkg={pkg} className="absolute right-3 top-3" />
       </div>
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="type-small font-semibold text-ink">{pkg.title}</h3>
+        <h3 className="type-small font-semibold text-ink transition-colors group-hover:text-accent-ink">{pkg.title}</h3>
         {pkg.blurb && <p className="type-small mt-1.5 line-clamp-2 text-muted">{pkg.blurb}</p>}
         <PriceTag pkg={pkg} size="sm" className="mt-2" />
         <span className="type-small mt-3 font-semibold text-accent-ink transition-colors group-hover:text-accent group-hover:underline group-hover:underline-offset-4">

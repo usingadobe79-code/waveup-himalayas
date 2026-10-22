@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Calendar, MessageCircle } from "lucide-react";
+import { MapPin, Calendar, MessageCircle, ArrowRight } from "lucide-react";
 import { PackageImage } from "@/components/ui/PackageImage";
 import { SaleBadge } from "@/components/ui/SaleBadge";
 import { RatingBadge } from "@/components/ui/Rating";
@@ -34,7 +34,7 @@ export function TrekCard({
   const duration = pkg.tripFacts?.duration;
 
   const cardClass = cn(
-    "card card-hover group flex h-full flex-col overflow-hidden",
+    "card card-hover group flex h-full flex-col overflow-hidden hover:border-accent/50",
     className,
   );
 
@@ -66,7 +66,7 @@ export function TrekCard({
         </p>
 
         {/* 2. Title */}
-        <h3 className="type-h3 mt-1.5 text-ink">
+        <h3 className="type-h3 mt-1.5 text-ink transition-colors group-hover:text-accent-ink">
           {featured ? (
             <Link
               href={href}
@@ -116,6 +116,12 @@ export function TrekCard({
               )}
             </div>
           </div>
+          {!featured && (
+            <ArrowRight
+              className="mb-0.5 h-4 w-4 shrink-0 -translate-x-1 text-accent-ink opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+              aria-hidden="true"
+            />
+          )}
           {featured && (
             <a
               href={whatsappEnquiry(pkg.title)}

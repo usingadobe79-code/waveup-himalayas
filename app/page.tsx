@@ -10,7 +10,9 @@ import { WhyUs } from "@/components/sections/WhyUs";
 import { Gallery } from "@/components/sections/Gallery";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { EnquiryForm } from "@/components/sections/EnquiryForm";
+import { HomeBlog } from "@/components/sections/HomeBlog";
 import { business } from "@/lib/content";
+import { getAllPosts, formatDate, resolveOptimized } from "@/lib/blog";
 
 // Keyword-targeted title/description for the landing page (the root layout's
 // default is a brand tagline, not search-targeted). NOTE: `title.template`
@@ -47,6 +49,17 @@ export const metadata: Metadata = {
  * → EnquiryForm (the closing "Plan Your Trip" contact moment) → Footer.
  */
 export default function Home() {
+  // getAllPosts() already drops drafts and sorts newest-first.
+  const latestPosts = getAllPosts()
+    .slice(0, 3)
+    .map((p) => ({
+      slug: p.slug,
+      title: p.title,
+      date: formatDate(p.date),
+      excerpt: p.excerpt,
+      coverImage: resolveOptimized(p.coverImage),
+    }));
+
   return (
     <>
       <Header />
@@ -59,6 +72,7 @@ export default function Home() {
         <WhyUs />
         <Gallery />
         <Testimonials />
+        <HomeBlog posts={latestPosts} />
         <EnquiryForm />
       </main>
       <Footer />

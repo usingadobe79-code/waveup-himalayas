@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { EASE_OUT_EXPO } from "@/lib/motion";
 import { brand, contact } from "@/lib/content";
+import { TrekSearch } from "./TrekSearch";
 
 /**
  * Hero content overlay — shared across all variants.
@@ -84,6 +85,14 @@ export function HeroContent() {
       >
         {brand.hero.sub}
       </p>
+
+      {/* Live trek search — z-30 so its dropdown sits above the CTA row below */}
+      <div
+        className="hero-rise relative z-30 mt-8 flex w-full justify-center"
+        style={delay(0.5)}
+      >
+        <TrekSearch />
+      </div>
 
       {/* CTAs — stacked full-width on mobile, inline from sm up */}
       <div

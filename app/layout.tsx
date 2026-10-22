@@ -5,6 +5,7 @@ import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import { MotionProvider } from "@/components/providers/MotionProvider";
 import { JsonLd, WebsiteJsonLd } from "@/components/seo/JsonLd";
 import { Analytics } from "@/components/seo/Analytics";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { business, brand, siteUrl } from "@/lib/content";
 
 // Display: aspirational editorial serif (docs/04 suggests Fraunces).
@@ -69,6 +70,7 @@ export default function RootLayout({
         <MotionProvider>
           <SmoothScroll>{children}</SmoothScroll>
         </MotionProvider>
+        <WhatsAppButton />
         <Analytics />
       </body>
     </html>

@@ -154,11 +154,19 @@
     box-shadow: var(--shadow-card);
     transition:
       transform 0.4s var(--ease-out-expo),
-      box-shadow 0.4s var(--ease-out-expo);
+      box-shadow 0.4s var(--ease-out-expo),
+      border-color 0.4s var(--ease-out-expo);
   }
-  .card-hover:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-card-hover);
+  @media (hover: hover) {
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card-hover);
+    }
+  }
+  /* Touch/press feedback (also fires on mouse-down). */
+  .card-hover:active {
+    transform: scale(0.99);
+    transition-duration: 0.15s;
   }
 }
 
