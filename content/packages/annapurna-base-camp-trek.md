@@ -1,4 +1,6 @@
 ---
+overview: |-
+  The Annapurna Base Camp Trek is one of Nepal’s most iconic Himalayan adventures. Also known as the ABC Trek, it takes you deep into the Annapurna Sanctuary—a stunning glacial amphitheater surrounded by towering peaks like Annapurna I (8,091 m), Machhapuchhre (Fishtail), and Annapurna South. Starting and ending in Pokhara, this moderate teahouse trek typically lasts 7 to 12 days and reaches a maximum altitude of 4,130 m (13,550 ft) at Annapurna Base Camp.
 title: Annapurna Base Camp Trek
 regionKey: annapurna
 serviceKey: trekking

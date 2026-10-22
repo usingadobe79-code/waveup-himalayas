@@ -1,4 +1,6 @@
 ---
+overview: |-
+  The Annapurna Circuit Trek is a 14-day guided Himalayan journey through Nepal’s most diverse trekking landscape — from the green Marsyangdi Valley to the dry alpine valleys of Mustang. Starting with a scenic drive from Kathmandu to Dharapani, you’ll trek through traditional villages, cross the legendary Thorong La Pass (5,416 m / 17,769 ft), visit the sacred Muktinath Temple, and descend through the quiet Lupra Valley to Jomsom. With a built-in acclimatization day in Manang, carefully paced daily walks, and expert guides, this moderate-to-strenuous Annapurna Circuit Trek is safe, scenic, and unforgettable.
 title: Annapurna Circuit Trek
 regionKey: annapurna
 serviceKey: trekking

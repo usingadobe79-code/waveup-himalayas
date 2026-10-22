@@ -1,4 +1,6 @@
 ---
+overview: |-
+  A 50–60-minute scenic mountain flight from Kathmandu along the Himalayas.
 title: "Everest Mountain Flight"
 regionKey: everest
 serviceKey: mountain-flights

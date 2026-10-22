@@ -1,4 +1,6 @@
 ---
+overview: |-
+  The Kathmandu Tour with Nagarkot Day Hike is a 5-day guided journey through Nepal's living heritage and its most accessible Himalayan viewpoint. Explore four UNESCO World Heritage Sites in the Kathmandu Valley, then hike from the ancient Newari town of Sankhu to Nagarkot (2,195 m) for a sunrise panorama that includes Langtang, Ganesh Himal, and on clear mornings, Mount Everest itself. This easy-grade tour is ideal for first-time visitors, families, and anyone who wants culture and mountain views without a long trek.
 title: Kathmandu Tour with Nagarkot Day Hike
 regionKey: cultural
 serviceKey: city-tours

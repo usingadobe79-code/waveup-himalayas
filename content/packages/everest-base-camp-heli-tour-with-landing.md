@@ -1,4 +1,6 @@
 ---
+overview: |-
+  A typical 4-hour morning EBC helicopter tour with a landing and breakfast at Everest View Hotel.
 title: "Everest Base Camp Heli Tour with Landing"
 regionKey: everest
 serviceKey: heli-tours

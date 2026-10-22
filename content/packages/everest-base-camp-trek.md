@@ -1,4 +1,6 @@
 ---
+overview: |-
+  The Everest Base Camp Trek is a 13-day guided Himalayan journey to the base of the world's highest mountain. Starting with a scenic flight to Lukla, you'll trek through Sherpa villages, cross suspension bridges, visit Tengboche Monastery, and reach Everest Base Camp (5,364 m) and Kala Patthar (5,555 m) for sunrise views of Everest. With acclimatization days, teahouse lodging, and expert guides, this moderate-to-challenging EBC Trek is safe, scenic, and unforgettable.
 title: Everest Base Camp Trek
 regionKey: everest
 serviceKey: trekking

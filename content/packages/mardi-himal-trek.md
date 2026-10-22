@@ -1,4 +1,6 @@
 ---
+overview: |-
+  The Mardi Himal Trek is a 9-day guided Himalayan journey to the hidden ridge beneath Machhapuchhre (Fishtail), one of Nepal's most iconic and sacred peaks. Starting with a scenic drive to Pokhara, you'll trek through rhododendron forests, traditional Gurung villages, and open alpine ridges to reach the Mardi Himal Upper Viewpoint at 4,200 m. With teahouse lodging, expert guides, and a perfectly paced itinerary, this moderate trek is safe, scenic, and unforgettable—ideal for beginners and seasoned trekkers alike.
 title: Mardi Himal Trek
 regionKey: annapurna
 serviceKey: trekking
