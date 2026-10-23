@@ -160,7 +160,7 @@ A typical 8000m expedition runs **six to eight weeks**, including approach, accl
 
 You do not need to climb an eight-thousander to experience the **highest mountains in Nepal** up close. Several of Nepal's finest treks bring you to the base of **Nepal 8000m peaks**, offering spectacular views and a genuine Himalayan adventure without the technical demands of mountaineering—perfect for travelers who want to experience the **8000m mountains in Nepal** from the trail rather than the summit.
 
-![](/images/blog/manaslu-circuit-trek-route-1778046052.jpg "Manaslu Circuit Trek")
+![](/images/blog/manaslu-circuit-trek-route-1778046052.opt-001.jpg "Manaslu Circuit Trek")
 
 - [**Everest Base Camp Trek**: ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)Reaches the foot of Everest and offers views of Lhotse and Makalu along the way. The most famous of all Nepal treks, it typically takes 12–14 days from Lukla.
 - **[Annapurna Base Camp Trek](https://waveuphimalayas.com/packages/annapurna-base-camp-trek/)**: Walks into the heart of the Annapurna Sanctuary, surrounded by Annapurna I and other peaks. A shorter option at around 7–10 days.
