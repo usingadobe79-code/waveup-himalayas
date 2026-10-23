@@ -76,7 +76,7 @@ Travellers choosing this route should allow several additional trekking days and
 
 ### By Helicopter from Kathmandu
 
-![](/images/blog/Prabhuhelicopter_20230120133300-001.jpg)
+![](/images/blog/Prabhuhelicopter_20230120133300-001.jpg "By Helicopter to Sagarmatha National Park")
 
 Helicopter travel is another option for visitors interested in reaching the Everest region with less trekking time or experiencing panoramic views of the Himalayas.
 
@@ -175,7 +175,7 @@ The wildlife of Sagarmatha National Park is an important part of Nepal’s natur
 
 Sagarmatha National Park is home to several Himalayan mammals and bird species. Some animals are difficult to spot because they live in remote areas or are naturally shy, but the region remains an important destination for nature enthusiasts and wildlife lovers.
 
-![](/images/blog/zydxccrdpjhy89odn4fb.jpg "Sagarmatha National Park")
+![](/images/blog/zydxccrdpjhy89odn4fb-001.jpg "Sagarmatha National Park")
 
 - **Snow leopard**: One of the most iconic endangered species of the Himalayas, the snow leopard inhabits remote, rugged mountain terrain. Sightings are rare because of its elusive nature and excellent camouflage.
 - **Himalayan tahr**: These strong mountain mammals are often found on steep slopes and rocky cliffs. Trekkers may occasionally see them grazing along hillsides, particularly in areas with suitable vegetation.
