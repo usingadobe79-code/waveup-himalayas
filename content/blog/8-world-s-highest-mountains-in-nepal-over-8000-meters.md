@@ -158,9 +158,9 @@ A typical 8000m expedition runs **six to eight weeks**, including approach, accl
 
 You do not need to climb an eight-thousander to experience the **highest mountains in Nepal** up close. Several of Nepal's finest treks bring you to the base of **Nepal 8000m peaks**, offering spectacular views and a genuine Himalayan adventure without the technical demands of mountaineering—perfect for travelers who want to experience the **8000m mountains in Nepal** from the trail rather than the summit.
 
-- **Everest Base Camp Trek**: Reaches the foot of Everest and offers views of Lhotse and Makalu along the way. The most famous of all Nepal treks, it typically takes 12–14 days from Lukla.
-- **Annapurna Base Camp Trek**: Walks into the heart of the Annapurna Sanctuary, surrounded by Annapurna I and other peaks. A shorter option at around 7–10 days.
-- **Manaslu Circuit Trek**: Circles Manaslu and crosses the Larkya La, one of Nepal's finest teahouse treks. Restricted-area permits required.
+- [**Everest Base Camp Trek**:](<8 World's Highest Mountains in Nepal Over 8000 meters>) Reaches the foot of Everest and offers views of Lhotse and Makalu along the way. The most famous of all Nepal treks, it typically takes 12–14 days from Lukla.
+- **[Annapurna Base Camp Trek](https://waveuphimalayas.com/packages/annapurna-base-camp-trek/)**: Walks into the heart of the Annapurna Sanctuary, surrounded by Annapurna I and other peaks. A shorter option at around 7–10 days.
+- **[Manaslu Circuit Trek](https://waveuphimalayas.com/packages/manaslu-circuit-trek/)**: Circles Manaslu and crosses the Larkya La, one of Nepal's finest teahouse treks. Restricted-area permits required.
 - **Kanchenjunga Base Camp Trek**: A remote, less-traveled route to the base of the world's third-highest mountain, suited to experienced trekkers seeking solitude.
 
 These treks are ideal for travelers who want the Himalayan experience without the technical demands of a full **Nepal 8000m peak expedition**. Wave Up Himalayas offers guided packages for each of these routes.
