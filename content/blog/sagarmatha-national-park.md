@@ -216,6 +216,8 @@ Common vegetation types include:
 
 As altitude increases, vegetation becomes more limited due to low temperatures, strong winds, and a shorter growing season. Near the highest mountain areas, plants are sparse, and large sections of the landscape consist of rock, ice, and snow.
 
+***
+
 ## Best Time to Visit Sagarmatha National Park
 
 The best time to visit Sagarmatha National Park is during the **spring (March to May)** and **autumn (late September to November)** seasons. These two periods offer the most stable weather, clearest skies, and best mountain views, making them the preferred trekking seasons for the vast majority of travelers .
