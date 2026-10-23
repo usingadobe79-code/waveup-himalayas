@@ -136,13 +136,15 @@ At the opposite end, **Annapurna I is statistically the deadliest eight-thousand
 
 Planning a **Nepal 8000m peak expedition** is a serious undertaking, and understanding what lies ahead—from permits to logistics to safety protocols—will help you prepare realistically. Here is what climbers can expect when attempting an eight-thousander in Nepal.
 
+![](/images/blog/best-climbing-routes-in-nepal-001.jpg "Mount Everest")
+
 **Climbing Seasons**
 
 The primary season for **Nepal 8000m peak expeditions** is spring (late March to May), when weather windows are most stable. A secondary autumn season (September–November) sees fewer expeditions but quieter conditions. Winter and summer climbs are rare and reserved for highly experienced mountaineers.
 
 **Permits and Logistics**
 
-All eight-thousander expeditions require permits from the Department of Tourism. Everest's spring royalty fee rose to **$15,000\*\* in September 2025, while other 8000m peaks cost \*\*$3,000** in spring and $1,500 in autumn. Solo climbing is no longer permitted above 8,000 meters—each pair of climbers must be accompanied by at least one guide, and GPS devices and rescue insurance are mandatory.
+All eight-thousander expeditions require permits from the Department of Tourism. Everest's spring royalty fee rose to **$15,000 in September 2025, while other 8000m peaks cost $3,000** in spring and $1,500 in autumn. Solo climbing is no longer permitted above 8,000 meters—each pair of climbers must be accompanied by at least one guide, and GPS devices and rescue insurance are mandatory.
 
 **Safety and Sherpa Support**
 
@@ -157,6 +159,8 @@ A typical 8000m expedition runs **six to eight weeks**, including approach, accl
 ## Trekking to 8000m Base Camps
 
 You do not need to climb an eight-thousander to experience the **highest mountains in Nepal** up close. Several of Nepal's finest treks bring you to the base of **Nepal 8000m peaks**, offering spectacular views and a genuine Himalayan adventure without the technical demands of mountaineering—perfect for travelers who want to experience the **8000m mountains in Nepal** from the trail rather than the summit.
+
+![](/images/blog/manaslu-circuit-trek-route-1778046052.jpg "Manaslu Circuit Trek")
 
 - [**Everest Base Camp Trek**: ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)Reaches the foot of Everest and offers views of Lhotse and Makalu along the way. The most famous of all Nepal treks, it typically takes 12–14 days from Lukla.
 - **[Annapurna Base Camp Trek](https://waveuphimalayas.com/packages/annapurna-base-camp-trek/)**: Walks into the heart of the Annapurna Sanctuary, surrounded by Annapurna I and other peaks. A shorter option at around 7–10 days.
