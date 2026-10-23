@@ -47,7 +47,7 @@ The answer depends on who you ask. The globally recognized count is **eight** �
 
 ![](/images/blog/1596997438-001.jpg "Mount Everest (8,848.86 m)")
 
-The highest mountain in Nepal and the world, Everest (Sagarmatha in Nepali) needs little introduction. Located in the Mahalangur Himal on the Nepal–China border, it is the ultimate objective for high-altitude mountaineers. The standard South Col route from Nepal is the most popular, though it demands serious preparation and a lengthy acclimatization schedule. For trekkers, Everest Base Camp remains one of Nepal's most iconic journeys.
+The highest mountain in Nepal and the world, Everest (Sagarmatha in Nepali) needs little introduction. Located in the Mahalangur Himal on the Nepal–China border, it is the ultimate objective for high-altitude mountaineers. The standard South Col route from Nepal is the most popular, though it demands serious preparation and a lengthy acclimatization schedule. For trekkers, **[Everest Base Camp](https://waveuphimalayas.com/packages/everest-base-camp-trek/)** remains one of Nepal's most iconic journeys.
 
 **Kanchenjunga (8,586 m)**
 
@@ -83,7 +83,7 @@ Dhaulagiri I is the seventh-highest mountain in the world and lies **entirely wi
 
 ![](/images/blog/Manaslu%2BExpedition-001.jpg "Manaslu (8,163 m)")
 
-Manaslu, the "Mountain of Spirit," is the eighth-highest peak in the world and another that lies **fully within Nepal**. It has become a favored choice for climbers preparing for Everest, as it offers a genuine eight-thousander experience with somewhat less traffic than the Khumbu giants. The Manaslu Circuit trek is also one of Nepal's finest teahouse treks.
+Manaslu, the "Mountain of Spirit," is the eighth-highest peak in the world and another that lies **fully within Nepal**. It has become a favored choice for climbers preparing for Everest, as it offers a genuine eight-thousander experience with somewhat less traffic than the Khumbu giants. The **[Manaslu Circuit trek](https://waveuphimalayas.com/packages/manaslu-circuit-trek/)** is also one of Nepal's finest teahouse treks.
 
 **Annapurna I (8,091 m)**
 
