@@ -202,7 +202,7 @@ gallery:
   - /images/packages/wp2540884.jpg
   - /images/packages/wp2540777.jpg
   - /images/packages/Namche-Bazaar.jpg
-routeMap: /images/packages/a3562d26-d1c3-405f-8222-4f317f569f6e.png
+routeMap: /images/packages/634d175c-b4b4-4f25-970a-716963a305f9 (1).jpg
 packingList:
   - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
   - Layered Clothing – Thermal base layers, fleece mid-layer, and waterproof/windproof hardshell jacket.
