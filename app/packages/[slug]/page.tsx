@@ -6,13 +6,13 @@ import { Check, X, MessageCircle, Mail, Phone } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
-import { PackageImage } from "@/components/ui/PackageImage";
 import { PriceTag } from "@/components/ui/PriceTag";
 import { PackageItinerary } from "@/components/sections/PackageItinerary";
 import { TripFacts } from "@/components/sections/TripFacts";
 import { PackageFaq } from "@/components/sections/PackageFaq";
 import { PackageReviews } from "@/components/sections/PackageReviews";
-import { PackageGallery } from "@/components/sections/PackageGallery";
+import { PackageGalleryHero } from "@/components/sections/PackageGalleryHero";
+import { SaleBadge } from "@/components/ui/SaleBadge";
 import { SimilarTreks } from "@/components/sections/SimilarTreks";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { TripJsonLd } from "@/components/seo/TripJsonLd";
@@ -147,34 +147,31 @@ export default async function PackageDetailPage({
       {pkg.faqs && pkg.faqs.length > 0 && <FaqJsonLd faqs={pkg.faqs} />}
       <Header solid />
       <main className="flex-1">
-        {/* Hero */}
-        <section className="relative isolate flex min-h-[58vh] items-end overflow-hidden">
-          <PackageImage
-            src={pkg.imageDisplay ?? null}
-            alt={pkg.title}
-            priority
-            sizes="100vw"
-          />
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-t from-surface-darker via-surface-darker/55 to-surface-darker/25"
-          />
-          <div className="container-page relative z-10 pb-12 pt-28 text-on-dark">
-            <nav aria-label="Breadcrumb" className="type-small mb-5 text-on-dark/70">
-              <Link href="/" className="transition-colors hover:text-on-dark">
+        {/* Header + interactive gallery */}
+        <section className="bg-surface pb-8 pt-28 sm:pb-10">
+          <div className="container-page min-w-0">
+            <nav aria-label="Breadcrumb" className="type-small mb-4 text-muted">
+              <Link href="/" className="transition-colors hover:text-ink">
                 Home
               </Link>
-              <span className="px-2 text-on-dark/40">/</span>
-              <Link href="/packages" className="transition-colors hover:text-on-dark">
+              <span className="px-2 opacity-50">/</span>
+              <Link href="/packages" className="transition-colors hover:text-ink">
                 Packages
               </Link>
-              <span className="px-2 text-on-dark/40">/</span>
-              <span className="text-on-dark/90">{pkg.title}</span>
+              <span className="px-2 opacity-50">/</span>
+              <span className="text-ink">{pkg.title}</span>
             </nav>
-            <span className="type-small inline-block rounded-badge bg-surface-darker/70 px-3 py-1 font-medium text-accent-hover backdrop-blur-sm">
+            <span className="type-small inline-block rounded-badge bg-surface-darker px-3 py-1 font-medium text-accent-hover">
               {pkg.region}
             </span>
-            <h1 className="type-h1 mt-4 max-w-3xl text-on-dark">{pkg.title}</h1>
+            <h1 className="type-h1 mb-6 mt-3 max-w-3xl text-ink">{pkg.title}</h1>
+            <PackageGalleryHero
+              images={pkg.galleryDisplay ?? pkg.gallery ?? []}
+              cover={pkg.imageDisplay}
+              title={pkg.title}
+              slug={pkg.slug}
+              badge={<SaleBadge pkg={pkg} />}
+            />
           </div>
         </section>
 
@@ -328,14 +325,6 @@ export default async function PackageDetailPage({
                     className="prose-blog mt-5"
                     dangerouslySetInnerHTML={{ __html: pkg.preparationHtml }}
                   />
-                </div>
-              )}
-
-              {/* Photo gallery — only for trips that supplied one. */}
-              {pkg.gallery && pkg.gallery.length > 0 && (
-                <div>
-                  <h2 className="type-h3 text-ink">Photo gallery</h2>
-                  <PackageGallery images={pkg.galleryDisplay ?? pkg.gallery} title={pkg.title} />
                 </div>
               )}
 
