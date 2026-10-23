@@ -2,7 +2,7 @@
 title: Sagarmatha National Park
 date: 2026-10-23
 excerpt: Plan your Sagarmatha National Park trek with Wave Up Himalayas. Explore Everest Base Camp routes, permits, entry fees, best seasons, and Sherpa culture.
-coverImage: /images/blog/hero-nepal.jpg
+coverImage: /images/blog/Timings-and-entrance-charges-of-Sagarmatha-National-Park-shutterstock_575285785.jpg
 author: Gaurav Lamichhane
 draft: false
 relatedPackages:
