@@ -98,7 +98,7 @@ itineraryDays:
     altitude: 5,545m
     duration: 7–8 hrs hike + trek
     description: Sunrise hike to Kala Patthar for the best close-up panorama of Everest. Descend to Pheriche.
-    image: /images/packages/aee3aaab-c2c1-4469-a464-68c46c4dad62.png
+    image: ''
     highlights: Early in the morning, hike to Kala Patthar (5,555 m) for sunrise views of Everest. This is the highest point of the trek and offers the best close-up panorama of Everest. After descending, continue down to Pheriche. Overnight at a teahouse.
   - day: 11
     route: Pheriche → Namche Bazaar
@@ -118,7 +118,7 @@ itineraryDays:
     route: Fly back to Kathmandu
     altitude: 135 km / 84 miles · 1,400m
     duration: 35 min flight / 20 min flight + 5–6 hrs drive
-    description: Fly from Luk to Kathmandu, or to Manthali/Ramechhap and drive back during peak season. Free time for shopping or relaxation.
+    description: Fly from Lukla to Kathmandu, or to Manthali/Ramechhap and drive back during peak season. Free time for shopping or relaxation.
     image: ''
     highlights: Fly from Lukla to Kathmandu, or to Manthali/Ramechhap and drive back to Kathmandu during peak season. Upon arrival, transfer to your hotel. The rest of the day is free for shopping or relaxation. Overnight at a 3-star hotel in Kathmandu.
 itineraryPeaks: []
@@ -126,7 +126,7 @@ itinerarySchedule: []
 tripFacts:
   duration: 13 days
   difficulty: Moderately challenging
-  maxAltitude: 5,555 m / 18,225 ft (Kala Patthar)
+  maxAltitude: 5,545 m / 18,225 ft (Kala Patthar)
   bestSeason: Autumn and Spring
   groupSize: '10'
   accommodation: 3-star hotel in Kathmandu + teahouses / local lodges (twin-sharing)
