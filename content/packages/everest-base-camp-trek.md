@@ -207,7 +207,7 @@ gallery:
   - /images/packages/media-4e593b0a-1763444924 (1).jpg
   - /images/packages/Sagarmatha-National-Park-base-camp-for-Everest.jpg
   - /images/packages/unnamed.jpg
-routeMap: /images/packages/ebc_route_map.png
+routeMap: /images/packages/ebc_route_map_v2.png
 packingList:
   - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
   - Layered Clothing – Thermal base layers, fleece mid-layer, and waterproof/windproof hardshell jacket.
