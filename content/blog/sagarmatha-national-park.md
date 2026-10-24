@@ -46,7 +46,7 @@ Reaching Sagarmatha National Park from Kathmandu involves travelling by air or r
 
 ### By Flight from Kathmandu to Lukla
 
-![](/images/blog/media-b51be4d2-1767086591-001.jpg "Lukla Airport")
+![Lukla Airport](/images/blog/media-b51be4d2-1767086591-001.jpg "Lukla Airport")
 
 Flying from Kathmandu to Lukla is the most popular option for travellers planning to visit Sagarmatha National Park and trek to Everest Base Camp. The flight generally takes around 30–35 minutes, depending on operating conditions, and offers spectacular views of Nepal's hills and Himalayan mountains.
 
@@ -56,7 +56,7 @@ After arriving in Lukla, trekkers typically walk towards Phakding and continue t
 
 ### By Road and Trekking via Salleri or Phaplu
 
-![](/images/blog/1594544603106453373_760778134661645_2946194967409683425_n%20%281%29-001.jpg "Salleri to Sagarmatha National Park")
+![Salleri to Sagarmatha National Park](/images/blog/1594544603106453373_760778134661645_2946194967409683425_n%20%281%29-001.jpg "Salleri to Sagarmatha National Park")
 
 Travellers who prefer an overland journey can take a jeep from Kathmandu to Salleri or Phaplu in the Solukhumbu region. The journey can take much of a day or longer, depending on road conditions, traffic, and weather.
 
@@ -66,7 +66,7 @@ This option is suitable for travellers who have more time and want to experience
 
 ### By the Classic Trekking Route via Jiri
 
-![](/images/blog/bhandara-jiri-ebc-trek%20%281%29.jpg "Jiri to Sagarmatha National Park")
+![Jiri to Sagarmatha National Park](/images/blog/bhandara-jiri-ebc-trek%20%281%29.jpg "Jiri to Sagarmatha National Park")
 
 Another option is to travel by road from Kathmandu to Jiri and continue trekking towards the Everest region. This historic approach was used by early Everest expeditions before flights to Lukla became the main access route.
 
@@ -76,7 +76,7 @@ Travellers choosing this route should allow several additional trekking days and
 
 ### By Helicopter from Kathmandu
 
-![](/images/blog/Prabhuhelicopter_20230120133300-001.jpg "By Helicopter to Sagarmatha National Park")
+![By Helicopter to Sagarmatha National Park](/images/blog/Prabhuhelicopter_20230120133300-001.jpg "By Helicopter to Sagarmatha National Park")
 
 Helicopter travel is another option for visitors interested in reaching the Everest region with less trekking time or experiencing panoramic views of the Himalayas.
 
@@ -105,61 +105,61 @@ Sagarmatha National Park is home to some of Nepal's most breathtaking Himalayan 
 
 ### Mount Everest
 
-![](/images/blog/1596997438-001.opt.jpg "Mount Everest")
+![Mount Everest](/images/blog/1596997438-001.opt.jpg "Mount Everest")
 
 Mount Everest, known as Sagarmatha in Nepali and Chomolungma in Tibetan, is the world's highest mountain above sea level, reaching 8,848.86 metres. It is the most famous landmark in Sagarmatha National Park and a major attraction for travellers visiting Nepal. The surrounding Himalayan scenery, glaciers, and dramatic mountain ridges create exceptional opportunities for trekking and photography. Visitors can enjoy views of Everest from several viewpoints along established trekking routes without attempting a summit expedition.
 
 ### Everest Base Camp
 
-![](/images/blog/Everest-Base-Camp-Header.jpg "Everest Base Camp")
+![Everest Base Camp](/images/blog/Everest-Base-Camp-Header.jpg "Everest Base Camp")
 
 [**Everest Base Camp** ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)is one of the most popular trekking destinations in Nepal, located at approximately 5,364 metres above sea level on the southern side of Mount Everest. The trek passes through beautiful mountain villages, suspension bridges, pine forests, and rugged glacial landscapes. Along the way, trekkers experience the hospitality of Sherpa communities and spectacular views of surrounding Himalayan peaks. Reaching base camp requires proper preparation, a gradual acclimatization schedule, and several days of trekking.
 
 ### Namche Bazaar
 
-![](/images/blog/9c2263b98f1e4736fb13c7aaaab8f474%20%281%29.jpg "Namche Bazzar")
+![Namche Bazzar](/images/blog/9c2263b98f1e4736fb13c7aaaab8f474%20%281%29.jpg "Namche Bazzar")
 
 Namche Bazaar is a vibrant Sherpa town and an important stop on the Everest Base Camp trekking route. Situated on a mountainside, it offers accommodation, restaurants, bakeries, shops, and stunning views of the surrounding mountains. Many trekkers spend an acclimatization day here before continuing to higher elevations. Visitors can explore local markets, learn about Sherpa culture, and enjoy nearby viewpoints while preparing for the next stage of their Himalayan adventure.
 
 ### Tengboche Monastery
 
-![](/images/blog/Tengboche_Monastery.jpg "Tengboche Monastery")
+![Tengboche Monastery](/images/blog/Tengboche_Monastery.jpg "Tengboche Monastery")
 
 Tengboche Monastery is one of the most significant Buddhist monasteries in the Everest region. Surrounded by spectacular Himalayan scenery, it provides visitors with an opportunity to learn about Tibetan Buddhist traditions and the spiritual heritage of Sherpa communities. The monastery is a memorable stop for trekkers travelling towards Everest Base Camp, and the surrounding area offers beautiful mountain views. Visitors should respect religious customs, follow local instructions, and ask permission before taking photographs inside religious spaces.
 
 ### Gokyo Lakes
 
-![](/images/blog/Gokyo_Lakes__Cho_La_Pass__Everest_Base_Camp_Trek_desktop.jpg "Gokyo Lake")
+![Gokyo Lake](/images/blog/Gokyo_Lakes__Cho_La_Pass__Everest_Base_Camp_Trek_desktop.jpg "Gokyo Lake")
 
 The Gokyo Lakes are a series of stunning high-altitude lakes known for their turquoise and emerald-coloured waters. Surrounded by rugged Himalayan peaks and glaciers, they offer a quieter alternative to some of the busier Everest trekking routes. The Gokyo region is also popular for its scenic viewpoints and access to Gokyo Ri, which provides panoramic views of Everest and neighbouring mountains in suitable conditions. Travellers can explore the lakes through a dedicated[ **Gokyo trek**](https://waveuphimalayas.com/packages/everest-base-camp-gokyo-lake-trek/) or a longer itinerary combining Gokyo Lakes with Everest Base Camp.
 
 ### Kala Patthar
 
-![](/images/blog/media-4e593b0a-1763444924-001.jpg "Kala Patthar")
+![Kala Patthar](/images/blog/media-4e593b0a-1763444924-001.jpg "Kala Patthar")
 
 Kala Patthar is a famous Himalayan viewpoint near Everest Base Camp, situated at approximately 5,545 metres above sea level. It is particularly popular for sunrise hikes and panoramic views of Mount Everest, Nuptse, and surrounding peaks. Although the climb is relatively short compared with the overall trek, the high elevation makes it physically demanding. Trekkers should attempt the ascent only when properly acclimatized and when weather and trail conditions are suitable.
 
 ### Khumbu Glacier
 
-![](/images/blog/khumbu-icefall.jpg)
+![Khumbu Glacier](/images/blog/khumbu-icefall.jpg "Khumbu Glacier")
 
 The Khumbu Glacier is one of the most remarkable natural features of Sagarmatha National Park. Located beneath the towering Himalayan peaks, it forms a dramatic landscape of ice, rock, and glacial debris. The glacier is an important feature of the Everest Base Camp region and highlights the powerful geological processes shaping the Himalayas. Visitors should remain on established trails and follow their guide's advice when travelling near glacial terrain.
 
 ### Khumjung Village
 
-![](/images/blog/841c600b8524128d5383705f6aab86cef2a4164abb94edb841ee15d76f347844-001.jpg "Khumjung Village")
+![Khumjung Village](/images/blog/841c600b8524128d5383705f6aab86cef2a4164abb94edb841ee15d76f347844-001.jpg "Khumjung Village")
 
 Khumjung is a traditional Sherpa village located above Namche Bazaar. Known for its stone houses, peaceful surroundings, and cultural heritage, it offers an opportunity to experience local life away from the main trekking trail. Visitors can explore the village, learn about Sherpa traditions, and appreciate views of the surrounding mountains. Khumjung is a worthwhile stop for travellers interested in the cultural side of Sagarmatha National Park.
 
 ### Dingboche Village
 
-![](/images/blog/IMG_20201208_171843-1025.jpg "Dingboche Village")
+![Dingboche Village](/images/blog/IMG_20201208_171843-1025.jpg "Dingboche Village")
 
 Dingboche is an important high-altitude settlement along the Everest Base Camp trekking route. Surrounded by rugged mountain scenery, stone-walled fields, and open alpine landscapes, it is commonly used as an acclimatization stop before trekkers continue towards Lobuche and Everest Base Camp. The village provides basic accommodation and meals for trekkers and serves as a useful place to rest while adjusting to the increasing elevation.
 
 ### Ama Dablam
 
-![](/images/blog/AR506852-scaled-001.jpg "Ama Dablam")
+![Ama Dablam](/images/blog/AR506852-scaled-001.jpg "Ama Dablam")
 
 Ama Dablam is one of the most recognisable mountains in the Everest region, admired for its distinctive shape and steep ridges. Its name is often interpreted as referring to a mother's necklace, inspired by the mountain's appearance and hanging glacier. Trekkers can enjoy impressive views of Ama Dablam from several sections of the Khumbu trail, particularly around Tengboche and Dingboche. The mountain is also a renowned destination for experienced mountaineers.
 
@@ -175,7 +175,7 @@ The wildlife of Sagarmatha National Park is an important part of Nepal’s natur
 
 Sagarmatha National Park is home to several Himalayan mammals and bird species. Some animals are difficult to spot because they live in remote areas or are naturally shy, but the region remains an important destination for nature enthusiasts and wildlife lovers.
 
-![](/images/blog/zydxccrdpjhy89odn4fb-001.jpg "Sagarmatha National Park")
+![Sagarmatha National Park](/images/blog/zydxccrdpjhy89odn4fb-001.jpg "Sagarmatha National Park")
 
 - **Snow leopard**: One of the most iconic endangered species of the Himalayas, the snow leopard inhabits remote, rugged mountain terrain. Sightings are rare because of its elusive nature and excellent camouflage.
 - **Himalayan tahr**: These strong mountain mammals are often found on steep slopes and rocky cliffs. Trekkers may occasionally see them grazing along hillsides, particularly in areas with suitable vegetation.
@@ -202,7 +202,7 @@ Birdwatching can be a rewarding activity while trekking through Sagarmatha Natio
 
 ### Plants and Vegetation in Sagarmatha National Park
 
-![](/images/blog/DMI-destination-management-inc-nepal-mountain-nepal-holiday-advisior-national-park-sagarmatha-national-park-scaled-001.jpg "Sagarmatha National Park")
+![Sagarmatha National Park](/images/blog/DMI-destination-management-inc-nepal-mountain-nepal-holiday-advisior-national-park-sagarmatha-national-park-scaled-001.jpg "Sagarmatha National Park")
 
 The plants of Sagarmatha National Park vary according to altitude, temperature, soil conditions, and exposure to sunlight. Lower elevations support forests, while higher areas feature shrubs, grasses, mosses, and other vegetation adapted to harsh mountain conditions.
 
