@@ -45,49 +45,49 @@ The answer depends on who you ask. The globally recognized count is **eight** �
 
 **Mount Everest (8,848.86 m)**
 
-![](/images/blog/1596997438-001.jpg "Mount Everest (8,848.86 m)")
+![Mount Everest (8,848.86 m)](/images/blog/1596997438-001.jpg "Mount Everest (8,848.86 m)")
 
 The highest mountain in Nepal and the world, Everest (Sagarmatha in Nepali) needs little introduction. Located in the Mahalangur Himal on the Nepal–China border, it is the ultimate objective for high-altitude mountaineers. The standard South Col route from Nepal is the most popular, though it demands serious preparation and a lengthy acclimatization schedule. For trekkers, **[Everest Base Camp](https://waveuphimalayas.com/packages/everest-base-camp-trek/)** remains one of Nepal's most iconic journeys.
 
 **Kanchenjunga (8,586 m)**
 
-![](/images/blog/Kangchenjunga_PangPema.jpg "Kanchenjunga (8,586 m)")
+![Kanchenjunga (8,586 m)](/images/blog/Kangchenjunga_PangPema.jpg "Kanchenjunga (8,586 m)")
 
 The third-highest mountain in the world sits on the Nepal–India border in the far eastern Himalaya. Kanchenjunga sees far fewer expeditions than Everest, making it an attractive option for climbers seeking solitude and a more self-sufficient experience. The surrounding Kanchenjunga Conservation Area also offers superb trekking routes for those who prefer to admire the peak from below.
 
 **Lhotse (8,516 m)**
 
-![](/images/blog/image-2-e1748338483564-1024x727.jpg "Lhotse (8,516 m)")
+![Lhotse (8,516 m)](/images/blog/image-2-e1748338483564-1024x727.jpg "Lhotse (8,516 m)")
 
 Connected to Everest via the South Col, Lhotse is the fourth-highest mountain in the world. Many Everest expeditions share their approach and base camp logistics with Lhotse, though the climbing itself is more technical. It is often considered by experienced mountaineers looking to add a second eight-thousander to their résumé.
 
 **Makalu (8,463 m)**
 
-![](/images/blog/MakaluExpedition.jpg "Makalu (8,463 m)")
+![Makalu (8,463 m)](/images/blog/MakaluExpedition.jpg "Makalu (8,463 m)")
 
 The fifth-highest peak in the world, Makalu is renowned for its striking pyramidal shape and technical difficulty. Located on the Nepal–China border, it receives fewer climbers than Everest or Cho Oyu, making it a serious undertaking for well-prepared expeditions.
 
 **Cho Oyu (8,201 m)**
 
-![](/images/blog/images%20%2814%29.jpg "Cho Oyu (8,201 m)")
+![Cho Oyu (8,201 m)](/images/blog/images%20%2814%29.jpg "Cho Oyu (8,201 m)")
 
 Cho Oyu is widely regarded as one of the more accessible eight-thousanders in Nepal. Its location on the Nepal–China border and relatively straightforward northwest ridge make it a popular choice for climbers attempting their first 8,000-meter peak. That said, "accessible" is a relative term — Cho Oyu still demands excellent fitness, acclimatization, and mountaineering skills.
 
 **Dhaulagiri I (8,167 m)**
 
-![](/images/blog/Dhaulagiri-Expedition-6.jpg "Dhaulagiri I (8,167 m)")
+![Dhaulagiri I (8,167 m)](/images/blog/Dhaulagiri-Expedition-6.jpg "Dhaulagiri I (8,167 m)")
 
 Dhaulagiri I is the seventh-highest mountain in the world and lies **entirely within Nepal**. Its name means "White Mountain" in Sanskrit, and its steep, dramatic faces are visible from the popular Annapurna region. Climbing Dhaulagiri is a significant step up in commitment and technical difficulty compared to Cho Oyu.
 
 **Manaslu (8,163 m)**
 
-![](/images/blog/Manaslu%2BExpedition-001.jpg "Manaslu (8,163 m)")
+![Manaslu (8,163 m)](/images/blog/Manaslu%2BExpedition-001.jpg "Manaslu (8,163 m)")
 
 Manaslu, the "Mountain of Spirit," is the eighth-highest peak in the world and another that lies **fully within Nepal**. It has become a favored choice for climbers preparing for Everest, as it offers a genuine eight-thousander experience with somewhat less traffic than the Khumbu giants. The **[Manaslu Circuit trek](https://waveuphimalayas.com/packages/manaslu-circuit-trek/)** is also one of Nepal's finest teahouse treks.
 
 **Annapurna I (8,091 m)**
 
-![](/images/blog/20121217194414-184bcb82-me-001.jpg "Annapurna I (8,091 m)")
+![Annapurna I (8,091 m)](/images/blog/20121217194414-184bcb82-me-001.jpg "Annapurna I (8,091 m)")
 
 Annapurna I holds a fearsome reputation. It was the first eight-thousander to be climbed, in 1950, but it also has one of the highest fatality rates among all 14 peaks. The standard north face route is safer than the notorious south face, but Annapurna remains a serious objective for highly experienced mountaineers only.
 
@@ -136,7 +136,7 @@ At the opposite end, **Annapurna I is statistically the deadliest eight-thousand
 
 Planning a **Nepal 8000m peak expedition** is a serious undertaking, and understanding what lies ahead—from permits to logistics to safety protocols—will help you prepare realistically. Here is what climbers can expect when attempting an eight-thousander in Nepal.
 
-![](/images/blog/best-climbing-routes-in-nepal-001.jpg "Mount Everest")
+![Mount Everest](/images/blog/best-climbing-routes-in-nepal-001.jpg "Mount Everest")
 
 **Climbing Seasons**
 
@@ -160,7 +160,7 @@ A typical 8000m expedition runs **six to eight weeks**, including approach, accl
 
 You do not need to climb an eight-thousander to experience the **highest mountains in Nepal** up close. Several of Nepal's finest treks bring you to the base of **Nepal 8000m peaks**, offering spectacular views and a genuine Himalayan adventure without the technical demands of mountaineering—perfect for travelers who want to experience the **8000m mountains in Nepal** from the trail rather than the summit.
 
-![](/images/blog/manaslu-circuit-trek-route-1778046052.opt-001.jpg "Manaslu Circuit Trek")
+![Manaslu Circuit Trek](/images/blog/manaslu-circuit-trek-route-1778046052.opt-001.jpg "Manaslu Circuit Trek")
 
 - [**Everest Base Camp Trek**: ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)Reaches the foot of Everest and offers views of Lhotse and Makalu along the way. The most famous of all Nepal treks, it typically takes 12–14 days from Lukla.
 - **[Annapurna Base Camp Trek](https://waveuphimalayas.com/packages/annapurna-base-camp-trek/)**: Walks into the heart of the Annapurna Sanctuary, surrounded by Annapurna I and other peaks. A shorter option at around 7–10 days.
