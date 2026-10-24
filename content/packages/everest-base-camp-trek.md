@@ -207,7 +207,7 @@ gallery:
   - /images/packages/media-4e593b0a-1763444924 (1).jpg
   - /images/packages/Sagarmatha-National-Park-base-camp-for-Everest.jpg
   - /images/packages/unnamed.jpg
-routeMap: /images/packages/aee3aaab-c2c1-4469-a464-68c46c4dad62.png
+routeMap: /images/packages/ebc_route_map.png
 packingList:
   - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
   - Layered Clothing – Thermal base layers, fleece mid-layer, and waterproof/windproof hardshell jacket.
@@ -232,7 +232,7 @@ preparation: |-
   - **Maximum Altitude:** 5,545 m at Kala Patthar. Reaching this height means you will be walking in an environment with roughly half the oxygen available at sea level.
   - **Acclimatization is Critical:** Proper hydration, a steady pace, and two built-in acclimatization days (in Namche and Dingboche) are essential for your safety. Never rush the ascent; listen to your body and your guide.
   - **Fitness Level:** A good level of fitness is recommended, as the trek involves 5–8 hours of walking per day at high altitude. Start your cardio and strength training 8–12 weeks before departure. To set realistic expectations, first understand [how difficult the Everest Base Camp trek](https://waveuphimalayas.com/blog/how-difficult-is-everest-base-camp-trek/) really is.
-  - **Train on Hills:** Simulate the trek by doing practice hikes on hills or long staircases with a loaded daypack (7–10 kg) on consecutive days. Read the [mistakes to avoid as a first-time trekker](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-a-first-time-trekker/) to pace yourself properly and avoid burnout.
+  - **Train on Hills:** Simulate the trek by doing practice hikes on hills or long staircases with a loaded daypack (7–10 kg) on consecutive days. Read the [mistakes to avoid as a first-time trekker](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-first-time-trekker/) to pace yourself properly and avoid burnout.
   - **Altitude Sickness (AMS):** Know the symptoms (headache, nausea, dizziness) and tell your guide immediately if they appear. We monitor oxygen levels daily with an oximeter. If symptoms worsen, the only safe treatment is to descend. Our [Everest Base Camp trek guide](https://waveuphimalayas.com/blog/everest-base-camp-trek-guide-cost-permits-packing-altitude-more/) explains how altitude is managed day by day.
 
   ### **Permits, Visas & Insurance**
