@@ -99,7 +99,7 @@ itineraryDays:
     duration: 7–8 hrs hike + trek
     description: Sunrise hike to Kala Patthar for the best close-up panorama of Everest. Descend to Pheriche.
     image: /images/packages/media-4e593b0a-1763444924 (1).jpg
-    highlights: Early in the morning, hike to Kala Patthar (5,555 m) for sunrise views of Everest. This is the highest point of the trek and offers the best close-up panorama of Everest. After descending, continue down to Pheriche. Overnight at a teahouse.
+    highlights: Early in the morning, hike to Kala Patthar (5,545 m) for sunrise views of Everest. This is the highest point of the trek and offers the best close-up panorama of Everest. After descending, continue down to Pheriche. Overnight at a teahouse.
   - day: 11
     route: Pheriche → Namche Bazaar
     altitude: 3,440m
