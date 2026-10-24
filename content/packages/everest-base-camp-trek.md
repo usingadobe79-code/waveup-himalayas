@@ -42,14 +42,14 @@ itineraryDays:
     altitude: 2,610m
     duration: 'Flight distance: ~135 km / 84 miles · 2,610m · 3–4 hrs trek'
     description: Fly to Lukla and begin trekking through Sherpa villages, mani walls, and suspension bridges to Phakding.
-    image: ''
+    image: /images/packages/lukla airport landing.jpg
     highlights: After an early breakfast, transfer to the domestic airport for your flight to Lukla. During peak seasons, flights may operate from Manthali/Ramechhap, requiring an early morning drive from Kathmandu. After landing in Lukla, meet your porters and begin trekking through the Dudh Koshi valley, crossing suspension bridges and passing mani walls on the way to Phakding. Overnight at a teahouse.
   - day: 3
     route: Phakding → Namche Bazaar
     altitude: 3,440m
     duration: 5–6 hrs trek
     description: Enter Sagarmatha National Park and climb to Namche Bazaar, the trading hub of the Khumbu.
-    image: ''
+    image: /images/packages/Sagarmatha-National-Park-base-camp-for-Everest.jpg
     highlights: Today you enter Sagarmatha National Park and cross several suspension bridges over the Dudh Koshi River. The trail gradually climbs to Namche Bazaar, the vibrant trading hub of the Khumbu region. If the weather is clear, you may get your first glimpse of Everest. Overnight at a teahouse.
   - day: 4
     route: Acclimatization Day in Namche
@@ -77,42 +77,42 @@ itineraryDays:
     altitude: 5,083m
     duration: 4–5 hrs hike
     description: Hike to Nangkartshang Peak for 360-degree views of Makalu, Lhotse, and Ama Dablam.
-    image: ''
+    image: /images/packages/43bbf8161a749ff28bda5e353952ba8f.jpg
     highlights: Today you hike to Nangkartshang Peak (5,083 m) for spectacular views of Makalu, Lhotse, and Ama Dablam. This hike is one of the best acclimatization activities on the trek. Return to Dingboche for the night. Overnight at a teahouse.
   - day: 8
     route: Dingboche → Lobuche
     altitude: 4,910m
     duration: 5–6 hrs trek
     description: Follow the Khumbu Glacier past Thukla Pass Memorial, honoring climbers who lost their lives on Everest.
-    image: ''
+    image: /images/packages/prayer-flags-Buddhist-front-foreground-massif-Khumbu.jpg
     highlights: The trail follows the Khumbu Glacier and passes through Thukla Pass, where you will see memorials dedicated to climbers who lost their lives on Everest. Continue to Lobuche, a small settlement near the glacier. Overnight at a teahouse.
   - day: 9
     route: Lobuche → Everest Base Camp → Gorak Shep
     altitude: 5,364m
     duration: 8–9 hrs trek
     description: Reach Everest Base Camp! Walk along the Khumbu Glacier to the base of the world's highest mountain.
-    image: ''
+    image: /images/packages/12-Days-Everest-base-Camp-trek.jpeg
     highlights: This is the most anticipated day of the trek. Walk along the Khumbu Glacier to Everest Base Camp (5,364 m). Standing at the base of the world's highest mountain is an unforgettable experience. After celebrating, return to Gorak Shep for the night. Overnight at a teahouse.
   - day: 10
     route: Kala Patthar → Pheriche
     altitude: 5,545m
     duration: 7–8 hrs hike + trek
     description: Sunrise hike to Kala Patthar for the best close-up panorama of Everest. Descend to Pheriche.
-    image: ''
+    image: /images/packages/media-4e593b0a-1763444924 (1).jpg
     highlights: Early in the morning, hike to Kala Patthar (5,555 m) for sunrise views of Everest. This is the highest point of the trek and offers the best close-up panorama of Everest. After descending, continue down to Pheriche. Overnight at a teahouse.
   - day: 11
     route: Pheriche → Namche Bazaar
     altitude: 3,440m
     duration: 7–8 hrs trek
     description: Retrace your steps down the valley through Tengboche and Phunki Tenga. Lower altitude makes breathing easier.
-    image: ''
+    image: /images/packages/Namche-from-Pheriche.jpeg.jpg
     highlights: Retrace your steps down the valley, passing through Tengboche and Phunki Tenga. The lower altitude makes breathing easier. Arrive in Namche Bazaar for the night. Overnight at a teahouse.
   - day: 12
     route: Namche → Lukla
     altitude: 2,840m
     duration: 7–8 hrs trek
     description: Final day of trekking. Follow the Dudh Koshi River back to Lukla. Celebrate with your guide and porters.
-    image: ''
+    image: /images/packages/Lukla-villag.jpg
     highlights: Follow the Dudh Koshi River back to Lukla. This is your final day of trekking. Celebrate your achievement with your guide and porters in Lukla. Overnight at a teahouse.
   - day: 13
     route: Fly back to Kathmandu
@@ -202,7 +202,12 @@ gallery:
   - /images/packages/wp2540884.jpg
   - /images/packages/wp2540777.jpg
   - /images/packages/Namche-Bazaar.jpg
-routeMap: /images/packages/634d175c-b4b4-4f25-970a-716963a305f9 (1).jpg
+  - /images/packages/lukla airport landing.jpg
+  - /images/packages/Tengboche_Monastery.jpg
+  - /images/packages/media-4e593b0a-1763444924 (1).jpg
+  - /images/packages/Sagarmatha-National-Park-base-camp-for-Everest.jpg
+  - /images/packages/unnamed.jpg
+routeMap: /images/packages/aee3aaab-c2c1-4469-a464-68c46c4dad62.png
 packingList:
   - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
   - Layered Clothing – Thermal base layers, fleece mid-layer, and waterproof/windproof hardshell jacket.
@@ -220,38 +225,39 @@ packingList:
   - Duffel Bag – A durable duffel bag for porters to carry your gear.
   - Daypack – A 30–40L daypack for daily essentials.
 preparation: |-
-  ### Altitude, Fitness & Acclimatization
+  Trekking to Everest Base Camp is a monumental achievement, but it requires respect for the mountains, the altitude, and the local culture. Here is a comprehensive breakdown of what you need to know, prepare for, and expect on your journey.
 
-  - **Maximum Altitude:** 5,545 m at Kala Patthar.
-  - **Acclimatization is Critical:** Proper hydration, a steady pace, and two built-in acclimatization days (in Namche and Dingboche) are essential for your safety.
-  - **Fitness Level:** A good level of fitness is recommended, as the trek involves 5–8 hours of walking per day at high altitude. Start your cardio and strength training 8–12 weeks before departure, and first understand [how difficult the Everest Base Camp trek](https://waveuphimalayas.com/blog/how-difficult-is-everest-base-camp-trek/) really is.
-  - **Train on Hills:** Simulate the trek by doing practice hikes on hills or long staircases with a loaded daypack on consecutive days. Read the [mistakes to avoid as a first-time trekker](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-a-first-time-trekker/) to pace yourself properly.
-  - **Altitude Sickness:** Know the symptoms (headache, nausea, dizziness) and tell your guide immediately if they appear. Our [Everest Base Camp trek guide](https://waveuphimalayas.com/blog/everest-base-camp-trek-guide-cost-permits-packing-altitude-more/) explains how altitude is managed day by day.
+  ### **Altitude, Fitness & Acclimatization**
 
-  ### Permits, Visas & Insurance
+  - **Maximum Altitude:** 5,545 m at Kala Patthar. Reaching this height means you will be walking in an environment with roughly half the oxygen available at sea level.
+  - **Acclimatization is Critical:** Proper hydration, a steady pace, and two built-in acclimatization days (in Namche and Dingboche) are essential for your safety. Never rush the ascent; listen to your body and your guide.
+  - **Fitness Level:** A good level of fitness is recommended, as the trek involves 5–8 hours of walking per day at high altitude. Start your cardio and strength training 8–12 weeks before departure. To set realistic expectations, first understand [how difficult the Everest Base Camp trek](https://waveuphimalayas.com/blog/how-difficult-is-everest-base-camp-trek/) really is.
+  - **Train on Hills:** Simulate the trek by doing practice hikes on hills or long staircases with a loaded daypack (7–10 kg) on consecutive days. Read the [mistakes to avoid as a first-time trekker](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-a-first-time-trekker/) to pace yourself properly and avoid burnout.
+  - **Altitude Sickness (AMS):** Know the symptoms (headache, nausea, dizziness) and tell your guide immediately if they appear. We monitor oxygen levels daily with an oximeter. If symptoms worsen, the only safe treatment is to descend. Our [Everest Base Camp trek guide](https://waveuphimalayas.com/blog/everest-base-camp-trek-guide-cost-permits-packing-altitude-more/) explains how altitude is managed day by day.
 
-  - **Permits:** You need two permits: the Sagarmatha National Park Permit and the Khumbu Pasanglhamu Rural Municipality Permit. Both are included in your package. (Read more about [permits for Everest Base Camp](https://waveuphimalayas.com/blog/permits-for-everest-base-camp-trek/)).
-  - **Visa:** A Nepal visa can be obtained on arrival at Tribhuvan International Airport.
-  - **Travel Insurance:** Comprehensive insurance covering helicopter evacuation up to 6,000 m, medical treatment, and trip cancellation is **mandatory**.
-  - **Guide & Porter:** Hiring a licensed guide and porter is essential for safety and comfort. Porters carry your main duffel (usually 10–12 kg), while you carry a 30–40L daypack.
+  ### **Permits, Visas & Insurance**
 
-  ### Accommodation, Food & Connectivity
+  - **Permits:** You need two mandatory permits: the Sagarmatha National Park Permit and the Khumbu Pasanglhamu Rural Municipality Permit. Both are included in your package. (Read more about [permits for Everest Base Camp](https://waveuphimalayas.com/blog/permits-for-everest-base-camp-trek/)).
+  - **Visa:** A Nepal visa can be obtained on arrival at Tribhuvan International Airport. Bring a passport valid for at least 6 months, a passport photo, and cash (USD) for the fee.
+  - **Travel Insurance:** Comprehensive insurance covering helicopter evacuation up to 6,000 m, medical treatment, and trip cancellation is **mandatory**. _Please note: In the event of a helicopter rescue, you will typically need to pay the operator upfront and claim the cost back from your insurance provider._
+  - **Guide & Porter:** Hiring a licensed guide and porter is essential for safety. Porters carry your main duffel (10–12 kg), while you carry a 30–40L daypack. If you are missing any gear, Thamel in Kathmandu has excellent shops to buy or rent equipment.
 
-  - **Accommodation:** Teahouses are basic but comfortable. Rooms are twin-sharing with shared bathrooms. Hot showers and device charging cost extra above Namche. [See what teahouse rooms are really like at different altitudes.](https://waveuphimalayas.com/blog/everest-base-camp-accommodation-and-food/)
-  - **Food & Water:** Breakfast is included every day. Lunch and dinner are available at teahouses for an additional cost. Drink only boiled or purified water, and avoid alcohol and caffeine at high altitude. [Read our full guide to EBC food, menus, and daily budgets.](https://waveuphimalayas.com/blog/everest-base-camp-accommodation-and-food/)
-  - **Connectivity:** Wi-Fi is available at most teahouses for a fee. Mobile network coverage is limited above Tengboche.
+  ### **Accommodation, Food & Connectivity**
 
-  ### Money & Logistics
+  - **Accommodation:** Teahouses are basic but comfortable. Rooms are twin-sharing with shared bathrooms. Hot showers and device charging cost extra above Namche. Power supply can be unreliable, so bring a high-capacity power bank. [See what teahouse rooms are really like at different altitudes](https://waveuphimalayas.com/blog/everest-base-camp-accommodation-and-food/).
+  - **Food & Water:** **Breakfast is included every day.** Lunch and dinner are available at teahouses for an additional cost. Drink only boiled or purified water. To avoid single-use plastics, please bring a reusable bottle and purification tablets. [Read our full guide to EBC food, menus, and daily budgets](https://waveuphimalayas.com/blog/everest-base-camp-accommodation-and-food/).
+  - **Connectivity:** Wi-Fi is available at most teahouses for a fee, but speeds are slow. Mobile network coverage is limited above Tengboche. Expect to be mostly offline above Dingboche.
 
-  - **Currency:** The local currency is the Nepali Rupee (NPR). USD and EUR can be exchanged in Kathmandu and Namche.
-  - **Money:** There are no ATMs above Namche. Carry enough Nepali Rupees for personal expenses and tips.
-  - **Flight Delays:** Lukla flights are weather-dependent and can be delayed or cancelled. We strongly recommend keeping 1–2 spare days after the trek.
-  - **Seasonal Flights:** During peak seasons, Lukla flights may operate from Manthali/Ramechhap instead of Kathmandu.
+  ### **Money & Logistics**
+
+  - **Currency & Cash:** The local currency is NPR. USD and EUR can be exchanged in Kathmandu and Namche. There are no ATMs above Namche, so carry enough cash for showers, charging, Wi-Fi, snacks, and tips.
+  - **Flight Delays:** Lukla flights are weather-dependent and can be delayed. We strongly recommend keeping 1–2 spare days after the trek before booking your international flight home.
+  - **Seasonal Flights:** During peak seasons, Lukla flights may operate from Manthali/Ramechhap instead of Kathmandu, requiring an early morning drive.
   - **Best Seasons:** March–May and September–November. Check the [best time for Everest Base Camp](https://waveuphimalayas.com/blog/best-time-for-everest-base-camp-trek/) to plan your dates, and book 3–6 months in advance.
 
-  ### Mindset & Culture
+  ### **Mindset & Culture**
 
-  - **Mental Preparation:** Long days, cold nights, and thin air will test your patience — stay positive, accept a slow pace, and celebrate small milestones.
-  - **Respect Local Culture:** Learn basic Nepali phrases, walk clockwise around mani walls and monasteries, and dress modestly at religious sites. Read [things to know before visiting Nepal](https://waveuphimalayas.com/blog/things-to-know-before-visiting-nepal/) for a broader primer.
-  - **Leave No Trace & Climate Impact:** Carry out what you carry in, use biodegradable soap, and avoid single-use plastics. The Himalayas are highly vulnerable to climate change, which is actively reshaping the trails and seasons. Learn more about [how climate change is affecting Nepal trekking](https://waveuphimalayas.com/blog/climate-change-nepal-trekking-best-time-to-visit-himalayas/) and how we can travel responsibly.
+  - **Mental Preparation:** Long days, cold nights, and thin air will test your patience. Stay positive, accept a slow pace, and celebrate small milestones.
+  - **Respect Local Culture:** Learn basic Nepali phrases, walk clockwise around mani walls and monasteries, and dress modestly at religious sites. Read [things to know before visiting Nepal](https://waveuphimalayas.com/blog/things-to-know-before-visiting-nepal/) for a broader cultural primer.
+  - **Leave No Trace:** Carry out what you carry in, use biodegradable soap, and avoid single-use plastics. The Himalayas are highly vulnerable to climate change. Learn more about [how climate change is affecting Nepal trekking](https://waveuphimalayas.com/blog/climate-change-nepal-trekking-best-time-to-visit-himalayas/).
 ---
