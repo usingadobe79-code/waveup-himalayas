@@ -77,7 +77,7 @@ itineraryDays:
     altitude: 5,083m
     duration: 4–5 hrs hike
     description: Hike to Nangkartshang Peak for 360-degree views of Makalu, Lhotse, and Ama Dablam.
-    image: /images/packages/43bbf8161a749ff28bda5e353952ba8f.jpg
+    image: ''
     highlights: Today you hike to Nangkartshang Peak (5,083 m) for spectacular views of Makalu, Lhotse, and Ama Dablam. This hike is one of the best acclimatization activities on the trek. Return to Dingboche for the night. Overnight at a teahouse.
   - day: 8
     route: Dingboche → Lobuche
