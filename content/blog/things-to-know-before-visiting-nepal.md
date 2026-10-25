@@ -231,7 +231,7 @@ Most treks in Nepal require at least one permit—some need two or three. Rules 
 - **Restricted areas:** As of March 2026, solo trekkers can obtain permits, but a guide is still required.
 - **Where to get them:** Nepal Tourism Board offices in Kathmandu (Bhrikutimandap) and Pokhara, or trail entry checkpoints (Monjo for EBC, Syabrubesi for Langtang).
 
-Most treks require a **TIMS card or local permit** plus a **national park entry fee**—typically USD 40–70 total. Restricted areas cost significantly more and require a guide and agency. Rules change often, so always confirm current requirements with your trekking agency before departure.
+Most treks require a **TIMS card or local permit** plus a **national park entry fee**—typically USD 40–70 total. Restricted areas cost significantly more and require a guide and agency. Rules change often, so always confirm current requirements with your trekking agency before departure. For more information, read our[ Complete Guide to Trekking in Nepal](https://waveuphimalayas.com/blog/a-complete-guide-to-trekking-in-nepal/) to learn everything you need to know before planning your trek.
 
 ***
 
