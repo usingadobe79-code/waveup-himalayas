@@ -172,6 +172,6 @@ The flight to Lukla lasts under an hour, but it sets the tone for the whole jour
 
 Join our [13-day guided Everest Base Camp trek](https://waveuphimalayas.com/packages/everest-base-camp-trek/), which includes Kathmandu–Lukla flights, permits, teahouse lodging, a licensed guide and two acclimatization days. Prefer to fly higher and walk less? Explore our [Everest Base Camp Heli Trek](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/).
 
-**If you are looking for Tour Packages please** **[click here](https://waveuphimalayas.com/#packages)**
+**If you are looking for Tour or Trekking Packages please** **[click here](https://waveuphimalayas.com/#packages)**
 
 **If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** **[info@waveuphimalayas.com](mailto:info@waveuphimalayas.com)**  **Phone** **[(Whatsapp or Viber +977 9861992878)](https://wa.me/+9779861992878)**
