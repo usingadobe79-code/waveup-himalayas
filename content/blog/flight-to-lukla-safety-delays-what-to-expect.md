@@ -172,7 +172,7 @@ The Lukla flight uses small aircraft, so weight and balance matter far more than
 
 Keep passports, flight documents, cash, medication, camera, power bank, water, snacks and a warm layer in your daypack. Airlines usually require spare lithium batteries and power banks in hand luggage. Put the sleeping bag, spare clothing and toiletries in your duffel. If a bag is held back for a later flight, you will still have everything you need for the first day in your daypack.
 
-Our [Everest Base Camp trek guide](https://waveuphimalayas.com/blog/everest-base-camp-trek-guide-cost-permits-packing-altitude-more/) has a full packing list, and our article on [first-time trekker mistakes](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-a-first-time-trekker/) covers the most common packing errors.
+Our [Everest Base Camp trek guide](https://waveuphimalayas.com/blog/everest-base-camp-trek-guide-cost-permits-packing-altitude-more/) has a full packing list, and our article on [first-time trekker mistakes](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-first-time-trekker/) covers the most common packing errors.
 
 ***
 
