@@ -2,7 +2,7 @@
 title: 'Flight to Lukla: Safety, Delays & What to Expect'
 date: 2026-10-25
 excerpt: 'Everything about the flight to Lukla: the 527 m runway, Ramechhap vs Kathmandu, safety, delays and baggage limits. Plan your Everest Base Camp trek.'
-coverImage: /images/blog/ramechhap-lukla-flight-1.jpg
+coverImage: /images/blog/Learn-about-the-flight-to-Lukla.jpg
 author: Gaurav Lamichhane
 draft: false
 relatedPackages:
@@ -35,6 +35,8 @@ Every Everest Base Camp journey begins with the same question: how do you get in
 
 At WaveUp Himalayas, we plan this flight into every Everest Base Camp trek we run, and we know it is the part our guests ask about most. Is the Lukla flight safe? Which airport will we leave from? What happens if the weather turns? This guide answers those questions honestly, so you arrive in Kathmandu excited rather than anxious.
 
+***
+
 ## The Lukla flight at a glance
 
 | Detail | What to know |
@@ -47,6 +49,8 @@ At WaveUp Himalayas, we plan this flight into every Everest Base Camp trek we ru
 | Baggage | Usually around 15 kg in total, varies by airline |
 | Peak-season departure | Often Ramechhap (Manthali), not Kathmandu |
 
+***
+
 ## Why the Lukla airport approach is so dramatic
 
 ![Lukla Airport](/images/blog/lukla%20airport%20landing-001.jpg "Lukla Airport")
@@ -58,6 +62,8 @@ A rock wall stands at the top of the runway. At the bottom, the ground simply fa
 The slope is not a flaw; it is the design. Landing uphill helps the plane slow down, and taking off downhill helps it gain speed. There is no go-around at Lukla, so the pilot commits to the landing on the first attempt. Because of this, Nepal's aviation authority sets strict experience rules for Lukla pilots, including many short-takeoff-and-landing missions and supervised landings before they are cleared to fly here alone.
 
 The airstrip has a story too. Sir Edmund Hillary supervised its construction in the 1960s to bring supplies and trekkers into the Khumbu, and the airport was renamed in 2008 in honour of Hillary and Tenzing Norgay, the first climbers confirmed on the summit of Everest.
+
+***
 
 ## What the flight to Lukla feels like
 
@@ -84,6 +90,8 @@ This is the question that surprises first-time trekkers most. In the peak trekki
 
 The drive to Ramechhap is the part of the journey guests remember least fondly. Our advice is simple: go to bed early the night before, sleep in the vehicle and carry water and snacks. Your guide and driver handle the tickets, check-in and transfers, and our itinerary explains the switch on Day 2 and Day 13 of the [13-day Everest Base Camp trek](https://waveuphimalayas.com/packages/everest-base-camp-trek/).
 
+***
+
 ## Is the Lukla flight safe?
 
 We answer this question carefully, because our guests deserve a straight answer.
@@ -97,6 +105,8 @@ What we do about it:
 - We require travel insurance that covers high-altitude trekking and helicopter evacuation.
 - We build spare days into your plans, so there is no pressure to fly in poor conditions.
 
+***
+
 ## Lukla flight delays and cancellations: how we plan for them
 
 Lukla flights depend on the weather, and mountain weather changes fast. Morning cloud, wind or poor visibility at Lukla or along the route can delay a flight by a few hours or cancel it for the day. This is normal in the Himalayas and it is the biggest planning risk on the trek.
@@ -108,6 +118,8 @@ We recommend three habits:
 - **Check your insurance** covers delays, extra nights and a helicopter evacuation if you need one.
 
 If your flight is delayed, your guide stays in touch with the airline, rebooks you on the next available flight and keeps you informed. Extra nights in Kathmandu or Lukla caused by delays are not included in the package, so a flexible schedule saves money and stress.
+
+***
 
 ## Helicopter to Lukla: your backup option
 
@@ -131,6 +143,8 @@ Check your travel insurance too. Cover for an emergency helicopter evacuation is
 **Want the helicopter to be the whole experience?**
 
 If you would rather fly higher and walk less, we also run helicopter-based journeys to the Everest region. Compare our [Everest Base Camp Heli Tour](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour/), [Heli Tour with Landing](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour-with-landing/) and [Heli Trek](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/), and message us if you want help choosing the one that suits your time, fitness and budget.
+
+***
 
 ## Lukla flight baggage limit: how to pack
 
