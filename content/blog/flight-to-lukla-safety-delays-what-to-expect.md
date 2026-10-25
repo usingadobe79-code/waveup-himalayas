@@ -31,9 +31,7 @@ faqs:
 tables: []
 ---
 
-Every Everest Base Camp journey begins with the same question: how do you get into the mountains? For most trekkers, the answer is a **flight to Lukla**, a roughly 35-minute ride in a small plane that ends on one of the shortest, steepest and most famous runways on Earth.
-
-At WaveUp Himalayas, we plan this flight into every Everest Base Camp trek we run, and we know it is the part our guests ask about most. Is the Lukla flight safe? Which airport will we leave from? What happens if the weather turns? This guide answers those questions honestly, so you arrive in Kathmandu excited rather than anxious.
+Planning a trip to Nepal? Whether you're dreaming of standing at Everest Base Camp, exploring the ancient temples of Kathmandu, or simply soaking in Himalayan hospitality, a little preparation goes a long way. From understanding **Nepal visa requirements / visa on arrival** procedures to choosing the **best time to visit Nepal**, securing the right **Nepal travel insurance / altitude sickness** coverage for high-altitude trekking, and knowing **what to pack for Nepal** (**Nepal packing list**), this complete **Nepal travel guide** covers all the essential **things to know before visiting Nepal**—especially for **first time visiting Nepal**. You'll also find practical **Nepal travel tips** on **is Nepal safe for tourists**, **altitude sickness** prevention, **Everest Base Camp preparation** (**Nepal trekking tips**), and local etiquette, so you can travel confidently and make the most of every moment in this breathtaking country.
 
 ***
 
