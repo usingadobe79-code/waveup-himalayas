@@ -217,7 +217,7 @@ Spring is the second-best trekking season. The weather is warmer, the rhododendr
 The monsoon brings rain, clouds, and leeches at lower elevations. Trekking is possible in rain-shadow areas like **Upper Mustang**, **Dolpo**, and parts of **Manaslu**, but many classic routes are muddy and obscured by clouds. This is a good season for cultural tours in Kathmandu and Pokhara, and for fewer crowds.
 
 **Winter (December–February)**
-Winter is cold, especially at high altitude. Many high passes are closed, but lower-altitude treks like **Ghorepani Poon Hill**, **Langtang Valley**, and **Kathmandu Valley** tours are still enjoyable. Skies are often clear, and the mountains are stunning — just be prepared for freezing nights.
+Winter is cold, especially at high altitude. Many high passes are closed, but lower-altitude treks like **[Ghorepani Poon Hill](https://waveuphimalayas.com/packages/ghorepani-poon-hill-trek/)**,[ **Langtang Valley**](https://waveuphimalayas.com/packages/langtang-valley-trek/), and **Kathmandu Valley** tours are still enjoyable. Skies are often clear, and the mountains are stunning — just be prepared for freezing nights.
 
 So, when is the **[best time to visit Nepal?](https://waveuphimalayas.com/blog/best-time-to-visit-nepal-wave-up-himalayas/)** For most trekkers, **autumn (October–November)** and **spring (March–May)** are the ideal months. But Nepal is a year-round destination if you choose the right region and the right trek.
 
@@ -244,8 +244,6 @@ Our guides are experienced, licensed, and passionate about sharing Nepal with th
 
 Whether you’re a first-time trekker or a seasoned mountaineer, **WaveUp Himalayas** will help you plan a safe, memorable, and responsible journey through the country we call home.
 
-***
-
-**If you are looking for Tour Packages please** **[click here](https://waveuphimalayas.com/#packages)**
+**If you are looking for Tour or Trekking Packages please** **[click here](https://waveuphimalayas.com/#packages)**
 
 **If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** **[info@waveuphimalayas.com](mailto:info@waveuphimalayas.com)**  **Phone** **[(Whatsapp or Viber +977 9861992878)](https://wa.me/+9779861992878)**
