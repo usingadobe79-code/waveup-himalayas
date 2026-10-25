@@ -125,7 +125,7 @@ If your flight is delayed, your guide stays in touch with the airline, rebooks y
 
 ## Helicopter to Lukla: your backup option
 
-![](/images/blog/kathmandu-to-lukla-helicopter-flight-001.jpg)
+![Helicopter to Lukla](/images/blog/kathmandu-to-lukla-helicopter-flight-001.jpg "Helicopter to Lukla")
 
 When low cloud or wind grounds the small fixed-wing planes, a helicopter to Lukla can sometimes still get through. Helicopters operate under different limits and can fly when the weather opens briefly, which is why many trekkers keep them in mind as a Plan B. They are not a guarantee, though, because a helicopter also stays on the ground when visibility is poor.
 
