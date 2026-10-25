@@ -77,6 +77,8 @@ Then comes the approach. The plane threads between ridges, turns toward the slop
 
 **Which side should you sit on?** Trekkers commonly recommend the left side going to Lukla and the right side coming back for the best mountain views. Seating rules differ by airline, so we will help you at check-in where we can.
 
+***
+
 ## Kathmandu to Lukla flight or Ramechhap to Lukla flight?
 
 This is the question that surprises first-time trekkers most. In the peak trekking months, roughly March to May and September to November, most Lukla flights leave from Manthali Airport in Ramechhap rather than Kathmandu. The change reduces congestion at Kathmandu's Tribhuvan Airport and lets more flights take off whenever the weather opens. Outside those months, flights usually leave from Kathmandu.
@@ -171,6 +173,8 @@ The Lukla flight uses small aircraft, so weight and balance matter far more than
 Keep passports, flight documents, cash, medication, camera, power bank, water, snacks and a warm layer in your daypack. Airlines usually require spare lithium batteries and power banks in hand luggage. Put the sleeping bag, spare clothing and toiletries in your duffel. If a bag is held back for a later flight, you will still have everything you need for the first day in your daypack.
 
 Our [Everest Base Camp trek guide](https://waveuphimalayas.com/blog/everest-base-camp-trek-guide-cost-permits-packing-altitude-more/) has a full packing list, and our article on [first-time trekker mistakes](https://waveuphimalayas.com/blog/mistakes-to-avoid-as-a-first-time-trekker/) covers the most common packing errors.
+
+***
 
 ## Tips from our guides for flight day
 
