@@ -1,6 +1,4 @@
 ---
-overview: |-
-  The Manaslu Circuit Trek is a 14-day guided Himalayan journey around the world's eighth-highest mountain, Mount Manaslu (8,163 m), beginning with a scenic drive from Kathmandu through Tibetan-influenced villages, across suspension bridges over the Budhi Gandaki River, past ancient monasteries, and over the dramatic Larkya La Pass (5,106 m). With built-in acclimatization, teahouse lodging, and expert local guides, this moderate-to-challenging trek is remote, culturally rich, and unforgettable. Often called the best alternative to the Annapurna Circuit, the Manaslu Circuit Trek offers a quieter, wilder experience inside the protected Manaslu Conservation Area.
 title: Manaslu Circuit Trek
 regionKey: manaslu-langtang
 serviceKey: trekking
@@ -9,6 +7,12 @@ originalPrice: null
 offerLabel: ''
 image: /images/packages/Larke-La-pass-1.webp
 blurb: Book the 14-day Manaslu Circuit Trek 2026/2027 with Wave Up Himalayas. Cross Larkya La Pass (5,106 m), explore Tibetan villages, permits & guides included.
+overview: |-
+  The **Manaslu Circuit Trek** is a **14-day guided trek** around Mount Manaslu (8,163 m), the world’s eighth-highest peak, starting and ending in Kathmandu. The trail follows the Budhi Gandaki River through deep gorges, pine forests and alpine meadows, crossing suspension bridges hung with prayer flags. You pass **Tibetan-influenced villages** like Samagaun and Samdo, along with ancient monasteries and mani walls, inside the protected **Manaslu Conservation Area**.
+
+  The highlight is crossing **Larkya La Pass (5,106 m / 16,752 ft)**, with views of Manaslu, Himlung Himal, Cheo Himal and Annapurna II. A full **acclimatization day at Samagaun** lets you rest or hike to Birendra Lake or **Manaslu Base Camp (4,800 m)**, which lowers the risk of altitude sickness. The route then descends through the Dudh Khola valley to Tilije, followed by a drive back to Kathmandu. This moderately challenging trek covers about 177 km, so it suits fit trekkers who are comfortable with several long days of walking at altitude.
+
+  Because Manaslu is a restricted area, the trails are far quieter than the Annapurna Circuit or Everest Base Camp. This makes it a good choice for an authentic, less crowded Himalayan experience. Our package includes all **Manaslu permits** (RAP, MCAP, ACAP and the Chumnubri entry fee), a licensed English-speaking guide, porter support, ground transport, teahouse accommodation, two nights in a 3-star Kathmandu hotel and breakfast on trekking days. The **best time for the Manaslu Circuit Trek** is autumn (September to November) and spring (March to May), with a minimum group of two trekkers.
 seoTitle: Manaslu Circuit Trek – 14 Days Guided | Wave Up Himalayas
 seoDescription: Book the 14-day Manaslu Circuit Trek 2026/2027 with Wave Up Himalayas. Cross Larkya La Pass (5,106 m), explore Tibetan villages, permits & guides included.
 featured: true
