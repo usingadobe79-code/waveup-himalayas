@@ -9,7 +9,7 @@ relatedPackages:
   - everest-base-camp-trek
   - manaslu-circuit-trek
   - annapurna-base-camp-trek
-seoTitle: 'Nepal 8000m Peaks: The 8 Highest Mountains & Expedition Guide'
+seoTitle: 'Nepal 8000m Peaks: The 8 Highest Mountains'
 seoDescription: Discover Nepal 8000m peaks — the 8 eight-thousanders including Everest, Kanchenjunga, and Annapurna. Routes, difficulty, permits, costs, and trekking options explained.
 faqs:
   - question: How many 8000m peaks are in Nepal?
