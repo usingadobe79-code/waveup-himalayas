@@ -110,7 +110,7 @@ Namche Bazaar is the Sherpa capital of the Khumbu and your first real altitude t
 
 Dingboche sits in the Imja Valley beneath the huge wall of Ama Dablam. The air is noticeably thinner than in Namche, nights are cold, and your body is working harder. This is the second and arguably more important acclimatization stop, because the terrain beyond Dingboche (Lobuche, Gorak Shep and Base Camp) climbs above 4,900 m.
 
-![ Dingboche (4,410 m)](/images/blog/Dingboche-Village-1025.jpg " Dingboche (4,410 m)")
+![Dingboche (4,410 m)](/images/blog/Dingboche-Village-1025.jpg "Dingboche (4,410 m)")
 
 #### Best Dingboche Rest Day Hikes
 
@@ -129,6 +129,7 @@ For the vast majority of trekkers, yes. Itineraries that skip rest days and prom
 ### Sample 14-Day EBC Itinerary with Acclimatization Days
 
 | Day | Route | Notes |
+| --- | --- | --- |
 | 1 | Fly Kathmandu to Lukla (2,860 m), trek to Phakding (2,610 m) | Easy first day |
 | 2 | Phakding to Namche Bazaar (3,440 m) | Long climb to finish |
 | 3 | **Acclimatization day in Namche** | Everest View Hotel or Khumjung hike |
@@ -138,8 +139,8 @@ For the vast majority of trekkers, yes. Itineraries that skip rest days and prom
 | 7 | Dingboche to Lobuche (about 4,900 m) | Short, slow day |
 | 8 | Lobuche to Gorak Shep, Everest Base Camp (5,364 m), back to Gorak Shep | Big day |
 | 9 | Kala Patthar (5,545 m) at sunrise, trek down to Pheriche | Long descent |
-| 10 to 12 | Descend to Namche and Lukla | Faster going down |
-| 13 to 14 | Fly to Kathmandu, spare day | Weather buffer |
+| 10–12 | Descend to Namche and Lukla | Faster going down |
+| 13–14 | Fly to Kathmandu, spare day | Weather buffer |
 
 ***
 
