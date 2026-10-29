@@ -337,7 +337,7 @@ Fly from Lukla to Kathmandu. Free time for shopping or relaxation.
 
 The **Everest Base Camp Trek** reaches 5,364m at Base Camp and 5,555m at Kala Patthar. At these altitudes, oxygen levels drop to roughly **50% of sea level**. Proper acclimatization prevents **altitude sickness (AMS)** and increases your chances of reaching Base Camp safely.
 
-Our itinerary includes two acclimatization days:
+Our itinerary includes[ two acclimatization days in Namche and Dingboche](https://waveuphimalayas.com/blog/ebc-acclimatization-in-namche-dingboche/):
 
 **Day 4 – Acclimatization in Namche (3,880m)**
 Hike to a scenic viewpoint for your first close-up of Everest. Explore Khumjung village and the Sherpa Museum.
@@ -377,6 +377,22 @@ The **Everest Base Camp Trek** is challenging, but it doesn't have to be overwhe
 
 The **Everest Base Camp Trek** is challenging, but with proper training, a longer itinerary, slow pacing, good gear, and the right support, you can make it easier and more enjoyable. Preparation is the key—and with **WaveUp Himalayas** by your side, you'll be ready for the adventure of a lifetime.
 
-**If you are looking for Tour Packages please** [**click here**](https://waveuphimalayas.com/#packages)
+**Ready to plan your trek?** Contact WaveUp Himalayas for a tailor-made itinerary with proper acclimatization built in, or explore our [13-day Everest Base Camp](https://waveuphimalayas.com/packages/everest-base-camp-trek/) itinerary to see how the rest days fit into the route. Not sure which route suits you? Compare our Everest region treks.
 
-**If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** [**info@waveuphimalayas.com**](mailto:info@waveuphimalayas.com)  **Phone** [**(Whatsapp or Viber +977 9861992878)**](https://wa.me/+9779861992878)
+[Everest Base Camp Trek](https://waveuphimalayas.com/packages/everest-base-camp-trek/)
+
+[Everest Base Camp Trek with Gokyo Lake](https://waveuphimalayas.com/packages/everest-base-camp-gokyo-lake-trek/)
+
+[Everest Base Camp Trek with Three Passes](https://waveuphimalayas.com/packages/everest-base-camp-three-passes-trek/)
+
+[Everest Base Camp Heli Trek](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/)
+
+[Everest Base Camp Heli Tour](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour/)
+
+[Everest Base Camp Heli Tour with Landing](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour-with-landing/)
+
+[Everest Mountain Flight](https://waveuphimalayas.com/packages/everest-mountain-flight/)
+
+**If you are looking for Tour Packages please** **[click here](https://waveuphimalayas.com/#packages)**
+
+**If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** **[info@waveuphimalayas.com](mailto:info@waveuphimalayas.com)**  **Phone** **[(Whatsapp or Viber +977 9861992878)](https://wa.me/+9779861992878)**
