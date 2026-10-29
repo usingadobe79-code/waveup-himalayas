@@ -363,7 +363,7 @@ Safety should always come first on a high-altitude trek like Everest Base Camp. 
 **Altitude Safety**
 
 - **Acclimatize properly.** Above 3,000 m, sleeping altitude should increase by no more than 500 m per day.
-- **Take rest days.** The acclimatization days at Namche and Dingboche are not optional.
+- **Take rest days.** The [acclimatization days at Namche and Dingboche](https://waveuphimalayas.com/blog/ebc-acclimatization-in-namche-dingboche/) are not optional.
 - **Know the symptoms.** Headache, dizziness, nausea, and loss of appetite are early signs of AMS. Confusion, breathlessness at rest, and coughing are medical emergencies — descend immediately.
 - **Consider Diamox.** Consult your doctor before the trek.
 - **Never ignore symptoms.** Tell your guide immediately if you feel unwell.
@@ -402,8 +402,24 @@ Safety should always come first on a high-altitude trek like Everest Base Camp. 
 
 The Everest Base Camp trek is safe when approached with respect, preparation, and the right support. Walk slowly, drink plenty of water, listen to your body, and trust your guide. At **WaveUp Himalayas**, safety is built into every itinerary — our guides are trained in high-altitude first aid and carry oximeters on every trek. Your adventure matters to us, and so does your wellbeing.
 
-The [Everest Base Camp Trek ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)is more than reaching a point on a map — it's a journey through breathtaking Himalayan landscapes, Sherpa culture, and a personal challenge that stays with you forever. With proper preparation and a trusted local team, this adventure is within reach for beginners and seasoned trekkers alike. **Ready to begin?** Contact **WaveUp Himalayas** and start planning your Everest Base Camp Trek in Nepal today.
+The Everest Base Camp Trek is more than reaching a point on a map — it's a journey through breathtaking Himalayan landscapes, Sherpa culture, and a personal challenge that stays with you forever. With proper preparation and a trusted local team, this adventure is within reach for beginners and seasoned trekkers alike. **Ready to begin?** Contact **WaveUp Himalayas** and start planning your Everest Base Camp Trek in Nepal today.
 
-**If you are looking for Tour Packages please** **[click here](https://waveuphimalayas.com/#packages)**
+**Ready to plan your trek?** Contact WaveUp Himalayas for a tailor-made itinerary with proper acclimatization built in, or explore our [13-day Everest Base Camp](https://waveuphimalayas.com/packages/everest-base-camp-trek/) itinerary to see how the rest days fit into the route. Not sure which route suits you? Compare our Everest region treks.
+
+[Everest Base Camp Trek](https://waveuphimalayas.com/packages/everest-base-camp-trek/)
+
+[Everest Base Camp Trek with Gokyo Lake](https://waveuphimalayas.com/packages/everest-base-camp-gokyo-lake-trek/)
+
+[Everest Base Camp Trek with Three Passes](https://waveuphimalayas.com/packages/everest-base-camp-three-passes-trek/)
+
+[Everest Base Camp Heli Trek](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/)
+
+[Everest Base Camp Heli Tour](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour/)
+
+[Everest Base Camp Heli Tour with Landing](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour-with-landing/)
+
+[Everest Mountain Flight](https://waveuphimalayas.com/packages/everest-mountain-flight/)
+
+**If you are looking for Tour or Trekking packages please** **[click here](https://waveuphimalayas.com/#packages)**
 
 **If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** **[info@waveuphimalayas.com](mailto:info@waveuphimalayas.com)**  **Phone** **[(Whatsapp or Viber +977 9861992878)](https://wa.me/+9779861992878)**
