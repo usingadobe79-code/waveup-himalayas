@@ -103,7 +103,7 @@ All tourist visas are **multiple-entry**.
 
 Autumn is widely considered the **[best time to visit Nepal,](https://waveuphimalayas.com/blog/best-time-to-visit-nepal-wave-up-himalayas/)** offering clear skies, stable weather, and vibrant festivals.
 
-![](/images/blog/Autumn%20trkking%20in%20Nepal%20%281%29.webp)
+![Autumn (Mid-October to Mid-November)](/images/blog/Autumn%20trkking%20in%20Nepal%20%281%29.jpg "Autumn (Mid-October to Mid-November)")
 
 - **Weather:** Dry, stable, and pleasant at lower altitudes; cold at night above 3,000m.
 - **Mountain Views:** The sharpest and clearest of the year—ideal for photography and sightseeing.
@@ -117,7 +117,7 @@ Autumn offers the best overall conditions for trekking and mountain views, makin
 
 Spring is the **second-best time to visit Nepal**, featuring blooming rhododendrons, warming weather, and Everest summit season.
 
-![](/images/blog/1717482117_TMVrf_phewa-lake.webp)
+![](/images/blog/1717482117_TMVrf_phewa-lake.opt-001.webp)
 
 - **Weather:** Warming across the country; pleasant days at lower altitudes, cold at higher elevations.
 - **Mountain Views:** Generally clear in March and early April; haze and dust build below 3,000m by late April.
