@@ -226,7 +226,7 @@ gallery:
   - /images/packages/gorakshep-to-kalapatthar-1024x768.jpg
   - /images/packages/Tengboche_Monastery.jpg
   - /images/packages/Gokyo-Ri.jpg
-routeMap: /images/packages/view-of-gokyo-lake-and-valley-from-gokyo-ri-during-goky-lakes-trek-1024x768.jpg
+routeMap: /images/packages/ebc_gokyo_route_map_web_1200.png
 packingList:
   - Trekking Boots – Waterproof, well-broken-in boots with good ankle support.
   - Microspikes – For the Cho La crossing; confirm with your guide whether spares are carried.
