@@ -90,7 +90,7 @@ Namche Bazaar is the Sherpa capital of the Khumbu and your first real altitude t
 
 ![Namche Bazaar (3,440 m)](/images/blog/image_processing20190412-4-020.jpg "Namche Bazaar (3,440 m)")
 
-#### Best Namche Bazaar Rest Day Activities
+### Best Namche Bazaar Rest Day Activities
 
 **1. Hike to the Everest View Hotel (about 3,880 m).** This is the most popular choice. The trail climbs above town, and on a clear morning the terrace offers views of Everest, Lhotse, Nuptse and Ama Dablam. Enjoy a cup of tea, then walk back down to sleep in Namche. Allow 2 to 3 hours round trip.
 
@@ -112,7 +112,7 @@ Dingboche sits in the Imja Valley beneath the huge wall of Ama Dablam. The air i
 
 ![Dingboche (4,410 m)](/images/blog/Dingboche-Village-1025.jpg "Dingboche (4,410 m)")
 
-#### Best Dingboche Rest Day Hikes
+### Best Dingboche Rest Day Hikes
 
 **1. Nangkartshang Peak (about 5,000 m).** A steep but rewarding hike up the ridge behind the village. It takes you roughly 600 m above your sleeping altitude, which is exactly what a climb high, sleep low day calls for. Views take in Makalu, Lhotse, Ama Dablam and the Chhukhung valley. Allow 4 to 5 hours round trip, go slowly, and turn back if symptoms appear.
 
