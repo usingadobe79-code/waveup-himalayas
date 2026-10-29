@@ -110,6 +110,8 @@ Namche Bazaar is the Sherpa capital of the Khumbu and your first real altitude t
 
 Dingboche sits in the Imja Valley beneath the huge wall of Ama Dablam. The air is noticeably thinner than in Namche, nights are cold, and your body is working harder. This is the second and arguably more important acclimatization stop, because the terrain beyond Dingboche (Lobuche, Gorak Shep and Base Camp) climbs above 4,900 m.
 
+![ Dingboche (4,410 m)](/images/blog/Dingboche-Village-1025.jpg " Dingboche (4,410 m)")
+
 #### Best Dingboche Rest Day Hikes
 
 **1. Nangkartshang Peak (about 5,000 m).** A steep but rewarding hike up the ridge behind the village. It takes you roughly 600 m above your sleeping altitude, which is exactly what a climb high, sleep low day calls for. Views take in Makalu, Lhotse, Ama Dablam and the Chhukhung valley. Allow 4 to 5 hours round trip, go slowly, and turn back if symptoms appear.
