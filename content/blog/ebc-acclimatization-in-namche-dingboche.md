@@ -88,6 +88,8 @@ When you hike to a higher altitude, your body experiences lower oxygen levels an
 
 Namche Bazaar is the Sherpa capital of the Khumbu and your first real altitude test. The climb up from the Dudh Koshi river and its high suspension bridges is steep, and most trekkers arrive tired with a first hint of thin air. It is also a great place to spend two nights, with bakeries, outdoor shops, ATMs, internet access and views of Thamserku and Kongde Ri.
 
+![Namche Bazaar (3,440 m)](/images/blog/image_processing20190412-4-020.jpg "Namche Bazaar (3,440 m)")
+
 #### Best Namche Bazaar Rest Day Activities
 
 **1. Hike to the Everest View Hotel (about 3,880 m).** This is the most popular choice. The trail climbs above town, and on a clear morning the terrace offers views of Everest, Lhotse, Nuptse and Ama Dablam. Enjoy a cup of tea, then walk back down to sleep in Namche. Allow 2 to 3 hours round trip.
