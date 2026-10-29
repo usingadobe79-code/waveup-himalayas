@@ -38,7 +38,7 @@ Whether you’re researching Diamox for EBC, learning how a pulse oximeter fits 
 
 ***
 
-### What Is Acclimatization and Why Does It Matter on the EBC Trek?
+## What Is Acclimatization and Why Does It Matter on the EBC Trek?
 
 Acclimatization is the process by which your body adjusts to lower oxygen levels as you gain altitude. On the Everest Base Camp trek, this adjustment is what separates a safe, enjoyable journey from one cut short by illness. At Everest Base Camp (5,364 m), each breath delivers roughly half the oxygen available at sea level, and your body needs time to adapt to that.
 
@@ -84,7 +84,7 @@ When you hike to a higher altitude, your body experiences lower oxygen levels an
 
 ***
 
-### Acclimatization Day in Namche Bazaar (3,440 m)
+## Acclimatization Day in Namche Bazaar (3,440 m)
 
 Namche Bazaar is the Sherpa capital of the Khumbu and your first real altitude test. The climb up from the Dudh Koshi river and its high suspension bridges is steep, and most trekkers arrive tired with a first hint of thin air. It is also a great place to spend two nights, with bakeries, outdoor shops, ATMs, internet access and views of Thamserku and Kongde Ri.
 
@@ -106,7 +106,7 @@ Namche Bazaar is the Sherpa capital of the Khumbu and your first real altitude t
 
 ***
 
-### Acclimatization Day in Dingboche (4,410 m)
+## Acclimatization Day in Dingboche (4,410 m)
 
 Dingboche sits in the Imja Valley beneath the huge wall of Ama Dablam. The air is noticeably thinner than in Namche, nights are cold, and your body is working harder. This is the second and arguably more important acclimatization stop, because the terrain beyond Dingboche (Lobuche, Gorak Shep and Base Camp) climbs above 4,900 m.
 
@@ -122,7 +122,7 @@ Dingboche sits in the Imja Valley beneath the huge wall of Ama Dablam. The air i
 
 ***
 
-### Do You Really Need Two Acclimatization Days?
+## Do You Really Need Two Acclimatization Days?
 
 For the vast majority of trekkers, yes. Itineraries that skip rest days and promise a fast trip to Base Camp can look tempting, but they significantly raise the risk of altitude illness and are a common reason trekkers turn back or need evacuation. A standard 12 to 14 day plan with two acclimatization days is the best balance of time and safety. If your schedule allows, add a spare buffer day for both acclimatization and flight delays at Lukla.
 
@@ -144,7 +144,7 @@ For the vast majority of trekkers, yes. Itineraries that skip rest days and prom
 
 ***
 
-### How to Recognize Altitude Sickness (AMS) on the Everest Base Camp Trek
+## How to Recognize Altitude Sickness (AMS) on the Everest Base Camp Trek
 
 Knowing the early signs of altitude sickness is one of the most important safety skills on the Everest Base Camp trek. Symptoms can appear anywhere above about 2,500 to 3,000 m, and they are often easy to dismiss as simple tiredness. Catching them early, and responding correctly, keeps a small problem from becoming a serious one.
 
@@ -192,7 +192,7 @@ At WaveUp Himalayas, we check in with every trekker each morning and evening, as
 
 ***
 
-### Practical Tips for a Successful Acclimatization on the EBC Trek
+## Practical Tips for a Successful Acclimatization on the EBC Trek
 
 Good acclimatization comes down to a handful of simple habits repeated every day. These are the tips our guides share with every group heading to Everest Base Camp.
 
