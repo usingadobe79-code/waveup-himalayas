@@ -79,6 +79,8 @@ By the middle of the trek, tired legs and sore feet are normal. Starting early, 
 
 **3. Altitude.**
 
+![Annapurna Base Camp trek altitude near Machhapuchhre Base Camp](/images/blog/7c1d0f1f81147d4625fecde886c5fea5-001.jpg "Annapurna Base Camp trek altitude near Machhapuchhre Base Camp")
+
 Above about 3,000 m, the risk of altitude sickness rises. The section from Deurali (about 3,200 m) to Machhapuchhre Base Camp (3,700 m) and on to ABC (4,130 m) is where headaches, nausea, loss of appetite and poor sleep most often appear. The air holds less oxygen, so even gentle walking feels harder than it would at home.
 
 Altitude affects fit and unfit trekkers alike, and nothing about your age or fitness reliably predicts how you will react. What helps is ascending gradually, drinking plenty of water, walking slowly and telling your guide early if you feel unwell. If symptoms worsen, descending is the safest answer.
