@@ -67,6 +67,8 @@ Five things account for nearly all of the Annapurna Base Camp trek difficulty, a
 
 **1. The stairs.** 
 
+![Stone stairs on the Annapurna Base Camp trek](/images/blog/day4stairs-001.jpg "Stone stairs on the Annapurna Base Camp trek")
+
 Ask anyone who has walked to ABC what they remember, and many will say the steps. The trail climbs and drops thousands of stone stairs, especially around Chomrong, Jhinu Danda and the stretch up to Sinuwa. Unlike a steady uphill path, stairs make your legs lift your full weight with every step, and the descents are just as demanding, because your knees and thighs absorb the impact for hours.
 
 Trekking poles, a slow and steady rhythm, and stair training before you leave make the biggest difference. Many trekkers find the downhill days harder than the climbs, so do not underestimate the return journey.
