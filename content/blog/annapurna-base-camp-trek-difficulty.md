@@ -2,7 +2,7 @@
 title: Annapurna Base Camp Trek Difficulty
 date: 2026-10-30
 excerpt: How difficult is the Annapurna Base Camp trek? Learn about stairs, altitude, daily walking times, fitness needs and tips to prepare with WaveUp Himalayas.
-coverImage: /images/blog/annapurna-base-camp.jpg
+coverImage: /images/blog/image_processing20181012-4-jbs6xr.jpg
 author: Gaurav Lamichhane
 draft: false
 relatedPackages:
