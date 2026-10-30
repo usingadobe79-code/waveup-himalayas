@@ -113,6 +113,8 @@ This is why so many first-time trekkers choose ABC, and why it appears on nearly
 
 ## Day-by-day difficulty: a 10-day Annapurna Base Camp trek itinerary
 
+![](/images/blog/annapurna-base-camp-trek-altitude-profile.png "Annapurna Base Camp Trek Altitude Profile")
+
 The hardest days on a 10-day Annapurna Base Camp trek from Pokhara are the climb to Ghorepani, the push through Sinuwa and Dovan, and the final ascent to ABC.
 
 This sample route, which is how many of our groups walk it, starts and ends in Pokhara. Walking times and altitudes are approximate and vary with pace and exact route.
