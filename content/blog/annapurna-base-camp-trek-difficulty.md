@@ -89,6 +89,8 @@ Altitude affects fit and unfit trekkers alike, and nothing about your age or fit
 
 **4. Cold nights.**
 
+![Teahouse at Annapurna Base Camp on a cold evening](/images/blog/Himalayan-A-Teahouse-In-Annapurna-Base-Camp-Trail.jpg "Teahouse at Annapurna Base Camp on a cold evening")
+
  Even in the best seasons, temperatures near ABC fall below freezing overnight. Teahouse rooms are unheated, and the dining hall is only warm while people are in it, so evenings and early mornings can feel bitterly cold once the sun drops behind the peaks.
 
 A warm sleeping bag matters, along with thermal layers, a down jacket, a hat and gloves. Many trekkers also find the cold makes sleeping at altitude harder, which adds to tiredness the next day. Packing well for the nights is just as important as packing for the walking.
