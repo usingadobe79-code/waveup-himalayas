@@ -117,6 +117,8 @@ No matter when you go, the **Annapurna Base Camp Trek** is a life-changing exper
 
 The **Annapurna Base Camp (ABC) Trek** takes you from Nepal’s green foothills to an impressive altitude of **4,130 metres (13,550 feet)**. Understanding the elevation helps you plan your trek, prepare for altitude changes, and enjoy the journey safely.
 
+![](/images/blog/abc-trek-elevation-profile.jpg)
+
 **Key Altitude Stops**
 
 - Nayapul: 1,070 m
