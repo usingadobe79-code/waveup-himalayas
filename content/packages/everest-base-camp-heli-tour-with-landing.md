@@ -77,7 +77,7 @@ tripFacts:
   bestSeason: Autumn and Spring (October–December, March–May)
   groupSize: 1–5
   accommodation: ''
-  meals: Breakfast at Everest View Hotel (included in package)\
+  meals: ''
   trekDistance: ''
   startEndPoint: Kathmandu
 includes:
