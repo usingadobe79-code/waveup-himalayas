@@ -114,6 +114,11 @@ faqs:
 gallery:
   - /images/packages/EBC-Helicopter-tour-with-Breakfast-at-HEV-1.jpg
   - /images/packages/images (4).jpg
+  - /images/packages/trips_March2021_breakfast-at-everest-helicopter-tour.jpg
+  - /images/packages/Kalapattar-landing.jpg
+  - /images/packages/Everest-Base-Camp-Helicopter-Tour-Cost-with-Landing.jpg
+  - /images/packages/MountEverestBaseCampHelicopterSightseeingtourfromKathmandu-001.jpg
+  - /images/packages/everest-heli-tour-with-breakfast.jpg
 routeMap: ''
 packingList:
   - Down jacket – mornings at the landings can be well below freezing, even in autumn sun. •
