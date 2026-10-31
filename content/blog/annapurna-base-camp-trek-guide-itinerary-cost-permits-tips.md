@@ -76,7 +76,7 @@ Choosing the right season is one of the most important decisions for your **Anna
 
 **Autumn (September–November)**
 
-![](/images/blog/trekkers-at-annapurna-base-camp-autumn-season.jpg-001.webp)
+![Autumn (September–November)](/images/blog/trekkers-at-annapurna-base-camp-autumn-season.jpg-001.webp "Autumn (September–November)")
 
 Autumn is widely considered the **best time to trek to Annapurna Base Camp**. The monsoon has cleared, leaving crisp, clean air and spectacular mountain views. **October** offers the best visibility of the entire year, with **Annapurna I**, **Machhapuchhre**, and **Annapurna South** appearing sharp and close.
 
@@ -86,7 +86,7 @@ Autumn is widely considered the **best time to trek to Annapurna Base Camp**. Th
 
 **Spring (March–May)**
 
-![](/images/blog/images%20%288%29.jpg)
+![Spring (March–May)](/images/blog/images%20%288%29.jpg "Spring (March–May)")
 
 Spring is the second-best season for the **Annapurna Base Camp Trek**. The trail between **Ghandruk** and **Chhomrong** erupts in rhododendron blooms, creating one of the most beautiful forest walks in Nepal. Temperatures are milder than autumn, though haze can reduce visibility in April and May.
 
@@ -96,7 +96,7 @@ Spring is the second-best season for the **Annapurna Base Camp Trek**. The trail
 
 **Winter (December–February)** 
 
-![](/images/blog/abc-trekking%20%281%29.webp)
+![Winter (December–February) ](/images/blog/abc-trekking%20%281%29.webp "Winter (December–February) ")
 
 Winter offers solitude on the trail, but conditions are harsh. At **Annapurna Base Camp (4,130m)**, temperatures can drop below -20°C, and some teahouses close. Only experienced trekkers with proper winter gear should attempt the trek during this season.
 
@@ -105,7 +105,7 @@ Winter offers solitude on the trail, but conditions are harsh. At **Annapurna Ba
 
 **Monsoon (June–August)** 
 
-![](/images/blog/annapurna-base-camp-trek-during-monsoon.webp)
+![Monsoon (June–August) ](/images/blog/annapurna-base-camp-trek-during-monsoon.webp "Monsoon (June–August) ")
 
 The monsoon brings heavy rain, leeches, landslides, and cloudy skies that hide the mountains. Most trekking agencies, including ours, do not operate the **ABC Trek** during peak monsoon. If you must trek, late September is your best bet as the rains taper off.
 
@@ -117,7 +117,7 @@ No matter when you go, the **Annapurna Base Camp Trek** is a life-changing exper
 
 The **Annapurna Base Camp (ABC) Trek** takes you from Nepal’s green foothills to an impressive altitude of **4,130 metres (13,550 feet)**. Understanding the elevation helps you plan your trek, prepare for altitude changes, and enjoy the journey safely.
 
-![](/images/blog/abc-trek-elevation-profile.jpg)
+![Annapurna Base Camp Trek Elevation](/images/blog/abc-trek-elevation-profile.jpg "Annapurna Base Camp Trek Elevation")
 
 **Key Altitude Stops**
 
@@ -286,7 +286,7 @@ Life on the ABC trail runs on Nepal's famous **teahouse system**—family-run mo
 
 A teahouse is part guesthouse, part family home, and part community hub. Most are built from stone and painted in bright blues, greens, and whites, with prayer flags strung across the front and a warm dining hall at the centre of daily life.
 
-![](/images/blog/annapurna-base-camp-trail-001.webp "Tea House in ABC Trek")
+![Tea House in ABC Trek](/images/blog/annapurna-base-camp-trail-001.webp "Tea House in ABC Trek")
 
 **Your room** is simple and functional: two single beds, a pillow, and thick blankets folded at the foot. Walls are thin—sometimes just plywood—so you will hear your neighbours. There is no heating in the rooms, and no insulation to speak of. At higher altitudes, the temperature inside can drop close to freezing at night. This is why we insist every trekker carries a sleeping bag rated for **-10°C to -15°C**, along with a down jacket for the evenings.
 
@@ -302,7 +302,7 @@ A teahouse is part guesthouse, part family home, and part community hub. Most ar
 
 The food on the ABC trek is simple, hearty, and surprisingly varied given how remote these kitchens are. Everything is carried up by hand, mule, or porter, so menus shrink as you gain altitude—but you will never go hungry.
 
-![](/images/blog/Food-on-the-Annapurna-Base-Camp-Trek.png "Annapurna Base Camp")
+![Dal Bhat in Tea House in ABC Trek](/images/blog/Food-on-the-Annapurna-Base-Camp-Trek.png "Dal Bhat in Tea House in ABC Trek")
 
 **Dal bhat** is the foundation of the trek. It is a platter of steamed rice, lentil soup, seasonal vegetables, and pickle, and it is what most Nepalis eat twice a day. It is nutritious, balanced, and often **refillable**—the words _"dal bhat power, 24 hour"_ are a genuine trekking truth. If you eat one meal on the trail, make it this one.
 
