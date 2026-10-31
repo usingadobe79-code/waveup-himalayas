@@ -23,7 +23,7 @@ itineraryHighlights:
   - Land at Pheriche for photos on the way into the high Himalaya.
   - Admire Everest, Lhotse, Nuptse, Pumori and Ama Dablam from the air.
   - Pass over Namche Bazaar, Tengboche Monastery and Sagarmatha National Park.
-  - • Enjoy breakfast at Everest View Hotel (3,880 m) with Everest in front of you.
+  - Enjoy breakfast at Everest View Hotel (3,880 m) with Everest in front of you.
 itineraryNotes: []
 itineraryDays: []
 itineraryPeaks:
