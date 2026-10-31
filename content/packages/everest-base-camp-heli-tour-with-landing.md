@@ -69,7 +69,7 @@ tripFacts:
   trekDistance: ''
   startEndPoint: Kathmandu
 includes:
-  - 'Helicopter: private charter, Kathmandu → Everest region → Kathmandu, with a window seat for every guest.'
+  - 'Helicopter: private charter, Kathmandu → Everest region → Kathmandu, with a window seat for every guest'
   - 'Landings: Pheriche and Kala Patthar, weather permitting.'
   - 'Breakfast: at Everest View Hotel (3,880 m).'
   - 'Transfers: private hotel and airport transfers in Kathmandu.'
@@ -78,7 +78,7 @@ includes:
 excludes:
   - 'Airport tax and permits: about US$100 per person.'
   - 'Drinks and personal expenses: at the hotel and elsewhere.'
-  - '• Travel and medical insurance: mandatory, covering helicopter flights to 5,500 m.'
+  - 'Travel and medical insurance: mandatory, covering helicopter flights to 5,500 m.'
   - 'Tips: for the pilot, ground crew and driver.'
   - 'Personal gear: warm clothing, sunglasses and camera.'
   - 'Weather costs: extra expenses from delays or rescheduling.'
