@@ -2,7 +2,7 @@
 title: Everest Base Camp Heli Tour with Landing and Breakfast
 regionKey: everest
 serviceKey: heli-tours
-price: 1640
+price: 1500
 originalPrice: null
 offerLabel: ''
 image: /images/packages/everest-heli-tour-1.jpg
@@ -11,6 +11,18 @@ overview: |-
   The Everest Base Camp Heli Tour with Landing and Breakfast is the fastest way to stand in the Khumbu without spending two weeks on the trail. In one morning you fly from Kathmandu to the foot of the world's highest mountain in a private helicopter, land at Kala Patthar (5,545 m), and eat breakfast at Everest View Hotel, one of the highest-placed hotels on Earth.
 
   Your group of up to five has the helicopter to itself, and every guest gets a window seat. You will fly over Lukla, Namche Bazaar, Tengboche Monastery, the Khumbu Glacier and Everest Base Camp, with Everest, Lhotse, Nuptse, Pumori and Ama Dablam in view. Kala Patthar is the one stop that makes this tour different from an overflight: you step out and look at Everest from the ground. The landing depends on weather, wind and passenger weight on the day, and we tell you plainly if it is closed. **Enquire today for 2026 and 2027 departure dates with WaveUp Himalayas.**
+
+  ### Highlights
+
+  - Fly from Kathmandu into the Khumbu in a private helicopter with a window seat for every guest.
+  - Land at Kala Patthar (5,545 m) for a close-up view of Mount Everest, weather permitting.
+  - Soar over Everest Base Camp (5,364 m) and the Khumbu Glacier.
+  - Land at Pheriche for photos on the way into the high Himalaya.
+  - Admire Everest, Lhotse, Nuptse, Pumori and Ama Dablam from the air.
+  - Pass over Namche Bazaar, Tengboche Monastery and Sagarmatha National Park.
+  - Enjoy breakfast at Everest View Hotel (3,880 m) with Everest in front of you.
+  - Skip the trek: no hiking, no altitude build-up days, no long itinerary.
+  - Return to your Kathmandu hotel by late morning.
 seoTitle: 'Everest Heli Tour: Landing & Breakfast | WaveUp Himalayas'
 seoDescription: 'Private Everest heli tour from Kathmandu: land at Kala Patthar (5,545 m) and enjoy breakfast at Everest View Hotel. 1 day, window seats. From US$1,640.'
 featured: false
@@ -71,16 +83,16 @@ tripFacts:
 includes:
   - 'Helicopter: private charter, Kathmandu → Everest region → Kathmandu, with a window seat for every guest'
   - 'Landings: Pheriche and Kala Patthar, weather permitting.'
-  - 'Breakfast: at Everest View Hotel (3,880 m).'
   - 'Transfers: private hotel and airport transfers in Kathmandu.'
   - 'Safety: pre-flight briefing and emergency oxygen on board.'
   - 'Support: WaveUp Himalayas trip coordinator from booking to drop-off.'
 excludes:
   - 'Airport tax and permits: about US$100 per person.'
+  - 'Breakfast: Breakfast at Hotel Everest View – USD 50 per person (optional).'
   - 'Drinks and personal expenses: at the hotel and elsewhere.'
   - 'Travel and medical insurance: mandatory, covering helicopter flights to 5,500 m.'
-  - 'Tips: for the pilot, ground crew and driver.'
   - 'Personal gear: warm clothing, sunglasses and camera.'
+  - 'Tips: for the pilot, ground crew and driver.'
   - 'Weather costs: extra expenses from delays or rescheduling.'
 faqs:
   - question: How long is the Everest helicopter tour with landing and breakfast?
@@ -94,7 +106,7 @@ faqs:
   - question: Can two people book?
     answer: Yes. Ask us for a private couples quote.
   - question: Is breakfast included?
-    answer: ' Yes, breakfast at Everest View Hotel is included. Drinks and personal expenses are extra.'
+    answer: No, breakfast is not included in the tour price. Guests can enjoy breakfast at Hotel Everest View for an additional USD 50 per person.
   - question: Do I need trekking experience or fitness training?
     answer: ' No. There is no trekking, only a few steps on foot at each landing.'
   - question: Will I get altitude sickness?
