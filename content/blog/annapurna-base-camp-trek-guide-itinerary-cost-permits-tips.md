@@ -395,7 +395,7 @@ Pack for four seasons in one trek. Keep it light—your daypack under 7 kg, your
 
 **Leave Behind**
 
-- Cotton clothing, unboken boots, bulky toiletries, hairdryer, drone without permit
+- Cotton clothing, unbroken boots, bulky toiletries, hairdryer, drone without permit
 
 **WaveUp Himalayas Tips**
 
