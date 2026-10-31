@@ -132,7 +132,7 @@ gallery:
   - /images/packages/Hotel-Everest-View-Entrance.jpeg
 routeMap: ''
 packingList:
-  - Down jacket – mornings at the landings can be well below freezing, even in autumn sun. •
+  - Down jacket – mornings at the landings can be well below freezing, even in autumn sun.
   - Warm base layers – thermal top and leggings under your clothes.
   - Fleece or softshell – a middle layer you can add or remove.
   - Windproof outer shell – wind at Kala Patthar is strong and cold.
