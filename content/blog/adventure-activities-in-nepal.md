@@ -41,7 +41,7 @@ faqs:
 tables: []
 ---
 
-Looking for the best **adventure activities in Nepal**? **WaveUp Himalayas** brings you world-class **Nepal adventure tourism**—from the iconic **Everest Base Camp trek** and **Annapurna Circuit trek** to **paragliding in Pokhara**, **white water rafting in Nepal**, **bungee jumping**, **zip-lining**, **peak climbing**, and **Chitwan jungle safari**. Whether you seek **extreme sports in Nepal** or a custom **Nepal adventure package**, our expert local guides deliver safe, sustainable, and unforgettable Himalayan adventures. Explore **Nepal adventure activities** with **WaveUp Himalayas** and book your trip today.
+Looking for the best **adventure activities in Nepal**? **WaveUp Himalayas** brings you world-class **Nepal adventure tourism**—from the iconic Everest Base Camp trek and Annapurna Circuit trek to paragliding in Pokhara, white water rafting in Nepal, bungee jumping, zip-lining, peak climbing, and Chitwan jungle safari. Whether you seek extreme sports in Nepal or a custom Nepal adventure package, our expert local guides deliver safe, sustainable, and unforgettable Himalayan adventures. Explore **Nepal adventure activities** with **WaveUp Himalayas** and book your trip today.
 
 ***
 
@@ -51,7 +51,7 @@ Nepal isn't just a country—it's a calling for every adventurer. Home to eight 
 
 **Eight of the World's 10 Highest Peaks**
 
-Where else can you stand at the base of **Mount Everest (8,849 m)**? Nepal is home to **eight of the world's ten highest mountains**, including Everest, Kangchenjunga, Lhotse, Makalu, Cho Oyu, Dhaulagiri, Manaslu, and Annapurna. For trekkers and mountaineers, this is the holy grail.
+Where else can you stand at the base of **Mount Everest (8,849 m)**? Nepal is home to **[eight of the world's ten highest mountains](https://waveuphimalayas.com/blog/8-world-s-highest-mountains-in-nepal-over-8000-meters/)**, including Everest, Kangchenjunga, Lhotse, Makalu, Cho Oyu, Dhaulagiri, Manaslu, and Annapurna. For trekkers and mountaineers, this is the holy grail.
 
 **Unmatched Geographical Diversity**
 
@@ -103,10 +103,10 @@ Trekking is the heart of **Nepal adventure tourism**. From short weekend hikes t
 The [**Everest Base Camp trek** ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)is the most iconic trek in the world. Standing at 5,364 meters at the foot of the world's tallest mountain is a life-changing experience. This 12–16 day trek takes you through Sherpa villages, ancient monasteries, and breathtaking Himalayan scenery.
 
 **Annapurna Circuit Trek**
-The [**Annapurna Circuit trek**](https://waveuphimalayas.com/packages/annapurna-circuit-trek/) is a classic teahouse trek crossing the Thorong La Pass at 5,416 meters. It offers diverse landscapes—from lush rice terraces to arid high-altitude deserts. Duration: 12–18 days.
+The **[Annapurna Circuit trek](https://waveuphimalayas.com/packages/annapurna-circuit-trek/)** is a classic teahouse trek crossing the Thorong La Pass at 5,416 meters. It offers diverse landscapes—from lush rice terraces to arid high-altitude deserts. Duration: 12–18 days.
 
 **Manaslu Circuit Trek**
-Often called Nepal's best-kept secret, the [**Manaslu Circuit trek**](https://waveuphimalayas.com/packages/manaslu-circuit-trek/) combines stunning mountain views with rich Tibetan-influenced culture. An 11–12 day trek with fewer crowds than Everest or Annapurna.
+Often called Nepal's best-kept secret, the **[Manaslu Circuit trek](https://waveuphimalayas.com/packages/manaslu-circuit-trek/)** combines stunning mountain views with rich Tibetan-influenced culture. An 11–12 day trek with fewer crowds than Everest or Annapurna.
 
 **Langtang Valley Trek**
 Perfect for those with limited time, the [**Langtang Valley trek** ](https://waveuphimalayas.com/packages/langtang-valley-trek/)takes 7–10 days and offers spectacular views of Langtang Lirung (7,227 m). It's easily accessible from Kathmandu.
@@ -261,8 +261,6 @@ Nepal is a paradise for thrill-seekers, but the Himalayas demand respect. Whethe
 
 Nepal is one of the most rewarding adventure destinations on Earth—but it demands preparation, respect, and flexibility. Follow these essential tips, and you'll be ready to tackle **trekking**, **rafting**, **paragliding**, **bungee jumping**, **safaris**, and more with confidence. Adventure is about stepping outside your comfort zone, but safety always comes first.
 
-***
+**If you are looking for Tour Packages please** **[click here](https://waveuphimalayas.com/#packages)**
 
-**If you are looking for Tour Packages please** [**click here**](https://waveuphimalayas.com/#packages)
-
-**If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** [**info@waveuphimalayas.com**](mailto:info@waveuphimalayas.com)  **Phone** [**(Whatsapp or Viber +977 9861992878)**](https://wa.me/+9779861992878)
+**If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** **[info@waveuphimalayas.com](mailto:info@waveuphimalayas.com)**  **Phone** **[(Whatsapp or Viber +977 9861992878)](https://wa.me/+9779861992878)**
