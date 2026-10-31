@@ -112,6 +112,7 @@ faqs:
   - question: Can I combine it with a trek or other tours?
     answer: Yes. We also run the 13-day Everest Base Camp Trek and Kathmandu city tours, and can combine them.
 gallery:
+  - /images/packages/EBC-Helicopter-tour-with-Breakfast-at-HEV-1.jpg
   - /images/packages/images (4).jpg
 routeMap: ''
 packingList:
