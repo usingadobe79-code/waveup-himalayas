@@ -130,7 +130,7 @@ gallery:
   - /images/packages/Everest-Base-Camp-Helicopter-Tour-Cost-with-Landing.jpg
   - /images/packages/MountEverestBaseCampHelicopterSightseeingtourfromKathmandu-001.jpg
   - /images/packages/Hotel-Everest-View-Entrance.jpeg
-routeMap: ''
+routeMap: /images/packages/everest-heli-route-map-800x600-clear.jpg
 packingList:
   - Down jacket – mornings at the landings can be well below freezing, even in autumn sun.
   - Warm base layers – thermal top and leggings under your clothes.
