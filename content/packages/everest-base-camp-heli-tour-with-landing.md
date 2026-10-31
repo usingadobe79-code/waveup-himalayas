@@ -5,7 +5,7 @@ serviceKey: heli-tours
 price: 1640
 originalPrice: null
 offerLabel: ''
-image: ''
+image: /images/packages/everest-heli-tour-1.jpg
 blurb: 'Private Everest heli tour from Kathmandu: land at Kala Patthar (5,545 m) and enjoy breakfast at Everest View Hotel. 1 day, window seats. From US$1,640.'
 overview: |-
   The Everest Base Camp Heli Tour with Landing and Breakfast is the fastest way to stand in the Khumbu without spending two weeks on the trail. In one morning you fly from Kathmandu to the foot of the world's highest mountain in a private helicopter, land at Kala Patthar (5,545 m), and eat breakfast at Everest View Hotel, one of the highest-placed hotels on Earth.
@@ -113,12 +113,11 @@ faqs:
     answer: Yes. We also run the 13-day Everest Base Camp Trek and Kathmandu city tours, and can combine them.
 gallery:
   - /images/packages/EBC-Helicopter-tour-with-Breakfast-at-HEV-1.jpg
-  - /images/packages/images (4).jpg
   - /images/packages/trips_March2021_breakfast-at-everest-helicopter-tour.jpg
   - /images/packages/Kalapattar-landing.jpg
   - /images/packages/Everest-Base-Camp-Helicopter-Tour-Cost-with-Landing.jpg
   - /images/packages/MountEverestBaseCampHelicopterSightseeingtourfromKathmandu-001.jpg
-  - /images/packages/everest-heli-tour-with-breakfast.jpg
+  - /images/packages/Hotel-Everest-View-Entrance.jpeg
 routeMap: ''
 packingList:
   - Down jacket – mornings at the landings can be well below freezing, even in autumn sun. •
