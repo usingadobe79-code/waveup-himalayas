@@ -1,5 +1,5 @@
 ---
-title: Everest Base Camp Trek vs Helicopter Tour
+title: 'Everest Base Camp Trek vs Helicopter Tour: Which to choose?'
 date: 2026-11-01
 excerpt: 'Everest Base Camp trek vs helicopter tour: compare cost, time, difficulty and views. See which suits you, or try the heli trek. Ask WaveUp Himalayas.'
 coverImage: /images/blog/Everest-Base-Camp-Helicopter-Tour-Cost-with-Landing.jpg
