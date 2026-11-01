@@ -85,6 +85,8 @@ What it asks of you: about 5 to 7 hours of walking on most days, basic teahouse 
 
 An **Everest Base Camp helicopter tour** typically departs from Kathmandu or Lukla and flies you deep into the Khumbu in a few hours. Most itineraries include a landing near Kala Patthar or Gorak Shep, a short stay with Everest, Lhotse and Nuptse in view, and sometimes a breakfast stop at a high-altitude lodge before the return flight.
 
+![](/images/blog/Everest-Heli-View.jpg)
+
 What the helicopter gives you:
 
 - **Speed:** The whole experience takes a morning, not two weeks.
