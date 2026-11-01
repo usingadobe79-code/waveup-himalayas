@@ -66,7 +66,7 @@ If you are asking **is the Everest Base Camp helicopter tour worth it**, the ans
 
 ## The Everest Base Camp Trek: Earn Every View
 
-The classic **Everest Base Camp trek** starts with a short flight from Kathmandu (or Ramechhap in peak season) to Lukla at 2,860 m. From there you walk through Phakding, Namche Bazaar, Tengboche, Dingboche and Lobuche to Gorak Shep, then on to Base Camp at 5,364 m. Most guests also climb **Kala Patthar (5,545 m)** for the best sunrise view of Everest.
+The classic[ **Everest Base Camp trek** ](https://waveuphimalayas.com/packages/everest-base-camp-trek/)starts with a short flight from Kathmandu (or Ramechhap in peak season) to Lukla at 2,860 m. From there you walk through Phakding, Namche Bazaar, Tengboche, Dingboche and Lobuche to Gorak Shep, then on to Base Camp at 5,364 m. Most guests also climb **Kala Patthar (5,545 m)** for the best sunrise view of Everest.
 
 ![Everest Base Camp Trek](/images/blog/images%20(5)-1.jpg "Everest Base Camp Trek")
 
@@ -83,7 +83,7 @@ What it asks of you: about 5 to 7 hours of walking on most days, basic teahouse 
 
 ## The Everest Helicopter Tour: Big Views, Small Time Commitment
 
-An **Everest Base Camp helicopter tour** typically departs from Kathmandu or Lukla and flies you deep into the Khumbu in a few hours. Most itineraries include a landing near Kala Patthar or Gorak Shep, a short stay with Everest, Lhotse and Nuptse in view, and sometimes a breakfast stop at a high-altitude lodge before the return flight.
+An **[Everest Base Camp helicopter tour](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour/)** typically departs from Kathmandu or Lukla and flies you deep into the Khumbu in a few hours. Most itineraries include a landing near Kala Patthar or Gorak Shep, a short stay with Everest, Lhotse and Nuptse in view, and sometimes a breakfast stop at a high-altitude lodge before the return flight.
 
 ![The Everest Helicopter Tour](/images/blog/Everest-Heli-View.jpg "The Everest Helicopter Tour")
 
