@@ -85,7 +85,7 @@ What it asks of you: about 5 to 7 hours of walking on most days, basic teahouse 
 
 An **Everest Base Camp helicopter tour** typically departs from Kathmandu or Lukla and flies you deep into the Khumbu in a few hours. Most itineraries include a landing near Kala Patthar or Gorak Shep, a short stay with Everest, Lhotse and Nuptse in view, and sometimes a breakfast stop at a high-altitude lodge before the return flight.
 
-![](/images/blog/Everest-Heli-View.jpg)
+![The Everest Helicopter Tour](/images/blog/Everest-Heli-View.jpg "The Everest Helicopter Tour")
 
 What the helicopter gives you:
 
@@ -151,6 +151,8 @@ Whichever season you pick, book early. Flights, lodges and helicopter slots fill
 ## The Middle Path: Everest Base Camp Heli Trek (Trek Up, Fly Back)
 
 If the full round trip feels like too much, the[ **Everest Base Camp heli trek**](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/) is our most popular compromise. You trek up to Base Camp with proper acclimatization, then fly back to Lukla or Kathmandu by helicopter instead of walking down.
+
+![Everest Base Camp Heli Trek](/images/blog/images%20%286%29-1.jpg "Everest Base Camp Heli Trek")
 
 Why guests love it:
 
