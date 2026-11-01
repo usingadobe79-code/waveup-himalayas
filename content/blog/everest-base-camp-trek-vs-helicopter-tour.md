@@ -2,7 +2,7 @@
 title: Everest Base Camp Trek vs Helicopter Tour
 date: 2026-11-01
 excerpt: 'Everest Base Camp trek vs helicopter tour: compare cost, time, difficulty and views. See which suits you, or try the heli trek. Ask WaveUp Himalayas.'
-coverImage: /images/blog/images (5)-1.jpg
+coverImage: /images/blog/Everest-Base-Camp-Helicopter-Tour-Cost-with-Landing.jpg
 author: Gaurav Lamichhane
 draft: false
 relatedPackages:
@@ -67,6 +67,8 @@ If you are asking **is the Everest Base Camp helicopter tour worth it**, the ans
 ## The Everest Base Camp Trek: Earn Every View
 
 The classic **Everest Base Camp trek** starts with a short flight from Kathmandu (or Ramechhap in peak season) to Lukla at 2,860 m. From there you walk through Phakding, Namche Bazaar, Tengboche, Dingboche and Lobuche to Gorak Shep, then on to Base Camp at 5,364 m. Most guests also climb **Kala Patthar (5,545 m)** for the best sunrise view of Everest.
+
+![Everest Base Camp Trek](/images/blog/images%20(5)-1.jpg "Everest Base Camp Trek")
 
 What the trek gives you:
 
