@@ -150,7 +150,7 @@ Whichever season you pick, book early. Flights, lodges and helicopter slots fill
 
 ## The Middle Path: Everest Base Camp Heli Trek (Trek Up, Fly Back)
 
-If the full round trip feels like too much, the **[Everest Base Camp heli trek](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/)** is our most popular compromise. You trek up to Base Camp with proper acclimatization, then fly back to Lukla or Kathmandu by helicopter instead of walking down.
+If the full round trip feels like too much, the[ **Everest Base Camp heli trek**](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/) is our most popular compromise. You trek up to Base Camp with proper acclimatization, then fly back to Lukla or Kathmandu by helicopter instead of walking down.
 
 Why guests love it:
 
