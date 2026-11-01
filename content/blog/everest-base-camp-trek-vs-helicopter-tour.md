@@ -70,7 +70,7 @@ The classic[ **Everest Base Camp trek** ](https://waveuphimalayas.com/packages/e
 
 ![Everest Base Camp Trek](/images/blog/images%20(5)-1.jpg "Everest Base Camp Trek")
 
-What the trek gives you:
+**What the trek gives you:**
 
 - **Culture and community:** Sherpa villages, prayer flags, monasteries and warm teahouse evenings with fellow trekkers.
 - **Gradual acclimatization:** Rest days at Namche and Dingboche let your body adapt, which makes the trek safer at altitude.
@@ -87,13 +87,13 @@ An **[Everest Base Camp helicopter tour](https://waveuphimalayas.com/packages/ev
 
 ![The Everest Helicopter Tour](/images/blog/Everest-Heli-View.jpg "The Everest Helicopter Tour")
 
-What the helicopter gives you:
+**What the helicopter gives you:**
 
 - **Speed:** The whole experience takes a morning, not two weeks.
 - **Accessibility:** It suits travelers with knee, heart or stamina concerns, older family members and anyone short on holiday days.
 - **Spectacular photography:** You see the Khumbu glacier, Everest and the Himalayan skyline from above.
 
-What to know before you book:
+**What to know before you book:**
 
 - **No acclimatization:** Time on the ground at altitude is short, and anyone sensitive to altitude should tell us in advance.
 - **Landing limits:** Landings are subject to weather, wind and local regulations, and flights may be rerouted or cancelled. We cannot promise a landing at Base Camp itself.
@@ -114,7 +114,7 @@ What to know before you book:
 | Weather dependence | Lukla flight delays possible | Flights can be delayed or cancelled |
 | Best for | Adventure seekers with 2+ weeks | Short on time, limited mobility, photography |
 
-_Prices vary by season, group size and inclusions. Contact WaveUp Himalayas for a current quote._
+_Prices vary by season, group size and inclusions._ **_[Contact WaveUp Himalayas](https://waveuphimalayas.com/#contact)_** _for a current quote._
 
 ***
 
