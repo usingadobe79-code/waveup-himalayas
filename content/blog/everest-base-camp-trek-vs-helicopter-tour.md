@@ -53,7 +53,7 @@ The honest answer to **Everest Base Camp trek or helicopter** is that neither is
 
 **Choose the Everest Base Camp helicopter tour if:**
 
-- You have only a few hours or a few days, and th[e **Everest Base Camp helicopter tour from Kathmandu**](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour/) (or from Lukla) fits one morning.
+- You have only a few hours or a few days, and the **[Everest Base Camp helicopter tour from Kathmandu](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour/)** (or from Lukla) fits one morning.
 - You have knee, heart or mobility concerns, or you are travelling with older family members.
 - Your goal is the views and photos: Everest, Lhotse, Nuptse and the Khumbu glacier from above, often with a landing near Kala Patthar.
 - You accept the trade-offs: a higher **Everest Base Camp helicopter tour cost** per hour, little time at altitude, weather-dependent flights and no cultural journey.
