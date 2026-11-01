@@ -60,7 +60,7 @@ The honest answer to **Everest Base Camp trek or helicopter** is that neither is
 
 If you are asking **is the Everest Base Camp helicopter tour worth it**, the answer is yes when time, health or mobility is your limit. If you are asking **is the Everest Base Camp trek worth it**, the answer is yes when you have the time and want the experience as much as the view.
 
-**Can't decide? Consider the heli trek.** Many of our guests choose the **Everest Base Camp heli trek**: trek up with proper acclimatization, then fly back from Lukla or Gorak Shep. It saves two to three days, spares your knees on the descent and keeps the culture and achievement of the trek, which makes it the best of both for travellers with about 10 days. Ask WaveUp Himalayas about **trek up, fly back Everest Base Camp** packages.
+**Can't decide? Consider the heli trek.** Many of our guests choose the[ **Everest Base Camp heli trek**](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/): trek up with proper acclimatization, then fly back from Lukla or Gorak Shep. It saves two to three days, spares your knees on the descent and keeps the culture and achievement of the trek, which makes it the best of both for travellers with about 10 days. Ask WaveUp Himalayas about **trek up, fly back Everest Base Camp** packages.
 
 ***
 
