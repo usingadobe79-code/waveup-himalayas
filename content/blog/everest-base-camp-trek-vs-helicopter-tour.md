@@ -120,11 +120,11 @@ _Prices vary by season, group size and inclusions. Contact WaveUp Himalayas for 
 
 ## How Hard Is the EBC Trek? Altitude Sickness Explained
 
-The[ **Everest Base Camp trek difficulty**](https://waveuphimalayas.com/blog/how-difficult-is-everest-base-camp-trek/) is moderate to challenging. It is not technical climbing, and no mountaineering skills are needed, but the days are long and the air is thin. Acute mountain sickness (AMS) can affect even very fit people, which is why altitude, not fitness, is the biggest risk.
+The[ Everest Base Camp trek difficulty](https://waveuphimalayas.com/blog/how-difficult-is-everest-base-camp-trek/) is moderate to challenging. It is not technical climbing, and no mountaineering skills are needed, but the days are long and the air is thin. Acute mountain sickness (AMS) can affect even very fit people, which is why altitude, not fitness, is the biggest risk.
 
 How we reduce that risk on our treks:
 
-- Itineraries with acclimatization days at Namche Bazaar and Dingboche
+- Itineraries with [acclimatization days at Namche Bazaar and Dingboche](https://waveuphimalayas.com/blog/ebc-acclimatization-in-namche-dingboche/)
 - Experienced guides trained to spot early AMS symptoms such as headache, nausea and poor sleep
 - A "walk high, sleep low" approach and daily health checks
 - Clear guidance on hydration, pace and when to descend
@@ -137,7 +137,7 @@ Tip: Start training 8 to 12 weeks ahead with hiking, stair climbing and cardio. 
 
 ## Best Time for Everest Base Camp: Trek or Helicopter
 
-The **[best time for the Everest Base Camp trek](https://waveuphimalayas.com/blog/best-time-for-everest-base-camp-trek/)** is the two main seasons, and both suit helicopter tours too.
+The [best time for the Everest Base Camp trek](https://waveuphimalayas.com/blog/best-time-for-everest-base-camp-trek/) is the two main seasons, and both suit helicopter tours too.
 
 - **Spring (March to May):** Warmer days, blooming rhododendrons and the busiest climbing season on Everest.
 - **Autumn (late September to November):** Clear skies, crisp air and the most stable mountain views. October is the most popular month.
@@ -150,7 +150,7 @@ Whichever season you pick, book early. Flights, lodges and helicopter slots fill
 
 ## The Middle Path: Everest Base Camp Heli Trek (Trek Up, Fly Back)
 
-If the full round trip feels like too much, the[ **Everest Base Camp heli trek**](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/) is our most popular compromise. You trek up to Base Camp with proper acclimatization, then fly back to Lukla or Kathmandu by helicopter instead of walking down.
+If the full round trip feels like too much, the **[Everest Base Camp heli trek](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/)** is our most popular compromise. You trek up to Base Camp with proper acclimatization, then fly back to Lukla or Kathmandu by helicopter instead of walking down.
 
 ![Everest Base Camp Heli Trek](/images/blog/images%20%286%29-1.jpg "Everest Base Camp Heli Trek")
 
