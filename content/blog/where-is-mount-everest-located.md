@@ -2,7 +2,7 @@
 title: Where is Mount Everest Located?
 date: 2026-11-02
 excerpt: Where is Mount Everest located? Discover its location, coordinates, height, and whether it’s in Nepal or Tibet, plus how to trek to Everest Base Camp with WaveUp Himalayas.
-coverImage: /images/blog/1653287230_ebc-c5hp0XiZDKvr6pLMNSUCPm0ibYD9kQnZDoIR3DU8-002.jpg
+coverImage: /images/blog/1596997438-001.jpg
 author: Gaurav Lamichhane
 draft: false
 relatedPackages:
