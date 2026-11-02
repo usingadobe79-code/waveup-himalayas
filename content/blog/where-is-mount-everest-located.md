@@ -89,6 +89,8 @@ The GPS coordinates of Mount Everest are approximately 27°59′ N latitude and 
 
 Mount Everest goes by different names depending on who you ask and which side you stand on.
 
+![Sagarmatha, Chomolungma and Everest](/images/blog/1596997438-001.jpg "Sagarmatha, Chomolungma and Everest")
+
 - **Sagarmatha:** The Nepali name, usually translated as "forehead of the sky." It was officially adopted in Nepal in the 1960s, and the national park carries the same name.
 - **Chomolungma (Qomolangma):** The Tibetan name, often translated as "Holy Mother" or "Goddess Mother of the World."
 - **Mount Everest:** The English name, given in 1865 in honor of Sir George Everest, a former Surveyor General of India. Before that, British surveyors had recorded the mountain simply as Peak XV.
@@ -144,6 +146,8 @@ The summit is about 140 km from Kathmandu in a straight line, but there are no r
 ## Trek to Everest Base Camp with WaveUp Himalayas
 
 The[ Everest Base Camp trek](https://waveuphimalayas.com/packages/everest-base-camp-trek/) is the most direct way to stand in the place people are really asking about when they search "where is Mount Everest located." With WaveUp Himalayas, you walk through the heart of the Khumbu region with local guides who know every village, ridge and weather pattern.
+
+![Everest Base Camp ](/images/blog/1653287230_ebc-c5hp0XiZDKvr6pLMNSUCPm0ibYD9kQnZDoIR3DU8-002.jpg "Everest Base Camp ")
 
 A typical Everest Base Camp trek takes around 12 to 14 days from Kathmandu and back, including acclimatization days. The classic route looks like this:
 
