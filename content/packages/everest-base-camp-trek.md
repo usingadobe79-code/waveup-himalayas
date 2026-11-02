@@ -20,7 +20,7 @@ overview: |-
 
   The route then continues above the treeline through Pangboche and Somare, where the landscape grows more rugged and the views open up to Ama Dablam, Lhotse, and Island Peak. On the second rest day in Dingboche, hikers climb Nangkartshang Peak (5,083 m) for 360-degree views of Makalu, Lhotse, and Ama Dablam — one of the best acclimatization hikes on the entire trek. After this essential preparation, the expedition continues along the Khumbu Glacier, passing the Thukla Pass memorials dedicated to climbers who lost their lives on Everest, before reaching Lobuche and then Gorak Shep.
 
-  From Gorak Shep, trekkers make the final walk along the Khumbu Glacier to Everest Base Camp (5,364 m) — standing at the base of the world's highest mountain is an unforgettable, hard-earned achievement. After celebrating, you return to Gorak Shep for the night. The next morning begins before dawn with the climb to Kala Patthar (5,545 m), where sunrise paints Everest, Nuptse, and Pumori in golden light — the finest close-up panorama of the world's highest mountain on the entire route.
+  From Gorak Shep, trekkers make the final walk along the Khumbu Glacier to Everest Base Camp (5,364 m) — standing at the base of the [world's highest mountain Mount Everest](https://waveuphimalayas.com/blog/where-is-mount-everest-located/) is an unforgettable, hard-earned achievement. After celebrating, you return to Gorak Shep for the night. The next morning begins before dawn with the climb to Kala Patthar (5,545 m), where sunrise paints Everest, Nuptse, and Pumori in golden light — the finest close-up panorama of the world's highest mountain on the entire route.
 
   ### The Descent
 
