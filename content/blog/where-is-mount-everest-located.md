@@ -128,6 +128,8 @@ Most of our guests choose the Nepal side. The trail passes through Namche Bazaar
 
 Everything starts in Kathmandu, Nepal's capital and the arrival point for international flights at Tribhuvan International Airport. From there, the journey to the Everest region follows a clear path.
 
+![Lukla Airport, officially Tenzing–Hillary Airport](/images/blog/lukla%20airport%20landing-001-1.jpg "Lukla Airport, officially Tenzing–Hillary Airport")
+
 1. **Arrive in Kathmandu.** Rest, sort your permits and meet your guide.
 2. **Fly to Lukla.** The short mountain [flight to Lukla](https://waveuphimalayas.com/blog/flight-to-lukla-safety-delays-what-to-expect/) (about 2,860 m), the gateway to the Khumbu region, is one of the most memorable parts of the trip. During busy seasons, departures may operate from Ramechhap instead of Kathmandu, and your trip team will plan for that.
 3. **Trek to Everest Base Camp.** From Lukla you follow the Dudh Koshi valley north through Phakding, Namche Bazaar, Tengboche, Dingboche and Lobuche to Gorak Shep, then on to Everest Base Camp.
