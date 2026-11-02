@@ -60,7 +60,7 @@ Mount Everest sits on the Nepal–China border in the Mahalangur Himal, a sub-ra
 
 ## Which Country Is Mount Everest In? Nepal or Tibet?
 
-Mount Everest is in both [Nepa](https://waveuphimalayas.com/blog/where-is-nepal-located/)l and China. The international border runs across the summit ridge, so the south side of the mountain belongs to Nepal and the north side belongs to the Tibet Autonomous Region of China.
+Mount Everest is in both [Nepal](https://waveuphimalayas.com/blog/where-is-nepal-located/) and China. The international border runs across the summit ridge, so the south side of the mountain belongs to Nepal and the north side belongs to the Tibet Autonomous Region of China.
 
 This is why you will see two different answers online. Some people say "Mount Everest is in Nepal" because the most popular trekking and climbing routes start there. Others say "Mount Everest is in Tibet" because the north face and the northern base camp are in China. Both are correct, because the peak is shared.
 
