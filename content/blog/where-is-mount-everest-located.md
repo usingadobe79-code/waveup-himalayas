@@ -75,6 +75,8 @@ For most international trekkers, the Nepal side is the easier and more scenic wa
 
 The GPS coordinates of Mount Everest are approximately 27°59′ N latitude and 86°55′ E longitude, or about 27.99° N, 86.93° E in decimal degrees. If you type these numbers into any online map, the pin lands on the summit.
 
+![Exact Location of Mount Everest](/images/blog/mt-everest-map-by-freeworldmaps-002.jpg "Exact Location of Mount Everest")
+
 **What continent is Mount Everest in?** Asia. It rises in the central-eastern part of the Himalayan arc, which stretches across Pakistan, India, Nepal, Bhutan and China.
 
 **What mountain range is Mount Everest in?** The Himalayas, within the Mahalangur Himal sub-range. Neighboring giants include Lhotse (8,516 m), Makalu (8,485 m) and Cho Oyu (8,188 m), and Nuptse sits right beside Everest.
@@ -147,7 +149,7 @@ The summit is about 140 km from Kathmandu in a straight line, but there are no r
 
 The[ Everest Base Camp trek](https://waveuphimalayas.com/packages/everest-base-camp-trek/) is the most direct way to stand in the place people are really asking about when they search "where is Mount Everest located." With WaveUp Himalayas, you walk through the heart of the Khumbu region with local guides who know every village, ridge and weather pattern.
 
-![Everest Base Camp ](/images/blog/1653287230_ebc-c5hp0XiZDKvr6pLMNSUCPm0ibYD9kQnZDoIR3DU8-002.jpg "Everest Base Camp ")
+![Everest Base Camp](/images/blog/1653287230_ebc-c5hp0XiZDKvr6pLMNSUCPm0ibYD9kQnZDoIR3DU8-002.jpg "Everest Base Camp")
 
 A typical Everest Base Camp trek takes around 12 to 14 days from Kathmandu and back, including acclimatization days. The classic route looks like this:
 
