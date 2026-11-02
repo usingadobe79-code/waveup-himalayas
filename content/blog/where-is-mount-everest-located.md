@@ -103,6 +103,8 @@ For the Sherpa people who live in the Khumbu valley, the mountain has long been 
 
 ## How Tall Is Mount Everest?
 
+![](/images/blog/everest-height.jpg)
+
 Mount Everest is 8,848.86 meters (29,031.7 feet) tall, measured from sea level to the snow summit. Nepal and China announced this figure together in December 2020, after separate surveys by each country and a joint agreement on the result.
 
 Earlier figures differed slightly. For decades, 8,848 m was the number most people used, and Chinese surveys had at times reported a lower rock-height figure. The 2020 joint announcement settled the question for official purposes.
