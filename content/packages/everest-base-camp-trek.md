@@ -27,8 +27,8 @@ overview: |-
   The return journey retraces your steps down the valley, descending through Pheriche, Tengboche, and Phunki Tenga back to Namche Bazaar. The lower altitude makes breathing easier with every step, and there's a quiet satisfaction in revisiting the landscapes you crossed on the way up. The final trekking day follows the Dudh Koshi River back to Lukla, where you celebrate your achievement with your guide and porters before flying back to Kathmandu the following morning.
 
   This is a safe, well-paced, and unforgettable journey to the roof of the world — ideal for both first-time trekkers and seasoned hikers who want the complete Everest Base Camp experience at a gradual, properly acclimatized pace. **Enquire today for 2026 and 2027 departure dates with Wave Up Himalayas.**
-seoTitle: Everest Base Camp Trek – 13 Days Guided | WaveUp Himalayas
-seoDescription: Book a 13-day guided Everest Base Camp Trek with WaveUp Himalayas. Includes permits, teahouses, Lukla flights & 2 acclimatization days. Enquire for 2026/2027.
+seoTitle: 'Everest Base Camp Trek 2026/27: 13-Day Itinerary & Cost'
+seoDescription: 13-day guided Everest Base Camp Trek from Kathmandu to 5,364 m and Kala Patthar (5,545 m). Permits, Lukla flights & teahouses included. From $1,550.
 featured: true
 draft: false
 itinerarySummary: ''
