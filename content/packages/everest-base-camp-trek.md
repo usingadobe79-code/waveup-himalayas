@@ -6,7 +6,7 @@ price: 1550
 originalPrice: null
 offerLabel: ''
 image: /images/packages/12-Days-Everest-base-Camp-trek.jpeg
-blurb: Book a 13-day guided Everest Base Camp Trek with WaveUp Himalayas. Includes permits, teahouses, Lukla flights & 2 acclimatization days. Enquire for 2026/2027.
+blurb: 13-day guided Everest Base Camp Trek from Kathmandu to 5,364 m and Kala Patthar (5,545 m). Permits, Lukla flights & teahouses included. From $1,550.
 overview: |-
   The **Everest Base Camp Trek** is the ultimate 13-day guided Himalayan journey to the base of the world's highest mountain. This classic trek spans roughly 100–130 kilometres (62–81 miles) round trip, following the legendary trail from Lukla through the heart of the Khumbu region to Everest Base Camp at 5,364 m and Kala Patthar at 5,545 m. Set inside the UNESCO-listed [Sagarmatha National Park](https://waveuphimalayas.com/blog/sagarmatha-national-park/) and following the Dudh Koshi River, the route passes through traditional Sherpa villages, ancient monasteries, and high alpine terrain. Beginning and ending in Kathmandu, this is the definitive Everest experience — the trek that puts you at the doorstep of the world's tallest peak.
 
