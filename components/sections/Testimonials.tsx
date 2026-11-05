@@ -1,12 +1,10 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { m } from "framer-motion";
 import { MessageCircle, BadgeCheck, ChevronLeft, ChevronRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { useReducedMotion } from "@/lib/useReducedMotion";
-import { EASE_OUT_EXPO } from "@/lib/motion";
+import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/cn";
 import { testimonials, business, contact } from "@/lib/content";
 
@@ -43,16 +41,6 @@ function initials(author: string): string {
  * automatically — no further code change needed.
  */
 export function Testimonials() {
-  const reduced = useReducedMotion();
-
-  const reveal = reduced
-    ? { initial: { opacity: 0 }, whileInView: { opacity: 1 }, transition: { duration: 0 } }
-    : {
-        initial: { opacity: 0, y: 24 },
-        whileInView: { opacity: 1, y: 0 },
-        transition: { duration: 0.6, ease: EASE_OUT_EXPO },
-      };
-
   const hasReviews = testimonials.length > 0;
 
   const trackRef = useRef<HTMLDivElement>(null);
@@ -94,11 +82,7 @@ export function Testimonials() {
         />
 
         {hasReviews ? (
-          <m.div
-            {...reveal}
-            viewport={{ once: true, amount: 0.2 }}
-            className="mt-12 md:mt-16"
-          >
+          <Reveal className="mt-12 md:mt-16">
             <div
               ref={trackRef}
               onScroll={onTrackScroll}
@@ -179,14 +163,10 @@ export function Testimonials() {
                 <ChevronRight className="h-5 w-5" aria-hidden="true" />
               </button>
             </div>
-          </m.div>
+          </Reveal>
         ) : (
           /* Honest empty state — no fabricated reviews. */
-          <m.div
-            {...reveal}
-            viewport={{ once: true, amount: 0.3 }}
-            className="mx-auto mt-12 max-w-2xl rounded-card border border-border bg-surface-alt p-10 text-center shadow-card md:mt-16 md:p-14"
-          >
+          <Reveal className="mx-auto mt-12 max-w-2xl rounded-card border border-border bg-surface-alt p-10 text-center shadow-card md:mt-16 md:p-14">
             <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-accent/10 text-accent">
               <BadgeCheck className="h-7 w-7" strokeWidth={1.75} aria-hidden="true" />
             </span>
@@ -215,7 +195,7 @@ export function Testimonials() {
               <MessageCircle className="h-4 w-4" />
               Travelled with us? Share your story
             </Button>
-          </m.div>
+          </Reveal>
         )}
       </div>
     </section>

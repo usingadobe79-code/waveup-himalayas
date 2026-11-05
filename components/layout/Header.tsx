@@ -4,13 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AnimatePresence, m } from "framer-motion";
 import { MessageCircle, Menu, X, ChevronDown, Heart } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
-import { EASE_OUT_EXPO } from "@/lib/motion";
-import { useReducedMotion } from "@/lib/useReducedMotion";
 import { useWishlist } from "@/lib/useWishlist";
 import { contact, services, regions, serviceCount } from "@/lib/content";
 
@@ -81,7 +78,6 @@ export function Header({ solid = false }: { solid?: boolean }) {
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({});
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const navRef = useRef<HTMLElement | null>(null);
-  const reduced = useReducedMotion();
   const { count } = useWishlist();
   const pathname = usePathname();
   const onHome = pathname === "/";
@@ -155,15 +151,6 @@ export function Header({ solid = false }: { solid?: boolean }) {
 
   const toggleSection = (key: string) => setOpenSections((s) => ({ ...s, [key]: !s[key] }));
 
-  const drawerMotion = reduced
-    ? { initial: { opacity: 0 }, animate: { opacity: 1 }, exit: { opacity: 0 }, transition: { duration: 0 } }
-    : {
-        initial: { x: "100%" },
-        animate: { x: 0 },
-        exit: { x: "100%" },
-        transition: { duration: 0.4, ease: EASE_OUT_EXPO },
-      };
-
   return (
     <>
       <header
@@ -182,6 +169,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
         >
           <Logo
             onDark
+            priority
             className={cn(
               "origin-left transition-transform duration-500 ease-[var(--ease-out-expo)]",
               // Smaller base size so the lockup never crowds the controls on a
@@ -244,18 +232,13 @@ export function Header({ solid = false }: { solid?: boolean }) {
                     `tabIndex={-1}` while closed keeps keyboard users from
                     tabbing into an invisible panel.
                   */}
-                  <m.div
-                    initial={false}
-                    animate={isOpen ? "open" : "closed"}
-                    variants={{
-                      open: { opacity: 1, y: 0 },
-                      closed: { opacity: 0, y: reduced ? 0 : 8 },
-                    }}
-                    transition={{ duration: reduced ? 0 : 0.2, ease: EASE_OUT_EXPO }}
+                  <div
                     aria-hidden={!isOpen}
                     className={cn(
-                      "absolute left-0 top-full mt-3 w-64 overflow-hidden rounded-card border border-border bg-surface-alt py-2 shadow-card-hover",
-                      isOpen ? "pointer-events-auto" : "pointer-events-none",
+                      "absolute left-0 top-full mt-3 w-64 overflow-hidden rounded-card border border-border bg-surface-alt py-2 shadow-card-hover transition-[opacity,transform] duration-200 ease-[var(--ease-out-expo)]",
+                      isOpen
+                        ? "pointer-events-auto translate-y-0 opacity-100"
+                        : "pointer-events-none translate-y-2 opacity-0",
                     )}
                   >
                     {group.items.map((item) => (
@@ -282,7 +265,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
                         {group.viewAll.label}
                       </a>
                     )}
-                  </m.div>
+                  </div>
                 </div>
               );
             })}
@@ -362,121 +345,120 @@ export function Header({ solid = false }: { solid?: boolean }) {
       */}
       {mounted &&
         createPortal(
-          <AnimatePresence>
-            {open && (
-              <div className="fixed inset-0 z-[60] xl:hidden">
-                <m.div
-                  className="absolute inset-0 bg-navy-deep/80 backdrop-blur-sm"
-                  onClick={() => setOpen(false)}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: reduced ? 0 : 0.3 }}
-                />
-                {/* Site navy at 60% + heavy blur: the hero behind softens to an
-                    unreadable wash while the menu text stays legible. Height is
-                    content-sized (no h-full) so the panel hangs from the top like
-                    a card; the full-screen scrim behind still dims the rest and
-                    closes on tap. Rounded bottom-left finishes the hanging edge. */}
-                <m.aside
-                  {...drawerMotion}
-                  className="absolute right-0 top-0 flex max-h-full w-[82%] max-w-sm flex-col overflow-y-auto rounded-bl-2xl bg-navy/60 px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)] backdrop-blur-2xl"
-                >
-                  {/* Close control lives in the drawer — the header's toggle is
-                      covered while open. Labelled, 44px. */}
-                  <div className="mb-6 flex items-center justify-between">
-                    <span className="type-eyebrow text-accent">Menu</span>
-                    <button
-                      type="button"
-                      onClick={() => setOpen(false)}
-                      aria-label="Close menu"
-                      className="-mr-2 inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10"
-                    >
-                      <X className="h-6 w-6" />
-                    </button>
-                  </div>
-
-                  <nav className="flex flex-col">
-                    {navGroups.map((group) => {
-                      const expanded = !!openSections[group.key];
-                      return (
-                        <div key={group.key} className="border-b border-white/10">
-                          <button
-                            type="button"
-                            onClick={() => toggleSection(group.key)}
-                            aria-expanded={expanded}
-                            className="flex w-full items-center justify-between py-4 text-lg font-medium text-white/90 transition-colors hover:text-gold"
-                          >
-                            {group.label}
-                            <ChevronDown
-                              className={cn(
-                                "h-5 w-5 shrink-0 transition-transform duration-300 ease-[var(--ease-out-expo)]",
-                                expanded && "rotate-180",
-                              )}
-                              aria-hidden="true"
-                            />
-                          </button>
-                          <AnimatePresence initial={false}>
-                            {expanded && (
-                              <m.div
-                                initial={{ height: 0, opacity: 0 }}
-                                animate={{ height: "auto", opacity: 1 }}
-                                exit={{ height: 0, opacity: 0 }}
-                                transition={{ duration: reduced ? 0 : 0.3, ease: EASE_OUT_EXPO }}
-                                className="overflow-hidden"
-                              >
-                                <div className="flex flex-col pb-3 pl-1">
-                                  {group.items.map((item) => (
-                                    <a
-                                      key={item.href}
-                                      href={resolve(item.href)}
-                                      onClick={() => setOpen(false)}
-                                      className="flex items-center justify-between gap-3 py-2.5 text-base text-white/75 transition-colors hover:text-gold"
-                                    >
-                                      <span>{item.label}</span>
-                                      {item.count !== undefined && (
-                                        <span className="text-xs text-white/45">{item.count}</span>
-                                      )}
-                                    </a>
-                                  ))}
-                                  {group.viewAll && (
-                                    <a
-                                      href={resolve(group.viewAll.href)}
-                                      onClick={() => setOpen(false)}
-                                      className="mt-1 py-2.5 text-base font-semibold text-gold"
-                                    >
-                                      {group.viewAll.label}
-                                    </a>
-                                  )}
-                                </div>
-                              </m.div>
-                            )}
-                          </AnimatePresence>
-                        </div>
-                      );
-                    })}
-                    <a
-                      href={resolve(blogLink.href)}
-                      onClick={() => setOpen(false)}
-                      className="border-b border-white/10 py-4 text-lg font-medium text-white/90 transition-colors hover:text-gold"
-                    >
-                      {blogLink.label}
-                    </a>
-                  </nav>
-                  <Button
-                    href={contact.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
+          open ? (
+            // CSS, not framer-motion/AnimatePresence: the Header is on every
+            // page, so keeping the motion runtime out of it lets the bundler
+            // drop framer-motion from the home page's critical path. The drawer
+            // mounts only while open (so its markup costs nothing until tapped)
+            // and animates in via CSS keyframes; it closes instantly (no exit
+            // animation), which reads fine for a menu.
+            <div className="fixed inset-0 z-[60] xl:hidden">
+              <div
+                className="animate-fade-in absolute inset-0 bg-navy-deep/80 backdrop-blur-sm"
+                onClick={() => setOpen(false)}
+              />
+              {/* Site navy at 60% + heavy blur: the hero behind softens to an
+                  unreadable wash while the menu text stays legible. Height is
+                  content-sized (no h-full) so the panel hangs from the top like
+                  a card; the full-screen scrim behind still dims the rest and
+                  closes on tap. Rounded bottom-left finishes the hanging edge. */}
+              <aside className="animate-drawer-in absolute right-0 top-0 flex max-h-full w-[82%] max-w-sm flex-col overflow-y-auto rounded-bl-2xl bg-navy/60 px-6 pb-8 pt-5 shadow-[-8px_0_40px_rgba(0,0,0,0.45)] backdrop-blur-2xl">
+                {/* Close control lives in the drawer — the header's toggle is
+                    covered while open. Labelled, 44px. */}
+                <div className="mb-6 flex items-center justify-between">
+                  <span className="type-eyebrow text-accent">Menu</span>
+                  <button
+                    type="button"
                     onClick={() => setOpen(false)}
-                    className="mt-6 w-full"
+                    aria-label="Close menu"
+                    className="-mr-2 inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10"
                   >
-                    <MessageCircle className="h-4 w-4" />
-                    Book Now
-                  </Button>
-                </m.aside>
-              </div>
-            )}
-          </AnimatePresence>,
+                    <X className="h-6 w-6" />
+                  </button>
+                </div>
+
+                <nav className="flex flex-col">
+                  {navGroups.map((group) => {
+                    const expanded = !!openSections[group.key];
+                    return (
+                      <div key={group.key} className="border-b border-white/10">
+                        <button
+                          type="button"
+                          onClick={() => toggleSection(group.key)}
+                          aria-expanded={expanded}
+                          className="flex w-full items-center justify-between py-4 text-lg font-medium text-white/90 transition-colors hover:text-gold"
+                        >
+                          {group.label}
+                          <ChevronDown
+                            className={cn(
+                              "h-5 w-5 shrink-0 transition-transform duration-300 ease-[var(--ease-out-expo)]",
+                              expanded && "rotate-180",
+                            )}
+                            aria-hidden="true"
+                          />
+                        </button>
+                        {/* CSS accordion — the grid-rows 0fr→1fr trick animates
+                            height with no JS measuring (replaces the framer
+                            height:auto animation). */}
+                        <div
+                          className={cn(
+                            "grid transition-[grid-template-rows] duration-300 ease-[var(--ease-out-expo)]",
+                            expanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
+                          )}
+                        >
+                          <div className="min-h-0 overflow-hidden">
+                            <div className="flex flex-col pb-3 pl-1">
+                              {group.items.map((item) => (
+                                <a
+                                  key={item.href}
+                                  href={resolve(item.href)}
+                                  tabIndex={expanded ? undefined : -1}
+                                  onClick={() => setOpen(false)}
+                                  className="flex items-center justify-between gap-3 py-2.5 text-base text-white/75 transition-colors hover:text-gold"
+                                >
+                                  <span>{item.label}</span>
+                                  {item.count !== undefined && (
+                                    <span className="text-xs text-white/45">{item.count}</span>
+                                  )}
+                                </a>
+                              ))}
+                              {group.viewAll && (
+                                <a
+                                  href={resolve(group.viewAll.href)}
+                                  tabIndex={expanded ? undefined : -1}
+                                  onClick={() => setOpen(false)}
+                                  className="mt-1 py-2.5 text-base font-semibold text-gold"
+                                >
+                                  {group.viewAll.label}
+                                </a>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                  <a
+                    href={resolve(blogLink.href)}
+                    onClick={() => setOpen(false)}
+                    className="border-b border-white/10 py-4 text-lg font-medium text-white/90 transition-colors hover:text-gold"
+                  >
+                    {blogLink.label}
+                  </a>
+                </nav>
+                <Button
+                  href={contact.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="mt-6 w-full"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  Book Now
+                </Button>
+              </aside>
+            </div>
+          ) : null,
           document.body,
         )}
     </>

@@ -1,6 +1,3 @@
-"use client";
-
-import { m } from "framer-motion";
 import {
   MapPinned,
   ShieldCheck,
@@ -9,8 +6,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { useReducedMotion } from "@/lib/useReducedMotion";
-import { staggerContainer, fadeRise, REVEAL } from "@/lib/motion";
+import { Reveal } from "@/components/ui/Reveal";
 import { whyUs } from "@/lib/content";
 
 /**
@@ -31,50 +27,39 @@ const ICONS: LucideIcon[] = [
 ];
 
 export function WhyUs() {
-  const reduced = useReducedMotion();
-
-  // Under reduced motion, drive children to "show" (initial=false = no enter
-  // animation). Dropping variants instead strands them at hidden opacity:0,
-  // since useReducedMotion flips true only after mount with no whileInView left.
-  const groupProps = reduced
-    ? { variants: staggerContainer, initial: false as const, animate: "show" as const }
-    : {
-        variants: staggerContainer,
-        initial: "hidden" as const,
-        whileInView: "show" as const,
-        viewport: REVEAL.viewport,
-      };
-  const item = fadeRise;
-
   return (
     <section id="why-us" className="section-y bg-surface-alt">
       <div className="container-page">
-        <m.div {...groupProps}>
-          <m.div variants={item}>
+        <div>
+          <Reveal>
             <SectionHeading
               eyebrow="Why WaveUp"
               title="Why Travel With Us"
               intro="A small, local team that builds each trip around you — with the licences, knowledge and care to do it right."
             />
-          </m.div>
+          </Reveal>
 
           <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 md:mt-16">
             {whyUs.map((point, i) => {
               const Icon = ICONS[i] ?? MapPinned;
               return (
-                <m.div key={point.title} variants={item} className="flex gap-5">
+                <Reveal key={point.title} delay={i * 80} className="flex gap-5">
                   <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                    <Icon className="h-6 w-6" strokeWidth={1.75} aria-hidden="true" />
+                    <Icon
+                      className="h-6 w-6"
+                      strokeWidth={1.75}
+                      aria-hidden="true"
+                    />
                   </span>
                   <div>
                     <h3 className="type-h3 text-ink">{point.title}</h3>
                     <p className="type-body mt-2 text-muted">{point.detail}</p>
                   </div>
-                </m.div>
+                </Reveal>
               );
             })}
           </div>
-        </m.div>
+        </div>
       </div>
     </section>
   );

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
-import { MotionProvider } from "@/components/providers/MotionProvider";
 import { JsonLd, WebsiteJsonLd } from "@/components/seo/JsonLd";
 import { Analytics } from "@/components/seo/Analytics";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
@@ -67,9 +66,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-surface text-ink">
         <JsonLd />
         <WebsiteJsonLd />
-        <MotionProvider>
-          <SmoothScroll>{children}</SmoothScroll>
-        </MotionProvider>
+        {/* MotionProvider is NOT global: framer-motion is only used on /about
+            (see app/about/layout.tsx). Loading its feature bundle app-wide put
+            ~1s of script on the home page's LCP critical path for nothing. */}
+        <SmoothScroll>{children}</SmoothScroll>
         <WhatsAppButton />
         <Analytics />
       </body>

@@ -338,9 +338,114 @@ html.lenis body {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
 }
-.icon-draw.is-drawn svg {
+/* Draws when marked `.is-drawn` (legacy JS trigger) OR when any ancestor
+   Reveal scrolls into view (`.is-in`) — the latter lets the Services cards
+   render as server components with no useInView hook. */
+.icon-draw.is-drawn svg,
+.is-in .icon-draw svg {
   animation: icon-draw 0.9s var(--ease-out-expo) forwards;
   animation-delay: var(--draw-delay, 0s);
+}
+
+/* ---------------------------------------------------------------------------
+   Scroll reveal — see components/ui/Reveal.tsx.
+   The lightweight CSS replacement for the sections' framer-motion
+   `whileInView` fade/rise. Reveal.tsx (a thin client shell) adds `is-in` the
+   moment a block scrolls in; because the animated content is passed to it as
+   server-rendered children, that content never hydrates. Reduced-motion users
+   get `is-in` immediately (set in Reveal.tsx); no-JS users get full opacity via
+   the `scripting: none` guard below, so content is never left invisible.
+   --------------------------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s var(--ease-out-expo),
+    transform 0.6s var(--ease-out-expo);
+}
+/* Directional + scale variants (Offers slides, Gallery tiles scale up). */
+.reveal.reveal-left {
+  transform: translateX(-64px);
+}
+.reveal.reveal-right {
+  transform: translateX(64px);
+}
+.reveal.reveal-scale {
+  transform: scale(0.96);
+}
+/* Badge pop — scales up from small with a gentle overshoot. */
+.reveal.reveal-pop {
+  transform: scale(0.5);
+  transition:
+    opacity 0.45s var(--ease-out-expo),
+    transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+/* Scripting disabled → never hide content behind a reveal that can't fire. */
+@media (scripting: none) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Small CSS animations that replaced one-off framer-motion uses (hero scroll
+   chevron, the mobile nav drawer + scrim, the Regions panel cross-fade). All
+   are paused/instant under the reduced-motion rule below.
+   --------------------------------------------------------------------------- */
+@keyframes chevron-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+.animate-chevron-bounce {
+  animation: chevron-bounce 1.8s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.3s ease both;
+}
+
+@keyframes drawer-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+.animate-drawer-in {
+  animation: drawer-in 0.4s var(--ease-out-expo) both;
+}
+
+@keyframes panel-fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.panel-fade {
+  animation: panel-fade 0.35s var(--ease-out-expo) both;
 }
 
 /* ---------------------------------------------------------------------------
@@ -353,13 +458,18 @@ html.lenis body {
    Per-element timing comes from a --d custom property set inline, keeping the
    staggered sequence without a stylesheet rule per element.
    --------------------------------------------------------------------------- */
+/* NOTE: these entrance keyframes animate transform ONLY, never opacity.
+   The hero holds the page's LCP element, and Chrome timestamps a
+   contentful paint at the end of any opacity fade — so fading the hero in
+   from opacity 0 pushed LCP out by the whole delay+duration (measured: it
+   made a hero CTA the LCP at ~2.5s). A transform-only rise animates with no
+   LCP penalty: the element is full-opacity (contentful) from the first
+   paint and merely slides into place. */
 @keyframes hero-rise {
   from {
-    opacity: 0;
     transform: translateY(24px);
   }
   to {
-    opacity: 1;
     transform: none;
   }
 }
@@ -368,11 +478,9 @@ html.lenis body {
    to track the display face's size across breakpoints. */
 @keyframes hero-rise-word {
   from {
-    opacity: 0;
     transform: translateY(0.4em);
   }
   to {
-    opacity: 1;
     transform: none;
   }
 }
