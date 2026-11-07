@@ -206,14 +206,8 @@ Whichever month you choose, a few habits make every trip safer and more enjoyabl
 - **Match the trip to your time.** Short on days or not keen on long walking? Compare options in our guide to the [Everest Base Camp trek vs helicopter tour](https://waveuphimalayas.com/blog/everest-base-camp-trek-vs-helicopter-tour/).
 - **Travelling solo as a woman?** We offer a fully guided tour with a lady guide.
 
-***
+Autumn (October to November) and spring (March to May) are the best time to visit Nepal, with clear skies and the most reliable trekking conditions. Winter rewards you with quiet trails and lower prices, and the monsoon opens up rain-shadow regions such as Upper Mustang. Whatever the month, the right plan matters as much as the calendar. Tell us your dates and the WaveUp Himalayas team will build the journey around them.
 
-WaveUp Himalayas is a small, local team based in Thamel, Kathmandu. We build every trip around you, with government-licensed mountain guides, customizable itineraries and the knowledge to match your dates to the right season. Our services include [guided treks](https://waveuphimalayas.com/packages/#trekking), [city tours](https://waveuphimalayas.com/packages/#city-tours), [helicopter tours](https://waveuphimalayas.com/packages/#heli-tours), [mountain flights](https://waveuphimalayas.com/packages/#mountain-flights), [jungle safari](https://waveuphimalayas.com/packages/#jungle-safari) and fully [custom trips](https://waveuphimalayas.com/packages/#custom-trips).
+**If you are looking for Tour or Trekking Packages please** **[click here](https://waveuphimalayas.com/#packages)**
 
-Tell us your dates, group size and what you have in mind, and we will reply with real options, usually within 24 hours.
-
-- **WhatsApp:** [+977 9861992878](https://wa.me/+9779861992878)
-- **Email:** [info@waveuphimalayas.com](mailto:info@waveuphimalayas.com)
-- **Office hours:** Sunday to Friday, 9:30 AM to 5:30 PM (Nepal time)
-- **Address:** 350 Amrit Marg, Thamel, Kathmandu, Bagmati Province 44600
-- **Website:** [waveuphimalayas.com](https://waveuphimalayas.com/)
+**If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** **[info@waveuphimalayas.com](mailto:info@waveuphimalayas.com)**  **Phone** **[(Whatsapp or Viber +977 9861992878)](https://wa.me/+9779861992878)**
