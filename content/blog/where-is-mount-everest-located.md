@@ -212,21 +212,7 @@ We treat every group as guests in the Himalayas, not as customers on a schedule,
 
 If you are ready to turn that dot on the map into a real journey, WaveUp Himalayas is here to help. Tell us your dates, your fitness level and the kind of experience you want, and we will build an Everest Base Camp plan that fits you.
 
-**Ready to see Everest with your own eyes?** Contact WaveUp Himalayas for a tailor-made plan, whether you want a short scenic flight or a full trek with proper acclimatization built in. Not sure which option suits you? Compare our Everest region experiences:
-
-[Everest Mountain Flight](https://waveuphimalayas.com/packages/everest-mountain-flight/)
-
-[Everest Base Camp Heli Tour](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour/)
-
-[Everest Base Camp Heli Tour with Landing](https://waveuphimalayas.com/packages/everest-base-camp-heli-tour-with-landing/)
-
-[Everest Base Camp Heli Trek](https://waveuphimalayas.com/packages/everest-base-camp-heli-trek/)
-
-[Everest Base Camp Trek](https://waveuphimalayas.com/packages/everest-base-camp-trek/)
-
-[Everest Base Camp Trek with Gokyo Lake](https://waveuphimalayas.com/packages/everest-base-camp-gokyo-lake-trek/)
-
-[Everest Base Camp Trek with Three Passes](https://waveuphimalayas.com/packages/everest-base-camp-three-passes-trek/)
+**Ready to see Everest with your own eyes?** Contact WaveUp Himalayas for a tailor-made plan, whether you want a short scenic flight or a full trek with proper acclimatization built in. Not sure which option suits you? Compare our [**Everest region** ](https://waveuphimalayas.com/packages/#everest)experiences:
 
 **If you are looking for Tour or Trekking Packages please** **[click here](https://waveuphimalayas.com/#packages)**
 
