@@ -278,7 +278,7 @@ WaveUp Himalayas organizes guided Annapurna Base Camp and Everest Base Camp trek
 - **Fully customizable:** extra rest days, private departures, Gokyo Lakes or Three Passes options, or a helicopter return from base camp
 - **Female-guided option:** a fully guided tour with a lady guide for solo women travelers
 
-Looking for a different route? We also run the Annapurna Circuit, Ghorepani Poon Hill, Manaslu Circuit, Langtang, Everest heli tours and more. See all packages at [waveuphimalayas.com](https://waveuphimalayas.com/packages/).
+Looking for a different route? We also run the Annapurna Circuit, Ghorepani Poon Hill, Manaslu Circuit, Langtang, Everest heli tours and more.
 
 **Plan your 2027 trek.** Tell us your dates, group size and fitness level, and we will recommend ABC, EBC or a combination, with a quote and a day-by-day itinerary. 
 
