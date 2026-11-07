@@ -75,7 +75,7 @@ ABC is shorter, lower and cheaper; EBC is longer, higher and more iconic. Here i
 
 ![Annapurna Base Camp trek](/images/blog/AnnapurnaBaseCampTrekkingMulti-dayMountainGlacierTour-001.jpg "Annapurna Base Camp trek")
 
-The Annapurna Base Camp trek is the best short Himalayan trek for most first-timers. It takes you from the lakeside city of Pokhara into the Annapurna Sanctuary, a high glacial basin ringed by Annapurna I, Annapurna South, Hiunchuli, Machapuchare (Fishtail) and Gangapurna.
+The [Annapurna Base Camp trek](https://waveuphimalayas.com/packages/annapurna-base-camp-trek/) is the best short Himalayan trek for most first-timers. It takes you from the lakeside city of Pokhara into the Annapurna Sanctuary, a high glacial basin ringed by Annapurna I, Annapurna South, Hiunchuli, Machapuchare (Fishtail) and Gangapurna.
 
 The route climbs through terraced farmland, Gurung villages such as Ghandruk and Chhomrong, bamboo and rhododendron forest, and finally an open alpine landscape. Because the trail is lower and the days are shorter, ABC is popular as a **short trek in Nepal for beginners**.
 
@@ -97,9 +97,9 @@ The route climbs through terraced farmland, Gurung villages such as Ghandruk and
 
 ## Everest Base Camp trek: walking in the shadow of the world's highest peak
 
-![](/images/blog/Old-Everest-Base-Camp-Trek-001.webp)
+![Everest Base Camp trek](/images/blog/Old-Everest-Base-Camp-Trek-001.webp "Everest Base Camp trek")
 
-The Everest Base Camp trek is the most famous trek in Nepal for a reason. You fly into Lukla, follow the Dudh Koshi valley through Sherpa villages like Namche Bazaar, Tengboche and Dingboche, and climb to the foot of the Khumbu Icefall at about 5,364 m. Most trekkers also hike Kala Patthar (about 5,545 m) for the best views of Everest, Nuptse and Lhotse.
+The [Everest Base Camp trek](https://waveuphimalayas.com/packages/everest-base-camp-trek/) is the most famous trek in Nepal for a reason. You fly into Lukla, follow the Dudh Koshi valley through Sherpa villages like Namche Bazaar, Tengboche and Dingboche, and climb to the foot of the Khumbu Icefall at about 5,364 m. Most trekkers also hike Kala Patthar (about 5,545 m) for the best views of Everest, Nuptse and Lhotse.
 
 If you are searching for **Everest Base Camp trek 2027** options, expect a longer, higher journey than ABC, with rewards to match: Buddhist monasteries, prayer flags, suspension bridges, and big alpine panoramas.
 
