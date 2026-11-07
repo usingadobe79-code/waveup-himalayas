@@ -73,6 +73,8 @@ ABC is shorter, lower and cheaper; EBC is longer, higher and more iconic. Here i
 
 ## Annapurna Base Camp trek: the amphitheatre of peaks
 
+![Annapurna Base Camp trek](/images/blog/AnnapurnaBaseCampTrekkingMulti-dayMountainGlacierTour-001.jpg "Annapurna Base Camp trek")
+
 The Annapurna Base Camp trek is the best short Himalayan trek for most first-timers. It takes you from the lakeside city of Pokhara into the Annapurna Sanctuary, a high glacial basin ringed by Annapurna I, Annapurna South, Hiunchuli, Machapuchare (Fishtail) and Gangapurna.
 
 The route climbs through terraced farmland, Gurung villages such as Ghandruk and Chhomrong, bamboo and rhododendron forest, and finally an open alpine landscape. Because the trail is lower and the days are shorter, ABC is popular as a **short trek in Nepal for beginners**.
@@ -94,6 +96,8 @@ The route climbs through terraced farmland, Gurung villages such as Ghandruk and
 ***
 
 ## Everest Base Camp trek: walking in the shadow of the world's highest peak
+
+![](/images/blog/Old-Everest-Base-Camp-Trek-001.webp)
 
 The Everest Base Camp trek is the most famous trek in Nepal for a reason. You fly into Lukla, follow the Dudh Koshi valley through Sherpa villages like Namche Bazaar, Tengboche and Dingboche, and climb to the foot of the Khumbu Icefall at about 5,364 m. Most trekkers also hike Kala Patthar (about 5,545 m) for the best views of Everest, Nuptse and Lhotse.
 
@@ -287,3 +291,7 @@ Choose Annapurna Base Camp in 2027 if you want a shorter, greener, more affordab
 There is no wrong answer. Both are among the best treks in Nepal, and both go well when you prepare, respect the altitude and walk with a good guide.
 
 Ready to plan your **Annapurna Base Camp trek 2027** or **Everest Base Camp trek 2027**? Message **WaveUp Himalayas** with your dates, budget and fitness level, and we will help you choose the right trek and build the itinerary around you. Spring and autumn dates fill up early, so start planning soon.
+
+**If you are looking for Tour or Trekking Packages please** **[click here](https://waveuphimalayas.com/#packages)**
+
+**If you need any further information, please** [**contact us**](https://waveuphimalayas.com/#contact)**, Email:** **[info@waveuphimalayas.com](mailto:info@waveuphimalayas.com)**  **Phone** **[(Whatsapp or Viber +977 9861992878)](https://wa.me/+9779861992878)**
