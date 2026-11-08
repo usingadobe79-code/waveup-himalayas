@@ -62,7 +62,7 @@ On a clear morning it is the kind of view that makes the long walk feel worth it
 
 ## Kala Patthar height in feet and meters
 
-![](/images/blog/kala-patthar-banner-001.jpg)
+![ Kala Patthar 5,545 m (18,192 ft)](/images/blog/kala-patthar-banner-001.jpg " Kala Patthar 5,545 m (18,192 ft)")
 
 The commonly cited Kala Patthar altitude is 5,545 m (about 18,192 ft). You may see figures up to roughly 5,644 m in other sources, because heights in the Khumbu vary slightly between surveys and GPS readings. We use 5,545 m on our itineraries.
 
