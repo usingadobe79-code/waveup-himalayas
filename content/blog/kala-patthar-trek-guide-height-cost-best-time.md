@@ -134,7 +134,7 @@ Our [13-day Everest Base Camp Trek](https://waveuphimalayas.com/packages/everest
 7. Acclimatization day in Dingboche.
 8. Trek to Lobuche.
 9. Trek to Gorak Shep, then on to Everest Base Camp and back.
-10. Kala Patthar at sunrise, then descend to a lower village.
+10. **Kala Patthar at sunrise, then descend to a lower village.**
 11. Trek back toward Namche Bazaar.
 12. Trek to Lukla.
 13. Fly to Kathmandu.
