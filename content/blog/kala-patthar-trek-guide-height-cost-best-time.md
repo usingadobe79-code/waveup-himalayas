@@ -88,7 +88,7 @@ If you only have energy for one, choose Kala Patthar for the view. If you want t
 
 ## How long does it take to hike Kala Patthar from Gorak Shep?
 
-![Gorak Shep](/images/blog/wide-view-gorakshep-001.jpg "Gorak Shep")
+![Gorak Shep Village](/images/blog/Gorakshep-Village-001.jpg "Gorak Shep Village")
 
 Plan for roughly 2 to 3 hours to climb from Gorak Shep to the top, and about 1 to 1.5 hours to come back down. The path is clear but steep, with loose rock near the upper section, and every step at this altitude feels slower than it looks.
 
