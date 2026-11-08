@@ -219,6 +219,8 @@ Travellers often ask how Kala Patthar compares with other famous viewpoints.
 
 Kala Patthar gives the closest and most dramatic view of Everest. Gokyo Ri is a stunning alternative with turquoise lakes, and it can be combined with base camp. Poon Hill is a gentler first Himalayan sunrise, and our [Ghorepani Poon Hill Trek](https://waveuphimalayas.com/packages/ghorepani-poon-hill-trek/) is ideal if you have fewer days.
 
+***
+
 ## How to see Everest without trekking: helicopter options
 
 ![Everest Heli Tour](/images/blog/Everest-Base-Camp-Helicopter-Tour-Cost-with-Landing.jpg "Everest Heli Tour")
