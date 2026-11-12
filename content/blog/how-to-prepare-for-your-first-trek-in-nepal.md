@@ -2,7 +2,7 @@
 title: How to Prepare for Your First Trek in Nepal
 date: 2026-11-12
 excerpt: First trek in Nepal? Learn how to choose a beginner trek, the best time to go, permits and costs for 2026–2027, fitness training, packing and altitude tips.
-coverImage: /images/blog/Autumn trek in Nepal-001.jpg
+coverImage: /images/blog/Everest-Base-Camp-trek-1024x768.jpg
 author: Gaurav Lamichhane
 draft: false
 relatedPackages:
@@ -44,6 +44,8 @@ This guide is written for you — **the first-time trekker** who wants honest an
 
 The most common first-timer mistake is booking Everest Base Camp because it is the name everyone knows. EBC is a superb goal, but it is a demanding trek at serious altitude, and it is far from the only way to experience the Himalaya. A good first trek builds your confidence and shows you how your body reacts to height, so you can aim higher next time.
 
+![Annapurna Base Camp Trek](/images/blog/7c1d0f1f81147d4625fecde886c5fea5-001.jpg "Annapurna Base Camp Trek")
+
 **Ghorepani Poon Hill** is the best all-round first trek in Nepal for most beginners. It is short, teahouse-based and tops out at about 3,210 m, with sunrise views over the Annapurna and Dhaulagiri ranges. A typical itinerary needs four to five walking days from the Pokhara side, which suits travellers with limited time. Do not mistake "beginner-friendly" for "easy": the route has steep climbs and thousands of stone steps, so train before you go.
 
 **Langtang Valley** is a great second step, or a first trek for people who want more time in the mountains. The trail climbs through forest and Tamang villages into the wide upper valley around Kyanjin Gompa. It starts by road from Kathmandu, so there is no mountain flight to worry about, and at a relaxed pace it takes seven to nine walking days.
@@ -64,6 +66,8 @@ The most common first-timer mistake is booking Everest Base Camp because it is t
 ## Timing: The Best Time to Trek in Nepal
 
 Nepal has two peak trekking seasons, and both work well for beginners.
+
+![Trekking in Nepal in Autumn](/images/blog/Autumn%20trkking%20in%20Nepal%20(1).jpg "Trekking in Nepal in Autumn")
 
 **Autumn (September to November)** is the favourite. The monsoon has washed the air clean, trails are dry and mountain views are at their sharpest. October is often the single best month, with the clearest skies, and it is also the busiest, so teahouses on popular trails fill fast. Late September and November are quieter and still excellent.
 
@@ -190,6 +194,8 @@ We run a pre-departure gear check in Kathmandu for every WaveUp Himalayas group,
 ## What to Expect From a Nepal Teahouse Trek
 
 Teahouse trekking is what makes Nepal special. Instead of carrying tents and stoves, you walk from village to village and stay in family-run lodges, eating hot meals and sleeping indoors every night.
+
+![Teahouses in Everest Base Camp ](/images/blog/teahouses-everest-trek-1724649609.jpg "Teahouses in Everest Base Camp ")
 
 ### Rooms and facilities
 
