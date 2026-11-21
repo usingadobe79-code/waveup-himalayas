@@ -14,6 +14,18 @@ overview: |-
 
   At 5,545 m,[ Kala Patthar](https://waveuphimalayas.com/blog/kala-patthar-trek-guide-height-cost-best-time/) is the trek's highest point — and where dawn reveals Mount Everest in brilliant golden light. All required permits, covering Sagarmatha National Park and Khumbu Pasanglhamu Rural Municipality, are included in the package. The [best seasons for this trek](https://waveuphimalayas.com/blog/best-time-for-everest-base-camp-trek/) are spring (March–May) and autumn (September–November), when skies are clear and trekking conditions in the Everest region are at their best. Along the way, trekkers connect with a region shaped by wild nature, old traditions, and the tough spirit of the mountain communities who call these towering peaks home.
 
+  ### Highlights of the Everest Base Camp Trek
+
+  - **Stand at Everest Base Camp (5,364 m):** Get as close to the world's highest mountain as a trek allows, without any climbing.
+  - **Sunrise from Kala Patthar (5,545 m):** Watch the first light hit Everest, Nuptse and Pumori in a full 360-degree panorama.
+  - **Fly to Lukla:** Start with a scenic mountain flight into one of the world's most dramatic airstrips.
+  - **Namche Bazaar:** Explore the lively trading town that serves as the hub of the Khumbu region.
+  - **Tengboche Monastery:** Visit the largest monastery in the Everest region.
+  - **Sagarmatha National Park:** Trek through this UNESCO World Heritage Site.
+  - **Sherpa culture:** Experience local hospitality, traditions and daily life in the mountains.
+  - **Suspension bridges and prayer flags:** Cross high bridges hung with colourful flags above deep river gorges.
+  - **Acclimatization hike to Nangkartshang Peak (5,083 m):** Adjust to the altitude while looking out over Makalu, Lhotse and Ama Dablam.
+
   ### Acclimatization and the Route
 
   The itinerary is built around two strategically placed [acclimatization days in Namche Bazaar and Dingboche,](https://waveuphimalayas.com/blog/ebc-acclimatization-in-namche-dingboche/) which are essential for safe altitude adjustment. On the Namche rest day, trekkers hike to a scenic viewpoint for a first close-up of Everest, then explore Khumjung village and the Sherpa Museum to learn about local culture and mountaineering history. Leaving Namche, the trail descends to Phunki Tenga before climbing through pine forests to Tengboche, home to the region's largest and most revered monastery, with panoramic views of Ama Dablam and Everest.
@@ -32,16 +44,7 @@ seoDescription: 13-day guided Everest Base Camp Trek from Kathmandu to 5,364 m a
 featured: true
 draft: false
 itinerarySummary: ''
-itineraryHighlights:
-  - Stand at Everest Base Camp (5,364 m) — the closest you can get to the world's highest mountain without climbing
-  - Catch sunrise from Kala Patthar (5,545 m) with a 360-degree panorama of Everest, Nuptse, and Pumori
-  - Experience the thrilling scenic mountain flight to Lukla — one of the world's most dramatic airport approaches
-  - Explore Namche Bazaar, the vibrant trading hub of the Khumbu region
-  - Visit the historic Tengboche Monastery, the largest in the Everest region
-  - Trek through Sagarmatha National Park, a UNESCO World Heritage Site
-  - Immerse yourself in Sherpa culture, hospitality, and mountain traditions
-  - Cross thrilling suspension bridges draped in colorful prayer flags
-  - Acclimatize with a rewarding hike to Nangkartshang Peak (5,083 m) for views of Makalu, Lhotse, and Ama Dablam
+itineraryHighlights: []
 itineraryNotes: []
 itineraryDays:
   - day: 1
